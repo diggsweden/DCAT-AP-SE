@@ -1,0 +1,18 @@
+{
+  "type": "text",
+  "nodetype": "ONLY_LITERAL",
+  "label": {
+    "en": "Version",
+    "sv": "Version"
+  },
+  "property": "owl:versionInfo",
+  "cardinality": {
+    "min": 0,
+    "pref": 0,
+    "max": 1
+  },
+  "description": {
+    "en": "This property contains a version number or other version designation of the Dataset.",
+    "sv": "Ett versionsnummer eller annan versionsbeteckning för datamängden."
+  }
+}

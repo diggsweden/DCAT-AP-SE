@@ -1,0 +1,18 @@
+{
+  "type": "text",
+  "nodetype": "URI",
+  "label": {
+    "en": "Web address for access",
+    "sv": "Webbadress för åtkomst"
+  },
+  "property": "dcat:accessURL",
+  "description": {
+    "en": "This property contains a URL that gives access to a Distribution of the Dataset. The resource at the access URL may contain information about how to get the Dataset. (1) Use accessURL, and not downloadURL,  when it is definitely not a download or when you are not sure whether it is. (2) If the distribution(s) are accessible only through a landing page (i.e. direct download URLs are not known), then the landing page link SHOULD be duplicated as accessURL on a distribution.",
+    "sv": "En webbadress till datamängdens distribution."
+  },
+  "cardinality": {
+    "min": 1,
+    "pref": 1
+  },
+  "pattern": "https?://.+"
+}

@@ -1,0 +1,44 @@
+{
+  "type": "group",
+  "label": {
+    "en": "Format",
+    "sv": "Format"
+  },
+  "description": {
+    "en": "This property refers to the data format of the distribution.",
+    "sv": "Denna egenskap motsvarar distributionens format."
+  },
+  "cardinality": {
+    "min": 1,
+    "pref": 1,
+    "max": 1
+  },
+  "styles": [
+    "disjoint"
+  ],
+  "cls": [
+    "cardgroup"
+  ],
+  "items": [
+    "dcat:format-group_di_choices",
+    "geodcat:dcterms:format-INSPIRE",
+    {
+      "type": "text",
+      "property": "dcterms:format",
+      "description": {
+        "en": "If you cannot find your mediatype in the list above you can provide one by hand. See list of established mediatypes at: http://www.iana.org/assignments/media-types/media-types.xhtml."
+      },
+      "label": {
+        "en": "Other mediatypes",
+        "sv": "Övriga mediatyper"
+      },
+      "nodetype": "ONLY_LITERAL",
+      "cardinality": {
+        "min": 0,
+        "pref": 1,
+        "max": 1
+      },
+      "pattern": "^\\w+\\/[-.\\w]+(?:\\+[-.\\w]+)?(\\s*;\\s*\\w+=\\w+)?$"
+    }
+  ]
+}

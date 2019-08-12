@@ -1,0 +1,20 @@
+{
+  "type": "text",
+  "property": "odrs:attributionText",
+  "label": {
+    "en": "Attribution text",
+    "sv": "Erkännandetext"
+  },
+  "description": {
+    "en": "The text to use in an attribution link. This may be the name of the publisher or a reference to a community or group of contributors.",
+    "sv": "Texten som ska användas i en erkännandetext. Detta kan vara namnet på utgivaren eller en hänvisning till ett gemenskap eller en grupp av bidragare."
+  },
+  "cardinality": {
+    "min": 0,
+    "pref": 1
+  },
+  "styles": [
+    "multiline"
+  ],
+  "nodetype": "LANGUAGE_LITERAL"
+}

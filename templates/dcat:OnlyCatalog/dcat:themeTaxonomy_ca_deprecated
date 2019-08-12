@@ -1,0 +1,29 @@
+{
+  "type": "choice",
+  "nodetype": "URI",
+  "property": "dcat:themeTaxonomy",
+  "label": {
+    "en": "Theme taxonomy",
+    "sv": "Taxonomi för tema"
+  },
+  "description": {
+    "en": "This property refers to a knowledge organization system used to classify the Catalogue's Datasets.",
+    "sv": "Den här egenskapen hänvisar till ett kunskapsorganisationssystem som används för att klassificera katalogens datamängder."
+  },
+  "choices": [
+    {
+      "value": "http://eurovoc.europa.eu/domains",
+      "label": {
+        "en": "Eurovoc"
+      }
+    }
+  ],
+  "cardinality": {
+    "min": 0,
+    "pref": 1
+  },
+  "styles": [
+    "strictmatch",
+    "deprecated"
+  ]
+}

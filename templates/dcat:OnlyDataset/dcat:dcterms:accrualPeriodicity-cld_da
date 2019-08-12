@@ -1,0 +1,198 @@
+{
+  "type": "choice",
+  "label": {
+    "en": "Frequency of update",
+    "sv": "Uppdateringsfrekvens"
+  },
+  "styles": [
+    "strictmatch",
+    "deprecated"
+  ],
+  "cardinality": {
+    "min": 0,
+    "pref": 0
+  },
+  "choices": [
+    {
+      "value": "http://purl.org/cld/freq/annual",
+      "label": {
+        "en": "Annual",
+        "sv": "Årlig"
+      },
+      "description": {
+        "en": "The event occurs once a year.",
+        "sv": "Uppdateringen sker en gång per år."
+      }
+    },
+    {
+      "value": "http://purl.org/cld/freq/biennial",
+      "label": {
+        "en": "Biennial",
+        "sv": "Varannat år"
+      },
+      "description": {
+        "en": "The event occurs every two years.",
+        "sv": "Uppdateringen sker vartannat år."
+      }
+    },
+    {
+      "value": "http://purl.org/cld/freq/bimonthly",
+      "label": {
+        "en": "Bimonthly",
+        "sv": "Varannan månad"
+      },
+      "description": {
+        "en": "The event occurs every two months.",
+        "sv": "Uppdateringen sker varannan månad."
+      }
+    },
+    {
+      "value": "http://purl.org/cld/freq/biweekly",
+      "label": {
+        "en": "Biweekly",
+        "sv": "Varannan vecka"
+      },
+      "description": {
+        "en": "The event occurs every two weeks.",
+        "sv": "Uppdateringen sker varannan vecka."
+      }
+    },
+    {
+      "value": "http://purl.org/cld/freq/continuous",
+      "label": {
+        "en": "Continuous",
+        "sv": "Kontinuerlig"
+      },
+      "description": {
+        "en": "The event repeats without interruption.",
+        "sv": "Uppdateringen sker kontiuerlig."
+      }
+    },
+    {
+      "value": "http://purl.org/cld/freq/daily",
+      "label": {
+        "en": "Daily",
+        "sv": "Dagligen"
+      },
+      "description": {
+        "en": "The event occurs once a day."
+      }
+    },
+    {
+      "value": "http://purl.org/cld/freq/irregular",
+      "label": {
+        "en": "Irregular",
+        "sv": "Oregelbunden"
+      },
+      "description": {
+        "en": "The event occurs at uneven intervals."
+      }
+    },
+    {
+      "value": "http://purl.org/cld/freq/monthly",
+      "label": {
+        "en": "Monthly",
+        "sv": "Månatlig"
+      },
+      "description": {
+        "en": "The event occurs once a month."
+      }
+    },
+    {
+      "value": "http://purl.org/cld/freq/quarterly",
+      "label": {
+        "en": "Quarterly",
+        "sv": "Kvartalsvis"
+      },
+      "description": {
+        "en": "The event occurs every three months."
+      }
+    },
+    {
+      "value": "http://purl.org/cld/freq/semiannual",
+      "label": {
+        "en": "Semiannual",
+        "sv": "Halvårlig"
+      },
+      "description": {
+        "en": "The event occurs twice a year."
+      }
+    },
+    {
+      "value": "http://purl.org/cld/freq/semimonthly",
+      "label": {
+        "en": "Semimonthly",
+        "sv": "Varannan månad"
+      },
+      "description": {
+        "en": "The event occurs twice a month."
+      }
+    },
+    {
+      "value": "http://purl.org/cld/freq/semiweekly",
+      "label": {
+        "en": "Semiweekly",
+        "sv": "Två gånger per vecka"
+      },
+      "description": {
+        "en": "The event occurs twice a week."
+      }
+    },
+    {
+      "value": "http://purl.org/cld/freq/threeTimesAMonth",
+      "label": {
+        "en": "Three times a month",
+        "sv": "Tre gånger per månad"
+      },
+      "description": {
+        "en": "The event occurs three times a month."
+      }
+    },
+    {
+      "value": "http://purl.org/cld/freq/threeTimesAWeek",
+      "label": {
+        "en": "Three times a week",
+        "sv": "Tre gånger per vecka"
+      },
+      "description": {
+        "en": "The event occurs three times a week."
+      }
+    },
+    {
+      "value": "http://purl.org/cld/freq/threeTimesAYear",
+      "label": {
+        "en": "Three times a year",
+        "sv": "Tre gånger per år"
+      },
+      "description": {
+        "en": "The event occurs three times a year."
+      }
+    },
+    {
+      "value": "http://purl.org/cld/freq/triennial",
+      "label": {
+        "en": "Triennial",
+        "sv": "Vart tredje år"
+      },
+      "description": {
+        "en": "The event occurs every three years."
+      }
+    },
+    {
+      "value": "http://purl.org/cld/freq/weekly",
+      "label": {
+        "en": "Weekly",
+        "sv": "Varje vecka"
+      },
+      "description": {
+        "en": "The event occurs once a week."
+      }
+    }
+  ],
+  "nodetype": "URI",
+  "property": "dcterms:accrualPeriodicity",
+  "description": {
+    "en": "This property refers to the frequency at which Dataset is updated.",
+    "sv": "Denna egenskapen avser den datamängdens uppdateringsfrekvens."
+  }
+}

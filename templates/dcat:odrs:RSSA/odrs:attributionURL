@@ -1,0 +1,17 @@
+{
+  "type": "text",
+  "property": "odrs:attributionURL",
+  "nodetype": "URI",
+  "label": {
+    "en": "Attribution URL",
+    "sv": "Erkännande URL"
+  },
+  "description": {
+    "en": "The link (URL) which should be used when attributing a data source. The URL could be a reference to the dataset or publisher homepage, but may also be a dedicated attribution page. This is useful when providing onward attribution to upstream sources."
+  },
+  "cardinality": {
+    "min": 0,
+    "pref": 1
+  },
+  "pattern": "https?://.+"
+}

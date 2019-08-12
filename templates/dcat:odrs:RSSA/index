@@ -1,0 +1,34 @@
+{
+  "type": "group",
+  "constraints": {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "http://schema.theodi.org/odrs#RightsStatement"
+  },
+  "label": {
+    "en": "Rights statement",
+    "sv": "Rättigheter"
+  },
+  "description": {
+    "en": "This property refers to a statement that specifies rights.",
+    "sv": "Egenskapen anger förklaring för rättigheterna."
+  },
+  "items": [
+    "odrs:attributionText",
+    "odrs:attributionURL",
+    "odrs:copyrightNotice",
+    "odrs:copyrightStatement",
+    "odrs:copyrightYear",
+    "odrs:copyrightHolder",
+    "odrs:jurisdiction",
+    "odrs:reuserGuidelines"
+  ],
+  "nodetype": "RESOURCE",
+  "cardinality": {
+    "min": 0,
+    "pref": 0,
+    "max": 1
+  },
+  "property": "dcterms:rights",
+  "cls": [
+    "cardgroup"
+  ]
+}

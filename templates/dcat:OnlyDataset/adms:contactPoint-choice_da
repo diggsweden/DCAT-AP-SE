@@ -1,0 +1,31 @@
+{
+  "type": "choice",
+  "nodetype": "RESOURCE",
+  "labelProperties": [
+    "http://www.w3.org/2006/vcard/ns#fn"
+  ],
+  "property": "http://www.w3.org/ns/adms#contactPoint",
+  "description": {
+    "en": "This property contains contact information that can be used for flagging errors in the Dataset or sending comments.",
+    "sv": "Egenskapen innehåller kontaktuppgifter som kan användas för att flagga fel i datamängden eller för att skicka kommentarer"
+  },
+  "label": {
+    "en": "Contact point",
+    "sv": "Kontakt"
+  },
+  "cardinality": {
+    "min": 0,
+    "pref": 1
+  },
+  "constraints": {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      "http://www.w3.org/2006/vcard/ns#Organization",
+      "http://www.w3.org/2006/vcard/ns#Individual",
+      "http://www.w3.org/2006/vcard/ns#Kind"
+    ]
+  },
+  "styles": [
+    "strictmatch",
+    "deprecated"
+  ]
+}

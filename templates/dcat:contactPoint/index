@@ -1,0 +1,24 @@
+{
+  "type": "group",
+  "nodetype": "RESOURCE",
+  "label": {
+    "en": "Contact point",
+    "sv": "Kontakt"
+  },
+  "description": {
+    "en": "This property contains contact information that can be used for flagging errors in the Dataset or sending comments",
+    "sv": "Egenskapen innehåller kontaktuppgifter som kan användas för att flagga fel i datamängden eller för att skicka kommentarer"
+  },
+  "items": [
+    "vc:kindIndOrOrg",
+    "vc:fn",
+    "vc:hasEmail",
+    "vc:hasTelephone",
+    "vc:hasAddress"
+  ],
+  "property": "dcat:contactPoint",
+  "cardinality": {
+    "min": 0,
+    "pref": 1
+  }
+}

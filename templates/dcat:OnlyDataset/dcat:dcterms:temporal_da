@@ -1,0 +1,59 @@
+{
+  "type": "group",
+  "property": "dcterms:temporal",
+  "nodetype": "RESOURCE",
+  "label": {
+    "en": "Time period",
+    "sv": "Tidsperiod"
+  },
+  "constraints": {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "http://purl.org/dc/terms/PeriodOfTime"
+  },
+  "cardinality": {
+    "min": 0,
+    "pref": 0
+  },
+  "cls": [
+    "cardgroup"
+  ],
+  "items": [
+    {
+      "type": "text",
+      "nodetype": "DATATYPE_LITERAL",
+      "property": "schema:startDate",
+      "label": {
+        "en": "Start",
+        "sv": "Start"
+      },
+      "description": {
+        "en": "Start date of the validity period of a dataset."
+      },
+      "datatype": [
+        "http://www.w3.org/2001/XMLSchema#date",
+        "http://www.w3.org/2001/XMLSchema#dateTime",
+        "http://www.w3.org/2001/XMLSchema#gYear"
+      ]
+    },
+    {
+      "type": "text",
+      "nodetype": "DATATYPE_LITERAL",
+      "property": "schema:endDate",
+      "label": {
+        "en": "End",
+        "sv": "Slut"
+      },
+      "description": {
+        "en": "End date of the validity period of a dataset."
+      },
+      "datatype": [
+        "http://www.w3.org/2001/XMLSchema#date",
+        "http://www.w3.org/2001/XMLSchema#dateTime",
+        "http://www.w3.org/2001/XMLSchema#gYear"
+      ]
+    }
+  ],
+  "description": {
+    "en": "Validity period of a dataset (start and end date)",
+    "sv": "Datamängdens giltighetsperiod (startdatum och slutdatum)"
+  }
+}

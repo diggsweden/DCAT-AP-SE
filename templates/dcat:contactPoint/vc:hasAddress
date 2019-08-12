@@ -1,0 +1,25 @@
+{
+  "property": "vcard:hasAddress",
+  "label": {
+    "en": "Address",
+    "sv": "Adress"
+  },
+  "description": {
+    "en": "To specify the components of the delivery address for the object"
+  },
+  "constraints": {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "http://www.w3.org/2006/vcard/ns#Address"
+  },
+  "type": "group",
+  "automatic": true,
+  "cardinality": {
+    "min": 0,
+    "pref": 1
+  },
+  "items": [
+    "vc:country-name",
+    "vc:locality",
+    "vc:postal-code",
+    "vc:street-address"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "type": "text",
+  "nodetype": "URI",
+  "label": {
+    "en": "Web address for download",
+    "sv": "Webbadress för nedladdning"
+  },
+  "property": "dcat:downloadURL",
+  "description": {
+    "en": "A file that contains the distribution of the dataset in a given format. dcat:downloadURL is a specific form of dcat:accessURL. Nevertheless, DCAT does not define dcat:downloadURL as a subproperty of dcat:accessURL not to enforce this entailment as DCAT profiles may wish to impose a stronger separation where they only use accessURL for non-download locations.",
+    "sv": "En fil som innehåller datamängdens distribution i ett givet format."
+  },
+  "cardinality": {
+    "min": 0,
+    "pref": 0
+  },
+  "pattern": "(http|https|ftp|ftps)://.*"
+}

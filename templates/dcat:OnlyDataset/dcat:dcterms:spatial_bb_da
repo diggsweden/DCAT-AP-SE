@@ -1,0 +1,32 @@
+{
+  "property": "dcterms:spatial",
+  "label": {
+    "en": "Boundingbox",
+    "sv": "Geografisk omskrivande rektangel"
+  },
+  "type": "group",
+  "nodetype": "BLANK",
+  "cardinality": {
+    "min": 0,
+    "pref": 0
+  },
+  "constraints": {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "http://purl.org/dc/terms/Location"
+  },
+  "items": [
+    {
+      "type": "text",
+      "nodetype": "DATATYPE_LITERAL",
+      "cardinality": {
+        "min": 0,
+        "pref": 1,
+        "max": 1
+      },
+      "datatype": "http://www.opengis.net/ont/geosparql#wktLiteral",
+      "property": "locn:geometry",
+      "styles": [
+        "invisibleGroup"
+      ]
+    }
+  ]
+}

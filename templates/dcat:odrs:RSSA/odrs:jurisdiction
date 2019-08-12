@@ -1,0 +1,17 @@
+{
+  "type": "text",
+  "property": "odrs:jurisdiction",
+  "nodetype": "URI",
+  "label": {
+    "en": "Jurisdiction",
+    "sv": "Jurisdiktion"
+  },
+  "description": {
+    "en": "A reference (URI) to the jurisdiction in which copyright and/or database rights have been asserts. It is recommended that this refer to the URI for a country or region."
+  },
+  "cardinality": {
+    "min": 0,
+    "pref": 1
+  },
+  "pattern": "https?://.+"
+}

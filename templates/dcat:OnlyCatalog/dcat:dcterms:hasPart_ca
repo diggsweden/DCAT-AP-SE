@@ -1,0 +1,16 @@
+{
+  "type": "choice",
+  "nodetype": "RESOURCE",
+  "property": "dcterms:hasPart",
+  "label": {
+    "en": "Has part",
+    "sv": "Består av"
+  },
+  "description": {
+    "en": "This property refers to a related Catalogue that is part of the described Catalogue.",
+    "sv": "Hänvisar till en relaterad katalog som är del av den beskrivna katalogen."
+  },
+  "constraints": {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "http://www.w3.org/ns/dcat#Catalog"
+  }
+}

@@ -1,0 +1,163 @@
+{
+  "type": "choice",
+  "nodetype": "LITERAL",
+  "property": "dcterms:format",
+  "label": {
+    "en": "Geographical mediatypes",
+    "sv": "Geografiska mediatyper"
+  },
+  "description": {
+    "en": "This register contains the sub-types of the media type application used for spatial data sets in INSPIRE, in particular in INSPIRE download services. Whenever sub-types exist that are registered with IANA or are in the registration process these are used. For all other formats, no commonly used sub-type exists and INSPIRE has to - at least temporarily - define their own types. In accordance with the rules for media types in RFC 2046/RFC 4288, these start with x-. At this time, all entries in this register have the status 'valid'. Sub-types that are no longer recommended for use will be marked as 'deprecated', but will always be kept in this register as download services may still be using deprecated sub-types."
+  },
+  "cardinality": {
+    "min": 0,
+    "pref": 0,
+    "max": 1
+  },
+  "choices": [
+    {
+      "value": "application/x-shapefile",
+      "label": {
+        "en": "x-shapefile"
+      },
+      "description": {
+        "en": "The media type shall be used for Esri shapefiles. The file is a zip archive that contains at least the shp, shx and dbf files."
+      }
+    },
+    {
+      "value": "application/x-filegdb",
+      "label": {
+        "en": "x-filegdb"
+      },
+      "description": {
+        "en": "The media type shall be used for Esri file geodatabases. The file is a zip archive that contains the gdb directory."
+      }
+    },
+    {
+      "value": "application/gml+xml",
+      "label": {
+        "en": "gml+xml"
+      }
+    },
+    {
+      "value": "application/x-gmz",
+      "label": {
+        "en": "x-gmz"
+      },
+      "description": {
+        "en": "The media type shall be used for a zip archive that contains one or more GML documents."
+      }
+    },
+    {
+      "value": "application/vnd.google-earth.kml+xml",
+      "label": {
+        "en": "vnd.google-earth.kml+xml"
+      }
+    },
+    {
+      "value": "application/vnd.google-earth.kmz",
+      "label": {
+        "en": "vnd.google-earth.kmz"
+      }
+    },
+    {
+      "value": "application/x-ecw",
+      "label": {
+        "en": "x-ecw"
+      },
+      "description": {
+        "en": "The media type shall be used for Enhanced Compressed Wavelet (ECW) files."
+      }
+    },
+    {
+      "value": "application/x-ascii-grid",
+      "label": {
+        "en": "x-ascii-grid"
+      },
+      "description": {
+        "en": "The media type shall be used for ASCII GRID files."
+      }
+    },
+    {
+      "value": "application/x-oracledump",
+      "label": {
+        "en": "x-oracledump"
+      },
+      "description": {
+        "en": "The media type shall be used for Oracle dumps. This media type is incomplete as it misses a reference to the specification of the format."
+      }
+    },
+    {
+      "value": "application/x-las",
+      "label": {
+        "en": "x-las"
+      },
+      "description": {
+        "en": "The media type shall be used for the LASer file format (LAS)."
+      }
+    },
+    {
+      "value": "application/x-laz",
+      "label": {
+        "en": "x-laz"
+      },
+      "description": {
+        "en": "The media type shall be used for compressed LAS files. This media type is incomplete as it misses a reference to the specification of the format."
+      }
+    },
+    {
+      "value": "application/x-tab",
+      "label": {
+        "en": "x-tab"
+      },
+      "description": {
+        "en": "The media type shall be used for the MapInfo TAB format. The file is a zip archive that contains at least the tab, dat, map and id files."
+      }
+    },
+    {
+      "value": "application/x-tab-raster",
+      "label": {
+        "en": "x-tab-raster"
+      },
+      "description": {
+        "en": "The media type shall be used for the MapInfo Raster TAB format. This media type is incomplete as it misses a reference to the specification of the format."
+      }
+    },
+    {
+      "value": "application/x-worldfile",
+      "label": {
+        "en": "x-worldfile"
+      },
+      "description": {
+        "en": "The media type shall be used for world files. The file extension usually depends on the format of the associated image, e.g. .jgw for JPEG (2000) oder .tfw for TIFF."
+      }
+    },
+    {
+      "value": "application/vnd.sqlite3",
+      "label": {
+        "en": "vnd.sqlite3"
+      }
+    },
+    {
+      "value": "application/geopackage+sqlite3",
+      "label": {
+        "en": "geopackage+sqlite3"
+      }
+    },
+    {
+      "value": "image/tiff",
+      "label": {
+        "en": "tiff"
+      }
+    },
+    {
+      "value": "image/jp2",
+      "label": {
+        "en": "jp2"
+      }
+    }
+  ],
+  "styles": [
+    "strictmatch"
+  ]
+}

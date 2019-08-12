@@ -1,0 +1,70 @@
+{
+  "type": "group",
+  "nodetype": "RESOURCE",
+  "description": {
+    "en": "This property provides a mechanism that can be used to verify that the contents of a distribution have not changed.",
+    "sv": "Denna egenskap kan användas för att kontrollera om innehållet i en distribution har förändrats."
+  },
+  "label": {
+    "en": "Checksum",
+    "sv": "Checksumma"
+  },
+  "cardinality": {
+    "min": 0,
+    "pref": 0,
+    "max": 1
+  },
+  "property": "http://spdx.org/rdf/terms#checksum",
+  "constraints": {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "http://spdx.org/rdf/terms#Checksum"
+  },
+  "cls": [
+    "cardgroup"
+  ],
+  "items": [
+    {
+      "type": "text",
+      "nodetype": "LITERAL",
+      "property": "http://spdx.org/rdf/terms#checksumValue",
+      "label": {
+        "en": "Checksum value",
+        "sv": "Värde"
+      },
+      "description": {
+        "en": "This property provides a lower case hexadecimal encoded digest value produced using a specific algorithm.",
+        "sv": "Ett hexadecimalt Digest-värde i gemener som genereras med hjälp av en särskild algoritm."
+      },
+      "cardinality": {
+        "min": 1,
+        "pref": 0,
+        "max": 1
+      }
+    },
+    {
+      "type": "choice",
+      "nodetype": "URI",
+      "choices": [
+        {
+          "value": "http://spdx.org/rdf/terms#checksumAlgorithm_sha1",
+          "label": {
+            "en": "SHA-1"
+          }
+        }
+      ],
+      "property": "http://spdx.org/rdf/terms#algorithm",
+      "label": {
+        "en": "Algorithm",
+        "sv": "Algoritm"
+      },
+      "description": {
+        "en": "This property identifies the algorithm used to produce the subject Checksum. Currently, SHA-1 is the only supported algorithm. It is anticipated that other algorithms will be supported at a later time.",
+        "sv": "Algoritmen som används för att generera checksumman."
+      },
+      "cardinality": {
+        "min": 1,
+        "pref": 0,
+        "max": 1
+      }
+    }
+  ]
+}

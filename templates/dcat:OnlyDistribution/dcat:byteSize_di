@@ -1,0 +1,23 @@
+{
+  "type": "text",
+  "property": "dcat:byteSize",
+  "nodetype": "DATATYPE_LITERAL",
+  "cardinality": {
+    "min": 0,
+    "pref": 0,
+    "max": 1
+  },
+  "label": {
+    "en": "Size (in bytes)",
+    "sv": "Storlek (i bytes)"
+  },
+  "description": {
+    "en": "The size in bytes can be approximated when the precise size is not known.",
+    "sv": "Distributionens storleken kan uppskattas när den exakta storleken är okänd."
+  },
+  "datatype": [
+    "http://www.w3.org/2001/XMLSchema#date",
+    "http://www.w3.org/2001/XMLSchema#dateTime",
+    "http://www.w3.org/2001/XMLSchema#gYear"
+  ]
+}

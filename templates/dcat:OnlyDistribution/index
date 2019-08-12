@@ -1,0 +1,30 @@
+{
+  "type": "group",
+  "constraints": {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "http://www.w3.org/ns/dcat#Distribution"
+  },
+  "label": {},
+  "items": [
+    "dcat:dcterms:title_di",
+    "dcat:dcterms:description_di",
+    "dcat:accessURL_di",
+    "dcat:downloadURL_di",
+    "dcat:format-group_di",
+    "dcat:byteSize_di",
+    "dcat:dcterms:language_di",
+    "dcat:dcterms:issued_di",
+    "dcat:dcterms:modified_di",
+    "dcat:adms:status_di",
+    "dcat:dcterms:license_di",
+    "dcat:odrs:RSSA",
+    "dcat:spdx:checksum_di",
+    "dcat:foaf:page_di",
+    "dcat:dcterms:conformsTo_di"
+  ],
+  "cardinality": {
+    "min": 0,
+    "pref": 0
+  },
+  "description": {},
+  "nodetype": "URI"
+}

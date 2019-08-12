@@ -1,0 +1,24 @@
+{
+  "property": "foaf:homepage",
+  "label": {
+    "en": "Homepage",
+    "sv": "Hemsida"
+  },
+  "description": {
+    "en": "This property refers to a web page that acts as the main page for the Catalogue.",
+    "sv": "Webadress till katalogens huvudsida."
+  },
+  "constraints": {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "http://xmlns.com/foaf/0.1/Document"
+  },
+  "type": "text",
+  "nodetype": "URI",
+  "cardinality": {
+    "min": 0,
+    "pref": 1,
+    "max": 1
+  },
+  "styles": [
+    "externalLink"
+  ]
+}

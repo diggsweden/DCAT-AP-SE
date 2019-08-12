@@ -1,0 +1,173 @@
+{
+  "type": "choice",
+  "property": "dcterms:format",
+  "nodetype": "ONLY_LITERAL",
+  "label": {
+    "en": "Common mediatypes",
+    "sv": "Vanliga mediatyper"
+  },
+  "choices": [
+    {
+      "value": "text/csv",
+      "label": {
+        "en": "CSV (.csv)"
+      },
+      "description": {
+        "en": "CSV is a simple spreadsheet format where rows are separeted by newlines and columns by commas, semicolon or some other special character."
+      }
+    },
+    {
+      "value": "text/csv+zip",
+      "label": {
+        "en": "CSV (.csv) in a zip"
+      },
+      "description": {
+        "en": "A zip file containing csv files."
+      }
+    },
+    {
+      "value": "application/xml",
+      "label": {
+        "en": "XML (.xml)"
+      },
+      "description": {
+        "en": "Extensible Markup Language (XML) is a markup language that defines a set of rules for encoding documents in a format that is both human-readable and machine-readable. It is defined in the XML 1.0 Specification produced by the W3C."
+      }
+    },
+    {
+      "value": "application/xml+zip",
+      "label": {
+        "en": "XML (.xml) in a zip"
+      },
+      "description": {
+        "en": "A zip file containing xml files."
+      }
+    },
+    {
+      "value": "application/json",
+      "label": {
+        "en": "JSON (.json)"
+      },
+      "description": {
+        "en": "JSON or JavaScript Object Notation, is an open standard format that uses human-readable text to transmit data objects consisting of attribute–value pairs. It is used primarily to transmit data between a server and web application, as an alternative to XML."
+      }
+    },
+    {
+      "value": "application/json+zip",
+      "label": {
+        "en": "JSON (.json) in a zip"
+      },
+      "description": {
+        "en": "A zip file containing xml files."
+      }
+    },
+    {
+      "value": "application/zip",
+      "label": {
+        "en": "ZIP (.zip)"
+      },
+      "description": {
+        "en": ".ZIP is an archive file format that supports lossless data compression."
+      }
+    },
+    {
+      "value": "text/html",
+      "label": {
+        "en": "HTML (.html)"
+      },
+      "description": {
+        "en": "HTML or HyperText Markup Language is the standard markup language used to create web pages."
+      }
+    },
+    {
+      "value": "application/vnd.ms-excel",
+      "label": {
+        "en": "Microsoft Excel (.xls)"
+      },
+      "description": {}
+    },
+    {
+      "value": "application/pdf",
+      "description": {
+        "en": "Portable Document Format (PDF) is a file format used to present documents encapsulating a complete description of a fixed-layout flat document, including the text, fonts, graphics, and other information needed to display it."
+      },
+      "label": {
+        "en": "PDF (.pdf)"
+      }
+    },
+    {
+      "value": "text/plain",
+      "label": {
+        "en": "Text (.txt)"
+      },
+      "description": {
+        "en": "Plain text file."
+      }
+    },
+    {
+      "value": "application/n-triples",
+      "label": {
+        "en": "RDF as N-Triples (.n3)"
+      },
+      "description": {
+        "en": "A line-based syntax for an RDF graph."
+      }
+    },
+    {
+      "value": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "label": {
+        "en": "Microsoft Excel XML (.xlsx)"
+      },
+      "description": {
+        "en": "Office Open XML Spreadsheet is a zipped, XML-based file format developed by Microsoft, standardized in ECMA-376 and later in ISO/IEC 29500."
+      }
+    },
+    {
+      "value": "application/vnd.oasis.opendocument.spreadsheet",
+      "label": {
+        "en": "OpenDocument Spreadsheet (.ods)"
+      },
+      "description": {
+        "en": "The Open Document Format for spreadsheets is an XML based format standardized first by OASIS and later by ISO/IEC: ISO/IEC 26300:2006/Amd 1:2012 — Open Document Format for Office Applications (OpenDocument) v1.1."
+      }
+    },
+    {
+      "value": "application/rdf+xml",
+      "label": {
+        "en": "RDF/XML (.rdf)"
+      },
+      "description": {
+        "en": "This is an XML syntax for RDF as introduced in the RDF/XML Syntax Specification by W3C in 2004."
+      }
+    },
+    {
+      "value": "application/sparql-query",
+      "label": {
+        "en": "RDF query (SPARQL)"
+      },
+      "description": {
+        "en": "SPARQL (pronounced \"sparkle\", an acronym for SPARQL Protocol and RDF Query Language) is an RDF query language, that is, a query language for databases, able to retrieve and manipulate data stored in Resource Description Framework format."
+      }
+    },
+    {
+      "value": "text/turtle",
+      "description": {
+        "en": "Turtle is a syntax for RDF that allows an RDF graph to be completely written in a compact and natural text form, with abbreviations for common usage patterns and datatypes. "
+      },
+      "label": {
+        "en": "RDF as Turtle (.ttl)"
+      }
+    }
+  ],
+  "cardinality": {
+    "min": 0,
+    "pref": 1,
+    "max": 1
+  },
+  "description": {
+    "en": "A selection of common mediatypes according to the list suggested by the DCAT-AP recommendation."
+  },
+  "styles": [
+    "strictmatch"
+  ]
+}

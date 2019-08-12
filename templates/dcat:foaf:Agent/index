@@ -1,0 +1,78 @@
+{
+  "type": "group",
+  "nodetype": "RESOURCE",
+  "property": "dcterms:publisher",
+  "items": [
+    {
+      "property": "foaf:name",
+      "label": {
+        "en": "Name",
+        "sv": "Namn"
+      },
+      "description": {
+        "en": "A name for some thing."
+      },
+      "type": "text",
+      "nodetype": "LANGUAGE_LITERAL",
+      "cardinality": {
+        "min": 1,
+        "pref": 0
+      }
+    },
+    "adms:publishertype",
+    {
+      "property": "foaf:homepage",
+      "label": {
+        "en": "Homepage",
+        "sv": "Hemsida"
+      },
+      "description": {
+        "en": "A homepage for some thing."
+      },
+      "constraints": {
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "http://xmlns.com/foaf/0.1/Document"
+      },
+      "type": "text",
+      "nodetype": "URI",
+      "cardinality": {
+        "min": 0,
+        "pref": 0
+      },
+      "styles": [
+        "externalLink"
+      ],
+      "pattern": "https?://.+"
+    },
+    {
+      "property": "foaf:mbox",
+      "label": {
+        "en": "Email address",
+        "sv": "E-postadress"
+      },
+      "description": {
+        "en": "A personal mailbox, ie. an Internet mailbox associated with exactly one owner, the first owner of this mailbox. This is a 'static inverse functional property', in that  there is (across time and change) at most one individual that ever has any particular value for foaf:mbox."
+      },
+      "type": "text",
+      "nodetype": "URI",
+      "cardinality": {
+        "min": 0,
+        "pref": 0
+      },
+      "styles": [
+        "email"
+      ],
+      "valueTemplate": "mailto:"
+    }
+  ],
+  "constraints": {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      "http://xmlns.com/foaf/0.1/Agent",
+      "http://xmlns.com/foaf/0.1/Person",
+      "http://xmlns.com/foaf/0.1/Organization"
+    ]
+  },
+  "label": {
+    "en": "Publisher",
+    "sv": "Tillhandahållande organisation"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "text",
+  "nodetype": "LANGUAGE_LITERAL",
+  "property": "http://www.w3.org/ns/adms#versionNotes",
+  "styles": [
+    "multiline"
+  ],
+  "label": {
+    "en": "Version notes",
+    "sv": "Versionsanteckningar"
+  },
+  "description": {
+    "en": "This property contains a description of the differences between this version and a previous version of the Dataset. This property can be repeated for parallel language versions of the version notes.",
+    "sv": "Innehåller en beskrivning av skillnaderna mellan denna version och en tidigare version av datamängden. Denna egenskap kan upprepas för parallella språkversioner av versionsanteckningar."
+  }
+}

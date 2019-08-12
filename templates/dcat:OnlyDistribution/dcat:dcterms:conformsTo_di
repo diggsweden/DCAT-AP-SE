@@ -1,0 +1,18 @@
+{
+  "property": "dcterms:conformsTo",
+  "label": {
+    "en": "Linked schemas",
+    "sv": "Länkade scheman"
+  },
+  "description": {
+    "en": "This property refers to an established schema to which the described Distribution conforms.",
+    "sv": "Egenskapen hänvisar till ett etablerat schema som den beskrivna distribution använder."
+  },
+  "constraints": {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "dcterms:Standard"
+  },
+  "type": "choice",
+  "automatic": true,
+  "nodetype": "URI",
+  "pattern": "https?://.+"
+}

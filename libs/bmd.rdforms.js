@@ -1,0 +1,1 @@
+bmd.rdforms.js_minified

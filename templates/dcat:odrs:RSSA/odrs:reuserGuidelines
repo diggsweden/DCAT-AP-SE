@@ -1,0 +1,17 @@
+{
+  "type": "text",
+  "label": {
+    "en": "Guidelines for re-users",
+    "sv": "Riktlinjer för återanvändning"
+  },
+  "description": {
+    "en": "Link (URL) to a document that provides guidelines for re-users of data that is covered by a specific rights statement. The guidelines may include more detail on attribution guidelines, a fuller copyright statement, and general guidance on how the data might be re-used"
+  },
+  "property": "odrs:reuserGuidelines",
+  "nodetype": "URI",
+  "cardinality": {
+    "min": 0,
+    "pref": 1
+  },
+  "pattern": "https?://.+"
+}

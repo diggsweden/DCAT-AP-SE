@@ -1,0 +1,12 @@
+{
+  "type": "text",
+  "property": "odrs:copyrightYear",
+  "nodetype": "ONLY_LITERAL",
+  "label": {
+    "en": "Copyright year",
+    "sv": "Upphovsrättsår"
+  },
+  "description": {
+    "en": "The year from which copyright over the content of the dataset is asserted."
+  }
+}

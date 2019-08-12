@@ -1,0 +1,39 @@
+{
+  "type": "choice",
+  "nodetype": "URI",
+  "property": "rdf:type",
+  "label": {
+    "en": "Kind",
+    "sv": "Typ"
+  },
+  "description": {
+    "en": "This property refers to the explicit vCard-Type („Individual“ or „Organisation“) of a contact point."
+  },
+  "choices": [
+    {
+      "value": "http://www.w3.org/2006/vcard/ns#Individual",
+      "label": {
+        "en": "Individual",
+        "sv": "Individ"
+      },
+      "description": {
+        "en": "An object representing a single person or entity."
+      }
+    },
+    {
+      "value": "http://www.w3.org/2006/vcard/ns#Organization",
+      "label": {
+        "en": "Organization",
+        "sv": "Organisation"
+      },
+      "description": {
+        "en": "An object representing an organization.  An organization is a single entity, and might represent a business or government, a department or division within a business or government, a club, an association, or the like."
+      }
+    }
+  ],
+  "cardinality": {
+    "min": 1,
+    "pref": 0,
+    "max": 1
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "property": "dcterms:conformsTo",
+  "label": {
+    "en": "Conforms to",
+    "sv": "Uppfyller"
+  },
+  "description": {
+    "en": "This property refers to an implementing rule or other specification.",
+    "sv": "Egenskapen hänvisar till en tillämpningsföreskrift eller annan specifikation."
+  },
+  "constraints": {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "dcterms:Standard"
+  },
+  "type": "choice",
+  "automatic": true,
+  "nodetype": "URI",
+  "pattern": "https?://.+"
+}

@@ -1,0 +1,16 @@
+{
+  "type": "choice",
+  "nodetype": "URI",
+  "description": {
+    "en": "This property refers to a related Dataset from which the described Dataset is derived.",
+    "sv": "En referens till en relaterad datamängd från vilken den beskrivna datamängden härleds."
+  },
+  "label": {
+    "en": "Source",
+    "sv": "Källa"
+  },
+  "property": "dcterms:source",
+  "constraints": {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "http://www.w3.org/ns/dcat#Dataset"
+  }
+}

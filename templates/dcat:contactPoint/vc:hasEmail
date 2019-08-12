@@ -1,0 +1,24 @@
+{
+  "property": "vcard:hasEmail",
+  "label": {
+    "en": "Email",
+    "sv": "E-postadress"
+  },
+  "description": {
+    "en": "To specify the electronic mail address for communication with the object"
+  },
+  "constraints": {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "http://www.w3.org/2006/vcard/ns#Email"
+  },
+  "type": "text",
+  "automatic": true,
+  "valueTemplate": "mailto:",
+  "styles": [
+    "email"
+  ],
+  "nodetype": "URI",
+  "cardinality": {
+    "min": 1,
+    "pref": 0
+  }
+}

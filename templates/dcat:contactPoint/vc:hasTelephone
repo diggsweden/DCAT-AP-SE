@@ -1,0 +1,33 @@
+{
+  "property": "vcard:hasTelephone",
+  "label": {
+    "en": "Telephone",
+    "sv": "Telefon"
+  },
+  "description": {
+    "en": "The telephone number should be given including country calling code, e.g. +4618100000."
+  },
+  "type": "group",
+  "automatic": true,
+  "items": [
+    {
+      "type": "text",
+      "nodetype": "URI",
+      "cardinality": {
+        "min": 1,
+        "pref": 1,
+        "max": 1
+      },
+      "description": {
+        "en": "The telephone number should be given including country calling code, e.g. +4618100000."
+      },
+      "property": "vcard:hasValue",
+      "pattern": "\\+?[0-9]*",
+      "valueTemplate": "tel:$1"
+    }
+  ],
+  "cardinality": {
+    "min": 0,
+    "pref": 1
+  }
+}

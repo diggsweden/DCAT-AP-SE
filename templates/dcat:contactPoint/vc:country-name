@@ -1,0 +1,17 @@
+{
+  "property": "vcard:country-name",
+  "label": {
+    "en": "Country name",
+    "sv": "Land"
+  },
+  "description": {
+    "en": "The country name associated with the address of the object."
+  },
+  "type": "text",
+  "nodetype": "LITERAL",
+  "cardinality": {
+    "min": 0,
+    "pref": 1,
+    "max": 1
+  }
+}

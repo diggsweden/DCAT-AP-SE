@@ -1,0 +1,17 @@
+{
+  "type": "text",
+  "property": "odrs:copyrightStatement",
+  "nodetype": "URI",
+  "label": {
+    "en": "Copyright statement",
+    "sv": "Upphovsrättsdokument"
+  },
+  "description": {
+    "en": "A link (URL) to a document that includes a statement about the copyright status of the content of a dataset. The web page might include both a copyright notice for a dataset, and any relevant guidance for re-users."
+  },
+  "cardinality": {
+    "min": 0,
+    "pref": 1
+  },
+  "pattern": "https?://.+"
+}

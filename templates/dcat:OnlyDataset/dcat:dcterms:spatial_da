@@ -1,0 +1,17 @@
+{
+  "property": "dcterms:spatial",
+  "label": {
+    "en": "Spatial coverage",
+    "sv": "Geografiskt område"
+  },
+  "description": {
+    "en": "A spatial region or named place. The geographical area covered by the dataset. It is recommended to use URIs from Geonames in the form: http://sws.geonames.org/6695072",
+    "sv": "Det geografiska området som omfattas av datamängden. Det rekommenderas att använda Geonames URI:er i följande form: http://sws.geonames.org/6695072"
+  },
+  "constraints": {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "http://purl.org/dc/terms/Location"
+  },
+  "type": "choice",
+  "automatic": true,
+  "nodetype": "URI"
+}

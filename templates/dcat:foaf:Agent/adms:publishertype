@@ -1,0 +1,98 @@
+{
+  "type": "choice",
+  "nodetype": "URI",
+  "property": "dcterms:type",
+  "label": {
+    "en": "Type",
+    "sv": "Typ"
+  },
+  "descriptions": {
+    "en": "This property refers to the type of the responsible position, who provides the catalog or the data structure.",
+    "de": "Diese Eigenschaft bezieht sich auf den Typ der verantwortlichen Stelle, die den Katalog oder die Datenstruktur bereitstellt.",
+    "sv": "Denna egenskap refererar till vilken typ av ansvarig position som tillhandahåller katalogen eller datastrukturen."
+  },
+  "choices": [
+    {
+      "value": "http://purl.org/adms/publishertype/Academia-ScientificOrganisation",
+      "label": {
+        "en": "Academia/Scientific organisation",
+        "sv": "Akademia/Vetenskaplig organisation"
+      }
+    },
+    {
+      "value": "http://purl.org/adms/publishertype/Company",
+      "label": {
+        "en": "Company",
+        "sv": "Företag"
+      }
+    },
+    {
+      "value": "http://purl.org/adms/publishertype/IndustryConsortium",
+      "label": {
+        "en": "Industry consortium",
+        "sv": "Industrikonsortium"
+      }
+    },
+    {
+      "value": "http://purl.org/adms/publishertype/LocalAuthority",
+      "label": {
+        "en": "Local Authority",
+        "sv": "Lokal myndighet/kommun"
+      }
+    },
+    {
+      "value": "http://purl.org/adms/publishertype/NationalAuthority",
+      "label": {
+        "en": "National authority",
+        "sv": "Nationell myndighet"
+      }
+    },
+    {
+      "value": "http://purl.org/adms/publishertype/NonGovernmentalOrganisation",
+      "label": {
+        "en": "Non-Governmental Organisation",
+        "sv": "Icke-statlig organisation"
+      }
+    },
+    {
+      "value": "http://purl.org/adms/publishertype/NonProfitOrganisation",
+      "label": {
+        "en": "Non-Profit Organisation",
+        "sv": "Ej vinstdrivande organisation"
+      }
+    },
+    {
+      "value": "http://purl.org/adms/publishertype/PrivateIndividual(s)",
+      "label": {
+        "en": "Private Individual(s)",
+        "sv": "Privatperson(er)"
+      }
+    },
+    {
+      "value": "http://purl.org/adms/publishertype/RegionalAuthority",
+      "label": {
+        "en": "Regional authority",
+        "sv": "Regional myndighet/landsting"
+      }
+    },
+    {
+      "value": "http://purl.org/adms/publishertype/StandardisationBody",
+      "label": {
+        "en": "Standardisation body",
+        "sv": "Standardiseringsorganisation"
+      }
+    },
+    {
+      "value": "http://purl.org/adms/publishertype/SupraNationalAuthority",
+      "label": {
+        "en": "Supra-national authority",
+        "sv": "Över-/mellanstatlig myndighet"
+      }
+    }
+  ],
+  "cardinality": {
+    "min": 0,
+    "pref": 1,
+    "max": 1
+  }
+}

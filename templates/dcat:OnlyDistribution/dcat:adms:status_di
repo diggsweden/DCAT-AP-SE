@@ -1,0 +1,51 @@
+{
+  "type": "choice",
+  "nodetype": "URI",
+  "property": "http://www.w3.org/ns/adms#status",
+  "label": {
+    "en": "Status",
+    "sv": "Status"
+  },
+  "choices": [
+    {
+      "value": "http://purl.org/adms/status/Completed",
+      "label": {
+        "en": "Completed",
+        "sv": "Färdig"
+      }
+    },
+    {
+      "value": "http://purl.org/adms/status/Deprecated",
+      "label": {
+        "en": "Deprecated",
+        "sv": "Avvecklad"
+      }
+    },
+    {
+      "value": "http://purl.org/adms/status/UnderDevelopment",
+      "label": {
+        "en": "Under development",
+        "sv": "Under utveckling"
+      }
+    },
+    {
+      "value": "http://purl.org/adms/status/Withdrawn",
+      "label": {
+        "en": "Withdrawn",
+        "sv": "Tillbakadragen"
+      }
+    }
+  ],
+  "cardinality": {
+    "min": 0,
+    "pref": 0,
+    "max": 1
+  },
+  "styles": [
+    "verticalRadioButtons"
+  ],
+  "description": {
+    "en": "This property refers to the maturity of the Distribution",
+    "sv": "Distributionens mognadsgrad"
+  }
+}

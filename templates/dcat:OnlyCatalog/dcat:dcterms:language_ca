@@ -1,0 +1,689 @@
+{
+  "property": "dcterms:language",
+  "label": {
+    "sv": "Språk",
+    "en": "Language"
+  },
+  "description": {
+    "en": "This property refers to a language used in the textual metadata describing titles, descriptions, etc. of the Datasets in the Catalogue. This property can be repeated if the metadata is provided in multiple languages.",
+    "sv": "Egenskapen anger vilket språk som används i metadata som titlar, beskrivningar etc. av datamängder i katalogen. Egenskapen kan upprepas om metadata anges på flera språk."
+  },
+  "constraints": {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "http://purl.org/dc/terms/LinguisticSystem"
+  },
+  "type": "choice",
+  "automatic": true,
+  "content": [],
+  "choices": [
+    {
+      "value": "http://publications.europa.eu/resource/authority/language/SQI",
+      "label": {
+        "en": "Albanian",
+        "sv": "albanska"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/language/ARA",
+      "label": {
+        "en": "Arabic",
+        "sv": "arabiska"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/language/HYE",
+      "label": {
+        "en": "Armenian",
+        "sv": "armeniska"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/language/AZE",
+      "label": {
+        "en": "Azerbaijani",
+        "sv": "azerbajdzjanska"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/language/EUS",
+      "label": {
+        "en": "Basque",
+        "sv": "baskiska"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/language/BEL",
+      "label": {
+        "en": "Belarusian",
+        "sv": "vitryska"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/language/BEN",
+      "label": {
+        "en": "Bengali",
+        "sv": "bengali"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/language/BOS",
+      "label": {
+        "en": "Bosnian",
+        "sv": "bosniska"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/language/BRE",
+      "label": {
+        "en": "Breton",
+        "sv": "bretonska"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/language/BUL",
+      "label": {
+        "en": "Bulgarian",
+        "sv": "bulgariska"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/language/CAT",
+      "label": {
+        "en": "Catalan",
+        "sv": "katalanska"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/language/ZHO",
+      "label": {
+        "en": "Chinese",
+        "sv": "kinesiska"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/language/COS",
+      "label": {
+        "en": "Corsican",
+        "sv": "korsikanska"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/language/HRV",
+      "label": {
+        "en": "Croatian",
+        "sv": "kroatiska"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/language/CES",
+      "label": {
+        "en": "Czech",
+        "sv": "tjeckiska"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/language/DAN",
+      "label": {
+        "en": "Danish",
+        "sv": "danska"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/language/DIV",
+      "label": {
+        "en": "Dhivehi",
+        "sv": "divehi"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/language/NLD",
+      "label": {
+        "en": "Dutch",
+        "sv": "nederländska"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/language/ENG",
+      "label": {
+        "en": "English",
+        "sv": "engelska"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/language/EPO",
+      "label": {
+        "en": "Esperanto",
+        "sv": "esperanto"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/language/EST",
+      "label": {
+        "en": "Estonian",
+        "sv": "estniska"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/language/FAO",
+      "label": {
+        "en": "Faroese",
+        "sv": "färöiska"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/language/FIN",
+      "label": {
+        "en": "Finnish",
+        "sv": "finska"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/language/VLS",
+      "label": {
+        "en": "Flemish",
+        "sv": "flamländska"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/language/FRA",
+      "label": {
+        "en": "French",
+        "sv": "franska"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/language/FRY",
+      "label": {
+        "en": "Frisian",
+        "sv": "frisiska"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/language/GLG",
+      "label": {
+        "en": "Galician",
+        "sv": "galiciska"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/language/KAT",
+      "label": {
+        "en": "Georgian",
+        "sv": "georgiska"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/language/DEU",
+      "label": {
+        "en": "German",
+        "sv": "tyska"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/language/ELL",
+      "label": {
+        "en": "Greek",
+        "sv": "grekiska"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/language/KAL",
+      "label": {
+        "en": "Greenlandic",
+        "sv": "grönländska"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/language/HEB",
+      "label": {
+        "en": "Hebrew",
+        "sv": "hebreiska"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/language/HIN",
+      "label": {
+        "en": "Hindi",
+        "sv": "hindi"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/language/HUN",
+      "label": {
+        "en": "Hungarian",
+        "sv": "ungerska"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/language/ISL",
+      "label": {
+        "en": "Icelandic",
+        "sv": "isländska"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/language/IND",
+      "label": {
+        "en": "Indonesian",
+        "sv": "indonesiska"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/language/INA",
+      "label": {
+        "en": "Interlingua",
+        "sv": "interlingua"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/language/GLE",
+      "label": {
+        "en": "Irish",
+        "sv": "iriska"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/language/ITA",
+      "label": {
+        "en": "Italian",
+        "sv": "italienska"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/language/JPN",
+      "label": {
+        "en": "Japanese",
+        "sv": "japanska"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/language/CSB",
+      "label": {
+        "en": "Kashubian",
+        "sv": "kasjubiska"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/language/KAZ",
+      "label": {
+        "en": "Kazakh",
+        "sv": "kazakiska"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/language/KHM",
+      "label": {
+        "en": "Khmer",
+        "sv": "khmer"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/language/KOR",
+      "label": {
+        "en": "Korean",
+        "sv": "koreanska"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/language/KUR",
+      "label": {
+        "en": "Kurdish",
+        "sv": "kurdiska"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/language/KIR",
+      "label": {
+        "en": "Kyrgyz",
+        "sv": "kirgiziska"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/language/LAO",
+      "label": {
+        "en": "Lao",
+        "sv": "lao"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/language/LAT",
+      "label": {
+        "en": "Latin",
+        "sv": "latin"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/language/LAV",
+      "label": {
+        "en": "Latvian",
+        "sv": "lettiska"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/language/LIT",
+      "label": {
+        "en": "Lithuanian",
+        "sv": "litauiska"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/language/LTZ",
+      "label": {
+        "en": "Luxembourgish",
+        "sv": "luxemburgiska"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/language/MKD",
+      "label": {
+        "en": "Macedonian",
+        "sv": "makedonska"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/language/MLG",
+      "label": {
+        "en": "Malagasy",
+        "sv": "malagassiska"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/language/MSA",
+      "label": {
+        "en": "Malay",
+        "sv": "malajiska"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/language/MLT",
+      "label": {
+        "en": "Maltese",
+        "sv": "maltesiska"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/language/MIN",
+      "label": {
+        "en": "Minangkabau",
+        "sv": "minangkabau"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/language/MOL",
+      "label": {
+        "en": "Moldavian",
+        "sv": "moldaviska"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/language/MON",
+      "label": {
+        "en": "Mongolian",
+        "sv": "mongoliska"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/language/0E0",
+      "label": {
+        "en": "Montenegrin",
+        "sv": "montenegrinska"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/language/NEP",
+      "label": {
+        "en": "Nepali",
+        "sv": "nepali"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/language/SME",
+      "label": {
+        "en": "Northern Sami",
+        "sv": "nordsamiska"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/language/NOR",
+      "label": {
+        "en": "Norwegian",
+        "sv": "norska"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/language/OCI",
+      "label": {
+        "en": "Occitan",
+        "sv": "occitanska"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/language/OSS",
+      "label": {
+        "en": "Ossetian",
+        "sv": "ossetiska"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/language/FAS",
+      "label": {
+        "en": "Persian",
+        "sv": "persiska"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/language/POL",
+      "label": {
+        "en": "Polish",
+        "sv": "polska"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/language/POR",
+      "label": {
+        "en": "Portuguese",
+        "sv": "portugisiska"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/language/ROM",
+      "label": {
+        "en": "Romani",
+        "sv": "romani"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/language/RON",
+      "label": {
+        "en": "Romanian",
+        "sv": "rumänska"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/language/ROH",
+      "label": {
+        "en": "Romansh",
+        "sv": "rätoromanska"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/language/RUS",
+      "label": {
+        "en": "Russian",
+        "sv": "ryska"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/language/GLA",
+      "label": {
+        "en": "Scottish Gaelic",
+        "sv": "skotsk gaeliska"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/language/SRP",
+      "label": {
+        "en": "Serbian",
+        "sv": "serbiska"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/language/HBS",
+      "label": {
+        "en": "Serbo-Croatian",
+        "sv": "serbokroatiska"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/language/SIN",
+      "label": {
+        "en": "Sinhala",
+        "sv": "singalesiska"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/language/SLK",
+      "label": {
+        "en": "Slovak",
+        "sv": "slovakiska"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/language/SLV",
+      "label": {
+        "en": "Slovenian",
+        "sv": "slovenska"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/language/SPA",
+      "label": {
+        "en": "Spanish",
+        "sv": "spanska"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/language/SWA",
+      "label": {
+        "en": "Swahili",
+        "sv": "swahili"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/language/SWE",
+      "label": {
+        "en": "Swedish",
+        "sv": "svenska"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/language/TGK",
+      "label": {
+        "en": "Tajiks",
+        "sv": "tadzjikiska"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/language/TAM",
+      "label": {
+        "en": "Tamil",
+        "sv": "tamil"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/language/THA",
+      "label": {
+        "en": "Thai",
+        "sv": "thai"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/language/BOD",
+      "label": {
+        "en": "Tibetan",
+        "sv": "tibetanska"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/language/TUR",
+      "label": {
+        "en": "Turkish",
+        "sv": "turkiska"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/language/TUK",
+      "label": {
+        "en": "Turkmen",
+        "sv": "turkmeniska"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/language/UKR",
+      "label": {
+        "en": "Ukrainian",
+        "sv": "ukrainska"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/language/URD",
+      "label": {
+        "en": "Urdu",
+        "sv": "urdu"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/language/UZB",
+      "label": {
+        "en": "Uzbek",
+        "sv": "uzbekiska"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/language/0D0",
+      "label": {
+        "en": "Valencian",
+        "sv": "valencianska"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/language/VIE",
+      "label": {
+        "en": "Vietnamese",
+        "sv": "vietnamesiska"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/language/WLN",
+      "label": {
+        "en": "Walloon",
+        "sv": "vallonska"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/language/CYM",
+      "label": {
+        "en": "Welsh",
+        "sv": "kymriska"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/language/YID",
+      "label": {
+        "en": "Yiddish",
+        "sv": "jiddisch"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/language/ZUL",
+      "label": {
+        "en": "Zulu",
+        "sv": "zulu"
+      }
+    }
+  ],
+  "nodetype": "URI",
+  "cardinality": {
+    "min": 0,
+    "pref": 1
+  }
+}

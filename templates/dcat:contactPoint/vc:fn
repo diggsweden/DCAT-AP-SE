@@ -1,0 +1,16 @@
+{
+  "property": "vcard:fn",
+  "label": {
+    "en": "Formatted name",
+    "sv": "Namn"
+  },
+  "description": {
+    "en": "The formatted text corresponding to the name of the object"
+  },
+  "type": "text",
+  "nodetype": "LITERAL",
+  "cardinality": {
+    "min": 1,
+    "pref": 0
+  }
+}

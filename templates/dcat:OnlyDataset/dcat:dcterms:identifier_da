@@ -1,0 +1,17 @@
+{
+  "property": "dcterms:identifier",
+  "label": {
+    "en": "Identifier",
+    "sv": "Identifierare"
+  },
+  "description": {
+    "en": "This property contains the main identifier for the Dataset, e.g. the URI or other unique identifier in the context of the Catalogue.",
+    "sv": "Datamängdens huvudidentifierare, t.ex. en URI eller annan unik identifierare i katalogens sammanhang."
+  },
+  "type": "text",
+  "nodetype": "ONLY_LITERAL",
+  "cardinality": {
+    "min": 0,
+    "pref": 0
+  }
+}

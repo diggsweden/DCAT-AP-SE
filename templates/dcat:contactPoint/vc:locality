@@ -1,0 +1,17 @@
+{
+  "property": "vcard:locality",
+  "label": {
+    "en": "Locality",
+    "sv": "Postort"
+  },
+  "description": {
+    "en": "The locality (e.g. city or town) associated with the address of the object."
+  },
+  "type": "text",
+  "nodetype": "LITERAL",
+  "cardinality": {
+    "min": 0,
+    "pref": 1,
+    "max": 1
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "type": "group",
+  "nodetype": "RESOURCE",
+  "constraints": {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "http://www.w3.org/ns/dcat#Catalog"
+  },
+  "items": [
+    "dcat:dcterms:title_ca",
+    "dcat:dcterms:description_ca",
+    "dcat:foaf:Agent_ca",
+    "dcat:dcterms:issued_ca",
+    "dcat:dcterms:language_ca",
+    "dcat:dcterms:modified_ca",
+    "dcat:foaf:homepage_ca",
+    "dcat:dcterms:spatial_ca",
+    "dcat:dcterms:license_ca",
+    "dcat:odrs:RSSA",
+    "dcat:dcterms:hasPart_ca",
+    "dcat:dcterms:isPartOf_ca",
+    "dcat:themeTaxonomy_ca_deprecated",
+    "dcat:themeTaxonomy_ca"
+  ]
+}

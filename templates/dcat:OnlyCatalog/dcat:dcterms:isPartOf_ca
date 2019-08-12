@@ -1,0 +1,21 @@
+{
+  "type": "choice",
+  "nodetype": "RESOURCE",
+  "property": "dcterms:isPartOf",
+  "label": {
+    "en": "Is part of",
+    "sv": "Är del av"
+  },
+  "description": {
+    "en": "This property refers to a related Catalogue in which the described Catalogue is physically or logically included.",
+    "sv": "Hänvisar till en närstående katalog där den beskrivna katalogen fysiskt eller logiskt ingår."
+  },
+  "cardinality": {
+    "min": 0,
+    "pref": 0,
+    "max": 1
+  },
+  "constraints": {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "http://www.w3.org/ns/dcat#Catalog"
+  }
+}

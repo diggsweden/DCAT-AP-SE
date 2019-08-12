@@ -1,0 +1,22 @@
+{
+  "type": "choice",
+  "constraints": {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "http://xmlns.com/foaf/0.1/Agent"
+  },
+  "property": "odrs:copyrightHolder",
+  "label": {
+    "en": "Copyright holder",
+    "sv": "Ägare av upphovsrätten"
+  },
+  "description": {
+    "en": "A reference to the organization that holds copyright over the content of the dataset"
+  },
+  "cardinality": {
+    "min": 0,
+    "pref": 1
+  },
+  "labelProperties": [
+    "http://xmlns.com/foaf/0.1/name"
+  ],
+  "nodetype": "URI"
+}

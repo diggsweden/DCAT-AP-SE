@@ -1,0 +1,15 @@
+{
+  "type": "text",
+  "property": "odrs:copyrightNotice",
+  "label": {
+    "en": "Copyright notice",
+    "sv": "Meddelande om upphovsrätt"
+  },
+  "description": {
+    "en": "The copyright notice associated with a rights statement. A notice must typically be preserved and displayed when acknowledging the source of some data. This property is expressed as a simple literal value and so is suitable for simple copyright notices. Where a data publisher needs to reference a larger copyright statement and/or related guidance then the copyrightStatement property should be used instead."
+  },
+  "styles": [
+    "multiline"
+  ],
+  "nodetype": "LANGUAGE_LITERAL"
+}

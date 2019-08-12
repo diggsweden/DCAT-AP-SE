@@ -1,0 +1,42 @@
+{
+  "type": "group",
+  "nodetype": "RESOURCE",
+  "styles": [
+    "disjoint"
+  ],
+  "items": [
+    "dcat:dcterms:cc-license-choices",
+    {
+      "type": "choice",
+      "nodetype": "URI",
+      "property": "dcterms:license",
+      "constraints": {
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "dcterms:LicenseDocument"
+      },
+      "label": {
+        "en": "Other",
+        "sv": "Övriga"
+      },
+      "cardinality": {
+        "min": 0,
+        "pref": 1
+      }
+    }
+  ],
+  "label": {
+    "en": "License",
+    "sv": "Licens"
+  },
+  "cardinality": {
+    "min": 0,
+    "pref": 1,
+    "max": 1
+  },
+  "description": {
+    "en": "This property refers to the licence under which the Distribution is made available.",
+    "sv": "Den här egenskapen hänvisar till licensen enligt vilken distributionen görs tillgänglig."
+  },
+  "cls": [
+    "cardgroup"
+  ]
+}

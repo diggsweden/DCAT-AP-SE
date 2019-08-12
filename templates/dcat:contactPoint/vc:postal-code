@@ -1,0 +1,17 @@
+{
+  "property": "vcard:postal-code",
+  "label": {
+    "en": "Postal code",
+    "sv": "Postkod"
+  },
+  "description": {
+    "en": "The postal code associated with the address of the object"
+  },
+  "type": "text",
+  "nodetype": "LITERAL",
+  "cardinality": {
+    "min": 0,
+    "pref": 1,
+    "max": 1
+  }
+}

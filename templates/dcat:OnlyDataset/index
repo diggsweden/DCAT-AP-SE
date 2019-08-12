@@ -1,0 +1,41 @@
+{
+  "type": "group",
+  "label": {
+    "en": "Dataset",
+    "sv": "Dataset"
+  },
+  "constraints": {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "http://www.w3.org/ns/dcat#Dataset"
+  },
+  "items": [
+    "dcat:dcterms:title_da",
+    "dcat:dcterms:description_da",
+    "dcat:foaf:Agent_da",
+    "adms:contactPoint-choice_da",
+    "dcat:contactPoint-choice_da",
+    "dcat:keyword_da",
+    "dcat:theme-da",
+    "dcat:dcterms:identifier_da",
+    "dcat:adms:identifier_da",
+    "dcat:dcterms:issued_da",
+    "dcat:dcterms:modified_da",
+    "dcat:dcterms:language_da",
+    "dcat:landingPage_da",
+    "dcat:dcterms:conformsTo_da",
+    "dcat:dcterms:spatial_da",
+    "dcat:dcterms:spatial_bb_da",
+    "dcat:dcterms:temporal_da",
+    "dcat:dcterms:accrualPeriodicity-cld_da",
+    "dcat:dcterms:accrualPeriodicity_da",
+    "dcat:adms:version",
+    "dcat:owl:versionInfo_da",
+    "dcat:adms:versionNotes_da",
+    "dcat:dcterms:source_da",
+    "dcat:dcterms:accessRights_da",
+    "dcat:hasVersion_da",
+    "dcat:isVersionOf_da",
+    "dcat:dcterms:relation_da",
+    "dcat:foaf:page_da",
+    "dcat:dcterms:provenance_da"
+  ]
+}

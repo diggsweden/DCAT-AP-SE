@@ -1,0 +1,16 @@
+{
+  "type": "choice",
+  "nodetype": "URI",
+  "property": "dcat:isVersionOf",
+  "label": {
+    "en": "Is version of",
+    "sv": "Är version av"
+  },
+  "description": {
+    "en": "This property refers to a related Dataset of which the described Dataset is a version, edition, or adaptation.",
+    "sv": "En relaterad datamängd som den beskrivna datamängden är en version, utgåva, eller anpassning av."
+  },
+  "constraints": {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "http://www.w3.org/ns/dcat#Dataset"
+  }
+}
