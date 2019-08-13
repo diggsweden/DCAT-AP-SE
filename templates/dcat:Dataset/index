@@ -2,7 +2,7 @@
   "type": "group",
   "label": {
     "en": "Dataset",
-    "sv": "Dataset"
+    "sv": "Datamängd"
   },
   "constraints": {
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "http://www.w3.org/ns/dcat#Dataset"

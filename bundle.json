@@ -2,87 +2,10 @@
   "templates": [
     {
       "type": "group",
-      "nodetype": "RESOURCE",
-      "styles": [
-        "showLink"
-      ],
-      "items": [
-        "dcat:documentType",
-        {
-          "property": "dcterms:title",
-          "label": {
-            "sv": "Titel",
-            "en": "Title"
-          },
-          "description": {
-            "en": "A name given to the resource."
-          },
-          "type": "text",
-          "nodetype": "LANGUAGE_LITERAL",
-          "cardinality": {
-            "min": 1
-          }
-        },
-        {
-          "property": "dcterms:description",
-          "label": {
-            "sv": "Beskrivning",
-            "en": "Description"
-          },
-          "description": {
-            "en": "An account of the resource."
-          },
-          "type": "text",
-          "nodetype": "LANGUAGE_LITERAL",
-          "styles": [
-            "multiline"
-          ],
-          "cardinality": {
-            "min": 0,
-            "pref": 1
-          }
-        }
-      ],
-      "id": "dcat:Documentish"
-    },
-    {
-      "type": "choice",
-      "property": "rdf:type",
-      "nodetype": "URI",
       "label": {
-        "sv": "Dokumenttyp",
-        "en": "Document type"
+        "en": "Catalog",
+        "sv": "Katalog"
       },
-      "cardinality": {
-        "min": 1
-      },
-      "choices": [
-        {
-          "value": "foaf:Document",
-          "label": {
-            "en": "Documentation",
-            "sv": "Dokumentation"
-          }
-        },
-        {
-          "value": "dcterms:LicenseDocument",
-          "label": {
-            "en": "License",
-            "sv": "Licens"
-          }
-        },
-        {
-          "value": "dcterms:Standard",
-          "label": {
-            "en": "Standard/Recommendation/Specification",
-            "sv": "Standard/rekommendation/specifikation"
-          }
-        }
-      ],
-      "id": "dcat:documentType"
-    },
-    {
-      "type": "group",
       "nodetype": "RESOURCE",
       "constraints": {
         "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "http://www.w3.org/ns/dcat#Catalog"
@@ -103,7 +26,7 @@
         "dcat:themeTaxonomy_ca_deprecated",
         "dcat:themeTaxonomy_ca"
       ],
-      "id": "dcat:OnlyCatalog"
+      "id": "dcat:Catalog"
     },
     {
       "property": "dcterms:title",
@@ -1174,7 +1097,7 @@
       "type": "group",
       "label": {
         "en": "Dataset",
-        "sv": "Dataset"
+        "sv": "Datamängd"
       },
       "constraints": {
         "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "http://www.w3.org/ns/dcat#Dataset"
@@ -1210,7 +1133,7 @@
         "dcat:foaf:page_da",
         "dcat:dcterms:provenance_da"
       ],
-      "id": "dcat:OnlyDataset"
+      "id": "dcat:Dataset"
     },
     {
       "property": "dcterms:title",
@@ -2987,7 +2910,10 @@
       "constraints": {
         "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "http://www.w3.org/ns/dcat#Distribution"
       },
-      "label": {},
+      "label": {
+        "en": "Distribution",
+        "sv": "Distribution"
+      },
       "items": [
         "dcat:dcterms:title_di",
         "dcat:dcterms:description_di",
@@ -3011,7 +2937,7 @@
       },
       "description": {},
       "nodetype": "URI",
-      "id": "dcat:OnlyDistribution"
+      "id": "dcat:Distribution"
     },
     {
       "property": "dcterms:title",
@@ -4515,6 +4441,87 @@
     {
       "type": "group",
       "nodetype": "RESOURCE",
+      "styles": [
+        "showLink"
+      ],
+      "items": [
+        "dcat:documentType",
+        {
+          "property": "dcterms:title",
+          "label": {
+            "sv": "Titel",
+            "en": "Title"
+          },
+          "description": {
+            "en": "A name given to the resource."
+          },
+          "type": "text",
+          "nodetype": "LANGUAGE_LITERAL",
+          "cardinality": {
+            "min": 1
+          }
+        },
+        {
+          "property": "dcterms:description",
+          "label": {
+            "sv": "Beskrivning",
+            "en": "Description"
+          },
+          "description": {
+            "en": "An account of the resource."
+          },
+          "type": "text",
+          "nodetype": "LANGUAGE_LITERAL",
+          "styles": [
+            "multiline"
+          ],
+          "cardinality": {
+            "min": 0,
+            "pref": 1
+          }
+        }
+      ],
+      "id": "dcat:Documentish"
+    },
+    {
+      "type": "choice",
+      "property": "rdf:type",
+      "nodetype": "URI",
+      "label": {
+        "sv": "Dokumenttyp",
+        "en": "Document type"
+      },
+      "cardinality": {
+        "min": 1
+      },
+      "choices": [
+        {
+          "value": "foaf:Document",
+          "label": {
+            "en": "Documentation",
+            "sv": "Dokumentation"
+          }
+        },
+        {
+          "value": "dcterms:LicenseDocument",
+          "label": {
+            "en": "License",
+            "sv": "Licens"
+          }
+        },
+        {
+          "value": "dcterms:Standard",
+          "label": {
+            "en": "Standard/Recommendation/Specification",
+            "sv": "Standard/rekommendation/specifikation"
+          }
+        }
+      ],
+      "id": "dcat:documentType"
+    },
+    {
+      "type": "group",
+      "nodetype": "RESOURCE",
       "label": {
         "en": "Contact point",
         "sv": "Kontakt"
@@ -4638,6 +4645,10 @@
             "min": 1,
             "pref": 1,
             "max": 1
+          },
+          "label": {
+            "en": "Value",
+            "sv": "Värde"
           },
           "description": {
             "en": "The telephone number should be given including country calling code, e.g. +4618100000."

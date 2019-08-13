@@ -3,7 +3,10 @@
   "constraints": {
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "http://www.w3.org/ns/dcat#Distribution"
   },
-  "label": {},
+  "label": {
+      "en": "Distribution",
+      "sv": "Distribution"
+    },
   "items": [
     "dcat:dcterms:title_di",
     "dcat:dcterms:description_di",

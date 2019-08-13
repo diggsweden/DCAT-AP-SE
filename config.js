@@ -1,12 +1,16 @@
 rdforms.spec({
   language: document.targetLanguage,
+  namespaces: {
+    spdx: 'http://spdx.org/rdf/terms#',
+    adms: 'http://www.w3.org/ns/adms#'
+  },
   bundles: [
     ['../bundle.json']
   ],
   main: [
-    'dcat:OnlyDataset',
-    'dcat:OnlyCatalog',
-    'dcat:OnlyDistribution'
+    'dcat:Dataset',
+    'dcat:Catalog',
+    'dcat:Distribution'
   ],
   supportive: [
     'dcat:contactPoint',
