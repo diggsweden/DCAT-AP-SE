@@ -1,8 +1,4 @@
 # Skördning av DCAT-AP-SE till öppnadata.se
-{:.no_toc}
-
-* Table of contents
-{:toc}
 
 Nedan beskrivs under vilka villkor öppnadata.se kan skörda en förteckning
 av datamängder uttryckt i DCAT-AP-SE. Härefter kommer vi kalla den nationella dataportalen öppnadata.se för "portalen" och
