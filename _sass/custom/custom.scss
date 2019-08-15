@@ -21,11 +21,14 @@
 //$grey-dk-250: #302d36;
 //$grey-dk-300: #27262b;
 
+$grey-lt-000: #F7F8F9;
 //$grey-lt-000: #f5f6fa;
 //$grey-lt-100: #eeebee;
 //$grey-lt-200: #ecebed;
 //$grey-lt-300: #e6e1e8;
 
+$sober: #154862;
+$purple-000: #0071BC;
 //$purple-000: #7253ed;
 //$purple-100: #5e41d0;
 //$purple-200: #4e26af;
@@ -53,17 +56,17 @@
 
 //$body-background-color: $white;
 //$sidebar-color: $grey-lt-000;
-$sidebar-color: #F7F8F9;
 //$search-background-color: $white;
 //$table-background-color: $white;
 //$code-background-color: $grey-lt-000;
 
 //$body-text-color: $grey-dk-100;
 //$body-heading-color: $grey-dk-300;
+$body-heading-color: $sober;
 //$search-result-preview-color: $grey-dk-000;
 //$nav-child-link-color: $grey-dk-100;
 //$link-color: $purple-000;
-$link-color: #0071BC;
+//$link-color: #0071BC;
 //$btn-primary-color: $purple-100;
 //$base-button-color: #f7f7f7;
 
@@ -141,3 +144,20 @@ $nav-width: 364px;
   padding-left: 30px;
   font-weight: normal;
 }
+
+.navigation>ul>li {
+  margin: 1.5rem 0;
+}
+
+.navigation li {
+  background-image: none;
+}
+
+.navigation li:hover {
+  border-bottom: 3px solid $sober;
+  background: rgba(75%, 75%, 75%, .25);
+  margin-bottom: -3px;
+  background-image: none;
+}
+
+h1, h2, h3, h4,
