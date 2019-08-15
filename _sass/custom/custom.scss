@@ -150,17 +150,22 @@ $nav-width: 364px;
 }
 
 .navigation a {
-  background-image: none;
+  background-image: none !important;
   color: $grey-dk-300;
   display: block;
-}
-
-.navigation a:hover {
-  background-image: none;
 }
 
 .navigation a:hover {
   border-bottom: 3px solid $sober;
   background: rgba(75%, 75%, 75%, .25);
   margin-bottom: -3px;
+}
+
+@media (min-width: 66.5rem) {
+  .side-bar {
+    width: $nav-width !important;
+  }
+  .main-content {
+    margin-left: $nav-width !important;
+  }
 }
