@@ -129,7 +129,7 @@ Kontakter och utgivande organisationer har olika uttryck i RDF, även om de har 
 av portalen och därmed får de inte blandas samman. Man får alltså inte använda samma identifierare för en kontakt och en
 utgivande organisation.
 
-## Multipla kataloger per organisation - avancerat
+## Multipla kataloger per organisation
 Registrera skördar från en skördningskälla per organisation. Skördningskällan innebär att en RDF graf laddas och det är
 tillåtet att denna graf innehåller mer än en katalog. Om det finns mer än en katalog är det nödvändigt att de är
 organiserade via propertyn dct:hasPart. Endast en nivå av kataloger och inga cirkulära referenser är tillåtna,
