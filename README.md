@@ -44,3 +44,11 @@ Så här bygger man:
     node buildBundle.js
     
 Resultatet är att filen `bundle.json` uppdateras vilken sedemera laddas av metadata specifikationen vid rendering.
+
+## Hur man ger återkoppling
+
+- Skapa nya ärenden
+- Kommentera på existerande
+- Skapa pull-requests för konkreta ändringar
+- Delta i referensgruppen, hör av dig till [oppnadata@digg.se](mailto:oppnadata@digg.se) om du vill ingå där
+- I slutet av processen är det möjligt att delta i ett möte med en större grupp med intressenter
