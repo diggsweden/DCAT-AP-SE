@@ -26,15 +26,21 @@ och som för närvarande stöds av öppnadata.se. Till detta kommer följande at
 8. Slutlig specifikation tas fram
 
 Tidslinjen är till viss del beroende hur snabbt DCAT 2 och DCAT-AP 1.3 blir klara och hur mycket 
-ändringar referensgrupp och den större gruppen med intressenter efterfrågar. Målsättningen är att bli klar slutet på 2019. 
+ändringar referensgrupp och den större gruppen med intressenter efterfrågar. Målsättningen är att bli klar i slutet på 2019. 
 
-## Utveckling av specifikationen
+## Specifikationens delar
 
 Specifikationen kan delas upp i två delar.
 
 1. Markdown dokument i katalogen [docs](docs) som genereras av Jekyll på Github pages
 2. Metadata specifikationen som drivs av en JSON konfiguration
 
-De sistnämnda JSON konfigurationen är uppdelad i en mängd olika JSON filer för läsbarhet som byggs ihop med ett node.js
-script till en stor JSON fil för att göra renderingen snabbare (minska mängden requests).
-Notera att Metadata specifikationen förvaltas på både engelska och svenska.
+Metadata specifikationen förvaltas på både engelska och svenska.
+
+Observera att JSON konfigurationen är uppdelad i en mängd olika JSON filer (för ökad läsbarhet och förvaltning)
+som byggs ihop med ett node.js script till en stor JSON fil för att göra renderingen snabbare (minska mängden requests).
+Så här bygger man:
+
+    node buildBundle.js
+    
+Resultatet är att filen `bundle.json` uppdateras vilken sedemera laddas av metadata specifikationen vid rendering.
