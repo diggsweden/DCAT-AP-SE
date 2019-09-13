@@ -33,7 +33,7 @@ const loadItem = function(dir, id, origId) {
 };
 profileDirs.sort((a, b) => (a === 'common' ? 1 : b<a) ).forEach(function (profile) {
   if (profile === 'commons') {
-    const commonPath = path.join(src, profile)
+    const commonPath = path.join(src, profile);
     const commonTemplates = fs.readdirSync(commonPath);
     commonTemplates.forEach(function(id) {
       loadItem(commonPath, id);
