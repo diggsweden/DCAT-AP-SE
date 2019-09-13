@@ -31,9 +31,17 @@ const loadItem = function(dir, id, origId) {
     // Ignore, item in other folder.
   }
 };
-profileDirs.forEach(function (profile) {
-  const profileDir = path.join(src, profile);
-  loadItem(profileDir, 'index', profile);
+profileDirs.sort((a, b) => (a === 'common' ? 1 : b<a) ).forEach(function (profile) {
+  if (profile === 'commons') {
+    const commonPath = path.join(src, profile)
+    const commonTemplates = fs.readdirSync(commonPath);
+    commonTemplates.forEach(function(id) {
+      loadItem(commonPath, id);
+    });
+  } else {
+    const profileDir = path.join(src, profile);
+    loadItem(profileDir, 'index', profile);
+  }
 });
 
 fs.writeFileSync(dist, JSON.stringify({ templates }, null, '  '));
