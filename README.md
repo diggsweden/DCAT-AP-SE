@@ -15,18 +15,7 @@ och som för närvarande stöds av öppnadata.se. Till detta kommer följande at
 - [D02.01 Draft specification BReg-DCAT-AP - 2019-07-01 Editor's Draft](https://joinup.ec.europa.eu/solution/abr-specification-registry-registries) - under utveckling.
 
 ## Arbetsprocess
-
-1. En första uppdaterad version tas fram baserad på den tidigare versionen
-2. Öppna frågor läggs upp i [Github Issue tracker](https://github.com/MetaSolutionsAB/DCAT-AP-SE/issues)
-3. Möte med referensgrupp för genomgång och prioriteringar
-4. Första utkast tas fram
-5. Möte med referensgrupp för granskning och återkoppling
-6. Andra utkast tas fram
-7. Öppen process med feedback från större grupp med intressenter
-8. Slutlig specifikation tas fram
-
-Tidslinjen är till viss del beroende hur snabbt DCAT 2 och DCAT-AP 1.3 blir klara och hur mycket 
-ändringar referensgrupp och den större gruppen med intressenter efterfrågar. Målsättningen är att bli klar i slutet på 2019. 
+Se [separat dokument](process/index.md).
 
 ## Specifikationens delar
 
