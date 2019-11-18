@@ -1,0 +1,18 @@
+{
+  "type": "group",
+  "nodetype": "RESOURCE",
+  "property": "prov:qualifiedAttribution",
+  "label": {
+    "en": "Attribution",
+    "sv": "Erkännande"
+  },
+  "constraints": {
+    "rdf:type": [
+      "prov:Attribution"
+    ]
+  },
+  "items": [
+    "geodcat:dcterms:type-responsiblepartyrole",
+    "dcat:prov:agent"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "property": "dcterms:description",
+  "label": {
+    "sv": "Beskrivning",
+    "en": "Description"
+  },
+  "description": {
+    "en": "This property contains a free-text account of the Data Service. This property can be repeated for parallel language versions of the description.",
+    "sv": "Datatjänstens beskrivning. Denna egenskap kan upprepas för parallella språkversioner av beskrivningen."
+  },
+  "type": "text",
+  "nodetype": "LANGUAGE_LITERAL",
+  "styles": [
+    "multiline"
+  ],
+  "cardinality": {
+    "min": 0,
+    "pref": 0
+  }
+}

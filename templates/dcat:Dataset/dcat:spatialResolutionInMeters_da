@@ -1,0 +1,17 @@
+{
+  "type": "text",
+  "nodetype": "DATATYPE_LITERAL",
+  "property": "dcat:spatialResolutionInMeters",
+  "datatype": "xsd:decimal",
+  "label": {
+    "en": "Spatial resolution",
+    "sv": "Rumslig upplösning"
+  },
+  "cardinality": {
+    "max": 1
+  },
+  "description": {
+    "en": "This property refers to the minimum spatial separation resolvable in a dataset, measured in meters.",
+    "sv": "Den minsta rumsliga upplösning som går att urskilja i datamängden, given i meter (kan innehålla decimaler)."
+  }
+}

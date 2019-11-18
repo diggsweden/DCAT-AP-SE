@@ -1,0 +1,18 @@
+{
+  "type": "group",
+  "nodetype": "RESOURCE",
+  "property": "dcat:qualifiedRelation",
+  "label": {
+    "en": "Qualified relation",
+    "sv": "Kvalificerad relation"
+  },
+  "constraints": {
+    "rdf:type": [
+      "dcat:Relationship"
+    ]
+  },
+  "items": [
+    "dcat:hadRole",
+    "dcat:QRResource"
+  ]
+}

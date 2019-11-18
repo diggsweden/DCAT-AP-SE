@@ -1,8 +1,8 @@
 {
   "property": "dcterms:spatial",
   "label": {
-    "en": "Spatial coverage",
-    "sv": "Geografiskt område"
+    "en": "Named geographical area",
+    "sv": "Namngivet geografiskt område"
   },
   "description": {
     "en": "A spatial region or named place. The geographical area covered by the dataset. It is recommended to use URIs from Geonames in the form: http://sws.geonames.org/6695072",
@@ -13,5 +13,8 @@
   },
   "type": "choice",
   "automatic": true,
-  "nodetype": "URI"
+  "nodetype": "URI",
+  "cardinality": {
+    "pref": 1
+  }
 }

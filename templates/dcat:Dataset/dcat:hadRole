@@ -1,0 +1,18 @@
+{
+  "type": "text",
+  "nodetype": "URI",
+  "property": "dcat:hadRole",
+  "label": {
+    "en": "Role",
+    "sv": "Roll"
+  },
+  "description": {
+    "en": "The role of a datset with respect to another dataset.",
+    "sv": "Anger på vilket sätt (vilken roll) en datamängd är relaterad till en annan datamängd."
+  },
+  "cardinality": {
+    "max": 1,
+    "min": 1
+  },
+  "pattern": "https?://.+"
+}

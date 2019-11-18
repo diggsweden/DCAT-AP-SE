@@ -1,0 +1,29 @@
+{
+  "type": "choice",
+  "property": "dcterms:creator",
+  "label": {
+    "en": "Creator",
+    "sv": "Skapare"
+  },
+  "labelProperties": [
+    "http://xmlns.com/foaf/0.1/name",
+    [
+      "http://xmlns.com/foaf/0.1/givenName",
+      "http://xmlns.com/foaf/0.1/familyName"
+    ]
+  ],
+  "constraints": {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      "http://xmlns.com/foaf/0.1/Agent",
+      "http://xmlns.com/foaf/0.1/Person",
+      "http://xmlns.com/foaf/0.1/Organization"
+    ]
+  },
+  "description": {
+    "en": "This property refers to the entity (organisation) primarily responsible for producing the dataset",
+    "sv": "Egenskapen hänvisar till en enhet (organisation) som är huvudansvarig för att producera datamängden."
+  },
+  "cardinality": {
+    "max": 1
+  }
+}

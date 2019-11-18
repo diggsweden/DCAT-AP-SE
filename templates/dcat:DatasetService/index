@@ -1,0 +1,19 @@
+{
+  "type": "group",
+  "label": {
+    "en": "Dataset service",
+    "sv": "Datatjänst"
+  },
+  "constraints": {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "http://www.w3.org/ns/dcat#DatasetService"
+  },
+  "items": [
+    "dcat:dcterms:title_ds",
+    "dcat:dcterms:description_ds",
+    "dcat:endpointURL",
+    "dcat:endpointDescription",
+    "dcat:servesDataset",
+    "dcat:dcterms:license_ds",
+    "dcat:odrs:RSSA"
+  ]
+}

@@ -11,6 +11,8 @@
     "dcat:dcterms:title_da",
     "dcat:dcterms:description_da",
     "dcat:foaf:Agent_da",
+    "dcat:dcterms:creator_da",
+    "dcat:prov:qualifiedAttribution",
     "adms:contactPoint-choice_da",
     "dcat:contactPoint-choice_da",
     "dcat:keyword_da",
@@ -25,6 +27,8 @@
     "dcat:dcterms:spatial_da",
     "dcat:dcterms:spatial_bb_da",
     "dcat:dcterms:temporal_da",
+    "dcat:temporalResolution_da",
+    "dcat:spatialResolutionInMeters_da",
     "dcat:dcterms:accrualPeriodicity-cld_da",
     "dcat:dcterms:accrualPeriodicity_da",
     "dcat:adms:version",
@@ -34,8 +38,11 @@
     "dcat:dcterms:accessRights_da",
     "dcat:hasVersion_da",
     "dcat:isVersionOf_da",
+    "dcat:dcterms:isReferencedBy",
     "dcat:dcterms:relation_da",
+    "dcat:qualifiedRelation",
     "dcat:foaf:page_da",
-    "dcat:dcterms:provenance_da"
+    "dcat:dcterms:provenance_da",
+    "dcat:dcterms:provenance_da_deprecated"
   ]
 }

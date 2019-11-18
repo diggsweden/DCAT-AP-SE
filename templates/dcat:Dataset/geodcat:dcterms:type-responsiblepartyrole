@@ -1,0 +1,140 @@
+{
+  "type": "choice",
+  "nodetype": "URI",
+  "property": "dcat:hadRole",
+  "pattern": "http://inspire.ec.europa.eu/metadata-codelist/ResponsiblePartyRole/.*",
+  "label": {
+    "en": "Role",
+    "sv": "Roll"
+  },
+  "description": {
+    "en": "Responsible party role",
+    "sv": "Ansvarig parts funktion"
+  },
+  "cardinality": {
+    "max": 1
+  },
+  "choices": [
+    {
+      "value": "http://inspire.ec.europa.eu/metadata-codelist/ResponsiblePartyRole/resourceProvider",
+      "label": {
+        "en": "Resource Provider",
+        "sv": "Leverantör"
+      },
+      "description": {
+        "en": "Party that supplies the resource.",
+        "sv": "Den part som tillhandahåller resursen."
+      }
+    },
+    {
+      "value": "http://inspire.ec.europa.eu/metadata-codelist/ResponsiblePartyRole/custodian",
+      "label": {
+        "en": "Custodian",
+        "sv": "Förvaltare"
+      },
+      "description": {
+        "en": "Party that accepts accountability and responsibility for the data and ensures appropriate care and maintenance of the resource.",
+        "sv": "Den part som ansvarar för data och säkerställer att resursen hanteras och underhålls på lämpligt sätt."
+      }
+    },
+    {
+      "value": "http://inspire.ec.europa.eu/metadata-codelist/ResponsiblePartyRole/owner",
+      "label": {
+        "en": "Owner",
+        "sv": "Ägare"
+      },
+      "description": {
+        "en": "Party that owns the resource.",
+        "sv": "Den part som äger resursen."
+      }
+    },
+    {
+      "value": "http://inspire.ec.europa.eu/metadata-codelist/ResponsiblePartyRole/user",
+      "label": {
+        "en": "User",
+        "sv": "Användare"
+      },
+      "description": {
+        "en": "Party who uses the resource.",
+        "sv": "Den part som använder resursen."
+      }
+    },
+    {
+      "value": "http://inspire.ec.europa.eu/metadata-codelist/ResponsiblePartyRole/distributor",
+      "label": {
+        "en": "Distributor",
+        "sv": "Distributör"
+      },
+      "description": {
+        "en": "Party who distributes the resource.",
+        "sv": "Den part som distribuerar resursen."
+      }
+    },
+    {
+      "value": "http://inspire.ec.europa.eu/metadata-codelist/ResponsiblePartyRole/originator",
+      "label": {
+        "en": "Originator",
+        "sv": "Producent"
+      },
+      "description": {
+        "en": "Party who created the resource",
+        "sv": "Den part som har skapat resursen."
+      }
+    },
+    {
+      "value": "http://inspire.ec.europa.eu/metadata-codelist/ResponsiblePartyRole/pointOfContact",
+      "label": {
+        "en": "Point of Contact",
+        "sv": "Kontakt"
+      },
+      "description": {
+        "en": "Party who can be contacted for acquiring knowledge about or acquisition of the resource.",
+        "sv": "Part som kan kontaktas för att få information om eller tillgång till resursen."
+      }
+    },
+    {
+      "value": "http://inspire.ec.europa.eu/metadata-codelist/ResponsiblePartyRole/principalInvestigator",
+      "label": {
+        "en": "Principal Investigator",
+        "sv": "Undersökningsledare"
+      },
+      "description": {
+        "en": "Key party responsible for gathering information and conducting research.",
+        "sv": "Den part som ansvarar för insamling av information och genomförande av undersökningar."
+      }
+    },
+    {
+      "value": "http://inspire.ec.europa.eu/metadata-codelist/ResponsiblePartyRole/processor",
+      "label": {
+        "en": "Processor",
+        "sv": "Vidareförädlare"
+      },
+      "description": {
+        "en": "Party who has processed the data in a manner such that the resource has been modified.",
+        "sv": "Part som har bearbetat data på ett sådant sätt att resursen har modifierats."
+      }
+    },
+    {
+      "value": "http://inspire.ec.europa.eu/metadata-codelist/ResponsiblePartyRole/publisher",
+      "label": {
+        "en": "Publisher",
+        "sv": "Utgivare"
+      },
+      "description": {
+        "en": "Party who published the resource.",
+        "sv": "Den part som har publicerat resursen."
+      }
+    },
+    {
+      "value": "http://inspire.ec.europa.eu/metadata-codelist/ResponsiblePartyRole/author",
+      "label": {
+        "en": "Author",
+        "sv": "Upphovsman"
+      },
+      "description": {
+        "en": "Party who authored the resource.",
+        "sv": "Den part som är resursens upphovsman."
+      }
+    }
+  ]
+}

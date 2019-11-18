@@ -6,13 +6,16 @@
   "label": {
       "en": "Distribution",
       "sv": "Distribution"
-    },
+  },
   "items": [
     "dcat:dcterms:title_di",
     "dcat:dcterms:description_di",
     "dcat:accessURL_di",
     "dcat:downloadURL_di",
     "dcat:format-group_di",
+    "dcat:accessService",
+    "dcat:temporalResolution_di",
+    "dcat:spatialResolutionInMeters_di",
     "dcat:byteSize_di",
     "dcat:dcterms:language_di",
     "dcat:dcterms:issued_di",

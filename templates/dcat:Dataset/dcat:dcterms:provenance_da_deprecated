@@ -1,0 +1,17 @@
+{
+  "type": "text",
+  "nodetype": "LANGUAGE_LITERAL",
+  "property": "dcterms:provenance",
+  "label": {
+    "en": "Provenance",
+    "sv": "Ursprung"
+  },
+  "description": {
+    "en": "This property contains a statement about the lineage of a Dataset.",
+    "sv": "Egenskapen innehåller ett uttalande om härstamningen av en datamängd."
+  },
+  "styles": [
+    "multiline",
+    "deprecated"
+  ]
+}

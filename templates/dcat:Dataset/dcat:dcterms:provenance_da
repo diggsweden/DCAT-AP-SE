@@ -1,6 +1,6 @@
 {
-  "type": "text",
-  "nodetype": "LANGUAGE_LITERAL",
+  "type": "group",
+  "nodetype": "RESOURCE",
   "property": "dcterms:provenance",
   "label": {
     "en": "Provenance",
@@ -10,7 +10,24 @@
     "en": "This property contains a statement about the lineage of a Dataset.",
     "sv": "Egenskapen innehåller ett uttalande om härstamningen av en datamängd."
   },
-  "styles": [
-    "multiline"
+  "constraints": {
+    "rdf:type": "dcterms:ProvenanceStatement"
+  },
+  "items": [
+    {
+      "type": "text",
+      "nodetype": "LANGUAGE_LITERAL",
+      "property": "dcterms:description",
+      "label": {
+        "en": "Description",
+        "sv": "Beskrivning"
+      },
+      "styles": [
+        "multiline"
+      ],
+      "cardinality": {
+        "min": 1
+      }
+    }
   ]
 }

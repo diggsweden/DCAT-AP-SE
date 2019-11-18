@@ -1,0 +1,16 @@
+{
+  "type": "text",
+  "nodetype": "URI",
+  "property": "dcat:endpointURL",
+  "label": {
+    "en": "Endpoint URL",
+    "sv": "Åtkomstadress"
+  },
+  "description": {
+    "en": "The root location or primary endpoint of the service (a URL).",
+    "sv": "Basadress eller primär startpunkt för tjänsten (en URL)."
+  },
+  "cardinality": {
+    "min": 1
+  }
+}

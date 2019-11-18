@@ -11,7 +11,7 @@
   },
   "cardinality": {
     "min": 0,
-    "pref": 0
+    "pref": 1
   },
   "cls": [
     "cardgroup"
@@ -20,7 +20,7 @@
     {
       "type": "text",
       "nodetype": "DATATYPE_LITERAL",
-      "property": "schema:startDate",
+      "property": "dcat:startDate",
       "label": {
         "en": "Start",
         "sv": "Start"
@@ -37,7 +37,7 @@
     {
       "type": "text",
       "nodetype": "DATATYPE_LITERAL",
-      "property": "schema:endDate",
+      "property": "dcat:endDate",
       "label": {
         "en": "End",
         "sv": "Slut"
@@ -49,6 +49,46 @@
         "http://www.w3.org/2001/XMLSchema#date",
         "http://www.w3.org/2001/XMLSchema#dateTime",
         "http://www.w3.org/2001/XMLSchema#gYear"
+      ]
+    },
+    {
+      "type": "text",
+      "nodetype": "DATATYPE_LITERAL",
+      "property": "schema:startDate",
+      "label": {
+        "en": "Start",
+        "sv": "Start"
+      },
+      "description": {
+        "en": "Start date of the validity period of a dataset. Deprecated in favour of dcat:startDate."
+      },
+      "datatype": [
+        "http://www.w3.org/2001/XMLSchema#date",
+        "http://www.w3.org/2001/XMLSchema#dateTime",
+        "http://www.w3.org/2001/XMLSchema#gYear"
+      ],
+      "styles": [
+        "deprecated"
+      ]
+    },
+    {
+      "type": "text",
+      "nodetype": "DATATYPE_LITERAL",
+      "property": "schema:endDate",
+      "label": {
+        "en": "End",
+        "sv": "Slut"
+      },
+      "description": {
+        "en": "End date of the validity period of a dataset. Deprecated in favour of dcat:endDate."
+      },
+      "datatype": [
+        "http://www.w3.org/2001/XMLSchema#date",
+        "http://www.w3.org/2001/XMLSchema#dateTime",
+        "http://www.w3.org/2001/XMLSchema#gYear"
+      ],
+      "styles": [
+        "deprecated"
       ]
     }
   ],

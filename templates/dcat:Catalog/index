@@ -1,10 +1,10 @@
 {
   "type": "group",
-    "label": {
-      "en": "Catalog",
-      "sv": "Katalog"
-    },
   "nodetype": "RESOURCE",
+   "label": {
+        "en": "Catalog",
+        "sv": "Katalog"
+   },
   "constraints": {
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "http://www.w3.org/ns/dcat#Catalog"
   },

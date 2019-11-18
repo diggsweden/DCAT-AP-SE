@@ -1,0 +1,18 @@
+{
+  "type": "text",
+  "nodetype": "DATATYPE_LITERAL",
+  "property": "dcat:temporalResolution",
+  "datatype": "xsd:duration",
+  "label": {
+    "en": "Temporal resolution",
+    "sv": "Tidsupplösning"
+  },
+  "cardinality": {
+    "max": 1
+  },
+  "pattern": "(-?)P(?=.)((\\d+)Y)?((\\d+)M)?((\\d+)D)?(T(?=.)((\\d+)H)?((\\d+)M)?(\\d*(\\.\\d+)?S)?)?",
+  "description": {
+    "en": "This property refers to the minimum time period resolvable in a dataset distribution. For example P1Y which indicate that data is given per year.",
+    "sv": "Den minsta tidsperion som går att urskilja i datamängdens distribution. Till exempel P1Y som indikerar att data har en upplösning per år."
+  }
+}

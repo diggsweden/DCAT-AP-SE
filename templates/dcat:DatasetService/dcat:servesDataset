@@ -1,0 +1,16 @@
+{
+  "type": "choice",
+  "nodetype": "URI",
+  "property": "dcat:servesDataset",
+  "label": {
+    "en": "Serves dataset",
+    "sv": "Försörjer datamängd"
+  },
+  "description": {
+    "en": "This property refers to a collection of data that this data service can distribute.",
+    "sv": "Egenskapen refererar till en eller flera datamängder som den denna tjänst kan tillhandahålla"
+  },
+  "constraints": {
+    "rdf:type": "http://www.w3.org/ns/dcat#Dataset"
+  }
+}

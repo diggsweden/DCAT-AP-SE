@@ -1,8 +1,8 @@
 {
   "property": "dcterms:spatial",
   "label": {
-    "en": "Boundingbox",
-    "sv": "Geografisk omskrivande rektangel"
+    "en": "Geographical area",
+    "sv": "Geografiskt område"
   },
   "type": "group",
   "nodetype": "BLANK",
@@ -23,10 +23,41 @@
         "max": 1
       },
       "datatype": "http://www.opengis.net/ont/geosparql#wktLiteral",
+      "property": "dcat:centroid",
+      "label": {
+        "en": "Center coordinate",
+        "sv": "Centrumkoordinat"
+      }
+    },
+    {
+      "type": "text",
+      "nodetype": "DATATYPE_LITERAL",
+      "cardinality": {
+        "min": 0,
+        "pref": 1,
+        "max": 1
+      },
+      "datatype": "http://www.opengis.net/ont/geosparql#wktLiteral",
+      "property": "dcat:bbox",
+      "label": {
+        "en": "Boundingbox",
+        "sv": "Geografisk omskrivande rektangel"
+      }
+    },
+    {
+      "type": "text",
+      "nodetype": "DATATYPE_LITERAL",
+      "cardinality": {
+        "min": 0,
+        "pref": 1,
+        "max": 1
+      },
+      "datatype": "http://www.opengis.net/ont/geosparql#wktLiteral",
       "property": "locn:geometry",
-      "styles": [
-        "invisibleGroup"
-      ]
+      "label": {
+        "en": "Geographic shape",
+        "sv": "Geografisk form"
+      }
     }
   ]
 }

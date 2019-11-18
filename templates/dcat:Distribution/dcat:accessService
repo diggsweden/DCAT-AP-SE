@@ -1,0 +1,16 @@
+{
+  "type": "choice",
+  "nodetype": "URI",
+  "property": "dcat:accessService",
+  "label": {
+    "en": "Access service",
+    "sv": "Åtkomst via datatjänst"
+  },
+  "description": {
+    "en": "This property refers to a data service that gives access to the distribution of the dataset",
+    "sv": "Datatjänst för åtkomst till datamängdens distribution. Denna egenskap kan upprepas när åtkomst är möjligt via flera tjänster."
+  },
+  "constraints": {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "http://www.w3.org/ns/dcat#DatasetService"
+  }
+}
