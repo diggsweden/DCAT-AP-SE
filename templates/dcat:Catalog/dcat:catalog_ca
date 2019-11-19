@@ -1,0 +1,16 @@
+{
+  "type": "choice",
+  "nodetype": "RESOURCE",
+  "property": "dcat:catalog",
+  "label": {
+    "en": "Catalog",
+    "sv": "Katalog"
+  },
+  "description": {
+    "en": "This property refers to a catalog whose contents are of interest in the context of this catalog",
+    "sv": "Egenskapen hänvisar till en katalog vars innehåll är av intresse för sammanhanget av denna katalog."
+  },
+  "constraints": {
+    "rdf:type": "dcat:Catalog"
+  }
+}

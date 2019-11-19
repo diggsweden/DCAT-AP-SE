@@ -35,7 +35,7 @@
     "dcat:owl:versionInfo_da",
     "dcat:adms:versionNotes_da",
     "dcat:dcterms:source_da",
-    "dcat:dcterms:accessRights_da",
+    "dcat:dcterms:accessRights",
     "dcat:hasVersion_da",
     "dcat:isVersionOf_da",
     "dcat:dcterms:isReferencedBy",
@@ -43,6 +43,6 @@
     "dcat:qualifiedRelation",
     "dcat:foaf:page_da",
     "dcat:dcterms:provenance_da",
-    "dcat:dcterms:provenance_da_deprecated"
+    "dcat:distribution_da"
   ]
 }

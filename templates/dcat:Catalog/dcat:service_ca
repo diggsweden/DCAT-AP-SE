@@ -1,0 +1,16 @@
+{
+  "type": "choice",
+  "nodetype": "RESOURCE",
+  "property": "dcat:service",
+  "label": {
+    "en": "Service",
+    "sv": "Datatjänst"
+  },
+  "description": {
+    "en": "This property refers to a site or end-point that is listed in the catalog.",
+    "sv": "Denna egenskap refererar till en datatjänst som är listad i katalogen."
+  },
+  "constraints": {
+    "rdf:type": "dcat:DatasetService"
+  }
+}

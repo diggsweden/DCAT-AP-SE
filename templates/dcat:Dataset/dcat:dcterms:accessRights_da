@@ -1,56 +1,8 @@
 {
   "type": "choice",
-  "nodetype": "URI",
-  "property": "dcterms:accessRights",
-  "label": {
-    "en": "Access rights",
-    "sv": "Åtkomsträttigheter"
-  },
+  "extends": "dcat:dcterms:accessRights",
   "description": {
     "en": "This property refers to information that indicates whether the Dataset is open data, has access restrictions or is not public.",
-    "sv": "Den här egenskapen hänvisar till information som indikerar huruvida datamängden innehåller öppna data, har åtkomstrestriktioner eller är inte offentlig."
+    "sv": "Den här egenskapen hänvisar till information som indikerar huruvida datamängden innehåller öppna data, har åtkomstrestriktioner eller inte är offentlig."
   },
-  "cardinality": {
-    "min": 0,
-    "pref": 0,
-    "max": 1
-  },
-  "choices": [
-    {
-      "value": "http://publications.europa.eu/resource/authority/access-right/NON_PUBLIC",
-      "label": {
-        "en": "Non-public",
-        "sv": "Ej offentlig"
-      },
-      "description": {
-        "en": "Not publicly accessible for privacy, security or other reasons. Usage note: This category may include resources that contain sensitive or personal information.",
-        "sv": "Inte tillgänglig för allmänheten pga integritet, säkerhet eller andra orsaker. Användningsanmärkning: Denna kategori kan omfatta resurser som innehåller känslig eller personlig information."
-      }
-    },
-    {
-      "value": "http://publications.europa.eu/resource/authority/access-right/PUBLIC",
-      "label": {
-        "en": "Public",
-        "sv": "Publik"
-      },
-      "description": {
-        "en": "Publicly accessible by everyone. Usage note: Permissible obstacles include registration and request for API keys, as long as anyone can request such registration and/or API keys.",
-        "sv": "Tillgängligt för allmänheten. Användningsanmärkning: Tillåtna hinder inkluderar registrering och begäran av API-nycklar, så länge vem som helst kan begära registrering och/eller API-nycklar."
-      }
-    },
-    {
-      "value": "http://publications.europa.eu/resource/authority/access-right/RESTRICTED",
-      "label": {
-        "en": "Restricted",
-        "sv": "Begränsad"
-      },
-      "description": {
-        "en": "Only available under certain conditions. Usage note: This category may include resources that require payment, resources shared under non-disclosure agreements, resources for which the publisher or owner has not yet decided if they can be publicly released.",
-        "sv": "Endast tillgängligt under särskilda villkor. Användningsanmärkning: Denna kategori kan omfatta resurser som kräver betalning, resurser som tillgängliggörs inom ramen för sekretessavtal, eller resurser där utgivaren eller ägaren ännu inte har beslutat om de kan offentliggjöras."
-      }
-    }
-  ],
-  "styles": [
-    "verticalRadioButtons"
-  ]
 }

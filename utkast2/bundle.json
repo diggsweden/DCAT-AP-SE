@@ -3,6 +3,63 @@
     {
       "type": "choice",
       "nodetype": "URI",
+      "property": "dcterms:accessRights",
+      "label": {
+        "en": "Access rights",
+        "sv": "Åtkomsträttigheter"
+      },
+      "description": {
+        "en": "This property refers to information that indicates whether the Dataset/service is open data, has access restrictions or is not public.",
+        "sv": "Den här egenskapen hänvisar till information som indikerar huruvida datamängden/datatjänsten innehåller öppna data, har åtkomstrestriktioner eller inte är offentlig."
+      },
+      "cardinality": {
+        "min": 0,
+        "pref": 1,
+        "max": 1
+      },
+      "choices": [
+        {
+          "value": "http://publications.europa.eu/resource/authority/access-right/NON_PUBLIC",
+          "label": {
+            "en": "Non-public",
+            "sv": "Ej offentlig"
+          },
+          "description": {
+            "en": "Not publicly accessible for privacy, security or other reasons. Usage note: This category may include resources that contain sensitive or personal information.",
+            "sv": "Inte tillgänglig för allmänheten pga integritet, säkerhet eller andra orsaker. Användningsanmärkning: Denna kategori kan omfatta resurser som innehåller känslig eller personlig information."
+          }
+        },
+        {
+          "value": "http://publications.europa.eu/resource/authority/access-right/PUBLIC",
+          "label": {
+            "en": "Public",
+            "sv": "Publik"
+          },
+          "description": {
+            "en": "Publicly accessible by everyone. Usage note: Permissible obstacles include registration and request for API keys, as long as anyone can request such registration and/or API keys.",
+            "sv": "Tillgängligt för allmänheten. Användningsanmärkning: Tillåtna hinder inkluderar registrering och begäran av API-nycklar, så länge vem som helst kan begära registrering och/eller API-nycklar."
+          }
+        },
+        {
+          "value": "http://publications.europa.eu/resource/authority/access-right/RESTRICTED",
+          "label": {
+            "en": "Restricted",
+            "sv": "Begränsad"
+          },
+          "description": {
+            "en": "Only available under certain conditions. Usage note: This category may include resources that require payment, resources shared under non-disclosure agreements, resources for which the publisher or owner has not yet decided if they can be publicly released.",
+            "sv": "Endast tillgängligt under särskilda villkor. Användningsanmärkning: Denna kategori kan omfatta resurser som kräver betalning, resurser som tillgängliggörs inom ramen för sekretessavtal, eller resurser där utgivaren eller ägaren ännu inte har beslutat om de kan offentliggjöras."
+          }
+        }
+      ],
+      "styles": [
+        "verticalRadioButtons"
+      ],
+      "id": "dcat:dcterms:accessRights"
+    },
+    {
+      "type": "choice",
+      "nodetype": "URI",
       "choices": [
         {
           "value": "http://creativecommons.org/licenses/by/4.0/",
@@ -779,8 +836,10 @@
         "dcat:odrs:RSSA",
         "dcat:dcterms:hasPart_ca",
         "dcat:dcterms:isPartOf_ca",
-        "dcat:themeTaxonomy_ca_deprecated",
-        "dcat:themeTaxonomy_ca"
+        "dcat:catalog_ca",
+        "dcat:themeTaxonomy_ca",
+        "dcat:dataset_ca",
+        "dcat:service_ca"
       ],
       "id": "dcat:Catalog"
     },
@@ -968,7 +1027,7 @@
       "items": [
         "dcat:dcterms:cc-license-choices",
         {
-          "type": "choice",
+          "type": "text",
           "nodetype": "URI",
           "property": "dcterms:license",
           "constraints": {
@@ -978,8 +1037,12 @@
             "en": "Other",
             "sv": "Övriga"
           },
+          "description": {
+            "en": "If you are not using an creative commons license, you must provide a URL to the license here. (That is why this is marked as mandatory.)",
+            "sv": "Om du inte använder en creative commons licens måste du ange en URL till licensen här. (Det är varför denna är markerad som obligatorisk."
+          },
           "cardinality": {
-            "min": 0,
+            "min": 1,
             "pref": 1
           }
         }
@@ -989,7 +1052,7 @@
         "sv": "Licens"
       },
       "cardinality": {
-        "min": 0,
+        "min": 1,
         "pref": 1,
         "max": 1
       },
@@ -1040,33 +1103,20 @@
     },
     {
       "type": "choice",
-      "nodetype": "URI",
-      "property": "dcat:themeTaxonomy",
+      "nodetype": "RESOURCE",
+      "property": "dcat:catalog",
       "label": {
-        "en": "Theme taxonomy",
-        "sv": "Taxonomi för tema"
+        "en": "Catalog",
+        "sv": "Katalog"
       },
       "description": {
-        "en": "This property refers to a knowledge organization system used to classify the Catalogue's Datasets.",
-        "sv": "Den här egenskapen hänvisar till ett kunskapsorganisationssystem som används för att klassificera katalogens datamängder."
+        "en": "This property refers to a catalog whose contents are of interest in the context of this catalog",
+        "sv": "Egenskapen hänvisar till en katalog vars innehåll är av intresse för sammanhanget av denna katalog."
       },
-      "choices": [
-        {
-          "value": "http://eurovoc.europa.eu/domains",
-          "label": {
-            "en": "Eurovoc"
-          }
-        }
-      ],
-      "cardinality": {
-        "min": 0,
-        "pref": 1
+      "constraints": {
+        "rdf:type": "dcat:Catalog"
       },
-      "styles": [
-        "strictmatch",
-        "deprecated"
-      ],
-      "id": "dcat:themeTaxonomy_ca_deprecated"
+      "id": "dcat:catalog_ca"
     },
     {
       "type": "choice",
@@ -1096,6 +1146,44 @@
         "pref": 1
       },
       "id": "dcat:themeTaxonomy_ca"
+    },
+    {
+      "type": "choice",
+      "nodetype": "RESOURCE",
+      "property": "dcat:dataset",
+      "label": {
+        "en": "Dataset",
+        "sv": "Datamängd"
+      },
+      "description": {
+        "en": "This property links the Catalogue with a Dataset that is part of the Catalogue.",
+        "sv": "Egenskapen hänvisar förbinder katalogen med en datamängd som är en del av katalogen."
+      },
+      "constraints": {
+        "rdf:type": "dcat:Dataset"
+      },
+      "cardinality": {
+        "min": 1,
+        "pref": 0
+      },
+      "id": "dcat:dataset_ca"
+    },
+    {
+      "type": "choice",
+      "nodetype": "RESOURCE",
+      "property": "dcat:service",
+      "label": {
+        "en": "Service",
+        "sv": "Datatjänst"
+      },
+      "description": {
+        "en": "This property refers to a site or end-point that is listed in the catalog.",
+        "sv": "Denna egenskap refererar till en datatjänst som är listad i katalogen."
+      },
+      "constraints": {
+        "rdf:type": "dcat:DatasetService"
+      },
+      "id": "dcat:service_ca"
     },
     {
       "type": "group",
@@ -1134,7 +1222,7 @@
         "dcat:owl:versionInfo_da",
         "dcat:adms:versionNotes_da",
         "dcat:dcterms:source_da",
-        "dcat:dcterms:accessRights_da",
+        "dcat:dcterms:accessRights",
         "dcat:hasVersion_da",
         "dcat:isVersionOf_da",
         "dcat:dcterms:isReferencedBy",
@@ -1142,7 +1230,7 @@
         "dcat:qualifiedRelation",
         "dcat:foaf:page_da",
         "dcat:dcterms:provenance_da",
-        "dcat:dcterms:provenance_da_deprecated"
+        "dcat:distribution_da"
       ],
       "id": "dcat:Dataset"
     },
@@ -1212,7 +1300,7 @@
         "sv": "Egenskapen hänvisar till en enhet (organisation) som ansvarar för att göra datamängden tillgänglig."
       },
       "cardinality": {
-        "min": 0,
+        "min": 1,
         "pref": 1,
         "max": 1
       },
@@ -1681,7 +1769,7 @@
       ],
       "cardinality": {
         "min": 0,
-        "pref": 0,
+        "pref": 1,
         "max": 1
       },
       "id": "dcat:dcterms:issued_da"
@@ -2428,63 +2516,6 @@
     {
       "type": "choice",
       "nodetype": "URI",
-      "property": "dcterms:accessRights",
-      "label": {
-        "en": "Access rights",
-        "sv": "Åtkomsträttigheter"
-      },
-      "description": {
-        "en": "This property refers to information that indicates whether the Dataset is open data, has access restrictions or is not public.",
-        "sv": "Den här egenskapen hänvisar till information som indikerar huruvida datamängden innehåller öppna data, har åtkomstrestriktioner eller är inte offentlig."
-      },
-      "cardinality": {
-        "min": 0,
-        "pref": 0,
-        "max": 1
-      },
-      "choices": [
-        {
-          "value": "http://publications.europa.eu/resource/authority/access-right/NON_PUBLIC",
-          "label": {
-            "en": "Non-public",
-            "sv": "Ej offentlig"
-          },
-          "description": {
-            "en": "Not publicly accessible for privacy, security or other reasons. Usage note: This category may include resources that contain sensitive or personal information.",
-            "sv": "Inte tillgänglig för allmänheten pga integritet, säkerhet eller andra orsaker. Användningsanmärkning: Denna kategori kan omfatta resurser som innehåller känslig eller personlig information."
-          }
-        },
-        {
-          "value": "http://publications.europa.eu/resource/authority/access-right/PUBLIC",
-          "label": {
-            "en": "Public",
-            "sv": "Publik"
-          },
-          "description": {
-            "en": "Publicly accessible by everyone. Usage note: Permissible obstacles include registration and request for API keys, as long as anyone can request such registration and/or API keys.",
-            "sv": "Tillgängligt för allmänheten. Användningsanmärkning: Tillåtna hinder inkluderar registrering och begäran av API-nycklar, så länge vem som helst kan begära registrering och/eller API-nycklar."
-          }
-        },
-        {
-          "value": "http://publications.europa.eu/resource/authority/access-right/RESTRICTED",
-          "label": {
-            "en": "Restricted",
-            "sv": "Begränsad"
-          },
-          "description": {
-            "en": "Only available under certain conditions. Usage note: This category may include resources that require payment, resources shared under non-disclosure agreements, resources for which the publisher or owner has not yet decided if they can be publicly released.",
-            "sv": "Endast tillgängligt under särskilda villkor. Användningsanmärkning: Denna kategori kan omfatta resurser som kräver betalning, resurser som tillgängliggörs inom ramen för sekretessavtal, eller resurser där utgivaren eller ägaren ännu inte har beslutat om de kan offentliggjöras."
-          }
-        }
-      ],
-      "styles": [
-        "verticalRadioButtons"
-      ],
-      "id": "dcat:dcterms:accessRights_da"
-    },
-    {
-      "type": "choice",
-      "nodetype": "URI",
       "property": "dcat:hasVersion",
       "constraints": {
         "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "http://www.w3.org/ns/dcat#Dataset"
@@ -2652,22 +2683,21 @@
       "id": "dcat:dcterms:provenance_da"
     },
     {
-      "type": "text",
-      "nodetype": "LANGUAGE_LITERAL",
-      "property": "dcterms:provenance",
+      "type": "choice",
+      "nodetype": "RESOURCE",
+      "property": "dcat:distribution",
       "label": {
-        "en": "Provenance",
-        "sv": "Ursprung"
+        "en": "Distribution",
+        "sv": "Distribution"
       },
       "description": {
-        "en": "This property contains a statement about the lineage of a Dataset.",
-        "sv": "Egenskapen innehåller ett uttalande om härstamningen av en datamängd."
+        "en": "This property links the Dataset to an available Distribution.",
+        "sv": "Denna egenskap förbinder en datamängd med en av dess distributioner."
       },
-      "styles": [
-        "multiline",
-        "deprecated"
-      ],
-      "id": "dcat:dcterms:provenance_da_deprecated"
+      "constraints": {
+        "rdf:type": "dcat:Distribution"
+      },
+      "id": "dcat:distribution_da"
     },
     {
       "type": "group",
@@ -2685,7 +2715,7 @@
         "dcat:endpointDescription",
         "dcat:servesDataset",
         "dcat:dcterms:license_ds",
-        "dcat:odrs:RSSA"
+        "dcat:dcterms:accessRights"
       ],
       "id": "dcat:DatasetService"
     },

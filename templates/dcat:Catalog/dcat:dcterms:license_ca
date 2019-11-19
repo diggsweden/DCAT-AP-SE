@@ -7,7 +7,7 @@
   "items": [
     "dcat:dcterms:cc-license-choices",
     {
-      "type": "choice",
+      "type": "text",
       "nodetype": "URI",
       "property": "dcterms:license",
       "constraints": {
@@ -17,8 +17,12 @@
         "en": "Other",
         "sv": "Övriga"
       },
+      "description": {
+        "en": "If you are not using an creative commons license, you must provide a URL to the license here. (That is why this is marked as mandatory.)",
+        "sv": "Om du inte använder en creative commons licens måste du ange en URL till licensen här. (Det är varför denna är markerad som obligatorisk."
+      },
       "cardinality": {
-        "min": 0,
+        "min": 1,
         "pref": 1
       }
     }
@@ -28,7 +32,7 @@
     "sv": "Licens"
   },
   "cardinality": {
-    "min": 0,
+    "min": 1,
     "pref": 1,
     "max": 1
   },

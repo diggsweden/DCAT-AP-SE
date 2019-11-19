@@ -21,7 +21,9 @@
     "dcat:odrs:RSSA",
     "dcat:dcterms:hasPart_ca",
     "dcat:dcterms:isPartOf_ca",
-    "dcat:themeTaxonomy_ca_deprecated",
-    "dcat:themeTaxonomy_ca"
+    "dcat:catalog_ca",
+    "dcat:themeTaxonomy_ca",
+    "dcat:dataset_ca",
+    "dcat:service_ca"
   ]
 }

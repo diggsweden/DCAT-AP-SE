@@ -1,0 +1,8 @@
+{
+  "extends": "dcat:dcterms:accessRights",
+  "type": "choice",
+  "description": {
+    "en": "This property refers to information that indicates if the Service can be openly accessed, if it has access restrictions or is not public.",
+    "sv": "Den här egenskapen hänvisar till information som indikerar huruvida datatjänsten är öppet tillgänglig, har åtkomstrestriktioner eller inte är offentlig."
+  }
+}

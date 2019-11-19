@@ -1,0 +1,20 @@
+{
+  "type": "choice",
+  "nodetype": "RESOURCE",
+  "property": "dcat:dataset",
+  "label": {
+    "en": "Dataset",
+    "sv": "Datamängd"
+  },
+  "description": {
+    "en": "This property links the Catalogue with a Dataset that is part of the Catalogue.",
+    "sv": "Egenskapen hänvisar förbinder katalogen med en datamängd som är en del av katalogen."
+  },
+  "constraints": {
+    "rdf:type": "dcat:Dataset"
+  },
+  "cardinality": {
+    "min": 1,
+    "pref": 0
+  }
+}

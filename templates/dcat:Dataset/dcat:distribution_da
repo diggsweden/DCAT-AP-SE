@@ -1,0 +1,16 @@
+{
+  "type": "choice",
+  "nodetype": "RESOURCE",
+  "property": "dcat:distribution",
+  "label": {
+    "en": "Distribution",
+    "sv": "Distribution"
+  },
+  "description": {
+    "en": "This property links the Dataset to an available Distribution.",
+    "sv": "Denna egenskap förbinder en datamängd med en av dess distributioner."
+  },
+  "constraints": {
+    "rdf:type": "dcat:Distribution"
+  }
+}
