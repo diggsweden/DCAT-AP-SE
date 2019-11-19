@@ -10,7 +10,7 @@ rdforms.spec({
   ],
   main: [
     'dcat:Dataset',
-    'dcat:DatasetService',
+    'dcat:DataService',
     'dcat:Catalog',
     'dcat:Distribution'
   ],

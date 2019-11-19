@@ -1181,9 +1181,157 @@
         "sv": "Denna egenskap refererar till en datatjänst som är listad i katalogen."
       },
       "constraints": {
-        "rdf:type": "dcat:DatasetService"
+        "rdf:type": "dcat:DataService"
       },
       "id": "dcat:service_ca"
+    },
+    {
+      "type": "group",
+      "label": {
+        "en": "Dataset service",
+        "sv": "Datatjänst"
+      },
+      "constraints": {
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "http://www.w3.org/ns/dcat#DataService"
+      },
+      "items": [
+        "dcat:dcterms:title_ds",
+        "dcat:dcterms:description_ds",
+        "dcat:endpointURL",
+        "dcat:endpointDescription",
+        "dcat:servesDataset",
+        "dcat:dcterms:license_ds",
+        "dcat:dcterms:accessRights"
+      ],
+      "id": "dcat:DataService"
+    },
+    {
+      "property": "dcterms:title",
+      "label": {
+        "sv": "Titel",
+        "en": "Title"
+      },
+      "description": {
+        "en": "This property contains a name given to the Service. This property can be repeated for parallel language versions of the name.",
+        "sv": "Datatjänstens namn. Denna egenskap kan upprepas för parallella språkversioner av namnet."
+      },
+      "type": "text",
+      "nodetype": "LANGUAGE_LITERAL",
+      "cardinality": {
+        "min": 1,
+        "pref": 0
+      },
+      "id": "dcat:dcterms:title_ds"
+    },
+    {
+      "property": "dcterms:description",
+      "label": {
+        "sv": "Beskrivning",
+        "en": "Description"
+      },
+      "description": {
+        "en": "This property contains a free-text account of the Data Service. This property can be repeated for parallel language versions of the description.",
+        "sv": "Datatjänstens beskrivning. Denna egenskap kan upprepas för parallella språkversioner av beskrivningen."
+      },
+      "type": "text",
+      "nodetype": "LANGUAGE_LITERAL",
+      "styles": [
+        "multiline"
+      ],
+      "cardinality": {
+        "min": 0,
+        "pref": 0
+      },
+      "id": "dcat:dcterms:description_ds"
+    },
+    {
+      "type": "text",
+      "nodetype": "URI",
+      "property": "dcat:endpointURL",
+      "label": {
+        "en": "Endpoint URL",
+        "sv": "Åtkomstadress"
+      },
+      "description": {
+        "en": "The root location or primary endpoint of the service (a URL).",
+        "sv": "Basadress eller primär startpunkt för tjänsten (en URL)."
+      },
+      "cardinality": {
+        "min": 1
+      },
+      "id": "dcat:endpointURL"
+    },
+    {
+      "type": "text",
+      "nodetype": "URI",
+      "property": "dcat:endpointDescription",
+      "label": {
+        "en": "Endpoint description",
+        "sv": "Beskrivning åtkomstadress"
+      },
+      "description": {
+        "en": "This property contains a description of the services available via the end-points, including their operations, parameters etc. The property gives specific details of the actual endpoint instances, while dct:conformsTo is used to indicate the general standard or specification that the endpoints implement.",
+        "sv": "Beskriver tjänstens åtkomstadresser inklusive de operationer och parametrar som stöds. Beskrivningen ger specifika detaljer om de faktiska åtkomstadresserna medans egenskapen dct:conformsTo används för att beskriva den generella standard eller specicikation som implementeras av tjänsten."
+      },
+      "cardinality": {
+        "pref": 1
+      },
+      "id": "dcat:endpointDescription"
+    },
+    {
+      "type": "choice",
+      "nodetype": "URI",
+      "property": "dcat:servesDataset",
+      "label": {
+        "en": "Serves dataset",
+        "sv": "Försörjer datamängd"
+      },
+      "description": {
+        "en": "This property refers to a collection of data that this data service can distribute.",
+        "sv": "Egenskapen refererar till en eller flera datamängder som den denna tjänst kan tillhandahålla"
+      },
+      "constraints": {
+        "rdf:type": "http://www.w3.org/ns/dcat#Dataset"
+      },
+      "id": "dcat:servesDataset"
+    },
+    {
+      "type": "group",
+      "nodetype": "RESOURCE",
+      "styles": [
+        "disjoint"
+      ],
+      "items": [
+        "dcat:dcterms:cc-license-choices",
+        {
+          "type": "choice",
+          "nodetype": "URI",
+          "property": "dcterms:license",
+          "constraints": {
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "dcterms:LicenseDocument"
+          },
+          "label": {
+            "en": "Other",
+            "sv": "Övriga"
+          },
+          "cardinality": {
+            "min": 0,
+            "pref": 1
+          }
+        }
+      ],
+      "label": {
+        "en": "License",
+        "sv": "Licens"
+      },
+      "cardinality": {
+        "max": 1
+      },
+      "description": {
+        "en": "This property refers to the licence under which the service can be used or reused.",
+        "sv": "Den här egenskapen hänvisar till licensen enligt vilken datatjänsten kan användas eller återanvändas."
+      },
+      "id": "dcat:dcterms:license_ds"
     },
     {
       "type": "group",
@@ -2698,154 +2846,6 @@
         "rdf:type": "dcat:Distribution"
       },
       "id": "dcat:distribution_da"
-    },
-    {
-      "type": "group",
-      "label": {
-        "en": "Dataset service",
-        "sv": "Datatjänst"
-      },
-      "constraints": {
-        "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "http://www.w3.org/ns/dcat#DatasetService"
-      },
-      "items": [
-        "dcat:dcterms:title_ds",
-        "dcat:dcterms:description_ds",
-        "dcat:endpointURL",
-        "dcat:endpointDescription",
-        "dcat:servesDataset",
-        "dcat:dcterms:license_ds",
-        "dcat:dcterms:accessRights"
-      ],
-      "id": "dcat:DatasetService"
-    },
-    {
-      "property": "dcterms:title",
-      "label": {
-        "sv": "Titel",
-        "en": "Title"
-      },
-      "description": {
-        "en": "This property contains a name given to the Service. This property can be repeated for parallel language versions of the name.",
-        "sv": "Datatjänstens namn. Denna egenskap kan upprepas för parallella språkversioner av namnet."
-      },
-      "type": "text",
-      "nodetype": "LANGUAGE_LITERAL",
-      "cardinality": {
-        "min": 1,
-        "pref": 0
-      },
-      "id": "dcat:dcterms:title_ds"
-    },
-    {
-      "property": "dcterms:description",
-      "label": {
-        "sv": "Beskrivning",
-        "en": "Description"
-      },
-      "description": {
-        "en": "This property contains a free-text account of the Data Service. This property can be repeated for parallel language versions of the description.",
-        "sv": "Datatjänstens beskrivning. Denna egenskap kan upprepas för parallella språkversioner av beskrivningen."
-      },
-      "type": "text",
-      "nodetype": "LANGUAGE_LITERAL",
-      "styles": [
-        "multiline"
-      ],
-      "cardinality": {
-        "min": 0,
-        "pref": 0
-      },
-      "id": "dcat:dcterms:description_ds"
-    },
-    {
-      "type": "text",
-      "nodetype": "URI",
-      "property": "dcat:endpointURL",
-      "label": {
-        "en": "Endpoint URL",
-        "sv": "Åtkomstadress"
-      },
-      "description": {
-        "en": "The root location or primary endpoint of the service (a URL).",
-        "sv": "Basadress eller primär startpunkt för tjänsten (en URL)."
-      },
-      "cardinality": {
-        "min": 1
-      },
-      "id": "dcat:endpointURL"
-    },
-    {
-      "type": "text",
-      "nodetype": "URI",
-      "property": "dcat:endpointDescription",
-      "label": {
-        "en": "Endpoint description",
-        "sv": "Beskrivning åtkomstadress"
-      },
-      "description": {
-        "en": "This property contains a description of the services available via the end-points, including their operations, parameters etc. The property gives specific details of the actual endpoint instances, while dct:conformsTo is used to indicate the general standard or specification that the endpoints implement.",
-        "sv": "Beskriver tjänstens åtkomstadresser inklusive de operationer och parametrar som stöds. Beskrivningen ger specifika detaljer om de faktiska åtkomstadresserna medans egenskapen dct:conformsTo används för att beskriva den generella standard eller specicikation som implementeras av tjänsten."
-      },
-      "cardinality": {
-        "pref": 1
-      },
-      "id": "dcat:endpointDescription"
-    },
-    {
-      "type": "choice",
-      "nodetype": "URI",
-      "property": "dcat:servesDataset",
-      "label": {
-        "en": "Serves dataset",
-        "sv": "Försörjer datamängd"
-      },
-      "description": {
-        "en": "This property refers to a collection of data that this data service can distribute.",
-        "sv": "Egenskapen refererar till en eller flera datamängder som den denna tjänst kan tillhandahålla"
-      },
-      "constraints": {
-        "rdf:type": "http://www.w3.org/ns/dcat#Dataset"
-      },
-      "id": "dcat:servesDataset"
-    },
-    {
-      "type": "group",
-      "nodetype": "RESOURCE",
-      "styles": [
-        "disjoint"
-      ],
-      "items": [
-        "dcat:dcterms:cc-license-choices",
-        {
-          "type": "choice",
-          "nodetype": "URI",
-          "property": "dcterms:license",
-          "constraints": {
-            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "dcterms:LicenseDocument"
-          },
-          "label": {
-            "en": "Other",
-            "sv": "Övriga"
-          },
-          "cardinality": {
-            "min": 0,
-            "pref": 1
-          }
-        }
-      ],
-      "label": {
-        "en": "License",
-        "sv": "Licens"
-      },
-      "cardinality": {
-        "max": 1
-      },
-      "description": {
-        "en": "This property refers to the licence under which the service can be used or reused.",
-        "sv": "Den här egenskapen hänvisar till licensen enligt vilken datatjänsten kan användas eller återanvändas."
-      },
-      "id": "dcat:dcterms:license_ds"
     },
     {
       "type": "group",

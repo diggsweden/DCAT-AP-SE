@@ -11,6 +11,6 @@
     "sv": "Denna egenskap refererar till en datatjänst som är listad i katalogen."
   },
   "constraints": {
-    "rdf:type": "dcat:DatasetService"
+    "rdf:type": "dcat:DataService"
   }
 }
