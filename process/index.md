@@ -15,6 +15,7 @@ Tidslinjen är till viss del beroende hur snabbt DCAT 2 och DCAT-AP 1.3 blir kla
 
 ## Möten
 * [Möte referensgrupp - 2019-09-30](meeting-20190930.md) 
+* [Möte referensgrupp - 2019-11-19](meeting-20191119.md) 
 
 ## Referensgrupp
 Referensgruppen är listad i bokstavsordning.
@@ -32,10 +33,11 @@ Hans Ekstål | Bolagsverket
 Björn Hagström | Konsult inom öppna data
 Kjell Hjorth | Lantmäteriet
 Lars-olof Hjärp | Trafikverket
+Peter Israelsson | Bolagsverket
 Catrin Karling | SCB
 Thomas Kvist | Region västerbotten
 Matthias Palmér | MetaSolutions
-Representant | Riksantikvarieämbetet
+Marcus Smith | Riksantikvarieämbetet
 Kristine Ulander | DIGG
 Øystein Åsnes | DIFI (Norge)
 Michael Östling | Metagis
