@@ -21,6 +21,7 @@
     "dcat:dcterms:issued_di",
     "dcat:dcterms:modified_di",
     "dcat:adms:status_di",
+    "dcatap:availability",
     "dcat:dcterms:license_di",
     "dcat:odrs:RSSA",
     "dcat:spdx:checksum_di",

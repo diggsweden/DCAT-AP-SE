@@ -1,0 +1,50 @@
+{
+  "type": "group",
+  "nodetype": "RESOURCE",
+  "styles": [
+    "showLink"
+  ],
+  "label": {
+      "en": "License document",
+      "sv": "Licensdokument"
+  },
+  "items": [
+    {
+      "property": "dcterms:title",
+      "label": {
+        "sv": "Titel",
+        "en": "Title"
+      },
+      "description": {
+        "en": "A name given to the resource."
+      },
+      "type": "text",
+      "nodetype": "LANGUAGE_LITERAL",
+      "cardinality": {
+        "pref": 1
+      }
+    },
+    {
+      "property": "dcterms:description",
+      "label": {
+        "sv": "Beskrivning",
+        "en": "Description"
+      },
+      "description": {
+        "en": "An account of the resource."
+      },
+      "type": "text",
+      "nodetype": "LANGUAGE_LITERAL",
+      "styles": [
+        "multiline"
+      ],
+      "cardinality": {
+        "min": 0,
+        "pref": 1
+      }
+    }
+  ],
+  "constraints": {
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "dcterms:LicenseDocument"
+  }
+}

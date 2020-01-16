@@ -1,5 +1,5 @@
 {
-  "type": "text",
+  "type": "choice",
   "property": "odrs:copyrightStatement",
   "nodetype": "URI",
   "label": {
@@ -13,5 +13,7 @@
     "min": 0,
     "pref": 1
   },
-  "pattern": "https?://.+"
+  "constraints": {
+      "rdf:type": "dcterms:LicenseDocument"
+  }
 }

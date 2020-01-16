@@ -122,7 +122,8 @@
       ],
       "description": {},
       "label": {
-        "en": "Creative Commons"
+        "en": "Creative Commons license",
+        "sv": "Creative Commons license"
       },
       "property": "dcterms:license",
       "cardinality": {
@@ -816,6 +817,159 @@
     {
       "type": "group",
       "nodetype": "RESOURCE",
+      "styles": [
+        "showLink"
+      ],
+      "label": {
+        "en": "License document",
+        "sv": "Licensdokument"
+      },
+      "items": [
+        {
+          "property": "dcterms:title",
+          "label": {
+            "sv": "Titel",
+            "en": "Title"
+          },
+          "description": {
+            "en": "A name given to the resource."
+          },
+          "type": "text",
+          "nodetype": "LANGUAGE_LITERAL",
+          "cardinality": {
+            "pref": 1
+          }
+        },
+        {
+          "property": "dcterms:description",
+          "label": {
+            "sv": "Beskrivning",
+            "en": "Description"
+          },
+          "description": {
+            "en": "An account of the resource."
+          },
+          "type": "text",
+          "nodetype": "LANGUAGE_LITERAL",
+          "styles": [
+            "multiline"
+          ],
+          "cardinality": {
+            "min": 0,
+            "pref": 1
+          }
+        }
+      ],
+      "constraints": {
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "dcterms:LicenseDocument"
+      },
+      "id": "dcterms:LicenseDocument"
+    },
+    {
+      "type": "group",
+      "nodetype": "RESOURCE",
+      "styles": [
+        "showLink"
+      ],
+      "label": {
+        "en": "Standard",
+        "sv": "Standard"
+      },
+      "items": [
+        {
+          "property": "dcterms:title",
+          "label": {
+            "sv": "Titel",
+            "en": "Title"
+          },
+          "description": {
+            "en": "A name given to the resource."
+          },
+          "type": "text",
+          "nodetype": "LANGUAGE_LITERAL",
+          "cardinality": {
+            "pref": 1
+          }
+        },
+        {
+          "property": "dcterms:description",
+          "label": {
+            "sv": "Beskrivning",
+            "en": "Description"
+          },
+          "description": {
+            "en": "An account of the resource."
+          },
+          "type": "text",
+          "nodetype": "LANGUAGE_LITERAL",
+          "styles": [
+            "multiline"
+          ],
+          "cardinality": {
+            "min": 0,
+            "pref": 1
+          }
+        }
+      ],
+      "constraints": {
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "dcterms:Standard"
+      },
+      "id": "dcterms:Standard"
+    },
+    {
+      "type": "group",
+      "nodetype": "RESOURCE",
+      "styles": [
+        "showLink"
+      ],
+      "label": {
+        "en": "Document",
+        "sv": "Dokument"
+      },
+      "items": [
+        {
+          "property": "dcterms:title",
+          "label": {
+            "sv": "Titel",
+            "en": "Title"
+          },
+          "description": {
+            "en": "A name given to the resource."
+          },
+          "type": "text",
+          "nodetype": "LANGUAGE_LITERAL",
+          "cardinality": {
+            "pref": 1
+          }
+        },
+        {
+          "property": "dcterms:description",
+          "label": {
+            "sv": "Beskrivning",
+            "en": "Description"
+          },
+          "description": {
+            "en": "An account of the resource."
+          },
+          "type": "text",
+          "nodetype": "LANGUAGE_LITERAL",
+          "styles": [
+            "multiline"
+          ],
+          "cardinality": {
+            "min": 0,
+            "pref": 1
+          }
+        }
+      ],
+      "constraints": {
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "foaf:Document"
+      },
+      "id": "foaf:Document"
+    },
+    {
+      "type": "group",
+      "nodetype": "RESOURCE",
       "label": {
         "en": "Catalog",
         "sv": "Katalog"
@@ -895,7 +1049,7 @@
       },
       "label": {
         "en": "Publisher",
-        "sv": "Tillhandahållande organisation"
+        "sv": "Utgivare"
       },
       "labelProperties": [
         "http://xmlns.com/foaf/0.1/name",
@@ -1019,47 +1173,23 @@
       "id": "dcat:dcterms:spatial_ca"
     },
     {
-      "type": "group",
-      "nodetype": "RESOURCE",
-      "styles": [
-        "disjoint"
-      ],
-      "items": [
-        "dcat:dcterms:cc-license-choices",
-        {
-          "type": "text",
-          "nodetype": "URI",
-          "property": "dcterms:license",
-          "constraints": {
-            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "dcterms:LicenseDocument"
-          },
-          "label": {
-            "en": "Other",
-            "sv": "Övriga"
-          },
-          "description": {
-            "en": "If you are not using an creative commons license, you must provide a URL to the license here. (That is why this is marked as mandatory.)",
-            "sv": "Om du inte använder en creative commons licens måste du ange en URL till licensen här. (Det är varför denna är markerad som obligatorisk."
-          },
-          "cardinality": {
-            "min": 1,
-            "pref": 1
-          }
-        }
-      ],
+      "type": "text",
+      "property": "dcterms:license",
+      "nodetype": "URI",
       "label": {
         "en": "License",
         "sv": "Licens"
+      },
+      "description": {
+        "en": "In Sweden we require the license on the catalog to be CC0-1.0 (Public domain), i.e. to use the URI http://creativecommons.org/publicdomain/zero/1.0/",
+        "sv": "I Sverige kräver vi licensen CC0-1.0 (Public domain) på katalogen, dvs man ska använda URI:n http://creativecommons.org/publicdomain/zero/1.0/"
       },
       "cardinality": {
         "min": 1,
         "pref": 1,
         "max": 1
       },
-      "description": {
-        "en": "This property refers to the licence under which the Catalogue can be used or reused.",
-        "sv": "Den här egenskapen hänvisar till licensen enligt vilken katalogen kan användas eller återanvändas."
-      },
+      "value": "http://creativecommons.org/publicdomain/zero/1.0/",
       "id": "dcat:dcterms:license_ca"
     },
     {
@@ -1348,7 +1478,6 @@
         "dcat:foaf:Agent_da",
         "dcat:dcterms:creator_da",
         "dcat:prov:qualifiedAttribution",
-        "adms:contactPoint-choice_da",
         "dcat:contactPoint-choice_da",
         "dcat:keyword_da",
         "dcat:theme-da",
@@ -1434,7 +1563,7 @@
       },
       "label": {
         "en": "Publisher",
-        "sv": "Tillhandahållande organisation"
+        "sv": "Utgivare"
       },
       "labelProperties": [
         "http://xmlns.com/foaf/0.1/name",
@@ -1459,7 +1588,7 @@
       "property": "dcterms:creator",
       "label": {
         "en": "Creator",
-        "sv": "Skapare"
+        "sv": "Producent"
       },
       "labelProperties": [
         "http://xmlns.com/foaf/0.1/name",
@@ -1490,7 +1619,7 @@
       "property": "prov:qualifiedAttribution",
       "label": {
         "en": "Attribution",
-        "sv": "Erkännande"
+        "sv": "Övrig aktör"
       },
       "constraints": {
         "rdf:type": [
@@ -1677,38 +1806,6 @@
       "labelProperties": [
         "http://www.w3.org/2006/vcard/ns#fn"
       ],
-      "property": "http://www.w3.org/ns/adms#contactPoint",
-      "description": {
-        "en": "This property contains contact information that can be used for flagging errors in the Dataset or sending comments.",
-        "sv": "Egenskapen innehåller kontaktuppgifter som kan användas för att flagga fel i datamängden eller för att skicka kommentarer"
-      },
-      "label": {
-        "en": "Contact point",
-        "sv": "Kontakt"
-      },
-      "cardinality": {
-        "min": 0,
-        "pref": 1
-      },
-      "constraints": {
-        "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
-          "http://www.w3.org/2006/vcard/ns#Organization",
-          "http://www.w3.org/2006/vcard/ns#Individual",
-          "http://www.w3.org/2006/vcard/ns#Kind"
-        ]
-      },
-      "styles": [
-        "strictmatch",
-        "deprecated"
-      ],
-      "id": "adms:contactPoint-choice_da"
-    },
-    {
-      "type": "choice",
-      "nodetype": "RESOURCE",
-      "labelProperties": [
-        "http://www.w3.org/2006/vcard/ns#fn"
-      ],
       "property": "dcat:contactPoint",
       "description": {
         "en": "This property contains contact information that can be used for flagging errors in the Dataset or sending comments.",
@@ -1716,7 +1813,7 @@
       },
       "label": {
         "en": "Contact point",
-        "sv": "Kontakt"
+        "sv": "Kontaktuppgift"
       },
       "cardinality": {
         "min": 0,
@@ -1760,8 +1857,8 @@
         "strictmatch"
       ],
       "label": {
-        "en": "Category (Data Theme Vocabulary)",
-        "sv": "Kategori (Data Theme Vocabulary)"
+        "en": "Category",
+        "sv": "Kategori"
       },
       "description": {
         "en": "This property refers to a category of the Dataset. A Dataset may be associated with multiple themes.",
@@ -1993,7 +2090,6 @@
       "type": "choice",
       "automatic": true,
       "nodetype": "URI",
-      "pattern": "https?://.+",
       "id": "dcat:dcterms:conformsTo_da"
     },
     {
@@ -2009,7 +2105,7 @@
       "constraints": {
         "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "http://purl.org/dc/terms/Location"
       },
-      "type": "choice",
+      "type": "text",
       "automatic": true,
       "nodetype": "URI",
       "cardinality": {
@@ -2024,10 +2120,10 @@
         "sv": "Geografiskt område"
       },
       "type": "group",
-      "nodetype": "BLANK",
+      "nodetype": "RESOURCE",
       "cardinality": {
         "min": 0,
-        "pref": 0
+        "pref": 1
       },
       "constraints": {
         "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "http://purl.org/dc/terms/Location"
@@ -2068,7 +2164,6 @@
           "nodetype": "DATATYPE_LITERAL",
           "cardinality": {
             "min": 0,
-            "pref": 1,
             "max": 1
           },
           "datatype": "http://www.opengis.net/ont/geosparql#wktLiteral",
@@ -2115,7 +2210,12 @@
             "http://www.w3.org/2001/XMLSchema#date",
             "http://www.w3.org/2001/XMLSchema#dateTime",
             "http://www.w3.org/2001/XMLSchema#gYear"
-          ]
+          ],
+          "cardinality": {
+            "min": 0,
+            "pref": 1,
+            "max": 1
+          }
         },
         {
           "type": "text",
@@ -2132,7 +2232,12 @@
             "http://www.w3.org/2001/XMLSchema#date",
             "http://www.w3.org/2001/XMLSchema#dateTime",
             "http://www.w3.org/2001/XMLSchema#gYear"
-          ]
+          ],
+          "cardinality": {
+            "min": 0,
+            "pref": 1,
+            "max": 1
+          }
         },
         {
           "type": "text",
@@ -2765,7 +2870,7 @@
     },
     {
       "type": "text",
-      "nodetype": "RESOURCE",
+      "nodetype": "URI",
       "property": "dcterms:relation",
       "label": {
         "en": "Resource",
@@ -2870,6 +2975,7 @@
         "dcat:dcterms:issued_di",
         "dcat:dcterms:modified_di",
         "dcat:adms:status_di",
+        "dcatap:availability",
         "dcat:dcterms:license_di",
         "dcat:odrs:RSSA",
         "dcat:spdx:checksum_di",
@@ -3536,6 +3642,71 @@
       "id": "dcat:adms:status_di"
     },
     {
+      "type": "choice",
+      "nodetype": "URI",
+      "description": {
+        "en": "This property indicates how long it is planned to keep the Distribution of the Dataset available",
+        "sv": "Denna egenskap berättar om den planerade tillgängligheten hos distributionen."
+      },
+      "label": {
+        "en": "Availability",
+        "sv": "Tillgänglighet"
+      },
+      "cardinality": {
+        "min": 0,
+        "pref": 1,
+        "max": 1
+      },
+      "property": "http://data.europa.eu/r5r/availability",
+      "choices": [
+        {
+          "value": "http://data.europa.eu/r5r/availability/temporary",
+          "label": {
+            "en": "Temporary",
+            "sv": "Temporär"
+          },
+          "description": {
+            "en": "Data can disappear at any time, no planning.",
+            "sv": "Data kan försvinna när som helst, ingen planering."
+          }
+        },
+        {
+          "value": "http://data.europa.eu/r5r/availability/experimental",
+          "label": {
+            "en": "Experimental",
+            "sv": "Experimentell"
+          },
+          "description": {
+            "en": "Data is available for a few years, short term planning.",
+            "sv": "Data är tillgängligt några år, kortsiktig planering."
+          }
+        },
+        {
+          "value": "http://data.europa.eu/r5r/availability/available",
+          "label": {
+            "en": "Available",
+            "sv": "Tillgänglig"
+          },
+          "description": {
+            "en": "Data is available for a few years, medium term planning.",
+            "sv": "Data är tillgängligt några år, medellångsiktig planering."
+          }
+        },
+        {
+          "value": "http://data.europa.eu/r5r/availability/stable",
+          "label": {
+            "en": "Stable",
+            "sv": "Stabil"
+          },
+          "description": {
+            "en": "Data will remain available in the long term.",
+            "sv": "Data kommer att finnas tillgängligt på lång sikt."
+          }
+        }
+      ],
+      "id": "dcatap:availability"
+    },
+    {
       "type": "group",
       "nodetype": "RESOURCE",
       "styles": [
@@ -3551,8 +3722,12 @@
             "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "dcterms:LicenseDocument"
           },
           "label": {
-            "en": "Other",
-            "sv": "Övriga"
+            "en": "Other license",
+            "sv": "Övrig licens"
+          },
+          "description": {
+            "en": "Refers to which licence under which the Distribution is made available if you are not using a CC license.",
+            "sv": "Hänvisar till vilken licens som distributionen görs tillgänglig om du inte använder en CC licens."
           },
           "cardinality": {
             "min": 0,
@@ -3689,90 +3864,9 @@
     {
       "type": "group",
       "nodetype": "RESOURCE",
-      "styles": [
-        "showLink"
-      ],
-      "items": [
-        "dcat:documentType",
-        {
-          "property": "dcterms:title",
-          "label": {
-            "sv": "Titel",
-            "en": "Title"
-          },
-          "description": {
-            "en": "A name given to the resource."
-          },
-          "type": "text",
-          "nodetype": "LANGUAGE_LITERAL",
-          "cardinality": {
-            "min": 1
-          }
-        },
-        {
-          "property": "dcterms:description",
-          "label": {
-            "sv": "Beskrivning",
-            "en": "Description"
-          },
-          "description": {
-            "en": "An account of the resource."
-          },
-          "type": "text",
-          "nodetype": "LANGUAGE_LITERAL",
-          "styles": [
-            "multiline"
-          ],
-          "cardinality": {
-            "min": 0,
-            "pref": 1
-          }
-        }
-      ],
-      "id": "dcat:Documentish"
-    },
-    {
-      "type": "choice",
-      "property": "rdf:type",
-      "nodetype": "URI",
-      "label": {
-        "sv": "Dokumenttyp",
-        "en": "Document type"
-      },
-      "cardinality": {
-        "min": 1
-      },
-      "choices": [
-        {
-          "value": "foaf:Document",
-          "label": {
-            "en": "Documentation",
-            "sv": "Dokumentation"
-          }
-        },
-        {
-          "value": "dcterms:LicenseDocument",
-          "label": {
-            "en": "License",
-            "sv": "Licens"
-          }
-        },
-        {
-          "value": "dcterms:Standard",
-          "label": {
-            "en": "Standard/Recommendation/Specification",
-            "sv": "Standard/rekommendation/specifikation"
-          }
-        }
-      ],
-      "id": "dcat:documentType"
-    },
-    {
-      "type": "group",
-      "nodetype": "RESOURCE",
       "label": {
         "en": "Contact point",
-        "sv": "Kontakt"
+        "sv": "Kontaktuppgift"
       },
       "description": {
         "en": "This property contains contact information that can be used for flagging errors in the Dataset or sending comments",
@@ -3786,6 +3880,13 @@
         "vc:hasAddress"
       ],
       "property": "dcat:contactPoint",
+      "constraints": {
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+          "http://www.w3.org/2006/vcard/ns#Organization",
+          "http://www.w3.org/2006/vcard/ns#Individual",
+          "http://www.w3.org/2006/vcard/ns#Kind"
+        ]
+      },
       "cardinality": {
         "min": 0,
         "pref": 1
@@ -3885,6 +3986,9 @@
       },
       "type": "group",
       "automatic": true,
+      "constraints": {
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "http://www.w3.org/2006/vcard/ns#Voice"
+      },
       "items": [
         {
           "type": "text",
@@ -3893,6 +3997,10 @@
             "min": 1,
             "pref": 1,
             "max": 1
+          },
+          "label": {
+            "en": "Number",
+            "sv": "Nummer"
           },
           "description": {
             "en": "The telephone number should be given including country calling code, e.g. +4618100000."
@@ -4080,8 +4188,8 @@
         ]
       },
       "label": {
-        "en": "Publisher",
-        "sv": "Tillhandahållande organisation"
+        "en": "Agent",
+        "sv": "Aktör"
       },
       "id": "dcat:foaf:Agent"
     },
@@ -4275,7 +4383,7 @@
       "id": "odrs:copyrightNotice"
     },
     {
-      "type": "text",
+      "type": "choice",
       "property": "odrs:copyrightStatement",
       "nodetype": "URI",
       "label": {
@@ -4289,7 +4397,9 @@
         "min": 0,
         "pref": 1
       },
-      "pattern": "https?://.+",
+      "constraints": {
+        "rdf:type": "dcterms:LicenseDocument"
+      },
       "id": "odrs:copyrightStatement"
     },
     {

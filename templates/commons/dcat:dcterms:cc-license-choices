@@ -63,7 +63,8 @@
   ],
   "description": {},
   "label": {
-    "en": "Creative Commons"
+    "en": "Creative Commons license",
+    "sv": "Creative Commons license"
   },
   "property": "dcterms:license",
   "cardinality": {

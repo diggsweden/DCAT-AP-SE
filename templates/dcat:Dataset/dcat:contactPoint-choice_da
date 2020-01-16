@@ -11,7 +11,7 @@
   },
   "label": {
     "en": "Contact point",
-    "sv": "Kontakt"
+    "sv": "Kontaktuppgift"
   },
   "cardinality": {
     "min": 0,

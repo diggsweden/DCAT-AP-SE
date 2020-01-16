@@ -1,43 +1,19 @@
 {
-  "type": "group",
-  "nodetype": "RESOURCE",
-  "styles": [
-    "disjoint"
-  ],
-  "items": [
-    "dcat:dcterms:cc-license-choices",
-    {
-      "type": "text",
-      "nodetype": "URI",
-      "property": "dcterms:license",
-      "constraints": {
-        "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "dcterms:LicenseDocument"
-      },
-      "label": {
-        "en": "Other",
-        "sv": "Övriga"
-      },
-      "description": {
-        "en": "If you are not using an creative commons license, you must provide a URL to the license here. (That is why this is marked as mandatory.)",
-        "sv": "Om du inte använder en creative commons licens måste du ange en URL till licensen här. (Det är varför denna är markerad som obligatorisk."
-      },
-      "cardinality": {
-        "min": 1,
-        "pref": 1
-      }
-    }
-  ],
+  "type": "text",
+  "property": "dcterms:license",
+  "nodetype": "URI",
   "label": {
-    "en": "License",
-    "sv": "Licens"
+      "en": "License",
+      "sv": "Licens"
+  },
+  "description": {
+    "en": "In Sweden we require the license on the catalog to be CC0-1.0 (Public domain), i.e. to use the URI http://creativecommons.org/publicdomain/zero/1.0/",
+    "sv": "I Sverige kräver vi licensen CC0-1.0 (Public domain) på katalogen, dvs man ska använda URI:n http://creativecommons.org/publicdomain/zero/1.0/"
   },
   "cardinality": {
     "min": 1,
     "pref": 1,
     "max": 1
   },
-  "description": {
-    "en": "This property refers to the licence under which the Catalogue can be used or reused.",
-    "sv": "Den här egenskapen hänvisar till licensen enligt vilken katalogen kan användas eller återanvändas."
-  }
+  "value": "http://creativecommons.org/publicdomain/zero/1.0/"
 }

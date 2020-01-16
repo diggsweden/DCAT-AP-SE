@@ -6,8 +6,8 @@
     "strictmatch"
   ],
   "label": {
-    "en": "Category (Data Theme Vocabulary)",
-    "sv": "Kategori (Data Theme Vocabulary)"
+    "en": "Category",
+    "sv": "Kategori"
   },
   "description": {
     "en": "This property refers to a category of the Dataset. A Dataset may be associated with multiple themes.",

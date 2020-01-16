@@ -4,7 +4,7 @@
   "property": "prov:qualifiedAttribution",
   "label": {
     "en": "Attribution",
-    "sv": "Erkännande"
+    "sv": "Övrig aktör"
   },
   "constraints": {
     "rdf:type": [

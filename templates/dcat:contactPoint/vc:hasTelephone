@@ -9,6 +9,9 @@
   },
   "type": "group",
   "automatic": true,
+  "constraints": {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "http://www.w3.org/2006/vcard/ns#Voice"
+  },
   "items": [
     {
       "type": "text",
@@ -17,6 +20,10 @@
         "min": 1,
         "pref": 1,
         "max": 1
+      },
+      "label": {
+        "en": "Number",
+        "sv": "Nummer"
       },
       "description": {
         "en": "The telephone number should be given including country calling code, e.g. +4618100000."

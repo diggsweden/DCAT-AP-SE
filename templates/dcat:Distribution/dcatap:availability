@@ -1,0 +1,64 @@
+{
+  "type": "choice",
+  "nodetype": "URI",
+  "description": {
+    "en": "This property indicates how long it is planned to keep the Distribution of the Dataset available",
+    "sv": "Denna egenskap berättar om den planerade tillgängligheten hos distributionen."
+  },
+  "label": {
+    "en": "Availability",
+    "sv": "Tillgänglighet"
+  },
+  "cardinality": {
+    "min": 0,
+    "pref": 1,
+    "max": 1
+  },
+  "property": "http://data.europa.eu/r5r/availability",
+  "choices": [
+    {
+      "value": "http://data.europa.eu/r5r/availability/temporary",
+      "label": {
+        "en": "Temporary",
+        "sv": "Temporär"
+      },
+      "description": {
+        "en": "Data can disappear at any time, no planning.",
+        "sv": "Data kan försvinna när som helst, ingen planering."
+      }
+    },
+    {
+      "value": "http://data.europa.eu/r5r/availability/experimental",
+      "label": {
+        "en": "Experimental",
+        "sv": "Experimentell"
+      },
+      "description": {
+        "en": "Data is available for a few years, short term planning.",
+        "sv": "Data är tillgängligt några år, kortsiktig planering."
+      }
+    },
+    {
+      "value": "http://data.europa.eu/r5r/availability/available",
+      "label": {
+        "en": "Available",
+        "sv": "Tillgänglig"
+      },
+      "description": {
+        "en": "Data is available for a few years, medium term planning.",
+        "sv": "Data är tillgängligt några år, medellångsiktig planering."
+      }
+    },
+    {
+      "value": "http://data.europa.eu/r5r/availability/stable",
+      "label": {
+        "en": "Stable",
+        "sv": "Stabil"
+      },
+      "description": {
+        "en": "Data will remain available in the long term.",
+        "sv": "Data kommer att finnas tillgängligt på lång sikt."
+      }
+    }
+  ]
+}

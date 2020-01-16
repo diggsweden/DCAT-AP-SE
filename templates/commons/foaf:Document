@@ -4,8 +4,11 @@
   "styles": [
     "showLink"
   ],
+  "label": {
+    "en": "Document",
+    "sv": "Dokument"
+  },
   "items": [
-    "dcat:documentType",
     {
       "property": "dcterms:title",
       "label": {
@@ -18,7 +21,7 @@
       "type": "text",
       "nodetype": "LANGUAGE_LITERAL",
       "cardinality": {
-        "min": 1
+        "pref": 1
       }
     },
     {
@@ -40,5 +43,8 @@
         "pref": 1
       }
     }
-  ]
+  ],
+  "constraints": {
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "foaf:Document"
+  }
 }

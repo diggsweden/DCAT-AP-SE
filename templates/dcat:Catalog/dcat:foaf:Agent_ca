@@ -11,7 +11,7 @@
   },
   "label": {
     "en": "Publisher",
-    "sv": "Tillhandahållande organisation"
+    "sv": "Utgivare"
   },
   "labelProperties": [
     "http://xmlns.com/foaf/0.1/name",

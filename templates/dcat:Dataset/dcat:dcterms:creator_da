@@ -3,7 +3,7 @@
   "property": "dcterms:creator",
   "label": {
     "en": "Creator",
-    "sv": "Skapare"
+    "sv": "Producent"
   },
   "labelProperties": [
     "http://xmlns.com/foaf/0.1/name",
