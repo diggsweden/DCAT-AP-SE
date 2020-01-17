@@ -49,7 +49,7 @@ DCAT-AP-SE syftar **inte** till att stödja insamling av:
 1. datamängderna själva då en sådan central hantering skulle vara problematisk ur många perspektiv
 2. information om renodlade tjänster (såvida inte tjänsterna är ett sätt att komma åt datamängder).
 
-Dock för att kunna möta syfte och behov kring DCAT-AP-SE kan insamling också innebära behov av insamling / förteckningar av:
+Dock för att kunna möta syfte och behov kring DCAT-AP-SE kan insamling / förteckningar av följande behövas:
 1. Standarder / specifikationer som beskriver datamängdernas uttryck
 2. Begrepp och informationsmodeller som beskriver innehållet i datamängderna
 3. Showcases / goda exempel av hur datamängder har använts 
