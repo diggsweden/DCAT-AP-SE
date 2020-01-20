@@ -41,7 +41,9 @@ Utifrån detta kan vi beskriva två olika scenarior:
 3. Beskriv ditt API som en datatjänst och peka ut den från distributionen.
 4. Ange på distributionen vilket format man får tillbaka från API:et.
 
-Obs, i detta fall pekar vi inte ut datatjänsten från katalogen. Det är möjligt att pekar från datatjänsten till datamängden, men då vi pekar från distributionen till datatjänsten är detta onödigt.
+Obs 1, i detta fall pekar vi inte ut datatjänsten från katalogen. Det är möjligt att pekar från datatjänsten till datamängden, men då vi pekar från distributionen till datatjänsten är detta onödigt.
+
+Obs 2, om möjligt bör man bara beskriva ett API som en datatjänst en gång och peka på samma instans från flera distributioner. 
 
 **B. Hur man beskriver datatjänster oberoende av datamängder** 
 1. Beskriv ditt API som en datatjänst
