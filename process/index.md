@@ -16,6 +16,7 @@ Tidslinjen är till viss del beroende hur snabbt DCAT 2 och DCAT-AP 1.3 blir kla
 ## Möten
 * [Möte referensgrupp - 2019-09-30](meeting-20190930.md) 
 * [Möte referensgrupp - 2019-11-19](meeting-20191119.md) 
+* [Möte referensgrupp - 2020-01-17](meeting-20200117.md) 
 
 ## Referensgrupp
 Referensgruppen är listad i bokstavsordning.
