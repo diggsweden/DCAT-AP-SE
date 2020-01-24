@@ -1,21 +1,10 @@
-const docReady = function(fn) {
-  // see if DOM is already available
-  if (document.readyState === "complete" || document.readyState === "interactive") {
-    // call on next available tick
-    setTimeout(fn, 1);
-  } else {
-    document.addEventListener("DOMContentLoaded", fn);
-  }
-};
-
 var lang2label = {
   'sv': 'Rekommendation',
   'en': 'Recommendation'
 };
 
-docReady(function() {
+window.addRecommendations = function(lang, recs) {
   const refs = {};
-  var recs = window.spec2recs;
   for (var key in recs) if (recs.hasOwnProperty(key)) {
     var ids = recs[key];
     for (var i = 0; i < ids.length; i++) {
@@ -60,4 +49,4 @@ docReady(function() {
       console.log("Failed create recommendation link from " + id + " to " + key);
     }
   }
-});
+};
