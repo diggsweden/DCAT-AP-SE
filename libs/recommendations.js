@@ -38,7 +38,7 @@ window.addRecommendations = function(lang, recs) {
 
         var recLink = document.createElement('a');
         recLink.innerText = textLink;
-        recLink.href = 'https://metasolutionsab.github.io/DCAT-AP-SE/docs/recommendations.html#' + target;
+        recLink.href = 'https://diggsweden.github.io/DCAT-AP-SE/docs/recommendations.html#' + target;
         td.appendChild(recLink);
         if ((j + 1) < targets.length) {
           var separator = document.createTextNode(', ');

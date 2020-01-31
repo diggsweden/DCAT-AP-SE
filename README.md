@@ -2,7 +2,7 @@
 
 I det här Github-arkivet hanterar vi den svenska anpassningen till DCAT-AP som pågår under hösten 2019 på uppdag av [Myndigheten för digital förvaltning (DIGG)](https://www.digg.se).
 
-Resultatet av det pågående arbetet kan ses här: [https://metasolutionsab.github.io/DCAT-AP-SE/](https://metasolutionsab.github.io/DCAT-AP-SE/)
+Resultatet av det pågående arbetet kan ses här: [https://diggsweden.github.io/DCAT-AP-SE/](https://diggsweden.github.io/DCAT-AP-SE/)
 
 Startpunkten är den [tidigare specifikationen som togs fram på uppdrag av VINNOVA](https://lankadedata.se/spec/DCAT-AP-SE/)
 och som för närvarande stöds av öppnadata.se. Till detta kommer följande att beaktas:
