@@ -17,6 +17,8 @@ const loadGroup = function(dir, src) {
         loadGroup(dir, child);
       }
     });
+  } else if (src.extends) {
+    loadItem(dir, src.extends);
   }
 };
 
