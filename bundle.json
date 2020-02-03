@@ -1705,28 +1705,6 @@
           }
         },
         {
-          "value": "http://inspire.ec.europa.eu/metadata-codelist/ResponsiblePartyRole/originator",
-          "label": {
-            "en": "Originator",
-            "sv": "Producent"
-          },
-          "description": {
-            "en": "Party who created the resource",
-            "sv": "Den part som har skapat resursen."
-          }
-        },
-        {
-          "value": "http://inspire.ec.europa.eu/metadata-codelist/ResponsiblePartyRole/pointOfContact",
-          "label": {
-            "en": "Point of Contact",
-            "sv": "Kontakt"
-          },
-          "description": {
-            "en": "Party who can be contacted for acquiring knowledge about or acquisition of the resource.",
-            "sv": "Part som kan kontaktas för att få information om eller tillgång till resursen."
-          }
-        },
-        {
           "value": "http://inspire.ec.europa.eu/metadata-codelist/ResponsiblePartyRole/principalInvestigator",
           "label": {
             "en": "Principal Investigator",
@@ -1746,17 +1724,6 @@
           "description": {
             "en": "Party who has processed the data in a manner such that the resource has been modified.",
             "sv": "Part som har bearbetat data på ett sådant sätt att resursen har modifierats."
-          }
-        },
-        {
-          "value": "http://inspire.ec.europa.eu/metadata-codelist/ResponsiblePartyRole/publisher",
-          "label": {
-            "en": "Publisher",
-            "sv": "Utgivare"
-          },
-          "description": {
-            "en": "Party who published the resource.",
-            "sv": "Den part som har publicerat resursen."
           }
         },
         {
