@@ -1,0 +1,74 @@
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+<https://example.com/catalog1> a dcat:Catalog ;
+	dcterms:modified "2020-02-04"^^xsd:date ;
+	dcterms:title "Katalog med rekommenderade fält"@sv ;
+	dcterms:description "Katalog ifyllda med rekommenderade fält enligt DCAT-AP-SE version 2"@sv ;
+	dcterms:publisher <https://example.com/publisher1> ;
+	dcat:dataset <https://example.com/dataset1> ;
+	dcterms:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+	foaf:homepage <http://example.com> ;
+	dcterms:language <http://publications.europa.eu/resource/authority/language/SWE> ;
+	dcterms:issued "2020-01-01"^^xsd:date ;
+	dcat:themeTaxonomy <http://publications.europa.eu/resource/authority/data-theme> .
+
+<https://example.com/publisher1> a foaf:Agent ;
+	foaf:name "Exempel organisation" ;
+	dcterms:type <http://purl.org/adms/publishertype/NonProfitOrganisation> .
+
+<http://sws.geonames.org/2661886> rdfs:label "Sweden"@en .
+
+<https://example.com/dataset1> a dcat:Dataset ;
+	dcterms:title "Bibliotek i Sverige"@sv , "Libraries in Sweden"@en ;
+	dcterms:description "Plats och öppettider för alla bibliotek i Sverige"@sv ;
+	dcterms:publisher <https://example.com/publisher1> ;
+	dcat:distribution <https://example.com/distribution1> , <https://example.com/distribution2> ;
+	dcterms:spatial <http://sws.geonames.org/2661886> ;
+	dcat:keyword "bibliotek"@sv , "library"@en ;
+	dcat:theme <http://publications.europa.eu/resource/authority/data-theme/EDUC> ;
+	dcterms:issued "2020-01-01"^^xsd:date ;
+	dcat:contactPoint <https://example.com/contactpoint1> ;
+	dcterms:temporal _:node1e07u274fx1 .
+
+_:node1e07u274fx1 a dcterms:PeriodOfTime ;
+	dcat:startDate "2010-01-01"^^xsd:date .
+
+<https://example.com/contactpoint1> a vcard:Organization ;
+	vcard:fn "Öppna data gruppen på exempel organisationen" ;
+	vcard:hasEmail <mailto:oppnadata@exemple.com> ;
+	vcard:hasTelephone _:node1e07tikr4x2 ;
+	vcard:hasAddress _:node1e07tikr4x1 .
+
+_:node1e07tikr4x1 a vcard:Address ;
+	vcard:country-name "Sverige" ;
+	vcard:street-address "exempelgatan 1" ;
+	vcard:locality "Teststaden" ;
+	vcard:postal-code "70000" .
+
+_:node1e07tikr4x2 vcard:hasValue <tel:+46012345678> .
+
+<https://example.com/distribution1> a dcat:Distribution ;
+	dcterms:description "En förteckning över bibliotek inklusive namn, plats, adress och öppettider."@sv ;
+	dcterms:format "text/csv" ;
+	dcat:accessURL <http://example.com/download> ;
+	dcterms:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+	dcat:downloadURL <http://example.com/download> .
+
+<https://example.com/distribution2> a dcat:Distribution ;
+	dcterms:description "Åtkomst till bibliotek via ett API"@sv ;
+	dcterms:format "application/json" ;
+	dcat:accessURL <http://example.com/api> ;
+	dcterms:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+	dcat:accessService <https://example.com/dataservice1> .
+
+<https://example.com/dataservice1> a dcat:DatasetService ;
+	dcterms:title "API exempel"@sv ;
+	dcterms:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+	dcterms:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
+	dcat:endpointURL <http://example.com/api> ;
+	dcat:endpointDescription <http://example.com/apidescription> .

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:vcard="http://www.w3.org/2006/vcard/ns#"
+	xmlns:dcat="http://www.w3.org/ns/dcat#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<dcat:Catalog rdf:about="https://example.com/catalog1">
+	<dcterms:title xml:lang="sv">Katalog med obligatoriska fält</dcterms:title>
+	<dcterms:description xml:lang="sv">Katalog ifyllda med obligatoriska fält enligt DCAT-AP-SE version 2. Följande icke-obligatoriska värden har lagts till för att visa uttryck av primära klasser; datamängden har en distribution och en contactpoint, distributionen har en datatjänst.</dcterms:description>
+	<dcterms:publisher rdf:resource="https://example.com/publisher1"/>
+	<dcat:dataset rdf:resource="https://example.com/dataset1"/>
+	<dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/"/>
+</dcat:Catalog>
+<foaf:Agent rdf:about="https://example.com/publisher1">
+	<foaf:name>Exampel organization.</foaf:name>
+</foaf:Agent>
+<dcat:Dataset rdf:about="https://example.com/dataset1">
+	<dcterms:title xml:lang="sv">Matvaruaffärer i Sverige</dcterms:title>
+	<dcterms:description xml:lang="sv">Vilka matvaruaffärer finns i Sverige, var finns de och vilka öppettider har de.</dcterms:description>
+	<dcterms:publisher rdf:resource="https://example.com/publisher1"/>
+	<dcat:distribution rdf:resource="https://example.com/distribution1"/>
+	<dcat:contactPoint rdf:resource="https://example.com/contactpoint1"/>
+</dcat:Dataset>
+<dcat:Distribution rdf:about="https://example.com/distribution1">
+	<dcat:accessURL rdf:resource="http://example.com/api"/>
+	<dcat:accessService rdf:resource="https://example.com/dataservice1"/>
+</dcat:Distribution>
+<vcard:Organization rdf:about="https://example.com/contactpoint1">
+	<vcard:fn>Öppna data gruppen på exempel organisationen</vcard:fn>
+	<vcard:hasEmail rdf:resource="mailto:oppnadata@example.com"/>
+</vcard:Organization>
+<dcat:DatasetService rdf:about="https://example.com/dataservice1">
+        <dcterms:title xml:lang="sv">Exempel API</dcterms:title>
+        <dcat:endpointURL rdf:resource="http://example.com/api"/>
+</dcat:DatasetService>
+</rdf:RDF>

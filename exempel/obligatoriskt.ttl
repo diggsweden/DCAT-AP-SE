@@ -1,0 +1,33 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+<https://example.com/catalog1> a dcat:Catalog ;
+	dcterms:title "Katalog med obligatoriska fält"@sv ;
+	dcterms:description "Katalog ifyllda med obligatoriska fält enligt DCAT-AP-SE version 2. Följande icke-obligatoriska värden har lagts till för att visa uttryck av primära klasser; datamängden har en distribution och en contactpoint, distributionen har en datatjänst."@sv ;
+	dcterms:publisher <https://example.com/publisher1> ;
+	dcat:dataset <https://example.com/dataset1> ;
+	dcterms:license <http://creativecommons.org/publicdomain/zero/1.0/> .
+
+<https://example.com/publisher1> a foaf:Agent ;
+	foaf:name "Exampel organization" .
+
+<https://example.com/dataset1> a dcat:Dataset ;
+	dcterms:title "Matvaruaffärer i Sverige"@sv ;
+	dcterms:description "Vilka matvaruaffärer finns i Sverige, var finns de och vilka öppettider har de."@sv ;
+	dcterms:publisher <https://example.com/publisher1> ;
+	dcat:distribution <https://example.com/distribution1> ;
+	dcat:contactPoint <https://example.com/contactpoint1> .
+
+<https://example.com/distribution1> a dcat:Distribution ;
+	dcat:accessURL <http://example.com/api> ;
+	dcat:accessService <https://example.com/dataservice1> .
+
+<https://example.com/contactpoint1> a vcard:Organization ;
+	vcard:fn "Öppna data gruppen på exempel organisationen" ;
+	vcard:hasEmail <mailto:oppnadata@example.com> .
+
+<https://example.com/dataservice1> a dcat:DatasetService ;
+	dcterms:title "Exempel API"@sv ;
+	dcat:endpointURL <http://example.com/api> .

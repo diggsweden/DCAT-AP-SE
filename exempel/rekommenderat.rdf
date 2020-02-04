@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:vcard="http://www.w3.org/2006/vcard/ns#"
+	xmlns:dcat="http://www.w3.org/ns/dcat#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<dcat:Catalog rdf:about="https://example.com/catalog1">
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-02-04</dcterms:modified>
+	<dcterms:title xml:lang="sv">Katalog med rekommenderade fält</dcterms:title>
+	<dcterms:description xml:lang="sv">Katalog ifyllda med rekommenderade fält enligt DCAT-AP-SE version 2</dcterms:description>
+	<dcterms:publisher rdf:resource="https://example.com/publisher1"/>
+	<dcat:dataset rdf:resource="https://example.com/dataset1"/>
+	<dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/"/>
+	<foaf:homepage rdf:resource="http://example.com"/>
+	<dcterms:language rdf:resource="http://publications.europa.eu/resource/authority/language/SWE"/>
+	<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-01-01</dcterms:issued>
+	<dcat:themeTaxonomy rdf:resource="http://publications.europa.eu/resource/authority/data-theme"/>
+</dcat:Catalog>
+<foaf:Agent rdf:about="https://example.com/publisher1">
+	<foaf:name>Exempel organisation</foaf:name>
+	<dcterms:type rdf:resource="http://purl.org/adms/publishertype/NonProfitOrganisation"/>
+</foaf:Agent>
+<rdf:Description rdf:about="http://sws.geonames.org/2661886">
+	<rdfs:label xml:lang="en">Sweden</rdfs:label>
+</rdf:Description>
+<dcat:Dataset rdf:about="https://example.com/dataset1">
+	<dcterms:title xml:lang="sv">Bibliotek i Sverige</dcterms:title>
+	<dcterms:title xml:lang="en">Libraries in Sweden</dcterms:title>
+	<dcterms:description xml:lang="sv">Plats och öppettider för alla bibliotek i Sverige</dcterms:description>
+	<dcterms:publisher rdf:resource="https://example.com/publisher1"/>
+	<dcat:distribution rdf:resource="https://example.com/distribution1"/>
+	<dcat:distribution rdf:resource="https://example.com/distribution2"/>
+	<dcterms:spatial rdf:resource="http://sws.geonames.org/2661886"/>
+	<dcat:keyword xml:lang="sv">bibliotek</dcat:keyword>
+	<dcat:keyword xml:lang="en">library</dcat:keyword>
+	<dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/EDUC"/>
+	<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-01-01</dcterms:issued>
+	<dcat:contactPoint rdf:resource="https://example.com/contactpoint1"/>
+	<dcterms:temporal>
+		<dcterms:PeriodOfTime rdf:nodeID="node1e07u274fx1">
+			<dcat:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-01-01</dcat:startDate>
+		</dcterms:PeriodOfTime>
+	</dcterms:temporal>
+</dcat:Dataset>
+<vcard:Organization rdf:about="https://example.com/contactpoint1">
+	<vcard:fn>Öppna data gruppen på exempel organisationen</vcard:fn>
+	<vcard:hasEmail rdf:resource="mailto:oppnadata@exemple.com"/>
+	<vcard:hasTelephone rdf:nodeID="node1e07tikr4x2"/>
+	<vcard:hasAddress>
+		<vcard:Address rdf:nodeID="node1e07tikr4x1">
+			<vcard:country-name>Sverige</vcard:country-name>
+			<vcard:street-address>exempelgatan 1</vcard:street-address>
+			<vcard:locality>Teststaden</vcard:locality>
+			<vcard:postal-code>70000</vcard:postal-code>
+		</vcard:Address>
+	</vcard:hasAddress>
+</vcard:Organization>
+<rdf:Description rdf:nodeID="node1e07tikr4x2">
+	<vcard:hasValue rdf:resource="tel:+46012345678"/>
+</rdf:Description>
+<dcat:Distribution rdf:about="https://example.com/distribution1">
+	<dcterms:description xml:lang="sv">En förteckning över bibliotek inklusive namn, plats, adress och öppettider.</dcterms:description>
+	<dcterms:format>text/csv</dcterms:format>
+	<dcat:accessURL rdf:resource="http://example.com/download"/>
+	<dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/"/>
+	<dcat:downloadURL rdf:resource="http://example.com/download"/>
+</dcat:Distribution>
+<dcat:Distribution rdf:about="https://example.com/distribution2">
+	<dcterms:description xml:lang="sv">Åtkomst till bibliotek via ett API</dcterms:description>
+	<dcterms:format>application/json</dcterms:format>
+	<dcat:accessURL rdf:resource="http://example.com/api"/>
+	<dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/"/>
+	<dcat:accessService rdf:resource="https://example.com/dataservice1"/>
+</dcat:Distribution>
+<dcat:DatasetService rdf:about="https://example.com/dataservice1">
+	<dcterms:title xml:lang="sv">API exempel</dcterms:title>
+	<dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/"/>
+	<dcterms:accessRights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC"/>
+	<dcat:endpointURL rdf:resource="http://example.com/api"/>
+	<dcat:endpointDescription rdf:resource="http://example.com/apidescription"/>
+</dcat:DatasetService>
+</rdf:RDF>
