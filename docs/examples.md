@@ -12,7 +12,7 @@ Nedan länkas till två exempel med obligatorisk och rekommenderad metadata ifyl
 
 Observera att exempel 2 innefattar både rekommenderade och obligatoriska metadata.
  
-Notera också att i båda exemplen har instanser av alla de primära klasserna [Katalog](), [Datamängd](), [Distribution](), [Datatjänst](), [Aktör]() och [Kontaktuppgift]() inkluderats för att visa vilken metadata som är obligatorisk / rekommenderad på dessa. Detta innebär dock att några relationer som inte är obligatoriska / rekommenderade har lagts till för att göra exemplena mer kompletta (så de hänger samman). Avvikelserna är:
+Notera också att i båda exemplen har instanser av alla de primära klasserna [Katalog](../sv/#dcat%3ACatalog), [Datamängd](../sv/#dcat%3ADataset), [Distribution](../sv/#dcat%3ADistribution), [Datatjänst](../sv/#dcat%3ADataService), [Aktör](../sv/#foaf%3AAgent) och [Kontaktuppgift](../sv/#vcard%3AOrganization) inkluderats för att visa vilken metadata som är obligatorisk / rekommenderad på dessa. Detta innebär dock att några relationer som inte är obligatoriska / rekommenderade har lagts till för att göra exemplena mer kompletta (så de hänger samman). Avvikelserna är:
 
 1. Exempel 1 - att ha en kontaktuppgift är bara rekommenderat
 2. Exempel 1 - att ha en distribution är bara rekommenderat
