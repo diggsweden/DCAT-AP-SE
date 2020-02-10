@@ -7,3 +7,4 @@ En anpassning av DCAT-AP till svenska förhållanden.
 - [Standarder](docs/standards.md) - likheter och skillnader till DCAT-AP, BREG, DCAT etc.
 - [Rekommendationer](docs/recommendations.md) - tips, bla. för hur man bör beskriva sina datamängder
 - [Exempel](docs/examples.md) - exempel som visar obligatorisk och rekommenderad metadata uttryckt i Turtle och RDF/XML
+- [Vanliga frågor](docs/faq.md) - här samlar vi frågor kring specifikationen, skördning och kopplingen till portalen
