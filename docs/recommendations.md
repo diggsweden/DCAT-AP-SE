@@ -75,3 +75,11 @@ I vissa situationer är producenten av datamängden inte samma som utgivaren. De
 Dessa aktörsroller kommer från INSPIRE-standarden där utgivare, prodcuent och kontaktuppgift är bortrensade för att inte möjliggöra två olika sätt att uttrycka samma aktörsroll.
 
 Notera att om inget annat anges antas att producent (och alla övriga aktörsroller) är densamma som utgivaren, du behöver alltså inte ange detta explicit.
+
+## 10. Tema och nyckelord
+
+Det är rekommenderat att ange ett eller flera teman för varje datamängd. Dessa teman är framtagna för att kunna skapa en första grov indelning på en dataportal. De teman som etablerats syftar till att vara lättförståeliga, hänga samman ämnesmässigt samt också skapar en någorlunda jämn fördelning av datamängder.
+
+Tyvärr räcker dessa 13 teman inte särskilt långt för att kategorisera datamängder, t.ex. det är helt klart att det finns många olika subkategorier inom trafik eller miljö som skulle kunna användas för att filtrera fram liknande datamängder. För detta syfte kan man komplettera tema med nyckelord. Nyckelord bör anges i singular, med små bokstäver och varje nyckelord bör bestå av ett eller om nödvändigt ett fåtal ord. Om det inte går att få in nyckelordet på ett fåtal ord är det sannolikt att du bör uttrycka det som en beskrivning istället.
+
+Om man har nyckelord som motsvarar "ekonomi" och "faktura" ska de uttryckas som två separata literaler i RDF, inte som ett nyckelord med komma imellan. Ett nyckelord kan upprepas på flera olika språk, följaktligen är det alltid viktigt att ange språk per nyckelord. Om du har möjlighet så återanvänd gärna nyckelord mellan datamängder. T.ex. kan du se vilka nyckelord som redan används på datamängder genom att söka på vår nationella dataportal. 
