@@ -42,6 +42,11 @@ var spec2recs = {
   "8-tidsperiod-och-tidsupplösning": [
     "dcat_Dataset-dcterms_temporal",
     "dcat_Dataset-dcat_temporalResolution"
+  ],
+  "9-Utgivare-producent-och-andra-aktörsroller": [
+    "dcat_Dataset-dcterms_publisher",
+    "dcat_Dataset-dcterms_creator",
+    "dcat_Dataset-prov_qualifiedAttribution"
   ]
 };
 

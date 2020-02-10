@@ -58,3 +58,20 @@ För datamängder som har en hög uppdateringsfrekvens är det inte rimligt att 
 
 ## 8. Tidsperiod och tidsupplösning
 De flesta datamängder har en tidsaspekt då de antingen motsvarar data som är insamlat eller giltigt under en viss tidsperiod. För datamängder som inte är avslutade, dvs fortsätter att öka över tiden, anger man ingen sluttid. Utöver tidsperiod kan datamängdens data ha olika tidsupplösning, t.ex. en datamängd som visar energiförbrukning kan innehålla data som går ner på sekundnivå medans befolkningsstatistik från SCB endast beskriver hur befolkningen ändras per år.
+
+## 9. Utgivare, producent och andra aktörsroller
+
+Med `utgivare` menas den organisation som är ansvarig för en datamängd. Ett sådant ansvar kan ta sitt uttryck på flera sätt, ofta innebär det att några av följande påståenden är sanna:
+
+1. man har en utpekad informationsägare inom den egna organisationen.
+2. man ansvarar för att göra säkerhetsklassning.
+3. man levererar till Kungliga Biblioteket enligt lagen om e-plikt.
+4. man svarar på begäran om utlämning av handlingar ur datamängden enligt tryckfrihetsförordningen.
+
+Det är utgivaren som ansvarar att datamängden kommer med i en PSI-förteckning som därmed gör datamängden synlig på vår nationella dataportal.
+
+I vissa situationer är producenten av datamängden inte samma som utgivaren. Det kan vara så att en myndighet tar hjälp av en annan organisation för att ta fram hela eller delar av datamängden. I de fallen kan man ange att den organisation är producent (eng. creator) av datamängden. Om man just producentrollen inte passar för att beskriva hur en annan organisation hjälper till i hantering av datamängden kan man använda fältet [övrig aktör](https://diggsweden.github.io/DCAT-AP-SE/sv/#prov%3AAttribution) för att ange detta. De aktörsroller som finns att välja på där är användare, distributör, förvaltare, leverantör, undersökningsledare, upphovsman, vidareförädlare, ägare.
+
+Dessa aktörsroller kommer från INSPIRE-standarden där utgivare, prodcuent och kontaktuppgift är bortrensade för att inte möjliggöra två olika sätt att uttrycka samma aktörsroll.
+
+Notera att om inget annat anges antas att producent (och alla övriga aktörsroller) är densamma som utgivaren, du behöver alltså inte ange detta explicit.
