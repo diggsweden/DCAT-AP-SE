@@ -35,6 +35,7 @@
     "dcat:adms:versionNotes_da",
     "dcat:dcterms:source_da",
     "dcat:dcterms:accessRights",
+    "schema:Offer",
     "dcat:hasVersion_da",
     "dcat:isVersionOf_da",
     "dcat:dcterms:isReferencedBy",

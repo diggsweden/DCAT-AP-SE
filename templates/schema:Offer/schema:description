@@ -1,0 +1,19 @@
+{
+  "property": "schema:description",
+  "label": {
+    "sv": "Beskrivning",
+    "en": "Description"
+  },
+  "description": {
+    "en": "Here you provide information about the fee, the basis for how the fees is calculated as well as other relevant information.",
+    "sv": "Här informerar du om avgift, beräkningsgrund och annan relevant information."
+  },
+  "type": "text",
+  "nodetype": "LANGUAGE_LITERAL",
+  "styles": [
+    "multiline"
+  ],
+  "cardinality": {
+    "min": 1
+  }
+}

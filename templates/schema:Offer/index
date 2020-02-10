@@ -1,0 +1,19 @@
+{
+  "type": "group",
+  "nodetype": "RESOURCE",
+  "property": "schema:offers",
+  "styles": [
+    "showLink"
+  ],
+  "label": {
+    "en": "Fee",
+    "sv": "Avgift"
+  },
+  "items": [
+    "schema:description",
+    "schema:mainEntityOfPage"
+  ],
+  "constraints": {
+      "rdf:type": "schema:Offer"
+  }
+}

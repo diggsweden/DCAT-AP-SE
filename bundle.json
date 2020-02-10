@@ -1500,6 +1500,7 @@
         "dcat:adms:versionNotes_da",
         "dcat:dcterms:source_da",
         "dcat:dcterms:accessRights",
+        "schema:Offer",
         "dcat:hasVersion_da",
         "dcat:isVersionOf_da",
         "dcat:dcterms:isReferencedBy",
@@ -4440,6 +4441,65 @@
       },
       "pattern": "https?://.+",
       "id": "odrs:reuserGuidelines"
+    },
+    {
+      "type": "group",
+      "nodetype": "RESOURCE",
+      "property": "schema:offers",
+      "styles": [
+        "showLink"
+      ],
+      "label": {
+        "en": "Fee",
+        "sv": "Avgift"
+      },
+      "items": [
+        "schema:description",
+        "schema:mainEntityOfPage"
+      ],
+      "constraints": {
+        "rdf:type": "schema:Offer"
+      },
+      "id": "schema:Offer"
+    },
+    {
+      "property": "schema:description",
+      "label": {
+        "sv": "Beskrivning",
+        "en": "Description"
+      },
+      "description": {
+        "en": "Here you provide information about the fee, the basis for how the fees is calculated as well as other relevant information.",
+        "sv": "Här informerar du om avgift, beräkningsgrund och annan relevant information."
+      },
+      "type": "text",
+      "nodetype": "LANGUAGE_LITERAL",
+      "styles": [
+        "multiline"
+      ],
+      "cardinality": {
+        "min": 1
+      },
+      "id": "schema:description"
+    },
+    {
+      "type": "text",
+      "nodetype": "URI",
+      "label": {
+        "en": "Webpage",
+        "sv": "Webbsida"
+      },
+      "property": "schema:mainEntityOfPage",
+      "description": {
+        "en": "A webpage with information about the fee and the basis upon which the fee is calculated is described in more detail.",
+        "sv": "En webbsida där informationom avgift och beräkningsgrund beskrivs i mer detalj."
+      },
+      "cardinality": {
+        "pref": 1,
+        "max": 1
+      },
+      "pattern": "https?://.+",
+      "id": "schema:mainEntityOfPage"
     }
   ]
 }

@@ -51,7 +51,8 @@ rdforms.spec({
     spdx: 'http://spdx.org/rdf/terms#',
     adms: 'http://www.w3.org/ns/adms#',
     prov: 'http://www.w3.org/ns/prov#',
-    dcatap: 'http://data.europa.eu/r5r/'
+    dcatap: 'http://data.europa.eu/r5r/',
+    schema: 'http://schema.org/'
   },
   bundles: [
     ['../bundle.json']
@@ -76,7 +77,8 @@ rdforms.spec({
     'dcat:dcterms:provenance_da',
     'dcat:spdx:checksum_di',
     'vc:hasTelephone',
-    'vc:hasAddress'
+    'vc:hasAddress',
+    'schema:Offer'
   ],
   onDone: function() {
     window.addRecommendations(document.targetLanguage, spec2recs);
