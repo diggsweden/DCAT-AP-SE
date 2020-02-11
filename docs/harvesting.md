@@ -1,10 +1,12 @@
 # Skördning av DCAT-AP-SE till öppnadata.se
 
-Nedan beskrivs under vilka villkor öppnadata.se kan skörda en förteckning
-av datamängder uttryckt i DCAT-AP-SE. Härefter kommer vi kalla den nationella dataportalen [öppnadata.se](https://oppnadata.se)
+Nedan beskrivs under vilka villkor Sveriges dataportal kan skörda en förteckning
+av datamängder uttryckt i DCAT-AP-SE. Härefter kommer vi kalla [Sveriges dataportal](https://oppnadata.se)
 för "portalen" och en förteckningen av datamängder uttryckt i DCAT-AP-SE för en "katalog".
 I anslutning till portalen finns ett administrativt gränsnitt på [registrera.oppnadata.se](https://registrera.oppnadata.se) 
 som riktar sig till utvecklare och katalogansvariga, härefter kommer vi referera till detta gränsnitt som "registrera".
+
+Under våren 2020 kommer det finnas två adresser/gränssnitt för Sveriges dataportal som är nåbara på [oppnadata.se](https://oppnadata.se) och [dataportal.se](https://dataportal.se) respektive. Detta är för att det sker ett iterativt utvecklingsarbete med att skapa nya gränsnitt och ny funktionalitet. Det är viktigt att notera dock att båda gränssnitten slår mot samma API som tillhandahålls av registrera. Dvs. för dataleverantörer är det inget som ändras, man behvöver inte registrera sina datamängder mer än en gång. 
 
 Nedan går vi igenom skördningsmekanismen samt också ett antal principer som man måste följa kring val av identifierare
 och hur man uttrycker utgivande organisationer. Sist i dokumentet finns principer man ska följa om man vill leverera mer än 
