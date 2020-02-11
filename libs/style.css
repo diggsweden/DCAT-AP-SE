@@ -1,0 +1,30 @@
+g.classGroup text {
+    fill: #134962 !important;
+}
+
+g.classGroup rect {
+    fill: #ddeeff !important;
+    stroke: #134962 !important;
+}
+
+g.classGroup line {
+    stroke: #134962 !important;
+}
+
+.classLabel .box {
+    fill: transparent !important;
+}
+
+.classLabel .label {
+    fill: #134962 !important;
+}
+
+.relation {
+    stroke: #134962 !important;
+}
+
+#dependencyStart,
+#dependencyEnd {
+    stroke: #134962 !important;
+    fill: #134962 !important;
+}

@@ -1,7 +1,7 @@
 {
   "type": "group",
   "label": {
-    "en": "Dataset service",
+    "en": "Data service",
     "sv": "Datatjänst"
   },
   "constraints": {

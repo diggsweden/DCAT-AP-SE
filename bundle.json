@@ -1318,7 +1318,7 @@
     {
       "type": "group",
       "label": {
-        "en": "Dataset service",
+        "en": "Data service",
         "sv": "Datatjänst"
       },
       "constraints": {
@@ -1647,6 +1647,7 @@
         "sv": "Ansvarig parts funktion"
       },
       "cardinality": {
+        "min": 1,
         "max": 1
       },
       "choices": [
@@ -1764,7 +1765,8 @@
       },
       "nodetype": "RESOURCE",
       "cardinality": {
-        "pref": 1
+        "min": 1,
+        "max": 1
       },
       "id": "dcat:prov:agent"
     },
@@ -2124,7 +2126,7 @@
           "property": "dcat:bbox",
           "label": {
             "en": "Boundingbox",
-            "sv": "Geografisk omskrivande rektangel"
+            "sv": "Omskrivande rektangel"
           }
         },
         {

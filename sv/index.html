@@ -8,7 +8,10 @@
     <title>Svensk anpassning av DCAT-AP</title>
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/default.min.css">
+    <link rel="stylesheet" type="text/css" href="../libs/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+    <script src="https://unpkg.com/mermaid@8.4.6/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true});</script>
 </head>
 <body class="h-entry">
 <div class="head">
@@ -43,7 +46,71 @@
 </div>
 <nav id="toc"></nav>
 <main>
-    <section>En introduktion.</section>
+    <section>
+        <p>DCAT-AP-SE är en metadataspecifikation som syftar till att beskriva datamängder. Mer specifikt är DCAT-AP-SE en svensk anpassning (en så kallad profil) av den europeiska metadataspecifikationen DCAT-AP. DCAT-AP är i sin tur är en anpassning (profil) av den internationella rekommendationen DCAT som utges av W3C.</p>
+        <p>I diagrammet nedan visas endast de primära klasserna, relationer mellan dem samt deras obligatoriska och rekommenderade egenskaper. Notera att för läsbarhet så anges klasser och egenskaper med svenska namn både i rubriker och i diagrammet. De faktiska metadatauttrycken är listade i detalj under respektive rubrik.</p>
+        <div class="mermaid">
+            classDiagram
+
+            Katalog --> Datamängd : datamängd
+            Katalog --> Aktör : utgivare
+            Datamängd --> Distribution : distribution
+            Datamängd --> Aktör : utgivare
+            Datamängd --> Kontaktuppgift : kontaktuppgift
+            Distribution --> Datatjänst : åtkomst via datatjänst
+            class Katalog {
+              titel
+              beskrivning
+              licens
+              utgivningsdatum
+              språk
+              ändringsdatum
+              hemsida
+              taxonomi för tema
+            }
+
+            class Datamängd {
+              titel
+              beskrivning
+              kontaktuppgift
+              nyckelord
+              kategori
+              tidsperiod
+              utgivningsdatum
+              åtkomsträttigheter
+              geografiskt område
+            }
+
+
+            class Distribution {
+              webbadress för åtkomst
+              beskrivning
+              mediatyp
+              tillgänglighet
+              licens
+            }
+
+            class Datatjänst {
+              titel
+              åtkomstadress
+              beskrivning åtkomstadress
+              licens
+              åtkomsträttigheter
+            }
+
+            class Aktör {
+              namn
+              typ
+            }
+
+            class Kontaktuppgift {
+              typ
+              namn
+              e-postadress
+            }
+
+        </div>
+    </section>
 </main>
 </body>
 

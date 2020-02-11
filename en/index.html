@@ -8,7 +8,10 @@
     <title>Swedish adoption of DCAT-AP</title>
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/default.min.css">
+    <link rel="stylesheet" type="text/css" href="../libs/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+    <script src="https://unpkg.com/mermaid@8.4.6/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true});</script>
 </head>
 <body class="h-entry">
 <div class="head">
@@ -43,7 +46,71 @@
 </div>
 <nav id="toc"></nav>
 <main>
-    <section>An introduction.
+    <section>
+        <p>DCAT-AP-SE is a metadata specification introduced for the purpose of describing datasets. More specifically, DCAT-AP-SE is a Swedish adaption (a profile) of the European metadata specification DCAT-AP. DCAT-AP in turn, is an adaption (profile) of the W3C recommendation DCAT.</p>
+        <p>The diagram below shows only the primary classes, their relationships and their mandatory and recommended properties. Note that for readability, classes and properties are introduced using friendly labels in both headings and the diagram below. The actual metadata expressions, i.e. the full URIs of classes and properties, are listed in the details under each respective heading.
+        </p>
+        <div class="mermaid">
+            classDiagram
+
+            Catalog --> Dataset : dataset
+            Catalog --> Agent : publisher
+            Dataset --> Distribution : distribution
+            Dataset --> Agent : publisher
+            Dataset --> Contact_point : contactpoint
+            Distribution --> Data_service : access service
+            class Catalog {
+              title
+              description
+              licens
+              release date
+              language
+              date modified
+              homepage
+              theme taxonomy
+            }
+
+            class Dataset {
+              title
+              description
+              contact point
+              keyword
+              theme
+              time period
+              release date
+              access rights
+              geographical area
+            }
+
+
+            class Distribution {
+              web address for access
+              description
+              mediatype
+              availability
+              licens
+            }
+
+            class Data_service {
+              title
+              endpoint URL
+              endpoint description
+              licens
+              access rights
+            }
+
+            class Agent {
+              name
+              type
+            }
+
+            class Contact_point {
+              kind
+              formatted name
+              email
+            }
+
+        </div>
     </section>
 </main>
 </body>

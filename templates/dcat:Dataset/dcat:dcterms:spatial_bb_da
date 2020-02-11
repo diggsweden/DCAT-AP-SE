@@ -41,7 +41,7 @@
       "property": "dcat:bbox",
       "label": {
         "en": "Boundingbox",
-        "sv": "Geografisk omskrivande rektangel"
+        "sv": "Omskrivande rektangel"
       }
     },
     {
