@@ -11,7 +11,7 @@ DCAT-AP-SE är en metadataspecifikation som möjliggör en enhetlig beskrivning 
 - [Vanliga frågor](docs/faq.md) - här samlar vi frågor kring specifikationen, skördning och kopplingen till portalen
 
 
-##Läs mer (utveckare / metadataexperter)**
+## Läs mer (utveckare / metadataexperter)
 
 - [Skördningsspecifikation](docs/harvesting.md) - instruktioner för hur man blir skördad till [Sveriges dataportal](https://oppnadata.se)
 - [Interoperabilitet, standarder och profiler](docs/standards.md) - likheter och skillnader till DCAT-AP, BREG, DCAT etc.
