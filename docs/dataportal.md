@@ -25,4 +25,4 @@ På [registrera.oppnadata.se](https://registrera.oppnadata.se) finns en verktygs
 ### Testa att skörda
 För att tillåta testskördningar finns en sandbox uppsatt med både en registrera och en dataportal.
 
-Dvs. på [registrera-sandbox.dataporta.se](https://registrera-sandbox.dataporta.se) finns det möjlighet att lägga upp en test-organisation och få den skördad med samma infrastruktur som skördar till den skarpa skördningen. Resultatet blir sen synligt på [www-sandbox.dataporta.se](https://www-sandbox.dataporta.se).
+Dvs. på [registrera.sandbox.dataportal.se](https://registrera.sandbox.dataportal.se) finns det möjlighet att lägga upp en test-organisation och få den skördad med samma infrastruktur som skördar till den skarpa skördningen. Resultatet blir sen synligt på [www.sandbox.dataportal.se](https://www.sandbox.dataportal.se).
