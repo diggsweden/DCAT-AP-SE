@@ -3,7 +3,7 @@ layout: main
 ---
 
 # DCAT-AP-SE
-DCAT-AP-SE är en metadataspecifikation som möjliggör en enhetlig beskrivning av datamängder för att förenkla insamling, sökning och presentation på den Svenska dataportalen.
+DCAT-AP-SE är en metadataspecifikation som möjliggör en enhetlig beskrivning av datamängder för att förenkla insamling, sökning och presentation på Sveriges dataportal.
 
 - [Introduktion](docs/introduction.md) - bakgrund, syfte samt relevanta regleringar
 - [Metadataspecifikation](sv) - information om det exakta metadatauttrycket, finns också på [engelska](en).
