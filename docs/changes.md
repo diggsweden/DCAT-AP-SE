@@ -56,3 +56,11 @@ Nedan följer i stora drag de ändringar som gjorts i DCAT-AP-2.0.0 och också i
 * Möjligt att peka ut aktörer i olika roller, tidigare fanns bara det som nu kallas utgivare (dcterms:publisher). Nu finns även producent (dcterms:creator) och en mängd andra roller via prov:qualifiedAttribution med en roll angiven (delmängd av Inspire som vi föreslagit i den svenska profilen).
 * Tillgänglighet för en datamängd kan anges (dcat:availability).
 * Uttrycket för tidsperiod använder nu dcat:startDate och dcat:endDate istället för schema:startDate och schema:endDate.
+
+## Ej bakåtkompatibla ändringar
+Majoriteten av ändringarna som gjorts mellan versionerna innefattar ändring i kardinalitet eller tillägg av egenskaper och klasser. Det innebär att det endast är ett fåtal platser som det kommer bli problem när man uppgraderar.
+
+1. Fält som blivit obligatoriska, dcterms:publisher på datamängdsnivån och dcterms:license på katalognivån.
+2. Egenskaper som ändrats, endast schema:startDate och schema:endDate som bytts ut mot dcat:startDate och dcat:endDate respektive.
+
+Dock, bara för att det är få "breaking changes" är det viktigt att notera att det finns en hel del nya möjligheter som man bör dra nytta av. Att dra nytta av dessa nya möjligheter kräver en större insats.
