@@ -8,7 +8,7 @@
   },
   "description": {
     "en": "This property contains a description of the services available via the end-points, including their operations, parameters etc. The property gives specific details of the actual endpoint instances, while dct:conformsTo is used to indicate the general standard or specification that the endpoints implement.",
-    "sv": "Beskriver tjänstens åtkomstadresser inklusive de operationer och parametrar som stöds. Beskrivningen ger specifika detaljer om de faktiska åtkomstadresserna medans egenskapen dct:conformsTo används för att beskriva den generella standard eller specicikation som implementeras av tjänsten."
+    "sv": "Beskriver tjänstens åtkomstadresser inklusive de operationer och parametrar som stöds. Beskrivningen ger specifika detaljer om de faktiska åtkomstadresserna medans egenskapen dct:conformsTo används för att beskriva den generella standard eller specifikation som implementeras av tjänsten. För en geografisk tjänst (WMS eller WFS) pekar man med fördel på getCapabilities anropet, för traditionella web services pekar man på en WDSL fil medans för REST tjänster pekar man på en beskrivning uttryckt enligt Open API specifikationen eller liknande."
   },
   "cardinality": {
     "pref": 1

@@ -12,6 +12,8 @@
     "dcat:dcterms:description_ds",
     "dcat:endpointURL",
     "dcat:endpointDescription",
+    "dcat:dcterms:type_ds",
+    "dcat:dcterms:conformsTo_ds",
     "dcat:servesDataset",
     "dcat:dcterms:license_ds",
     "dcat:dcterms:accessRights"

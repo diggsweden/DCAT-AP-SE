@@ -1170,6 +1170,10 @@
       "type": "choice",
       "automatic": true,
       "nodetype": "URI",
+      "cardinality": {
+        "min": 0,
+        "pref": 1
+      },
       "id": "dcat:dcterms:spatial_ca"
     },
     {
@@ -1329,6 +1333,8 @@
         "dcat:dcterms:description_ds",
         "dcat:endpointURL",
         "dcat:endpointDescription",
+        "dcat:dcterms:type_ds",
+        "dcat:dcterms:conformsTo_ds",
         "dcat:servesDataset",
         "dcat:dcterms:license_ds",
         "dcat:dcterms:accessRights"
@@ -1401,12 +1407,167 @@
       },
       "description": {
         "en": "This property contains a description of the services available via the end-points, including their operations, parameters etc. The property gives specific details of the actual endpoint instances, while dct:conformsTo is used to indicate the general standard or specification that the endpoints implement.",
-        "sv": "Beskriver tjänstens åtkomstadresser inklusive de operationer och parametrar som stöds. Beskrivningen ger specifika detaljer om de faktiska åtkomstadresserna medans egenskapen dct:conformsTo används för att beskriva den generella standard eller specicikation som implementeras av tjänsten."
+        "sv": "Beskriver tjänstens åtkomstadresser inklusive de operationer och parametrar som stöds. Beskrivningen ger specifika detaljer om de faktiska åtkomstadresserna medans egenskapen dct:conformsTo används för att beskriva den generella standard eller specifikation som implementeras av tjänsten. För en geografisk tjänst (WMS eller WFS) pekar man med fördel på getCapabilities anropet, för traditionella web services pekar man på en WDSL fil medans för REST tjänster pekar man på en beskrivning uttryckt enligt Open API specifikationen eller liknande."
       },
       "cardinality": {
         "pref": 1
       },
       "id": "dcat:endpointDescription"
+    },
+    {
+      "type": "choice",
+      "nodetype": "URI",
+      "property": "dcterms:type",
+      "label": {
+        "en": "Service type",
+        "sv": "Tjänstetyp"
+      },
+      "description": {
+        "en": "Which type of service it is, like a geographic service, SOAP, REST or query oriented like SPARQL or GraphQL.",
+        "sv": "Vilken typ av tjänst det är, t.ex. en geografisk tjänst, SOAP, REST eller frågespråk som SPARQL eller GraphQL."
+      },
+      "choices": [
+        {
+          "value": "http://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceType/discovery",
+          "label": {
+            "en": "Spatial Discovery Service",
+            "sv": "Geografisk söktjänst"
+          },
+          "description": {
+            "en": "Services making it possible to search for spatial data sets and services on the basis of the content of the corresponding metadata and to display the content of the metadata.",
+            "sv": "Tjänst som gör det möjligt att söka efter rumsliga datamängder och datatjänster med utgångspunkt i innehållet i tillhörande metadata, samt att visa metadatas innehåll."
+          }
+        },
+        {
+          "value": "http://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceType/download",
+          "label": {
+            "en": "Spatial Download Service",
+            "sv": "Geografisk nedladdningstjänst"
+          },
+          "description": {
+            "en": "Service that enables copies of spatial data sets, or parts of such sets, to be downloaded and, where practicable, accessed directly.",
+            "sv": "Tjänst som gör det möjligt att ladda ned kopior av rumsliga datamängder eller delar av sådana och, i de fall det är möjligt, få direkt åtkomst."
+          }
+        },
+        {
+          "value": "http://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceType/view",
+          "label": {
+            "en": "Spatial View Service",
+            "sv": "Geografisk visningstjänst"
+          },
+          "description": {
+            "en": "Service that makes it possible, as a minimum, to display, navigate, zoom in and out, pan or overlay viewable spatial data sets and to display legend information and any relevant content of metadata.",
+            "sv": "Tjänst som gör det möjligt att, åtminstone, visa, navigera, zooma in och ut i, panorera och överlagra visningsbara rumsliga datamängder samt att visa förklarande information och relevant innehåll i metadata."
+          }
+        },
+        {
+          "value": "http://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceType/invoke",
+          "label": {
+            "en": "Invoke Spatial Data Service",
+            "sv": "Tjänst för förbindelse med geografiska datatjänster"
+          },
+          "description": {
+            "en": "Service that allows defining both the data inputs and data outputs expected by the spatial service and a workflow or service chain combining multiple services. It also allows defining the external web service interface of the workflow or service chain.",
+            "sv": "Tjänst som gör det möjligt att definiera både indata och utdata som förväntas av den rumsliga tjänsten samt ett arbetsflöde eller en tjänstekedja som kombinerar flera tjänster. Denna tjänst gör det också möjligt att definiera det externa webbtjänstgränssnittet för arbetsflödet eller tjänstekedjan."
+          }
+        },
+        {
+          "value": "http://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceType/transformation",
+          "label": {
+            "en": "Spatial Transformation Service",
+            "sv": "Geografisk omvandlingstjänst"
+          },
+          "description": {
+            "en": "Service that enables spatial data sets to be transformed with a view to achieving interoperability.",
+            "sv": "Tjänst som gör det möjligt att omvandla rumsliga datamängder i syfte att uppnå interoperabilitet."
+          }
+        },
+        {
+          "value": "http://www.wikidata.org/entity/Q61940129",
+          "label": {
+            "en": "GraphQL",
+            "sv": "GraphQL"
+          },
+          "description": {
+            "en": "Graph based data query and manipulation language for APIs",
+            "sv": "Grafbaserat fråge- och manipulaionsspråk för API:er."
+          }
+        },
+        {
+          "value": "http://www.wikidata.org/entity/Q189620",
+          "label": {
+            "en": "SOAP",
+            "sv": "SOAP"
+          },
+          "description": {
+            "en": "SOAP is an XML-based protocol for web services.",
+            "sv": "SOAP är ett XML baserat protokoll för web services."
+          }
+        },
+        {
+          "value": "http://www.wikidata.org/entity/Q1046238",
+          "label": {
+            "en": "XML-RPC",
+            "sv": "XML-RPC"
+          },
+          "description": {
+            "en": "XML-RPC is a remote procedure call (RPC) protocol which uses XML to encode its calls and HTTP as a transport mechanism.",
+            "sv": "XML-RPC är ett RPC protokoll över HTTP som använder XML för att representera sina anrop och svar."
+          }
+        },
+        {
+          "value": "http://www.wikidata.org/entity/Q1164443",
+          "label": {
+            "en": "JSON-RPC",
+            "sv": "JSON-RPC"
+          },
+          "description": {
+            "en": "JSON-RPC is a remote procedure call protocol encoded in JSON.",
+            "sv": "JSON-RPC är ett enkelt RPC protokoll som använder JSON."
+          }
+        },
+        {
+          "value": "http://www.wikidata.org/entity/Q749568",
+          "label": {
+            "en": "REST",
+            "sv": "REST"
+          },
+          "description": {
+            "en": "RESTful services makes use of different URIs and the stateless operations provided in the http protocol, e.g. GET, PUT, POST and DELETE to access and manipulate data.",
+            "sv": "Tjänster baserade på principerna bakom REST använder sig av olika URI:er och de tillståndslösa operationerna i http protokollet, t.ex. GET, PUT, POST och DELETE för att komma åt och manipulera data."
+          }
+        },
+        {
+          "value": "http://www.wikidata.org/entity/Q54871",
+          "label": {
+            "en": "SPARQL",
+            "sv": "SPARQL"
+          },
+          "description": {
+            "en": "SPARQL is a semantic query language for databases - able to retrieve and manipulate data stored in Resource Description Framework (RDF) format.",
+            "sv": "SPARQL är ett semantiskt frågespråk för databaser - används för att komma åt och manipulera data uttryckt i RDF formatet."
+          }
+        }
+      ],
+      "id": "dcat:dcterms:type_ds"
+    },
+    {
+      "property": "dcterms:conformsTo",
+      "label": {
+        "en": "Conforms to",
+        "sv": "Uppfyller"
+      },
+      "description": {
+        "en": "This property refers to an implementing rule or other specification.",
+        "sv": "Egenskapen hänvisar till en tillämpningsföreskrift eller annan specifikation."
+      },
+      "constraints": {
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "dcterms:Standard"
+      },
+      "type": "choice",
+      "automatic": true,
+      "nodetype": "URI",
+      "id": "dcat:dcterms:conformsTo_ds"
     },
     {
       "type": "choice",
@@ -1937,11 +2098,11 @@
       "property": "dcterms:identifier",
       "label": {
         "en": "Identifier",
-        "sv": "Identifierare"
+        "sv": "Identifikator"
       },
       "description": {
         "en": "This property contains the main identifier for the Dataset, e.g. the URI or other unique identifier in the context of the Catalogue.",
-        "sv": "Datamängdens huvudidentifierare, t.ex. en URI eller annan unik identifierare i katalogens sammanhang."
+        "sv": "Datamängdens huvudsakliga identifikator, t.ex. en URI eller annan unik identifierare i katalogens sammanhang."
       },
       "type": "text",
       "nodetype": "ONLY_LITERAL",
@@ -1957,11 +2118,11 @@
       "property": "http://www.w3.org/ns/adms#identifier",
       "label": {
         "en": "Other identifier",
-        "sv": "Övrig identifierare"
+        "sv": "Övrig identifikator"
       },
       "description": {
         "en": "This property refers to a secondary identifier of the Dataset, such as MAST/ADS 48, DataCite 49 , DOI 50 , EZID 51 or W3ID 52.",
-        "sv": "Egenskapen avser en sekundär identifierare för datamängden"
+        "sv": "Egenskapen avser en sekundär identifikator för datamängden"
       },
       "id": "dcat:adms:identifier_da"
     },
@@ -2881,7 +3042,7 @@
       },
       "description": {
         "en": "This property contains a statement about the lineage of a Dataset.",
-        "sv": "Egenskapen innehåller ett uttalande om härstamningen av en datamängd."
+        "sv": "Egenskapen uttrycker datamängdens härkomst inkluderande ursprung, ägar- och annan historia. Detta kallas också för proveniens."
       },
       "constraints": {
         "rdf:type": "dcterms:ProvenanceStatement"

@@ -4,10 +4,10 @@
   "property": "http://www.w3.org/ns/adms#identifier",
   "label": {
     "en": "Other identifier",
-    "sv": "Övrig identifierare"
+    "sv": "Övrig identifikator"
   },
   "description": {
     "en": "This property refers to a secondary identifier of the Dataset, such as MAST/ADS 48, DataCite 49 , DOI 50 , EZID 51 or W3ID 52.",
-    "sv": "Egenskapen avser en sekundär identifierare för datamängden"
+    "sv": "Egenskapen avser en sekundär identifikator för datamängden"
   }
 }

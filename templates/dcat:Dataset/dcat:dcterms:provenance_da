@@ -8,7 +8,7 @@
   },
   "description": {
     "en": "This property contains a statement about the lineage of a Dataset.",
-    "sv": "Egenskapen innehåller ett uttalande om härstamningen av en datamängd."
+    "sv": "Egenskapen uttrycker datamängdens härkomst inkluderande ursprung, ägar- och annan historia. Detta kallas också för proveniens."
   },
   "constraints": {
     "rdf:type": "dcterms:ProvenanceStatement"

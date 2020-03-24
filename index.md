@@ -17,3 +17,4 @@ DCAT-AP-SE är en metadataspecifikation som möjliggör en enhetlig beskrivning 
 - [Metadata på dataportalen](docs/dataportal.md) - hur syns metadata på Sveriges dataportal och hur kan man testa att det fungerar innan man publicerar på riktigt
 - [Interoperabilitet, standarder och profiler](docs/standards.md) - likheter och skillnader till DCAT-AP, BREG, DCAT etc.
 - [Exempel](docs/examples.md) - exempel som visar obligatorisk och rekommenderad metadata uttryckt i Turtle och RDF/XML
+- [Avvikelser och ändringslogg](docs/changes.md) - vad som skiljer sig i den svenska profilen visavi DCAT-AP och vad som ändrats sedan förra versionen.
