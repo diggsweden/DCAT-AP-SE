@@ -85,3 +85,20 @@ Det är rekommenderat att ange ett eller flera teman för varje datamängd. Dess
 Tyvärr räcker dessa 13 teman inte särskilt långt för att kategorisera datamängder, t.ex. det är helt klart att det finns många olika subkategorier inom trafik eller miljö som skulle kunna användas för att filtrera fram liknande datamängder. För detta syfte kan man komplettera tema med nyckelord. Nyckelord bör anges i singular, med små bokstäver och varje nyckelord bör bestå av ett eller om nödvändigt ett fåtal ord. Om det inte går att få in nyckelordet på ett fåtal ord är det sannolikt att du bör uttrycka det som en beskrivning istället.
 
 Om man har nyckelord som motsvarar "ekonomi" och "faktura" ska de uttryckas som två separata literaler i RDF, inte som ett nyckelord med komma imellan. Ett nyckelord kan upprepas på flera olika språk, följaktligen är det alltid viktigt att ange språk per nyckelord. Om du har möjlighet så återanvänd gärna nyckelord mellan datamängder. T.ex. kan du se vilka nyckelord som redan används på datamängder genom att söka på vår nationella dataportal. 
+
+## 11. Licenser
+
+Det är rekommenderat att ange en licens per distribution. Att man inte anger det på datamängdsnivån har att göra med att olika licenser kan ha olika licenser, t.ex. olika upplösningar i en karttjänst.
+
+När man anger en licens måste man peka ut en webbadress (URI) där licensen beskrivs. Då det finns väldigt många licenser kan vi inte tillhandahålla en komplett lista med alla möjliga licenser. Däremot har vi som en del av specifikationen listat de [vanligaste licenserna från Creative Commons](https://diggsweden.github.io/DCAT-AP-SE/sv/#dcat_Distribution-dcterms_license) för att tillhandahålla viss vägledning.
+
+I vissa situationer kan en licens ha flera olika webbadresser, t.ex. CC BY 4.0 (CC är en förkortning av Creative Commons) kan läsas på svenska här:
+
+    https://creativecommons.org/licenses/by/4.0/deed.sv
+    
+Men, den korrekta webbadressen som man ska använda är den utan språk angivet, dvs denna:
+
+     https://creativecommons.org/licenses/by/4.0/
+     
+Det finns två huvudsakliga skäl till detta. Det första är att man vill kunna visa filtrera och visa upp ett kortare namn för licensen på olika dataportaler och då är det svårt att hålla koll på olika adresser som ska behandlas likvärdigt. Även om det skulle vara hanterligt på den Svenska nivån blir det ohanterligt på den Europeiska nivån dit all information skördas.
+Det andra skälet är mer semantiskt, det ska vara tydligt CC-BY 4.0 är samma license i Sverige som i Tyskland. Hela syftet med att etablera välkända licenser som vi återanvänder är att minska behovet av att läsa långa licenstexter då vi redan har gjort det en gång och vet vad de innebär. Att behöva läsa CC-BY 4.0 på tyska bara för att försäkra sig om att det är samma villkor som på svenska skapar både merarbete och barriärer.
