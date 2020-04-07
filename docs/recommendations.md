@@ -94,11 +94,11 @@ När man anger en licens måste man peka ut en webbadress (URI) där licensen be
 
 I vissa situationer kan en licens ha flera olika webbadresser, t.ex. CC BY 4.0 (CC är en förkortning av Creative Commons) kan läsas på svenska här:
 
-    https://creativecommons.org/licenses/by/4.0/deed.sv
+    https://creativecommons.org/licenses/by/4.0/deed.sv   <-- FEL
     
 Men, den korrekta webbadressen som man ska använda är den utan språk angivet, dvs denna:
 
-     https://creativecommons.org/licenses/by/4.0/
+     https://creativecommons.org/licenses/by/4.0/   <-- RÄTT
      
 Det finns två huvudsakliga skäl till detta. Det första är att man vill kunna visa filtrera och visa upp ett kortare namn för licensen på olika dataportaler och då är det svårt att hålla koll på olika adresser som ska behandlas likvärdigt. Även om det skulle vara hanterligt på den Svenska nivån blir det ohanterligt på den Europeiska nivån dit all information skördas.
 Det andra skälet är mer semantiskt, det ska vara tydligt CC-BY 4.0 är samma license i Sverige som i Tyskland. Hela syftet med att etablera välkända licenser som vi återanvänder är att minska behovet av att läsa långa licenstexter då vi redan har gjort det en gång och vet vad de innebär. Att behöva läsa CC-BY 4.0 på tyska bara för att försäkra sig om att det är samma villkor som på svenska skapar både merarbete och barriärer.
