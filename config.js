@@ -52,7 +52,7 @@ var spec2recs = {
     "dcat_Dataset-dcat_theme",
     "dcat_Dataset-dcat_keyword"
   ],
-  "10-licenser" : [
+  "11-licenser" : [
     "dcat_Distribution-dcterms_license",
     "dcat_Distribution-dcterms_license-2"
   ]
