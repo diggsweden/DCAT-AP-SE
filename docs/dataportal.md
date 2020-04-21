@@ -23,6 +23,6 @@ De viktigaste fälten är de som är markerade som obligatoriska eller rekommend
 På [registrera.oppnadata.se](https://registrera.oppnadata.se) finns en verktygslåda där man kan ladda upp sin metadata och validera den mot DCAT-AP-SE. Man kan även konvertera till nyare versioner av DCAT-AP-SE, utforska och slå samman två eller flera kataloger till en katalog.
 
 ### Testa att skörda
-För att tillåta testskördningar finns en sandbox uppsatt med både en registrera och en dataportal.
+För att tillåta testskördningar finns en så kallad sandlåda (sandbox på engelska) uppsatt med både en registrera och en dataportal.
 
 Dvs. på [registrera.sandbox.dataportal.se](https://registrera.sandbox.dataportal.se) finns det möjlighet att lägga upp en test-organisation och få den skördad med samma infrastruktur som skördar till den skarpa skördningen. Resultatet blir sen synligt på [www.sandbox.dataportal.se](https://www.sandbox.dataportal.se).
