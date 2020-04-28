@@ -6,6 +6,10 @@
     "en": "Common mediatypes",
     "sv": "Vanliga mediatyper"
   },
+  "description": {
+    "en": "A selection of common mediatypes.",
+    "sv": "A samling vanliga mediatyper."
+  },
   "choices": [
     {
       "value": "text/csv",
@@ -19,7 +23,8 @@
     {
       "value": "text/csv+zip",
       "label": {
-        "en": "CSV (.csv) in a zip"
+        "en": "CSV (.csv) in a zip",
+        "sv": "CSV (.csv) i en zip"
       },
       "description": {
         "en": "A zip file containing csv files."
@@ -37,7 +42,8 @@
     {
       "value": "application/xml+zip",
       "label": {
-        "en": "XML (.xml) in a zip"
+        "en": "XML (.xml) in a zip",
+        "sv": "XML (.xml) i en zip"
       },
       "description": {
         "en": "A zip file containing xml files."
@@ -55,7 +61,8 @@
     {
       "value": "application/json+zip",
       "label": {
-        "en": "JSON (.json) in a zip"
+        "en": "JSON (.json) in a zip",
+        "sv": "JSON (.json) i en zip"
       },
       "description": {
         "en": "A zip file containing xml files."
@@ -107,7 +114,8 @@
     {
       "value": "application/n-triples",
       "label": {
-        "en": "RDF as N-Triples (.n3)"
+        "en": "RDF as N-Triples (.n3)",
+        "sv": "RDF som N-Triples (.n3)"
       },
       "description": {
         "en": "A line-based syntax for an RDF graph."
@@ -155,7 +163,8 @@
         "en": "Turtle is a syntax for RDF that allows an RDF graph to be completely written in a compact and natural text form, with abbreviations for common usage patterns and datatypes. "
       },
       "label": {
-        "en": "RDF as Turtle (.ttl)"
+        "en": "RDF as Turtle (.ttl)",
+        "sv": "RDF som Turtle (.ttl)"
       }
     }
   ],
@@ -163,9 +172,6 @@
     "min": 0,
     "pref": 1,
     "max": 1
-  },
-  "description": {
-    "en": "A selection of common mediatypes according to the list suggested by the DCAT-AP recommendation."
   },
   "styles": [
     "strictmatch"

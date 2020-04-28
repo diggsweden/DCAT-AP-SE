@@ -5,7 +5,8 @@
     "sv": "Postkod"
   },
   "description": {
-    "en": "The postal code associated with the address of the object"
+    "en": "The postal code associated with the address.",
+    "sv": "Postkoden för adressen."
   },
   "type": "text",
   "nodetype": "LITERAL",

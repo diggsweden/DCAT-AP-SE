@@ -5,7 +5,8 @@
     "sv": "E-postadress"
   },
   "description": {
-    "en": "To specify the electronic mail address for communication with the object"
+    "en": "An e-mail address used by a person or a specific administrative function within an organization.",
+    "sv": "En mailadress som används av en person eller en funktionsadress inom en organisation."
   },
   "constraints": {
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "http://www.w3.org/2006/vcard/ns#Email"

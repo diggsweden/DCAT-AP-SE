@@ -7,8 +7,8 @@
     "sv": "Åtkomstadress"
   },
   "description": {
-    "en": "The root location or primary endpoint of the service (a URL).",
-    "sv": "Basadress eller primär startpunkt för tjänsten (en URL)."
+    "en": "The root location or primary endpoint of the data service (a URL).",
+    "sv": "Basadress eller primär startpunkt för datatjänsten (en URL)."
   },
   "cardinality": {
     "min": 1

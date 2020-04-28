@@ -5,7 +5,8 @@
     "sv": "Namn"
   },
   "description": {
-    "en": "The formatted text corresponding to the name of the object"
+    "en": "The text that corresponds to the name of the contactpoint.",
+    "sv": "En text som motsvarar namnet på kontaktuppgiften."
   },
   "type": "text",
   "nodetype": "LITERAL",

@@ -1,0 +1,8 @@
+{
+  "type": "choice",
+  "extends": "dcat:theme",
+  "description": {
+    "en": "This property refers to a category of the Dataservice. A Dataservice may be associated with multiple themes.",
+    "sv": "En kategori för datatjänsten. En datatjänst kan associeras med flera teman."
+  }
+}

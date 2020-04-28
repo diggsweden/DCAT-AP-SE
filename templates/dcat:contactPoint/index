@@ -6,8 +6,8 @@
     "sv": "Kontaktuppgift"
   },
   "description": {
-    "en": "This property contains contact information that can be used for flagging errors in the Dataset or sending comments",
-    "sv": "Egenskapen innehåller kontaktuppgifter som kan användas för att flagga fel i datamängden eller för att skicka kommentarer"
+    "en": "This property contains contact information that can be used for flagging errors in the Dataset / Data service or sending comments",
+    "sv": "Egenskapen innehåller kontaktuppgifter som kan användas för att flagga fel i datamängden / datatjänsten eller för att skicka kommentarer"
   },
   "items": [
     "vc:kindIndOrOrg",

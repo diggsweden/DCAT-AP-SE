@@ -1,0 +1,17 @@
+{
+  "type": "choice",
+  "nodetype": "URI",
+  "label": {
+    "en": "Documentation",
+    "sv": "Dokumentation"
+  },
+  "property": "foaf:page",
+  "pattern": "https?://.+",
+  "description": {
+    "en": "This property refers to a page or document about the data service.",
+    "sv": "En sida eller ett dokument för datatjänsten."
+  },
+  "constraints": {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "foaf:Document"
+  }
+}

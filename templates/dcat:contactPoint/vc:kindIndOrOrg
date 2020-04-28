@@ -7,7 +7,8 @@
     "sv": "Typ"
   },
   "description": {
-    "en": "This property refers to the explicit vCard-Type („Individual“ or „Organisation“) of a contact point."
+    "en": "This property tells wether the contect point corresponds to an Individual or an Organisation.",
+    "sv": "Egenskapen anger om kontaktuppgiften motsvar en individ eller organisation."
   },
   "choices": [
     {
@@ -17,7 +18,8 @@
         "sv": "Individ"
       },
       "description": {
-        "en": "An object representing a single person or entity."
+        "en": "The contectpoint corresponds to an individual.",
+        "sv": "Kontaktuppgiften motsvarar en individ."
       }
     },
     {
@@ -27,7 +29,8 @@
         "sv": "Organisation"
       },
       "description": {
-        "en": "An object representing an organization.  An organization is a single entity, and might represent a business or government, a department or division within a business or government, a club, an association, or the like."
+        "en": "The contactpoint corresponds to an organization. An organization is a single entity, and might represent a business or government, a department or division within a business or government, a club, an association, or the like.",
+        "sv": "Kontaktuppgiften motsvarar en organisation. En organisation kan motsvara ett företag, en myndighet, en förening osv."
       }
     }
   ],

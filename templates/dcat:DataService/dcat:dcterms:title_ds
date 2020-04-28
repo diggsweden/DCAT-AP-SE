@@ -5,7 +5,7 @@
     "en": "Title"
   },
   "description": {
-    "en": "This property contains a name given to the Service. This property can be repeated for parallel language versions of the name.",
+    "en": "This property contains a name given to the data service. This property can be repeated for parallel language versions of the name.",
     "sv": "Datatjänstens namn. Denna egenskap kan upprepas för parallella språkversioner av namnet."
   },
   "type": "text",

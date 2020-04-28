@@ -14,8 +14,8 @@
         "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "dcterms:LicenseDocument"
       },
       "label": {
-        "en": "Other",
-        "sv": "Övriga"
+        "en": "License - other",
+        "sv": "Licens - övriga"
       },
       "cardinality": {
         "min": 0,
@@ -31,7 +31,7 @@
     "max": 1
   },
   "description": {
-    "en": "This property refers to the licence under which the service can be used or reused.",
+    "en": "This property refers to the licence under which the data service can be used or reused.",
     "sv": "Den här egenskapen hänvisar till licensen enligt vilken datatjänsten kan användas eller återanvändas."
   }
 }

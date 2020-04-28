@@ -16,7 +16,8 @@
         "en": "Title"
       },
       "description": {
-        "en": "A name given to the resource."
+        "en": "A name given to the resource.",
+        "sv": "Ett namn för dokumentet."
       },
       "type": "text",
       "nodetype": "LANGUAGE_LITERAL",
@@ -31,7 +32,8 @@
         "en": "Description"
       },
       "description": {
-        "en": "An account of the resource."
+        "en": "An account of the document.",
+        "sv": "En beskrivning av dokumentet."
       },
       "type": "text",
       "nodetype": "LANGUAGE_LITERAL",

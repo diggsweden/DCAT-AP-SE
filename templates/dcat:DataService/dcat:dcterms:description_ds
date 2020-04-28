@@ -5,7 +5,7 @@
     "en": "Description"
   },
   "description": {
-    "en": "This property contains a free-text account of the Data Service. This property can be repeated for parallel language versions of the description.",
+    "en": "This property contains a free-text account of the data service. This property can be repeated for parallel language versions of the description.",
     "sv": "Datatjänstens beskrivning. Denna egenskap kan upprepas för parallella språkversioner av beskrivningen."
   },
   "type": "text",

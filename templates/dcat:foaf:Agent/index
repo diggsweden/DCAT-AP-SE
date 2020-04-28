@@ -10,7 +10,8 @@
         "sv": "Namn"
       },
       "description": {
-        "en": "A name for some thing."
+        "en": "A name for a person or organization.",
+        "en": "Ett namn på en person eller organisation."
       },
       "type": "text",
       "nodetype": "LANGUAGE_LITERAL",
@@ -27,7 +28,8 @@
         "sv": "Hemsida"
       },
       "description": {
-        "en": "A homepage for some thing."
+        "en": "A homepage for a person or organization.",
+        "sv": "En hemsida för en person eller organisation."
       },
       "constraints": {
         "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "http://xmlns.com/foaf/0.1/Document"
@@ -50,7 +52,8 @@
         "sv": "E-postadress"
       },
       "description": {
-        "en": "A personal mailbox, ie. an Internet mailbox associated with exactly one owner, the first owner of this mailbox. This is a 'static inverse functional property', in that  there is (across time and change) at most one individual that ever has any particular value for foaf:mbox."
+        "en": "An e-mail address used by a person or a specific administrative function within an organization.",
+        "sv": "En mailadress som används av en person eller en funktionsadress inom en organisation."
       },
       "type": "text",
       "nodetype": "URI",

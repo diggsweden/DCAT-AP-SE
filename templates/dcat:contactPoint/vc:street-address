@@ -5,7 +5,8 @@
     "sv": "Gatuadress"
   },
   "description": {
-    "en": "The street address associated with the address of the object."
+    "en": "The street address associated with the address.",
+    "sv": "Gatuadressen för adressen."
   },
   "type": "text",
   "nodetype": "LITERAL",

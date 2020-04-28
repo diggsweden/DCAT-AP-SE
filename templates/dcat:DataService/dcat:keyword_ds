@@ -1,0 +1,20 @@
+{
+  "type": "text",
+  "nodetype": "LANGUAGE_LITERAL",
+  "label": {
+    "en": "Keyword",
+    "sv": "Nyckelord"
+  },
+  "property": "dcat:keyword",
+  "cardinality": {
+    "min": 0,
+    "pref": 1
+  },
+  "description": {
+    "en": "This property contains a keyword or tag describing the Dataservice",
+    "sv": "Egenskapen innehåller ett nyckelord som beskriver datatjänsten"
+  },
+  "styles": [
+    "viewAllTranslations"
+  ]
+}

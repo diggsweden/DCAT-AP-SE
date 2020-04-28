@@ -10,10 +10,10 @@
   "items": [
     "dcat:dcterms:title_da",
     "dcat:dcterms:description_da",
-    "dcat:foaf:Agent_da",
+    "dcat:dcterms:publisher_da",
     "dcat:dcterms:creator_da",
     "dcat:prov:qualifiedAttribution",
-    "dcat:contactPoint-choice_da",
+    "dcat:contactPoint_da",
     "dcat:keyword_da",
     "dcat:theme-da",
     "dcat:dcterms:identifier_da",

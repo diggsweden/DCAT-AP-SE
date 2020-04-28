@@ -49,7 +49,8 @@ Obs 2, om möjligt bör man bara beskriva ett API som en datatjänst en gång oc
 
 **B. Hur man beskriver datatjänster oberoende av datamängder** 
 1. Beskriv ditt API som en datatjänst
-2. Peka ut datatjänsten från katalogen
+2. Fyll i information som behövs för att datatjänsten ska vara lätt att hitta och utvärdera självständigt, t.ex. utgivare, landningssida, dokumentation, tema, nyckelord etc.
+3. Peka ut datatjänsten från katalogen
 
 För scenario B finns inget visningsstöd i den nationella dataportalen.
 
@@ -102,3 +103,4 @@ Men, den korrekta webbadressen som man ska använda är den utan språk angivet,
      
 Det finns två huvudsakliga skäl till detta. Det första är att man vill kunna visa filtrera och visa upp ett kortare namn för licensen på olika dataportaler och då är det svårt att hålla koll på olika adresser som ska behandlas likvärdigt. Även om det skulle vara hanterligt på den Svenska nivån blir det ohanterligt på den Europeiska nivån dit all information skördas.
 Det andra skälet är mer semantiskt, det ska vara tydligt CC-BY 4.0 är samma license i Sverige som i Tyskland. Hela syftet med att etablera välkända licenser som vi återanvänder är att minska behovet av att läsa långa licenstexter då vi redan har gjort det en gång och vet vad de innebär. Att behöva läsa CC-BY 4.0 på tyska bara för att försäkra sig om att det är samma villkor som på svenska skapar både merarbete och barriärer.
+
