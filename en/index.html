@@ -5,37 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700">
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/icon?family=Material+Icons">
-    <title>Swedish adoption of DCAT-AP</title>
+    <title>DCAT-AP-SE version 2.0.0 - DRAFT</title>
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/default.min.css">
     <link rel="stylesheet" type="text/css" href="../libs/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
-    <script src="https://unpkg.com/mermaid@8.4.6/dist/mermaid.min.js"></script>
-    <script>mermaid.initialize({startOnLoad:true});</script>
 </head>
 <body class="h-entry">
 <div class="head">
-    <h1 class="title">Swedish adoption of DCAT-AP</h1>
-    <h2 class="subtitle">Clarifications, explanations of the fields and recommendations, 18:th of November 2019</h2>
+    <h1 class="title">DCAT-AP-SE version 2.0.0 - <strong style="color:red">DRAFT</strong></h1>
+    <h2 class="subtitle">Clarifications, translations and explanations of DCAT-AP for Sweden.</h2>
     <div>
         <dl>
+            <dt>Publication date:</dt>
+            <dd>29 April 2020</dd>
             <dt>Latest version:</dt>
             <dd><a class="u-url" href="https://diggsweden.github.io/DCAT-AP-SE/en/">https://diggsweden.github.io/DCAT-AP-SE/en/</a></dd>
             <dt>This version:</dt>
-            <dd><a class="u-url" href="https://diggsweden.github.io/DCAT-AP-SE/utkast3/en">https://diggsweden.github.io/DCAT-AP-SE/utkast3/en/</a></dd>
-            <dt>Previous version:</dt>
-            <dd><a class="u-url" href="https://diggsweden.github.io/DCAT-AP-SE/utkast2/en">https://diggsweden.github.io/DCAT-AP-SE/utkast2/en/</a></dd>
+            <dd><a class="u-url" href="https://diggsweden.github.io/DCAT-AP-SE/2.0.0/en">https://diggsweden.github.io/DCAT-AP-SE/2.0.0/en/</a></dd>
             <dt>Previous stable version:</dt>
             <dd><a href="https://lankadedata.se/spec/DCAT-AP-SE">https://lankadedata.se/spec/DCAT-AP-SE</a></dd>
-            <dt class="editor">Technical author:</dt>
+            <dt class="editor">Editor:</dt>
             <dd class="editor p-author h-card vcard"><a class="p-name fn u-url url"
                                                         href="mailto:matthias@metasolutions.se">Matthias Palmér</a> - MetaSolutions</dd>
-            <dd class="editor p-author h-card vcard"><a class="p-name fn u-url url"
-                                                        href="mailto:hannes@metasolutions.se">Hannes Ebner</a> - MetaSolutions</dd>
             <dt class="editor">Contributors:</dt>
-            <!--dd class="editor p-author h-card vcard">Ulrika Dommellöf Mattsson - Naturvårdsverket</dd-->
+            <dd class="editor p-author h-card vcard">Caspar Almalander - SKL</dd>
+            <dd class="editor p-author h-card vcard">John Cunningham - Bolagsverket</dd>
+            <dd class="editor p-author h-card vcard">Ulrika Domellöf-Mattsson - Naturvårdsverket</dd>
+            <dd class="editor p-author h-card vcard">Hannes Ebner - MetaSolutions</dd>
+            <dd class="editor p-author h-card vcard">Mattias Ekhem - DIGG</dd>
+            <dd class="editor p-author h-card vcard">Hans Ekstål - Bolagsverket</dd>
+            <dd class="editor p-author h-card vcard">Fredrik Emanuelsson - SCB</dd>
+            <dd class="editor p-author h-card vcard">Björn Hagström - DIGG</dd>
+            <dd class="editor p-author h-card vcard">Kjell Hjorth - Lantmäteriet</dd>
+            <dd class="editor p-author h-card vcard">Lars-Olof Hjärp - Trafikverket</dd>
+            <dd class="editor p-author h-card vcard">Peter Istraelsson - Bolagsverket</dd>
+            <dd class="editor p-author h-card vcard">Joakim Jenhagen - Bolagsverket</dd>
+            <dd class="editor p-author h-card vcard">Catrin Karling - SCB</dd>
+            <dd class="editor p-author h-card vcard">Thomas Kvist - Region Västerbotten</dd>
+            <dd class="editor p-author h-card vcard">Marcus Smith - Riksantikvarieämbetet</dd>
+            <dd class="editor p-author h-card vcard">Kristine Ulander - DIGG</dd>
+            <dd class="editor p-author h-card vcard">Mats Åhlin - SIS</dd>
+            <dd class="editor p-author h-card vcard">Øystein Åsnes - DIFI (Norge)</dd>
+            <dd class="editor p-author h-card vcard">Michael Östling - Metagis</dd>
+            <dt class="editor">Remissvar och återkopplingar:</dt>
+            <dd class="editor p-author h-card vcard">SCB</dd>
+            <dd class="editor p-author h-card vcard">KB</dd>
+            <dd class="editor p-author h-card vcard">Lantmäteriet</dd>
+            <dd class="editor p-author h-card vcard">Trafikverket</dd>
+            <dd class="editor p-author h-card vcard">SUHF:s nationella arbetsgrupp för forskningsdata</dd>
+            <dd class="editor p-author h-card vcard">Samt en del kommentarer på Github och Facebook</dd>
             <dt class="editor">On behalf of:</dt>
-            <dd class="editor p-author h-card vcard">Kristine Ulander - Myndigheten för digital förvaltning</dd-->
+            <dd class="editor p-author h-card vcard"><a href="https://www.digg.se/">Swedish Agency for Digital Government</a></dd>
             <dt>Licens:</dt>
             <dd><a href="http://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a></dd>
         </dl>
@@ -115,6 +136,8 @@
     </section>
 </main>
 </body>
+    <script src="https://unpkg.com/mermaid@8.4.6/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true});</script>
     <script src="https://lankadedata.se/spec/assets/fixup.js"></script>
     <script src="../libs/bmd.rdforms.js"></script>
     <script src="../libs/rdfjson.js"></script>
@@ -124,9 +147,4 @@
     <script src="../libs/recommendations.js"></script>
     <script src="../config.js"></script>
     <link rel="stylesheet" href="https://lankadedata.se/spec/assets/style.css">
-    <style>
-        hr {
-            height: 0px;
-        }
-    </style>
 </html>
