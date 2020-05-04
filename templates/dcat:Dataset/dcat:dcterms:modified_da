@@ -11,9 +11,9 @@
   "type": "text",
   "nodetype": "DATATYPE_LITERAL",
   "datatype": [
-    "http://www.w3.org/2001/XMLSchema#date",
-    "http://www.w3.org/2001/XMLSchema#dateTime",
-    "http://www.w3.org/2001/XMLSchema#gYear"
+    "https://www.w3.org/2001/XMLSchema#date",
+    "https://www.w3.org/2001/XMLSchema#dateTime",
+    "https://www.w3.org/2001/XMLSchema#gYear"
   ],
   "cardinality": {
     "min": 0,
