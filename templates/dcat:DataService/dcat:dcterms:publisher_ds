@@ -3,10 +3,10 @@
   "nodetype": "RESOURCE",
   "property": "dcterms:publisher",
   "constraints": {
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
-      "http://xmlns.com/foaf/0.1/Agent",
-      "http://xmlns.com/foaf/0.1/Person",
-      "http://xmlns.com/foaf/0.1/Organization"
+    "https://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      "https://xmlns.com/foaf/0.1/Agent",
+      "https://xmlns.com/foaf/0.1/Person",
+      "https://xmlns.com/foaf/0.1/Organization"
     ]
   },
   "label": {
@@ -14,10 +14,10 @@
     "sv": "Utgivare"
   },
   "labelProperties": [
-    "http://xmlns.com/foaf/0.1/name",
+    "https://xmlns.com/foaf/0.1/name",
     [
-      "http://xmlns.com/foaf/0.1/givenName",
-      "http://xmlns.com/foaf/0.1/familyName"
+      "https://xmlns.com/foaf/0.1/givenName",
+      "https://xmlns.com/foaf/0.1/familyName"
     ]
   ],
   "description": {
