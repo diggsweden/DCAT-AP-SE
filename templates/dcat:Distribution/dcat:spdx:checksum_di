@@ -48,6 +48,7 @@
           "value": "http://spdx.org/rdf/terms#checksumAlgorithm_sha1",
           "label": {
             "en": "SHA-1"
+            "sv": "SHA-1"
           }
         }
       ],
