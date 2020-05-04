@@ -7,7 +7,7 @@
     "sv": "Tidsperiod"
   },
   "constraints": {
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "http://purl.org/dc/terms/PeriodOfTime"
+    "https://www.w3.org/1999/02/22-rdf-syntax-ns#type": "https://purl.org/dc/terms/PeriodOfTime"
   },
   "cardinality": {
     "min": 0,
@@ -30,9 +30,9 @@
         "sv": "Startdatum för den period då datamängden innehåller data."
       },
       "datatype": [
-        "http://www.w3.org/2001/XMLSchema#date",
-        "http://www.w3.org/2001/XMLSchema#dateTime",
-        "http://www.w3.org/2001/XMLSchema#gYear"
+        "https://www.w3.org/2001/XMLSchema#date",
+        "https://www.w3.org/2001/XMLSchema#dateTime",
+        "https://www.w3.org/2001/XMLSchema#gYear"
       ],
       "cardinality": {
         "min": 0,
@@ -53,9 +53,9 @@
         "sv": "Slutdatum för den period då datamängden innehåller data."
       },
       "datatype": [
-        "http://www.w3.org/2001/XMLSchema#date",
-        "http://www.w3.org/2001/XMLSchema#dateTime",
-        "http://www.w3.org/2001/XMLSchema#gYear"
+        "https://www.w3.org/2001/XMLSchema#date",
+        "https://www.w3.org/2001/XMLSchema#dateTime",
+        "https://www.w3.org/2001/XMLSchema#gYear"
       ],
       "cardinality": {
         "min": 0,
@@ -72,12 +72,13 @@
         "sv": "Start"
       },
       "description": {
-        "en": "Start date of the validity period of a dataset. Deprecated in favour of dcat:startDate."
+        "en": "Start date of the validity period of a dataset. Deprecated in favour of dcat:startDate.",
+        "sv": "Startdatum av datamängdens giltighetsperiod. Övergiven för att istället använda dcat:startDate."
       },
       "datatype": [
-        "http://www.w3.org/2001/XMLSchema#date",
-        "http://www.w3.org/2001/XMLSchema#dateTime",
-        "http://www.w3.org/2001/XMLSchema#gYear"
+        "https://www.w3.org/2001/XMLSchema#date",
+        "https://www.w3.org/2001/XMLSchema#dateTime",
+        "https://www.w3.org/2001/XMLSchema#gYear"
       ],
       "styles": [
         "deprecated"
@@ -92,12 +93,13 @@
         "sv": "Slut"
       },
       "description": {
-        "en": "End date of the validity period of a dataset. Deprecated in favour of dcat:endDate."
+        "en": "End date of the validity period of a dataset. Deprecated in favour of dcat:endDate.",
+        "sv": "Slutdatum av giltighetsperioden av en datamängd. Övergiven för att istället använda dcat:endDate."
       },
       "datatype": [
-        "http://www.w3.org/2001/XMLSchema#date",
-        "http://www.w3.org/2001/XMLSchema#dateTime",
-        "http://www.w3.org/2001/XMLSchema#gYear"
+        "https://www.w3.org/2001/XMLSchema#date",
+        "https://www.w3.org/2001/XMLSchema#dateTime",
+        "https://www.w3.org/2001/XMLSchema#gYear"
       ],
       "styles": [
         "deprecated"
