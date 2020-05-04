@@ -47,7 +47,8 @@
         {
           "value": "http://spdx.org/rdf/terms#checksumAlgorithm_sha1",
           "label": {
-            "en": "SHA-1"
+            "en": "SHA-1",
+            "sv": "SHA-1"
           }
         }
       ],
@@ -58,7 +59,7 @@
       },
       "description": {
         "en": "This property identifies the algorithm used to produce the subject Checksum. Currently, SHA-1 is the only supported algorithm. It is anticipated that other algorithms will be supported at a later time.",
-        "sv": "Algoritmen som används för att generera checksumman."
+        "sv": "Algoritmen som används för att generera checksumman. För närvarande är SHA-1 den enda algoritm som stöds. Det förväntas att andra algoritmer kommer att stödjas vid ett senare tillfälle."
       },
       "cardinality": {
         "min": 1,
