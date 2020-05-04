@@ -12,6 +12,6 @@
     "sv": "En sida eller ett dokument om denna datamängd."
   },
   "constraints": {
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "foaf:Document"
+    "https://www.w3.org/1999/02/22-rdf-syntax-ns#type": "foaf:Document"
   }
 }
