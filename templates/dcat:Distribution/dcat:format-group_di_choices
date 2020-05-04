@@ -10,55 +10,67 @@
     {
       "value": "text/csv",
       "label": {
-        "en": "CSV (.csv)"
+        "en": "CSV (.csv)",
+        "sv": "CSV (.csv)"
       },
       "description": {
-        "en": "CSV is a simple spreadsheet format where rows are separeted by newlines and columns by commas, semicolon or some other special character."
+        "en": "CSV is a simple spreadsheet format where rows are separeted by newlines and columns by commas, semicolon or some other special character.",
+        "sv": "CSV är ett enkelt format för kalkylark där rader är separerade av nylinjer och kolumner av kommatecken, semikolon eller någon annan specialkaraktär."
       }
     },
     {
       "value": "text/csv+zip",
       "label": {
-        "en": "CSV (.csv) in a zip"
+        "en": "CSV (.csv) in a zip",
+        "sv": "CSV (.csv) i en zip"
       },
       "description": {
-        "en": "A zip file containing csv files."
+        "en": "A zip file containing CSV files.",
+        "sv": "En zip-fil som innehåller CSV-filer."
       }
     },
     {
       "value": "application/xml",
       "label": {
-        "en": "XML (.xml)"
+        "en": "XML (.xml)",
+        "sv": "XML (.xml)"
       },
       "description": {
-        "en": "Extensible Markup Language (XML) is a markup language that defines a set of rules for encoding documents in a format that is both human-readable and machine-readable. It is defined in the XML 1.0 Specification produced by the W3C."
+        "en": "Extensible Markup Language (XML) is a markup language that defines a set of rules for encoding documents in a format that is both human-readable and machine-readable. It is defined in the XML 1.0 Specification produced by the W3C.",
+        "sv": "Extensible Markup Language (XML) är ett uppmärkt språk som definierar en grupp av regler för att koda dokument i ett format som är både läsbart för människor och maskinläsbart. Det är definierat i XML 1.0 Specifikationen producerat av W3C."
       }
     },
     {
       "value": "application/xml+zip",
       "label": {
-        "en": "XML (.xml) in a zip"
+        "en": "XML (.xml) in a zip",
+        "sv": "XML (.xml) i en zip"
       },
       "description": {
-        "en": "A zip file containing xml files."
+        "en": "A zip file containing XML files.",
+        "sv": "En zip-fil som innehåller XML-filer."
       }
     },
     {
       "value": "application/json",
       "label": {
-        "en": "JSON (.json)"
+        "en": "JSON (.json)",
+        "sv": "JSON (.json)"
       },
       "description": {
-        "en": "JSON or JavaScript Object Notation, is an open standard format that uses human-readable text to transmit data objects consisting of attribute–value pairs. It is used primarily to transmit data between a server and web application, as an alternative to XML."
+        "en": "JSON or JavaScript Object Notation, is an open standard format that uses human-readable text to transmit data objects consisting of attribute–value pairs. It is used primarily to transmit data between a server and web application, as an alternative to XML.",
+        "sv": "JSON eller JavaScript Object Notation, är en öppen standard-format som använder text läsbar för människor för att överföra dataobjekt består av egenskap-värdepar. Det är använd primärt för att överföra data mellan en server och en webb-applikation, som ett alternativ till XML."
       }
     },
     {
       "value": "application/json+zip",
       "label": {
-        "en": "JSON (.json) in a zip"
+        "en": "JSON (.json) in a zip",
+        "sv": "JSON (.json) i en zip"
       },
       "description": {
-        "en": "A zip file containing xml files."
+        "en": "A zip file containing JSON files.",
+        "sv": "En zip-fil som innehåller JSON-filer."
       }
     },
     {
@@ -67,24 +79,31 @@
         "en": "ZIP (.zip)"
       },
       "description": {
-        "en": ".ZIP is an archive file format that supports lossless data compression."
+        "en": ".ZIP is an archive file format that supports lossless data compression.",
+        "sv": ".ZIP är ett format för filarkiv som stödjer icke-förstörande datakomprimering."
       }
     },
     {
       "value": "text/html",
       "label": {
-        "en": "HTML (.html)"
+        "en": "HTML (.html)",
+        "sv": "HTML (.html)"
       },
       "description": {
-        "en": "HTML or HyperText Markup Language is the standard markup language used to create web pages."
+        "en": "HTML or HyperText Markup Language is the standard markup language used to create web pages.",
+        "sv": "HTML eller HyperText Markup Language är standard för uppmärkt språk använt för att skapa webbsidor."
       }
     },
     {
       "value": "application/vnd.ms-excel",
       "label": {
         "en": "Microsoft Excel (.xls)"
+        "sv": "Microsoft Excel (.xls)"
       },
-      "description": {}
+      "description": {
+        "en": "Microsot Excel (.xls) is a proprietary, non-standardized, spreadsheet file format created by the Microsoft Corporation.",
+        "sv": "Microsoft Excel (.xls) är ett proprietärt, icke-standardiserat filformat för kalkylark skapat av Microsoft Corporation."
+        }
     },
     {
       "value": "application/pdf",
@@ -92,70 +111,85 @@
         "en": "Portable Document Format (PDF) is a file format used to present documents encapsulating a complete description of a fixed-layout flat document, including the text, fonts, graphics, and other information needed to display it."
       },
       "label": {
-        "en": "PDF (.pdf)"
+        "en": "PDF (.pdf)",
+        "sv": "PDF (.pdf)"
       }
     },
     {
       "value": "text/plain",
       "label": {
-        "en": "Text (.txt)"
+        "en": "Text (.txt)",
+        "sv": "Text (.txt)"
       },
       "description": {
-        "en": "Plain text file."
+        "en": "Plain text file.",
+        "sv": "Enkel textfil."
       }
     },
     {
       "value": "application/n-triples",
       "label": {
-        "en": "RDF as N-Triples (.n3)"
+        "en": "RDF as N-Triples (.n3)",
+        "sv": "RDF som N-Triples (.n3)"
       },
       "description": {
-        "en": "A line-based syntax for an RDF graph."
+        "en": "A line-based syntax for an RDF graph.",
+        "sv": "En linjebaserad syntax för en RDF-graf."
       }
     },
     {
       "value": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
       "label": {
-        "en": "Microsoft Excel XML (.xlsx)"
+        "en": "Microsoft Excel XML (.xlsx)",
+        "sv": "Microsoft Excel XML (.xlsx)"
       },
       "description": {
-        "en": "Office Open XML Spreadsheet is a zipped, XML-based file format developed by Microsoft, standardized in ECMA-376 and later in ISO/IEC 29500."
+        "en": "Office Open XML Spreadsheet is a zipped, XML-based file format developed by Microsoft, standardized in ECMA-376 and later in ISO/IEC 29500.",
+        "sv": "Office Open XML Spreadsheet är en zippad, XML-baserat filformat utvecklat av Microsoft, standardiserad i ECMA-376 och senare i ISO/IEC 29500."
       }
     },
     {
       "value": "application/vnd.oasis.opendocument.spreadsheet",
       "label": {
-        "en": "OpenDocument Spreadsheet (.ods)"
+        "en": "OpenDocument Spreadsheet (.ods)",
+        "sv": "OpenDocument Spreadsheet (.ods)"
       },
       "description": {
-        "en": "The Open Document Format for spreadsheets is an XML based format standardized first by OASIS and later by ISO/IEC: ISO/IEC 26300:2006/Amd 1:2012 — Open Document Format for Office Applications (OpenDocument) v1.1."
+        "en": "The Open Document Format for spreadsheets is an XML based format standardized first by OASIS and later by ISO/IEC: ISO/IEC 26300:2006/Amd 1:2012 — Open Document Format for Office Applications (OpenDocument) v1.1.",
+        "sv": "Open Document Format (Öppna Dokumentformatet) för kalkylark är ett XML-baserat format standardiserat först av OASIS och senare av ISO/IEC: ISO/IEC 26300:2006/Amd 1:2012 — Open Document Format for Office Applications (OpenDocument) v1.1."
       }
     },
     {
       "value": "application/rdf+xml",
       "label": {
-        "en": "RDF/XML (.rdf)"
+        "en": "RDF/XML (.rdf)",
+        "sv": "RDF/XML (.rdf)"
       },
       "description": {
-        "en": "This is an XML syntax for RDF as introduced in the RDF/XML Syntax Specification by W3C in 2004."
+        "en": "This is an XML syntax for RDF as introduced in the RDF/XML Syntax Specification by W3C in 2004.",
+        "sv": "Detta är ett XML-syntax för RDF som introducerades i specifikationen RDF/XML Syntax Specification av W3C år 2004."
       }
     },
     {
       "value": "application/sparql-query",
       "label": {
-        "en": "RDF query (SPARQL)"
+        "en": "RDF query (SPARQL)",
+        "sv": "RDF sökning (SPARQL)"
       },
       "description": {
-        "en": "SPARQL (pronounced \"sparkle\", an acronym for SPARQL Protocol and RDF Query Language) is an RDF query language, that is, a query language for databases, able to retrieve and manipulate data stored in Resource Description Framework format."
+        "en": "SPARQL (pronounced \"sparkle\", an acronym for SPARQL Protocol and RDF Query Language) is an RDF query language, that is, a query language for databases, able to retrieve and manipulate data stored in Resource Description Framework format.",
+        "sv": "SPARQL (uttalat \"sparkle\", är en akronym för SPARQL Protocol and RDF Query Language) är ett RDF query-språk, som är, ett frågespråk för databaser, kunnigt att hämta och manipulera data lagrat i Resource Description Framework-formatet."
       }
     },
     {
       "value": "text/turtle",
       "description": {
-        "en": "Turtle is a syntax for RDF that allows an RDF graph to be completely written in a compact and natural text form, with abbreviations for common usage patterns and datatypes. "
+        "en": "Turtle is a syntax for RDF that allows an RDF graph to be completely written in a compact and natural text form, with abbreviations for common usage patterns and datatypes.",
+        "sv": "Turtle är ett syntax för RDF som tillåter en RDF-graf att bli helt skriven i en kompakt och naturlig textform, med förkortningar för vanliga användningsmönster och datatyper."
       },
       "label": {
-        "en": "RDF as Turtle (.ttl)"
+        "en": "RDF as Turtle (.ttl)",
+        "sv": "RDF som Turtle (ttl)"
       }
     }
   ],
@@ -165,7 +199,8 @@
     "max": 1
   },
   "description": {
-    "en": "A selection of common mediatypes according to the list suggested by the DCAT-AP recommendation."
+    "en": "A selection of common mediatypes according to the list suggested by the DCAT-AP recommendation.",
+    "sv": "Ett urval av vanliga mediatyper enligt listan föreslaget av rekommendationen DCAT-AP."
   },
   "styles": [
     "strictmatch"
