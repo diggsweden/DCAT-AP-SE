@@ -15,7 +15,7 @@
       },
       "description": {
         "en": "CSV is a simple spreadsheet format where rows are separeted by newlines and columns by commas, semicolon or some other special character.",
-        "sv": "CSV är ett enkelt format för kalkylark där rader är separerade av nylinjer och kolumner av kommatecken, semikolon eller någon annan specialkaraktär."
+        "sv": "CSV är ett enkelt format för kalkylark där rader är separerade av radbrytningar och kolumner av kommatecken, semikolon eller någon annan specialkaraktär."
       }
     },
     {
