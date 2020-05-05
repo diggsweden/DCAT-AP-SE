@@ -26,7 +26,8 @@
       "type": "text",
       "property": "dcterms:format",
       "description": {
-        "en": "If you cannot find your mediatype in the list above you can provide one by hand. See list of established mediatypes at: http://www.iana.org/assignments/media-types/media-types.xhtml."
+        "en": "If you cannot find your mediatype in the list above you can provide one by hand. See list of established mediatypes at: http://www.iana.org/assignments/media-types/media-types.xhtml.",
+        "sv": "Om du inte kan hitta din mediatyp i listan ovanför kan du tillhandahålla en för hand. Se lista över etablerade mediatyper på: http://www.iana.org/assignments/media-types/media-types.xhtml."
       },
       "label": {
         "en": "Other mediatypes",
