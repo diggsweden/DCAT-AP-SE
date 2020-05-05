@@ -75,7 +75,8 @@
         "sv": "Dagligen"
       },
       "description": {
-        "en": "The event occurs once a day."
+        "en": "The event occurs once a day.",
+        "sv": "Uppdateringen sker en gång per dag."
       }
     },
     {
@@ -85,7 +86,8 @@
         "sv": "Oregelbunden"
       },
       "description": {
-        "en": "The event occurs at uneven intervals."
+        "en": "The event occurs at uneven intervals.",
+        "sv": "Uppdateringen sker vid oregelbundna intervaller."
       }
     },
     {
@@ -95,7 +97,8 @@
         "sv": "Månatlig"
       },
       "description": {
-        "en": "The event occurs once a month."
+        "en": "The event occurs once a month.",
+        "sv": "Uppdateringen sker en gång per månad."
       }
     },
     {
@@ -105,7 +108,8 @@
         "sv": "Kvartalsvis"
       },
       "description": {
-        "en": "The event occurs every three months."
+        "en": "The event occurs every three months.",
+        "sv": "Uppdateringen sker var tredje månad."
       }
     },
     {
@@ -115,7 +119,8 @@
         "sv": "Halvårlig"
       },
       "description": {
-        "en": "The event occurs twice a year."
+        "en": "The event occurs twice a year.",
+        "sv": "Uppdateringen sker två gånger per år."
       }
     },
     {
@@ -125,7 +130,8 @@
         "sv": "Varannan månad"
       },
       "description": {
-        "en": "The event occurs twice a month."
+        "en": "The event occurs twice a month.",
+        "sv": "Uppdateringen sker två gånger per månad."
       }
     },
     {
@@ -135,7 +141,8 @@
         "sv": "Två gånger per vecka"
       },
       "description": {
-        "en": "The event occurs twice a week."
+        "en": "The event occurs twice a week.",
+        "sv": "Uppdateringen sker två gånger per vecka."
       }
     },
     {
@@ -145,7 +152,8 @@
         "sv": "Tre gånger per månad"
       },
       "description": {
-        "en": "The event occurs three times a month."
+        "en": "The event occurs three times a month.",
+        "sv": "Uppdateringen sker tre gånger per månad."
       }
     },
     {
@@ -155,7 +163,8 @@
         "sv": "Tre gånger per vecka"
       },
       "description": {
-        "en": "The event occurs three times a week."
+        "en": "The event occurs three times a week.",
+        "sv": "Uppdateringen sker tre gånger per vecka."
       }
     },
     {
@@ -165,7 +174,8 @@
         "sv": "Tre gånger per år"
       },
       "description": {
-        "en": "The event occurs three times a year."
+        "en": "The event occurs three times a year.",
+        "sv": "Uppdateringen sker tre gånger per år."
       }
     },
     {
@@ -175,7 +185,8 @@
         "sv": "Vart tredje år"
       },
       "description": {
-        "en": "The event occurs every three years."
+        "en": "The event occurs every three years.",
+        "sv": "Uppdateringen sker vart tredje år."
       }
     },
     {
@@ -185,7 +196,8 @@
         "sv": "Varje vecka"
       },
       "description": {
-        "en": "The event occurs once a week."
+        "en": "The event occurs once a week.",
+        "sv": "Uppdateringen sker veckovis."
       }
     }
   ],
