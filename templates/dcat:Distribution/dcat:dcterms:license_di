@@ -14,8 +14,8 @@
         "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "dcterms:LicenseDocument"
       },
       "label": {
-        "en": "Other license",
-        "sv": "Övrig licens"
+        "en": "License - other",
+        "sv": "Licens - övrig"
       },
       "description": {
         "en": "Refers to which licence under which the Distribution is made available if you are not using a CC license.",

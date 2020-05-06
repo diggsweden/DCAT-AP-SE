@@ -1,0 +1,18 @@
+{
+  "type": "text",
+  "nodetype": "URI",
+  "label": {
+    "en": "Landing page",
+    "sv": "Ingångssida"
+  },
+  "property": "dcat:landingPage",
+  "cardinality": {
+    "min": 0,
+    "pref": 0
+  },
+  "description": {
+    "en": "This property refers to a web page that provides access to the data service and/or additional information. It is intended to point to a landing page at the original data provider, not to a page on a site of a third party, such as an aggregator.",
+    "sv": "Den här egenskapen hänvisar till en webbsida som ger tillgång till datatjänsten och/eller ytterligare information. Den bör peka på en landningssida hos den ursprungliga dataleverantören och inte till en sida på en webbplats av en tredje part, såsom en aggregator."
+  },
+  "pattern": "https?://.+"
+}

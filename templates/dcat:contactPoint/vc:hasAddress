@@ -5,7 +5,8 @@
     "sv": "Adress"
   },
   "description": {
-    "en": "To specify the components of the delivery address for the object"
+    "en": "To specify the delivery address for the contact point.",
+    "sv": "För att specificera en address för kontaktuppgiften."
   },
   "constraints": {
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "http://www.w3.org/2006/vcard/ns#Address"

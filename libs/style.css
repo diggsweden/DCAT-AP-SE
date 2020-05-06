@@ -28,3 +28,11 @@ g.classGroup line {
     stroke: #134962 !important;
     fill: #134962 !important;
 }
+
+.mermaid svg {
+    overflow: visible;
+}
+
+hr {
+    height: 0px;
+}

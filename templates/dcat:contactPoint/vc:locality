@@ -5,7 +5,8 @@
     "sv": "Postort"
   },
   "description": {
-    "en": "The locality (e.g. city or town) associated with the address of the object."
+    "en": "The locality (e.g. city or town) associated with the address.",
+    "sv": "Postorten (t.ex. en stad eller ort) för en adress."
   },
   "type": "text",
   "nodetype": "LITERAL",

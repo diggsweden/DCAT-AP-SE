@@ -7,7 +7,8 @@
     "sv": "Geografiska mediatyper"
   },
   "description": {
-    "en": "This register contains the sub-types of the media type application used for spatial data sets in INSPIRE, in particular in INSPIRE download services. Whenever sub-types exist that are registered with IANA or are in the registration process these are used. For all other formats, no commonly used sub-type exists and INSPIRE has to - at least temporarily - define their own types. In accordance with the rules for media types in RFC 2046/RFC 4288, these start with x-. At this time, all entries in this register have the status 'valid'. Sub-types that are no longer recommended for use will be marked as 'deprecated', but will always be kept in this register as download services may still be using deprecated sub-types."
+    "en": "This list contains the media types applications should use for spatial data sets in INSPIRE, in particular in INSPIRE download services. Whenever sub-types exist that are registered with IANA or are in the registration process these are used. For all other formats, no commonly used sub-type exists and INSPIRE has to - at least temporarily - define their own types. In accordance with the rules for media types in RFC 2046/RFC 4288, these start with x-. In addition to the data-oriented mediatypes we also list four protocoll oriented formats (application/vnd.ogc.[wms|wmts|wfs|wcs]_xml) to cover for the cases where a single protocoll-oriented distribution is created for a dataset rather one per data format.",
+    "sv": "Denna lista innehåller mediatyper som bör användas för datamängder inom INSPIRE, mer specifikt i INSPIREs nedladdningstjänster. Närhelst etablerade IANA mediatyper finns används dessa. När mediatyper saknas har INSPIRE - i allafall temporärt - definierat egna mediatyper. I enlighet med reglerna RFC 2046/RFC 4288 startas subtypen för dessa med x-. Utöver de dataorienterade mediatyperna listas också fyra protokollorienterade format (application/vnd.ogc.[wms|wmts|wfs|wcs]_xml) för att täcka in de fall när man skapar upp enbart en distribution som motsvarar protokollet istället för en distribution per format. "
   },
   "cardinality": {
     "min": 0,
@@ -154,6 +155,34 @@
       "value": "image/jp2",
       "label": {
         "en": "jp2"
+      }
+    },
+    {
+      "value": "application/vnd.ogc.wms_xml",
+      "label": {
+        "en": "WMS service",
+        "sv": "WMS tjänst"
+      }
+    },
+    {
+      "value": "application/vnd.ogc.wmts_xml",
+      "label": {
+        "en": "WMTS service",
+        "sv": "WMTS tjänst"
+      }
+    },
+    {
+      "value": "application/vnd.ogc.wfs_xml",
+      "label": {
+        "en": "WFS service",
+        "sv": "WFS tjänst"
+      }
+    },
+    {
+      "value": "application/vnd.ogc.wcs_xml",
+      "label": {
+        "en": "WCS service",
+        "sv": "WCS tjänst"
       }
     }
   ],

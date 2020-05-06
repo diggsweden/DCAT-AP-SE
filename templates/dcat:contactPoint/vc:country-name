@@ -5,7 +5,8 @@
     "sv": "Land"
   },
   "description": {
-    "en": "The country name associated with the address of the object."
+    "en": "The country name associated with the address.",
+    "sv": "Ett namn på adressens land."
   },
   "type": "text",
   "nodetype": "LITERAL",

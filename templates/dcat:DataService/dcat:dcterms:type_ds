@@ -3,113 +3,14 @@
   "nodetype": "URI",
   "property": "dcterms:type",
   "label": {
-    "en": "Service type",
-    "sv": "Tjänstetyp"
+    "en": "Architectural style",
+    "sv": "Arkitekturstil"
   },
   "description": {
-    "en": "Which type of service it is, like a geographic service, SOAP, REST or query oriented like SPARQL or GraphQL.",
-    "sv": "Vilken typ av tjänst det är, t.ex. en geografisk tjänst, SOAP, REST eller frågespråk som SPARQL eller GraphQL."
+    "en": "Which architectural style used for the service. Use dcterms:conformsTo to indicate more details such as the exact protocol used.",
+    "sv": "Vilken arkitekturstil som tjänsten använder. Använd dcterms:conformsTo för att indikera mer detaljer som vilken exakt vilket protokoll som används."
   },
   "choices": [
-    {
-      "value": "http://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceType/discovery",
-      "label": {
-        "en": "Spatial Discovery Service",
-        "sv": "Geografisk söktjänst"
-      },
-      "description": {
-        "en": "Services making it possible to search for spatial data sets and services on the basis of the content of the corresponding metadata and to display the content of the metadata.",
-        "sv": "Tjänst som gör det möjligt att söka efter rumsliga datamängder och datatjänster med utgångspunkt i innehållet i tillhörande metadata, samt att visa metadatas innehåll."
-      }
-    },
-    {
-      "value": "http://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceType/download",
-      "label": {
-        "en": "Spatial Download Service",
-        "sv": "Geografisk nedladdningstjänst"
-      },
-      "description": {
-        "en": "Service that enables copies of spatial data sets, or parts of such sets, to be downloaded and, where practicable, accessed directly.",
-        "sv": "Tjänst som gör det möjligt att ladda ned kopior av rumsliga datamängder eller delar av sådana och, i de fall det är möjligt, få direkt åtkomst."
-      }
-    },
-    {
-      "value": "http://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceType/view",
-      "label": {
-        "en": "Spatial View Service",
-        "sv": "Geografisk visningstjänst"
-      },
-      "description": {
-        "en": "Service that makes it possible, as a minimum, to display, navigate, zoom in and out, pan or overlay viewable spatial data sets and to display legend information and any relevant content of metadata.",
-        "sv": "Tjänst som gör det möjligt att, åtminstone, visa, navigera, zooma in och ut i, panorera och överlagra visningsbara rumsliga datamängder samt att visa förklarande information och relevant innehåll i metadata."
-      }
-    },
-    {
-      "value": "http://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceType/invoke",
-      "label": {
-        "en": "Invoke Spatial Data Service",
-        "sv": "Tjänst för förbindelse med geografiska datatjänster"
-      },
-      "description": {
-        "en": "Service that allows defining both the data inputs and data outputs expected by the spatial service and a workflow or service chain combining multiple services. It also allows defining the external web service interface of the workflow or service chain.",
-        "sv": "Tjänst som gör det möjligt att definiera både indata och utdata som förväntas av den rumsliga tjänsten samt ett arbetsflöde eller en tjänstekedja som kombinerar flera tjänster. Denna tjänst gör det också möjligt att definiera det externa webbtjänstgränssnittet för arbetsflödet eller tjänstekedjan."
-      }
-    },
-    {
-      "value": "http://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceType/transformation",
-      "label": {
-        "en": "Spatial Transformation Service",
-        "sv": "Geografisk omvandlingstjänst"
-      },
-      "description": {
-        "en": "Service that enables spatial data sets to be transformed with a view to achieving interoperability.",
-        "sv": "Tjänst som gör det möjligt att omvandla rumsliga datamängder i syfte att uppnå interoperabilitet."
-      }
-    },
-    {
-      "value": "http://www.wikidata.org/entity/Q61940129",
-      "label": {
-        "en": "GraphQL",
-        "sv": "GraphQL"
-      },
-      "description": {
-        "en": "Graph based data query and manipulation language for APIs",
-        "sv": "Grafbaserat fråge- och manipulaionsspråk för API:er."
-      }
-    },
-    {
-      "value": "http://www.wikidata.org/entity/Q189620",
-      "label": {
-        "en": "SOAP",
-        "sv": "SOAP"
-      },
-      "description": {
-        "en": "SOAP is an XML-based protocol for web services.",
-        "sv": "SOAP är ett XML baserat protokoll för web services."
-      }
-    },
-    {
-      "value": "http://www.wikidata.org/entity/Q1046238",
-      "label": {
-        "en": "XML-RPC",
-        "sv": "XML-RPC"
-      },
-      "description": {
-        "en": "XML-RPC is a remote procedure call (RPC) protocol which uses XML to encode its calls and HTTP as a transport mechanism.",
-        "sv": "XML-RPC är ett RPC protokoll över HTTP som använder XML för att representera sina anrop och svar."
-      }
-    },
-    {
-      "value": "http://www.wikidata.org/entity/Q1164443",
-      "label": {
-        "en": "JSON-RPC",
-        "sv": "JSON-RPC"
-      },
-      "description": {
-        "en": "JSON-RPC is a remote procedure call protocol encoded in JSON.",
-        "sv": "JSON-RPC är ett enkelt RPC protokoll som använder JSON."
-      }
-    },
     {
       "value": "http://www.wikidata.org/entity/Q749568",
       "label": {
@@ -117,19 +18,19 @@
         "sv": "REST"
       },
       "description": {
-        "en": "RESTful services makes use of different URIs and the stateless operations provided in the http protocol, e.g. GET, PUT, POST and DELETE to access and manipulate data.",
-        "sv": "Tjänster baserade på principerna bakom REST använder sig av olika URI:er och de tillståndslösa operationerna i http protokollet, t.ex. GET, PUT, POST och DELETE för att komma åt och manipulera data."
+        "en": "RESTful services makes use of different URIs (resources) and the stateless operations provided in the HTTP protocol, e.g. GET, PUT, POST and DELETE to access and manipulate data.",
+        "sv": "Tjänster baserade på principerna bakom REST använder sig av olika URI:er och de tillståndslösa operationerna i HTTP protokollet, t.ex. GET, PUT, POST och DELETE för att komma åt och manipulera data."
       }
     },
     {
-      "value": "http://www.wikidata.org/entity/Q54871",
+      "value": "http://www.wikidata.org/entity/Q62270",
       "label": {
-        "en": "SPARQL",
-        "sv": "SPARQL"
+        "en": "RPC",
+        "sv": "RPC"
       },
       "description": {
-        "en": "SPARQL is a semantic query language for databases - able to retrieve and manipulate data stored in Resource Description Framework (RDF) format.",
-        "sv": "SPARQL är ett semantiskt frågespråk för databaser - används för att komma åt och manipulera data uttryckt i RDF formatet."
+        "en": "RPC services (Remote Procedure Call) implements a client-service message passing model allowing different procedures to be called from a single endpoint. RPC services can be divided into categories based on which protocol they use, the most common categories are XML-RPC, JSON-RPC, SOAP, and gRPC.",
+        "sv": "RPC tjänster (Remote Procedure Call) implmementerar en klient-server modell för meddelande transport där olika metoder kan anropas från samma åtkomstadress. RPC tjänster kan delas in i olika kategorier baserat på vilket protokoll de använder, de vanligaste protokollen är XML-RPC, JSON-RPC, SOAP och gRPC."
       }
     }
   ]

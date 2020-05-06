@@ -5,7 +5,8 @@
     "sv": "Telefon"
   },
   "description": {
-    "en": "The telephone number should be given including country calling code, e.g. +4618100000."
+    "en": "The telephone number should be given including country calling code, e.g. +4618100000.",
+    "sv": "Ett telefonnummer ska ges inklusive landskod, t.ex. +4618100000."
   },
   "type": "group",
   "automatic": true,
@@ -26,7 +27,8 @@
         "sv": "Nummer"
       },
       "description": {
-        "en": "The telephone number should be given including country calling code, e.g. +4618100000."
+        "en": "The telephone number should be given including country calling code, e.g. +4618100000.",
+        "sv": "Ett telefonnummer ska ges inklusive landskod, t.ex. +4618100000."
       },
       "property": "vcard:hasValue",
       "pattern": "^[0-9+()-.\\s]+$",

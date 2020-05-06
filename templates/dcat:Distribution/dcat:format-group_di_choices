@@ -6,6 +6,10 @@
     "en": "Common mediatypes",
     "sv": "Vanliga mediatyper"
   },
+  "description": {
+    "en": "A selection of common mediatypes.",
+    "sv": "A samling vanliga mediatyper."
+  },
   "choices": [
     {
       "value": "text/csv",
@@ -189,7 +193,7 @@
       },
       "label": {
         "en": "RDF as Turtle (.ttl)",
-        "sv": "RDF som Turtle (ttl)"
+        "sv": "RDF som Turtle (.ttl)"
       }
     }
   ],

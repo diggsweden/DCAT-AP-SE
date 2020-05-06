@@ -26,7 +26,8 @@
         "sv": "Start"
       },
       "description": {
-        "en": "Start date of the validity period of a dataset."
+        "en": "Start date of the period for which the dataset contains data.",
+        "sv": "Startdatum för den period då datamängden innehåller data."
       },
       "datatype": [
         "http://www.w3.org/2001/XMLSchema#date",
@@ -48,7 +49,8 @@
         "sv": "Slut"
       },
       "description": {
-        "en": "End date of the validity period of a dataset."
+        "en": "End date of the period for which the dataset contains data.",
+        "sv": "Slutdatum för den period då datamängden innehåller data."
       },
       "datatype": [
         "http://www.w3.org/2001/XMLSchema#date",

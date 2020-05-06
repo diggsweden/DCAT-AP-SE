@@ -37,9 +37,22 @@ dcterms:type | License | Olämpligt att detta uttrycks i varje katalog för etab
 ### Utelämnade klasser
 Den svenska profilen inkluderar inte dcat:CatalogRecord. Till skillnad från egenskaperna listade ovan är det inte tillåtet att använda dcat:CatalogRecord i dagsläget då det inte skulle fungera med den nuvarande skördningsinfrastrukturen och hur portalen är byggd. Detta kan komma att förändras i framtiden om det dyker upp tydliga användarfall som kräver stöd för dcat:CatalogRecord.
 
-### Tillägg
+### Tillägg från W3C DCAT2
+Det finns en mängd egenskaper i W3C DCAT2 på datatjänst nivån som inte har plockats in i DCAT-AP2.0.0. I följande tabell listar vi de egenskaper som lagts till i den svenska profilen. Alla tillägg är på datatjänst där vi försöker förutse ett användarfall där datatjänster beskrivs oberoende i större utsträckning, t.ex. för att kunna exponera en tjänstekatalog:
+
+Egenskap | Kommentar
+:--- | :--- 
+dcterms:publisher | För oberoende datatjänster som inte är kopplade till en datamängd är det viktigt att kunna se vilken deras publisher är.  
+dcat:contactPoint | Oberoende datatjänster behöver kunna ange en kontaktuppgift.
+dcterms:type | Vi begränsar användningen till arkitekturstilarna REST och RPC då det är någorlunda enkelt och informativt att kategorisera datatjänster efter dessa.
+dcterms:conformsTo | Det är viktigt att kunna indikera vilken specifikation som datatjänsten följer.
+dcat:landingPage | Datatjänst kan precis som datamängd ha en egen landningssida.
+foaf:page | Komplementärt till ett schema (som med fördel anges via dcat:endpointDescription) behövs ofta dokumentation, särskilt om det inte finns någon mer formell specifikation skriven.
+dcat:theme | Vi använder samma kategorier som på datamängder.
+dcat:keyword | Nyckelord kompletterar teman på samma sätt som på datamängder.
+
+### Övriga tillägg
 För att ange en eventuell avgift pekar man ut en [Avgift med hjälp av klassen schema:Offer](https://diggsweden.github.io/DCAT-AP-SE/sv/#schema%3AOffer) via schema:offers på datamängden. Avgiften kan innefatta både en beskrivning och en vidare pekning till en webbsida där mer information finns. 
-Den svenska profilen har också lagt till dcterms:type på Datatjänst med fördefinierade värdena från Inspire tillsammans med ett antal wikidata entiteter motsvarande vanliga tjänstetyper. Notera att dcterms:type finns med i W3C DCAT2 men har inte plockats in i DCAT-AP2.0.0. På liknande sätt har också dcterms:conformsTo på Datatjänst då den också finns i W3C DCAT2.
 
 ### Förtydlingar
 * Licensen på katalognivån måste vara CC-0.

@@ -48,7 +48,7 @@
           },
           "description": {
             "en": "Only available under certain conditions. Usage note: This category may include resources that require payment, resources shared under non-disclosure agreements, resources for which the publisher or owner has not yet decided if they can be publicly released.",
-            "sv": "Endast tillgängligt under särskilda villkor. Användningsanmärkning: Denna kategori kan omfatta resurser som kräver betalning, resurser som tillgängliggörs inom ramen för sekretessavtal, eller resurser där utgivaren eller ägaren ännu inte har beslutat om de kan offentliggjöras."
+            "sv": "Endast tillgängligt under särskilda villkor. Användningsanmärkning: Denna kategori kan omfatta resurser som kräver betalning, resurser som tillgängliggörs inom ramen för sekretessavtal, eller resurser där utgivaren eller ägaren ännu inte har beslutat om de kan offentliggöras."
           }
         }
       ],
@@ -122,8 +122,8 @@
       ],
       "description": {},
       "label": {
-        "en": "Creative Commons license",
-        "sv": "Creative Commons license"
+        "en": "License - Creative Commons",
+        "sv": "Licens - Creative Commons"
       },
       "property": "dcterms:license",
       "cardinality": {
@@ -815,6 +815,112 @@
       "id": "dcat:dcterms:language"
     },
     {
+      "type": "choice",
+      "nodetype": "RESOURCE",
+      "property": "dcat:theme",
+      "styles": [
+        "strictmatch"
+      ],
+      "label": {
+        "en": "Category",
+        "sv": "Kategori"
+      },
+      "choices": [
+        {
+          "value": "http://publications.europa.eu/resource/authority/data-theme/AGRI",
+          "label": {
+            "en": "Agriculture, fisheries, forestry and food",
+            "sv": "Jordbruk, fiske, skogsbruk och livsmedel"
+          }
+        },
+        {
+          "value": "http://publications.europa.eu/resource/authority/data-theme/ECON",
+          "label": {
+            "en": "Economy and finance",
+            "sv": "Ekonomi och finans"
+          }
+        },
+        {
+          "value": "http://publications.europa.eu/resource/authority/data-theme/EDUC",
+          "label": {
+            "en": "Education, culture and sport",
+            "sv": "Utbildning, kultur och sport"
+          }
+        },
+        {
+          "value": "http://publications.europa.eu/resource/authority/data-theme/ENER",
+          "label": {
+            "en": "Energy",
+            "sv": "Energi"
+          }
+        },
+        {
+          "value": "http://publications.europa.eu/resource/authority/data-theme/ENVI",
+          "label": {
+            "en": "Environment",
+            "sv": "Miljö"
+          }
+        },
+        {
+          "value": "http://publications.europa.eu/resource/authority/data-theme/GOVE",
+          "label": {
+            "en": "Government and public sector",
+            "sv": "Regeringen och den offentliga sektorn"
+          }
+        },
+        {
+          "value": "http://publications.europa.eu/resource/authority/data-theme/HEAL",
+          "label": {
+            "en": "Health",
+            "sv": "Hälsa"
+          }
+        },
+        {
+          "value": "http://publications.europa.eu/resource/authority/data-theme/INTR",
+          "label": {
+            "en": "International issues",
+            "sv": "Internationella frågor"
+          }
+        },
+        {
+          "value": "http://publications.europa.eu/resource/authority/data-theme/JUST",
+          "label": {
+            "en": "Justice, legal system and public safety",
+            "sv": "Rättvisa, rättsliga system och allmän säkerhet"
+          }
+        },
+        {
+          "value": "http://publications.europa.eu/resource/authority/data-theme/SOCI",
+          "label": {
+            "en": "Population and society",
+            "sv": "Befolkning och samhälle"
+          }
+        },
+        {
+          "value": "http://publications.europa.eu/resource/authority/data-theme/REGI",
+          "label": {
+            "en": "Regions and cities",
+            "sv": "Regioner och städer"
+          }
+        },
+        {
+          "value": "http://publications.europa.eu/resource/authority/data-theme/TECH",
+          "label": {
+            "en": "Science and technology",
+            "sv": "Vetenskap och teknik"
+          }
+        },
+        {
+          "value": "http://publications.europa.eu/resource/authority/data-theme/TRAN",
+          "label": {
+            "en": "Transport",
+            "sv": "Transport"
+          }
+        }
+      ],
+      "id": "dcat:theme"
+    },
+    {
       "type": "group",
       "nodetype": "RESOURCE",
       "styles": [
@@ -832,7 +938,8 @@
             "en": "Title"
           },
           "description": {
-            "en": "A name given to the resource."
+            "en": "A name given to the resource.",
+            "sv": "Ett namn för licensdokumentet."
           },
           "type": "text",
           "nodetype": "LANGUAGE_LITERAL",
@@ -847,7 +954,8 @@
             "en": "Description"
           },
           "description": {
-            "en": "An account of the resource."
+            "en": "An account of the license document.",
+            "sv": "En beskrivning av licensdokumentet."
           },
           "type": "text",
           "nodetype": "LANGUAGE_LITERAL",
@@ -883,7 +991,8 @@
             "en": "Title"
           },
           "description": {
-            "en": "A name given to the resource."
+            "en": "A name given to the standard.",
+            "sv": "Ett namn för standarden."
           },
           "type": "text",
           "nodetype": "LANGUAGE_LITERAL",
@@ -898,7 +1007,8 @@
             "en": "Description"
           },
           "description": {
-            "en": "An account of the resource."
+            "en": "An account of the standard.",
+            "sv": "En beskrivning av standarden."
           },
           "type": "text",
           "nodetype": "LANGUAGE_LITERAL",
@@ -934,7 +1044,8 @@
             "en": "Title"
           },
           "description": {
-            "en": "A name given to the resource."
+            "en": "A name given to the resource.",
+            "sv": "Ett namn för dokumentet."
           },
           "type": "text",
           "nodetype": "LANGUAGE_LITERAL",
@@ -949,7 +1060,8 @@
             "en": "Description"
           },
           "description": {
-            "en": "An account of the resource."
+            "en": "An account of the document.",
+            "sv": "En beskrivning av dokumentet."
           },
           "type": "text",
           "nodetype": "LANGUAGE_LITERAL",
@@ -1333,11 +1445,17 @@
         "dcat:dcterms:description_ds",
         "dcat:endpointURL",
         "dcat:endpointDescription",
+        "dcat:dcterms:publisher_ds",
+        "dcat:contactPoint_ds",
         "dcat:dcterms:type_ds",
+        "dcat:keyword_ds",
+        "dcat:theme-ds",
         "dcat:dcterms:conformsTo_ds",
         "dcat:servesDataset",
         "dcat:dcterms:license_ds",
-        "dcat:dcterms:accessRights"
+        "dcat:dcterms:accessRights",
+        "dcat:landingPage_ds",
+        "dcat:foaf:page_ds"
       ],
       "id": "dcat:DataService"
     },
@@ -1348,7 +1466,7 @@
         "en": "Title"
       },
       "description": {
-        "en": "This property contains a name given to the Service. This property can be repeated for parallel language versions of the name.",
+        "en": "This property contains a name given to the data service. This property can be repeated for parallel language versions of the name.",
         "sv": "Datatjänstens namn. Denna egenskap kan upprepas för parallella språkversioner av namnet."
       },
       "type": "text",
@@ -1366,7 +1484,7 @@
         "en": "Description"
       },
       "description": {
-        "en": "This property contains a free-text account of the Data Service. This property can be repeated for parallel language versions of the description.",
+        "en": "This property contains a free-text account of the data service. This property can be repeated for parallel language versions of the description.",
         "sv": "Datatjänstens beskrivning. Denna egenskap kan upprepas för parallella språkversioner av beskrivningen."
       },
       "type": "text",
@@ -1389,8 +1507,8 @@
         "sv": "Åtkomstadress"
       },
       "description": {
-        "en": "The root location or primary endpoint of the service (a URL).",
-        "sv": "Basadress eller primär startpunkt för tjänsten (en URL)."
+        "en": "The root location or primary endpoint of the data service (a URL).",
+        "sv": "Basadress eller primär startpunkt för datatjänsten (en URL)."
       },
       "cardinality": {
         "min": 1
@@ -1407,7 +1525,7 @@
       },
       "description": {
         "en": "This property contains a description of the services available via the end-points, including their operations, parameters etc. The property gives specific details of the actual endpoint instances, while dct:conformsTo is used to indicate the general standard or specification that the endpoints implement.",
-        "sv": "Beskriver tjänstens åtkomstadresser inklusive de operationer och parametrar som stöds. Beskrivningen ger specifika detaljer om de faktiska åtkomstadresserna medans egenskapen dct:conformsTo används för att beskriva den generella standard eller specifikation som implementeras av tjänsten. För en geografisk tjänst (WMS eller WFS) pekar man med fördel på getCapabilities anropet, för traditionella web services pekar man på en WDSL fil medans för REST tjänster pekar man på en beskrivning uttryckt enligt Open API specifikationen eller liknande."
+        "sv": "Beskriver datatjänstens åtkomstadresser inklusive de operationer och parametrar som stöds. Beskrivningen ger specifika detaljer om de faktiska åtkomstadresserna medans egenskapen dct:conformsTo används för att beskriva den generella standard eller specifikation som implementeras av tjänsten. För en geografisk tjänst (WMS eller WFS) pekar man med fördel på getCapabilities anropet, för traditionella web services pekar man på en WDSL fil medans för REST tjänster pekar man på en beskrivning uttryckt enligt Open API specifikationen eller liknande."
       },
       "cardinality": {
         "pref": 1
@@ -1416,116 +1534,73 @@
     },
     {
       "type": "choice",
+      "nodetype": "RESOURCE",
+      "property": "dcterms:publisher",
+      "constraints": {
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+          "http://xmlns.com/foaf/0.1/Agent",
+          "http://xmlns.com/foaf/0.1/Person",
+          "http://xmlns.com/foaf/0.1/Organization"
+        ]
+      },
+      "label": {
+        "en": "Publisher",
+        "sv": "Utgivare"
+      },
+      "labelProperties": [
+        "http://xmlns.com/foaf/0.1/name",
+        [
+          "http://xmlns.com/foaf/0.1/givenName",
+          "http://xmlns.com/foaf/0.1/familyName"
+        ]
+      ],
+      "description": {
+        "en": "This property refers to an entity (organisation) responsible for making the Dataservice available.",
+        "sv": "Egenskapen hänvisar till en enhet (organisation) som ansvarar för att göra datatjänsten tillgänglig."
+      },
+      "id": "dcat:dcterms:publisher_ds"
+    },
+    {
+      "type": "choice",
+      "nodetype": "RESOURCE",
+      "labelProperties": [
+        "http://www.w3.org/2006/vcard/ns#fn"
+      ],
+      "property": "dcat:contactPoint",
+      "description": {
+        "en": "This property contains contact information that can be used for flagging errors in the dataservice or sending comments.",
+        "sv": "Egenskapen innehåller kontaktuppgifter som kan användas för att flagga fel i datatjänsten eller för att skicka kommentarer"
+      },
+      "label": {
+        "en": "Contact point",
+        "sv": "Kontaktuppgift"
+      },
+      "cardinality": {
+        "min": 0,
+        "pref": 1
+      },
+      "constraints": {
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+          "http://www.w3.org/2006/vcard/ns#Organization",
+          "http://www.w3.org/2006/vcard/ns#Individual",
+          "http://www.w3.org/2006/vcard/ns#Kind"
+        ]
+      },
+      "id": "dcat:contactPoint_ds"
+    },
+    {
+      "type": "choice",
       "nodetype": "URI",
       "property": "dcterms:type",
       "label": {
-        "en": "Service type",
-        "sv": "Tjänstetyp"
+        "en": "Architectural style",
+        "sv": "Arkitekturstil"
       },
       "description": {
-        "en": "Which type of service it is, like a geographic service, SOAP, REST or query oriented like SPARQL or GraphQL.",
-        "sv": "Vilken typ av tjänst det är, t.ex. en geografisk tjänst, SOAP, REST eller frågespråk som SPARQL eller GraphQL."
+        "en": "Which architectural style used for the service. Use dcterms:conformsTo to indicate more details such as the exact protocol used.",
+        "sv": "Vilken arkitekturstil som tjänsten använder. Använd dcterms:conformsTo för att indikera mer detaljer som vilken exakt vilket protokoll som används."
       },
       "choices": [
-        {
-          "value": "http://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceType/discovery",
-          "label": {
-            "en": "Spatial Discovery Service",
-            "sv": "Geografisk söktjänst"
-          },
-          "description": {
-            "en": "Services making it possible to search for spatial data sets and services on the basis of the content of the corresponding metadata and to display the content of the metadata.",
-            "sv": "Tjänst som gör det möjligt att söka efter rumsliga datamängder och datatjänster med utgångspunkt i innehållet i tillhörande metadata, samt att visa metadatas innehåll."
-          }
-        },
-        {
-          "value": "http://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceType/download",
-          "label": {
-            "en": "Spatial Download Service",
-            "sv": "Geografisk nedladdningstjänst"
-          },
-          "description": {
-            "en": "Service that enables copies of spatial data sets, or parts of such sets, to be downloaded and, where practicable, accessed directly.",
-            "sv": "Tjänst som gör det möjligt att ladda ned kopior av rumsliga datamängder eller delar av sådana och, i de fall det är möjligt, få direkt åtkomst."
-          }
-        },
-        {
-          "value": "http://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceType/view",
-          "label": {
-            "en": "Spatial View Service",
-            "sv": "Geografisk visningstjänst"
-          },
-          "description": {
-            "en": "Service that makes it possible, as a minimum, to display, navigate, zoom in and out, pan or overlay viewable spatial data sets and to display legend information and any relevant content of metadata.",
-            "sv": "Tjänst som gör det möjligt att, åtminstone, visa, navigera, zooma in och ut i, panorera och överlagra visningsbara rumsliga datamängder samt att visa förklarande information och relevant innehåll i metadata."
-          }
-        },
-        {
-          "value": "http://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceType/invoke",
-          "label": {
-            "en": "Invoke Spatial Data Service",
-            "sv": "Tjänst för förbindelse med geografiska datatjänster"
-          },
-          "description": {
-            "en": "Service that allows defining both the data inputs and data outputs expected by the spatial service and a workflow or service chain combining multiple services. It also allows defining the external web service interface of the workflow or service chain.",
-            "sv": "Tjänst som gör det möjligt att definiera både indata och utdata som förväntas av den rumsliga tjänsten samt ett arbetsflöde eller en tjänstekedja som kombinerar flera tjänster. Denna tjänst gör det också möjligt att definiera det externa webbtjänstgränssnittet för arbetsflödet eller tjänstekedjan."
-          }
-        },
-        {
-          "value": "http://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceType/transformation",
-          "label": {
-            "en": "Spatial Transformation Service",
-            "sv": "Geografisk omvandlingstjänst"
-          },
-          "description": {
-            "en": "Service that enables spatial data sets to be transformed with a view to achieving interoperability.",
-            "sv": "Tjänst som gör det möjligt att omvandla rumsliga datamängder i syfte att uppnå interoperabilitet."
-          }
-        },
-        {
-          "value": "http://www.wikidata.org/entity/Q61940129",
-          "label": {
-            "en": "GraphQL",
-            "sv": "GraphQL"
-          },
-          "description": {
-            "en": "Graph based data query and manipulation language for APIs",
-            "sv": "Grafbaserat fråge- och manipulaionsspråk för API:er."
-          }
-        },
-        {
-          "value": "http://www.wikidata.org/entity/Q189620",
-          "label": {
-            "en": "SOAP",
-            "sv": "SOAP"
-          },
-          "description": {
-            "en": "SOAP is an XML-based protocol for web services.",
-            "sv": "SOAP är ett XML baserat protokoll för web services."
-          }
-        },
-        {
-          "value": "http://www.wikidata.org/entity/Q1046238",
-          "label": {
-            "en": "XML-RPC",
-            "sv": "XML-RPC"
-          },
-          "description": {
-            "en": "XML-RPC is a remote procedure call (RPC) protocol which uses XML to encode its calls and HTTP as a transport mechanism.",
-            "sv": "XML-RPC är ett RPC protokoll över HTTP som använder XML för att representera sina anrop och svar."
-          }
-        },
-        {
-          "value": "http://www.wikidata.org/entity/Q1164443",
-          "label": {
-            "en": "JSON-RPC",
-            "sv": "JSON-RPC"
-          },
-          "description": {
-            "en": "JSON-RPC is a remote procedure call protocol encoded in JSON.",
-            "sv": "JSON-RPC är ett enkelt RPC protokoll som använder JSON."
-          }
-        },
         {
           "value": "http://www.wikidata.org/entity/Q749568",
           "label": {
@@ -1533,23 +1608,53 @@
             "sv": "REST"
           },
           "description": {
-            "en": "RESTful services makes use of different URIs and the stateless operations provided in the http protocol, e.g. GET, PUT, POST and DELETE to access and manipulate data.",
-            "sv": "Tjänster baserade på principerna bakom REST använder sig av olika URI:er och de tillståndslösa operationerna i http protokollet, t.ex. GET, PUT, POST och DELETE för att komma åt och manipulera data."
+            "en": "RESTful services makes use of different URIs (resources) and the stateless operations provided in the HTTP protocol, e.g. GET, PUT, POST and DELETE to access and manipulate data.",
+            "sv": "Tjänster baserade på principerna bakom REST använder sig av olika URI:er och de tillståndslösa operationerna i HTTP protokollet, t.ex. GET, PUT, POST och DELETE för att komma åt och manipulera data."
           }
         },
         {
-          "value": "http://www.wikidata.org/entity/Q54871",
+          "value": "http://www.wikidata.org/entity/Q62270",
           "label": {
-            "en": "SPARQL",
-            "sv": "SPARQL"
+            "en": "RPC",
+            "sv": "RPC"
           },
           "description": {
-            "en": "SPARQL is a semantic query language for databases - able to retrieve and manipulate data stored in Resource Description Framework (RDF) format.",
-            "sv": "SPARQL är ett semantiskt frågespråk för databaser - används för att komma åt och manipulera data uttryckt i RDF formatet."
+            "en": "RPC services (Remote Procedure Call) implements a client-service message passing model allowing different procedures to be called from a single endpoint. RPC services can be divided into categories based on which protocol they use, the most common categories are XML-RPC, JSON-RPC, SOAP, and gRPC.",
+            "sv": "RPC tjänster (Remote Procedure Call) implmementerar en klient-server modell för meddelande transport där olika metoder kan anropas från samma åtkomstadress. RPC tjänster kan delas in i olika kategorier baserat på vilket protokoll de använder, de vanligaste protokollen är XML-RPC, JSON-RPC, SOAP och gRPC."
           }
         }
       ],
       "id": "dcat:dcterms:type_ds"
+    },
+    {
+      "type": "text",
+      "nodetype": "LANGUAGE_LITERAL",
+      "label": {
+        "en": "Keyword",
+        "sv": "Nyckelord"
+      },
+      "property": "dcat:keyword",
+      "cardinality": {
+        "min": 0,
+        "pref": 1
+      },
+      "description": {
+        "en": "This property contains a keyword or tag describing the Dataservice",
+        "sv": "Egenskapen innehåller ett nyckelord som beskriver datatjänsten"
+      },
+      "styles": [
+        "viewAllTranslations"
+      ],
+      "id": "dcat:keyword_ds"
+    },
+    {
+      "type": "choice",
+      "extends": "dcat:theme",
+      "description": {
+        "en": "This property refers to a category of the Dataservice. A Dataservice may be associated with multiple themes.",
+        "sv": "En kategori för datatjänsten. En datatjänst kan associeras med flera teman."
+      },
+      "id": "dcat:theme-ds"
     },
     {
       "property": "dcterms:conformsTo",
@@ -1579,7 +1684,7 @@
       },
       "description": {
         "en": "This property refers to a collection of data that this data service can distribute.",
-        "sv": "Egenskapen refererar till en eller flera datamängder som den denna tjänst kan tillhandahålla"
+        "sv": "Egenskapen refererar till en eller flera datamängder som den denna datatjänst kan tillhandahålla"
       },
       "constraints": {
         "rdf:type": "http://www.w3.org/ns/dcat#Dataset"
@@ -1602,8 +1707,8 @@
             "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "dcterms:LicenseDocument"
           },
           "label": {
-            "en": "Other",
-            "sv": "Övriga"
+            "en": "License - other",
+            "sv": "Licens - övriga"
           },
           "cardinality": {
             "min": 0,
@@ -1619,10 +1724,47 @@
         "max": 1
       },
       "description": {
-        "en": "This property refers to the licence under which the service can be used or reused.",
+        "en": "This property refers to the licence under which the data service can be used or reused.",
         "sv": "Den här egenskapen hänvisar till licensen enligt vilken datatjänsten kan användas eller återanvändas."
       },
       "id": "dcat:dcterms:license_ds"
+    },
+    {
+      "type": "text",
+      "nodetype": "URI",
+      "label": {
+        "en": "Landing page",
+        "sv": "Ingångssida"
+      },
+      "property": "dcat:landingPage",
+      "cardinality": {
+        "min": 0,
+        "pref": 0
+      },
+      "description": {
+        "en": "This property refers to a web page that provides access to the data service and/or additional information. It is intended to point to a landing page at the original data provider, not to a page on a site of a third party, such as an aggregator.",
+        "sv": "Den här egenskapen hänvisar till en webbsida som ger tillgång till datatjänsten och/eller ytterligare information. Den bör peka på en landningssida hos den ursprungliga dataleverantören och inte till en sida på en webbplats av en tredje part, såsom en aggregator."
+      },
+      "pattern": "https?://.+",
+      "id": "dcat:landingPage_ds"
+    },
+    {
+      "type": "choice",
+      "nodetype": "URI",
+      "label": {
+        "en": "Documentation",
+        "sv": "Dokumentation"
+      },
+      "property": "foaf:page",
+      "pattern": "https?://.+",
+      "description": {
+        "en": "This property refers to a page or document about the data service.",
+        "sv": "En sida eller ett dokument för datatjänsten."
+      },
+      "constraints": {
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "foaf:Document"
+      },
+      "id": "dcat:foaf:page_ds"
     },
     {
       "type": "group",
@@ -1636,10 +1778,10 @@
       "items": [
         "dcat:dcterms:title_da",
         "dcat:dcterms:description_da",
-        "dcat:foaf:Agent_da",
+        "dcat:dcterms:publisher_da",
         "dcat:dcterms:creator_da",
         "dcat:prov:qualifiedAttribution",
-        "dcat:contactPoint-choice_da",
+        "dcat:contactPoint_da",
         "dcat:keyword_da",
         "dcat:theme-da",
         "dcat:dcterms:identifier_da",
@@ -1743,7 +1885,7 @@
         "pref": 1,
         "max": 1
       },
-      "id": "dcat:foaf:Agent_da"
+      "id": "dcat:dcterms:publisher_da"
     },
     {
       "type": "choice",
@@ -1957,7 +2099,7 @@
           "http://www.w3.org/2006/vcard/ns#Kind"
         ]
       },
-      "id": "dcat:contactPoint-choice_da"
+      "id": "dcat:contactPoint_da"
     },
     {
       "type": "text",
@@ -1982,112 +2124,11 @@
     },
     {
       "type": "choice",
-      "nodetype": "RESOURCE",
-      "property": "dcat:theme",
-      "styles": [
-        "strictmatch"
-      ],
-      "label": {
-        "en": "Category",
-        "sv": "Kategori"
-      },
+      "extends": "dcat:theme",
       "description": {
         "en": "This property refers to a category of the Dataset. A Dataset may be associated with multiple themes.",
         "sv": "En kategori för datamängden. En datamängd kan associeras med flera teman."
       },
-      "choices": [
-        {
-          "value": "http://publications.europa.eu/resource/authority/data-theme/AGRI",
-          "label": {
-            "en": "Agriculture, fisheries, forestry and food",
-            "sv": "Jordbruk, fiske, skogsbruk och livsmedel"
-          }
-        },
-        {
-          "value": "http://publications.europa.eu/resource/authority/data-theme/ECON",
-          "label": {
-            "en": "Economy and finance",
-            "sv": "Ekonomi och finans"
-          }
-        },
-        {
-          "value": "http://publications.europa.eu/resource/authority/data-theme/EDUC",
-          "label": {
-            "en": "Education, culture and sport",
-            "sv": "Utbildning, kultur och sport"
-          }
-        },
-        {
-          "value": "http://publications.europa.eu/resource/authority/data-theme/ENER",
-          "label": {
-            "en": "Energy",
-            "sv": "Energi"
-          }
-        },
-        {
-          "value": "http://publications.europa.eu/resource/authority/data-theme/ENVI",
-          "label": {
-            "en": "Environment",
-            "sv": "Miljö"
-          }
-        },
-        {
-          "value": "http://publications.europa.eu/resource/authority/data-theme/GOVE",
-          "label": {
-            "en": "Government and public sector",
-            "sv": "Regeringen och den offentliga sektorn"
-          }
-        },
-        {
-          "value": "http://publications.europa.eu/resource/authority/data-theme/HEAL",
-          "label": {
-            "en": "Health",
-            "sv": "Hälsa"
-          }
-        },
-        {
-          "value": "http://publications.europa.eu/resource/authority/data-theme/INTR",
-          "label": {
-            "en": "International issues",
-            "sv": "Internationella frågor"
-          }
-        },
-        {
-          "value": "http://publications.europa.eu/resource/authority/data-theme/JUST",
-          "label": {
-            "en": "Justice, legal system and public safety",
-            "sv": "Rättvisa, rättsliga system och allmän säkerhet"
-          }
-        },
-        {
-          "value": "http://publications.europa.eu/resource/authority/data-theme/SOCI",
-          "label": {
-            "en": "Population and society",
-            "sv": "Befolkning och samhälle"
-          }
-        },
-        {
-          "value": "http://publications.europa.eu/resource/authority/data-theme/REGI",
-          "label": {
-            "en": "Regions and cities",
-            "sv": "Regioner och städer"
-          }
-        },
-        {
-          "value": "http://publications.europa.eu/resource/authority/data-theme/TECH",
-          "label": {
-            "en": "Science and technology",
-            "sv": "Vetenskap och teknik"
-          }
-        },
-        {
-          "value": "http://publications.europa.eu/resource/authority/data-theme/TRAN",
-          "label": {
-            "en": "Transport",
-            "sv": "Transport"
-          }
-        }
-      ],
       "cardinality": {
         "min": 0,
         "pref": 1
@@ -2335,7 +2376,8 @@
             "sv": "Start"
           },
           "description": {
-            "en": "Start date of the validity period of a dataset."
+            "en": "Start date of the period for which the dataset contains data.",
+            "sv": "Startdatum för den period då datamängden innehåller data."
           },
           "datatype": [
             "http://www.w3.org/2001/XMLSchema#date",
@@ -2357,7 +2399,8 @@
             "sv": "Slut"
           },
           "description": {
-            "en": "End date of the validity period of a dataset."
+            "en": "End date of the period for which the dataset contains data.",
+            "sv": "Slutdatum för den period då datamängden innehåller data."
           },
           "datatype": [
             "http://www.w3.org/2001/XMLSchema#date",
@@ -3252,6 +3295,10 @@
         "en": "Common mediatypes",
         "sv": "Vanliga mediatyper"
       },
+      "description": {
+        "en": "A selection of common mediatypes.",
+        "sv": "A samling vanliga mediatyper."
+      },
       "choices": [
         {
           "value": "text/csv",
@@ -3265,7 +3312,8 @@
         {
           "value": "text/csv+zip",
           "label": {
-            "en": "CSV (.csv) in a zip"
+            "en": "CSV (.csv) in a zip",
+            "sv": "CSV (.csv) i en zip"
           },
           "description": {
             "en": "A zip file containing csv files."
@@ -3283,7 +3331,8 @@
         {
           "value": "application/xml+zip",
           "label": {
-            "en": "XML (.xml) in a zip"
+            "en": "XML (.xml) in a zip",
+            "sv": "XML (.xml) i en zip"
           },
           "description": {
             "en": "A zip file containing xml files."
@@ -3301,7 +3350,8 @@
         {
           "value": "application/json+zip",
           "label": {
-            "en": "JSON (.json) in a zip"
+            "en": "JSON (.json) in a zip",
+            "sv": "JSON (.json) i en zip"
           },
           "description": {
             "en": "A zip file containing xml files."
@@ -3353,7 +3403,8 @@
         {
           "value": "application/n-triples",
           "label": {
-            "en": "RDF as N-Triples (.n3)"
+            "en": "RDF as N-Triples (.n3)",
+            "sv": "RDF som N-Triples (.n3)"
           },
           "description": {
             "en": "A line-based syntax for an RDF graph."
@@ -3401,7 +3452,8 @@
             "en": "Turtle is a syntax for RDF that allows an RDF graph to be completely written in a compact and natural text form, with abbreviations for common usage patterns and datatypes. "
           },
           "label": {
-            "en": "RDF as Turtle (.ttl)"
+            "en": "RDF as Turtle (.ttl)",
+            "sv": "RDF som Turtle (.ttl)"
           }
         }
       ],
@@ -3409,9 +3461,6 @@
         "min": 0,
         "pref": 1,
         "max": 1
-      },
-      "description": {
-        "en": "A selection of common mediatypes according to the list suggested by the DCAT-AP recommendation."
       },
       "styles": [
         "strictmatch"
@@ -3427,7 +3476,8 @@
         "sv": "Geografiska mediatyper"
       },
       "description": {
-        "en": "This register contains the sub-types of the media type application used for spatial data sets in INSPIRE, in particular in INSPIRE download services. Whenever sub-types exist that are registered with IANA or are in the registration process these are used. For all other formats, no commonly used sub-type exists and INSPIRE has to - at least temporarily - define their own types. In accordance with the rules for media types in RFC 2046/RFC 4288, these start with x-. At this time, all entries in this register have the status 'valid'. Sub-types that are no longer recommended for use will be marked as 'deprecated', but will always be kept in this register as download services may still be using deprecated sub-types."
+        "en": "This list contains the media types applications should use for spatial data sets in INSPIRE, in particular in INSPIRE download services. Whenever sub-types exist that are registered with IANA or are in the registration process these are used. For all other formats, no commonly used sub-type exists and INSPIRE has to - at least temporarily - define their own types. In accordance with the rules for media types in RFC 2046/RFC 4288, these start with x-. In addition to the data-oriented mediatypes we also list four protocoll oriented formats (application/vnd.ogc.[wms|wmts|wfs|wcs]_xml) to cover for the cases where a single protocoll-oriented distribution is created for a dataset rather one per data format.",
+        "sv": "Denna lista innehåller mediatyper som bör användas för datamängder inom INSPIRE, mer specifikt i INSPIREs nedladdningstjänster. Närhelst etablerade IANA mediatyper finns används dessa. När mediatyper saknas har INSPIRE - i allafall temporärt - definierat egna mediatyper. I enlighet med reglerna RFC 2046/RFC 4288 startas subtypen för dessa med x-. Utöver de dataorienterade mediatyperna listas också fyra protokollorienterade format (application/vnd.ogc.[wms|wmts|wfs|wcs]_xml) för att täcka in de fall när man skapar upp enbart en distribution som motsvarar protokollet istället för en distribution per format. "
       },
       "cardinality": {
         "min": 0,
@@ -3574,6 +3624,34 @@
           "value": "image/jp2",
           "label": {
             "en": "jp2"
+          }
+        },
+        {
+          "value": "application/vnd.ogc.wms_xml",
+          "label": {
+            "en": "WMS service",
+            "sv": "WMS tjänst"
+          }
+        },
+        {
+          "value": "application/vnd.ogc.wmts_xml",
+          "label": {
+            "en": "WMTS service",
+            "sv": "WMTS tjänst"
+          }
+        },
+        {
+          "value": "application/vnd.ogc.wfs_xml",
+          "label": {
+            "en": "WFS service",
+            "sv": "WFS tjänst"
+          }
+        },
+        {
+          "value": "application/vnd.ogc.wcs_xml",
+          "label": {
+            "en": "WCS service",
+            "sv": "WCS tjänst"
           }
         }
       ],
@@ -3853,8 +3931,8 @@
             "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "dcterms:LicenseDocument"
           },
           "label": {
-            "en": "Other license",
-            "sv": "Övrig licens"
+            "en": "License - other",
+            "sv": "Licens - övrig"
           },
           "description": {
             "en": "Refers to which licence under which the Distribution is made available if you are not using a CC license.",
@@ -4000,8 +4078,8 @@
         "sv": "Kontaktuppgift"
       },
       "description": {
-        "en": "This property contains contact information that can be used for flagging errors in the Dataset or sending comments",
-        "sv": "Egenskapen innehåller kontaktuppgifter som kan användas för att flagga fel i datamängden eller för att skicka kommentarer"
+        "en": "This property contains contact information that can be used for flagging errors in the Dataset / Data service or sending comments",
+        "sv": "Egenskapen innehåller kontaktuppgifter som kan användas för att flagga fel i datamängden / datatjänsten eller för att skicka kommentarer"
       },
       "items": [
         "vc:kindIndOrOrg",
@@ -4033,7 +4111,8 @@
         "sv": "Typ"
       },
       "description": {
-        "en": "This property refers to the explicit vCard-Type („Individual“ or „Organisation“) of a contact point."
+        "en": "This property tells wether the contect point corresponds to an Individual or an Organisation.",
+        "sv": "Egenskapen anger om kontaktuppgiften motsvar en individ eller organisation."
       },
       "choices": [
         {
@@ -4043,7 +4122,8 @@
             "sv": "Individ"
           },
           "description": {
-            "en": "An object representing a single person or entity."
+            "en": "The contectpoint corresponds to an individual.",
+            "sv": "Kontaktuppgiften motsvarar en individ."
           }
         },
         {
@@ -4053,7 +4133,8 @@
             "sv": "Organisation"
           },
           "description": {
-            "en": "An object representing an organization.  An organization is a single entity, and might represent a business or government, a department or division within a business or government, a club, an association, or the like."
+            "en": "The contactpoint corresponds to an organization. An organization is a single entity, and might represent a business or government, a department or division within a business or government, a club, an association, or the like.",
+            "sv": "Kontaktuppgiften motsvarar en organisation. En organisation kan motsvara ett företag, en myndighet, en förening osv."
           }
         }
       ],
@@ -4071,7 +4152,8 @@
         "sv": "Namn"
       },
       "description": {
-        "en": "The formatted text corresponding to the name of the object"
+        "en": "The text that corresponds to the name of the contactpoint.",
+        "sv": "En text som motsvarar namnet på kontaktuppgiften."
       },
       "type": "text",
       "nodetype": "LITERAL",
@@ -4088,7 +4170,8 @@
         "sv": "E-postadress"
       },
       "description": {
-        "en": "To specify the electronic mail address for communication with the object"
+        "en": "An e-mail address used by a person or a specific administrative function within an organization.",
+        "sv": "En mailadress som används av en person eller en funktionsadress inom en organisation."
       },
       "constraints": {
         "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "http://www.w3.org/2006/vcard/ns#Email"
@@ -4113,7 +4196,8 @@
         "sv": "Telefon"
       },
       "description": {
-        "en": "The telephone number should be given including country calling code, e.g. +4618100000."
+        "en": "The telephone number should be given including country calling code, e.g. +4618100000.",
+        "sv": "Ett telefonnummer ska ges inklusive landskod, t.ex. +4618100000."
       },
       "type": "group",
       "automatic": true,
@@ -4134,7 +4218,8 @@
             "sv": "Nummer"
           },
           "description": {
-            "en": "The telephone number should be given including country calling code, e.g. +4618100000."
+            "en": "The telephone number should be given including country calling code, e.g. +4618100000.",
+            "sv": "Ett telefonnummer ska ges inklusive landskod, t.ex. +4618100000."
           },
           "property": "vcard:hasValue",
           "pattern": "^[0-9+()-.\\s]+$",
@@ -4154,7 +4239,8 @@
         "sv": "Adress"
       },
       "description": {
-        "en": "To specify the components of the delivery address for the object"
+        "en": "To specify the delivery address for the contact point.",
+        "sv": "För att specificera en address för kontaktuppgiften."
       },
       "constraints": {
         "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "http://www.w3.org/2006/vcard/ns#Address"
@@ -4180,7 +4266,8 @@
         "sv": "Land"
       },
       "description": {
-        "en": "The country name associated with the address of the object."
+        "en": "The country name associated with the address.",
+        "sv": "Ett namn på adressens land."
       },
       "type": "text",
       "nodetype": "LITERAL",
@@ -4198,7 +4285,8 @@
         "sv": "Postort"
       },
       "description": {
-        "en": "The locality (e.g. city or town) associated with the address of the object."
+        "en": "The locality (e.g. city or town) associated with the address.",
+        "sv": "Postorten (t.ex. en stad eller ort) för en adress."
       },
       "type": "text",
       "nodetype": "LITERAL",
@@ -4216,7 +4304,8 @@
         "sv": "Postkod"
       },
       "description": {
-        "en": "The postal code associated with the address of the object"
+        "en": "The postal code associated with the address.",
+        "sv": "Postkoden för adressen."
       },
       "type": "text",
       "nodetype": "LITERAL",
@@ -4234,7 +4323,8 @@
         "sv": "Gatuadress"
       },
       "description": {
-        "en": "The street address associated with the address of the object."
+        "en": "The street address associated with the address.",
+        "sv": "Gatuadressen för adressen."
       },
       "type": "text",
       "nodetype": "LITERAL",
@@ -4257,7 +4347,7 @@
             "sv": "Namn"
           },
           "description": {
-            "en": "A name for some thing."
+            "en": "Ett namn på en person eller organisation."
           },
           "type": "text",
           "nodetype": "LANGUAGE_LITERAL",
@@ -4274,7 +4364,8 @@
             "sv": "Hemsida"
           },
           "description": {
-            "en": "A homepage for some thing."
+            "en": "A homepage for a person or organization.",
+            "sv": "En hemsida för en person eller organisation."
           },
           "constraints": {
             "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "http://xmlns.com/foaf/0.1/Document"
@@ -4297,7 +4388,8 @@
             "sv": "E-postadress"
           },
           "description": {
-            "en": "A personal mailbox, ie. an Internet mailbox associated with exactly one owner, the first owner of this mailbox. This is a 'static inverse functional property', in that  there is (across time and change) at most one individual that ever has any particular value for foaf:mbox."
+            "en": "An e-mail address used by a person or a specific administrative function within an organization.",
+            "sv": "En mailadress som används av en person eller en funktionsadress inom en organisation."
           },
           "type": "text",
           "nodetype": "URI",
