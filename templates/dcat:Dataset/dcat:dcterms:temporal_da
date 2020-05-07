@@ -72,7 +72,8 @@
         "sv": "Start"
       },
       "description": {
-        "en": "Start date of the validity period of a dataset. Deprecated in favour of dcat:startDate."
+        "en": "Start date of the validity period of a dataset. Deprecated in favour of dcat:startDate.",
+        "sv": "Startdatum för giltighetsperioden av en datamängd. Övergiven till stöd för dcat:startDate."
       },
       "datatype": [
         "http://www.w3.org/2001/XMLSchema#date",
@@ -92,7 +93,8 @@
         "sv": "Slut"
       },
       "description": {
-        "en": "End date of the validity period of a dataset. Deprecated in favour of dcat:endDate."
+        "en": "End date of the validity period of a dataset. Deprecated in favour of dcat:endDate.",
+        "sv": "Slutdatum för giltighetsperioden av en datamängd. Övergiven till stöd för dcat:endDate."
       },
       "datatype": [
         "http://www.w3.org/2001/XMLSchema#date",
