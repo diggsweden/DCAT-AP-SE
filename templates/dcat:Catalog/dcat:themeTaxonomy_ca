@@ -12,14 +12,14 @@
   },
   "choices": [
     {
-      "value": "https://publications.europa.eu/resource/authority/data-theme",
+      "value": "http://publications.europa.eu/resource/authority/data-theme",
       "label": {
         "en": "Data Theme Vocabulary",
         "sv": "Vokabulär för Data-Teman"
       },
       "description": {
-        "en": "MRD Data Themes Named Authority List",
-        "sv": "Lista över namngivna MRD Data-Teman"
+        "en": "MDR Data Themes Named Authority List",
+        "sv": "Lista över namngivna MDR Data-Teman"
       }
     }
   ],
