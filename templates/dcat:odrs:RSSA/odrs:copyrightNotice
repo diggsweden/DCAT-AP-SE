@@ -6,7 +6,8 @@
     "sv": "Meddelande om upphovsrätt"
   },
   "description": {
-    "en": "The copyright notice associated with a rights statement. A notice must typically be preserved and displayed when acknowledging the source of some data. This property is expressed as a simple literal value and so is suitable for simple copyright notices. Where a data publisher needs to reference a larger copyright statement and/or related guidance then the copyrightStatement property should be used instead."
+    "en": "The copyright notice associated with a rights statement. A notice must typically be preserved and displayed when acknowledging the source of some data. This property is expressed as a simple literal value and so is suitable for simple copyright notices. Where a data publisher needs to reference a larger copyright statement and/or related guidance then the copyrightStatement property should be used instead.",
+    "sv": "Notisen om upphovsrätt som associeras med ett rättsligt yttrande. En notis bör typiskt bli bevarad och uppvisad när den bekräftar källan av någon data. Denna egenskap är uttryckt som ett enkelt bokstavligt värde och är därför lämplig för enkla notiser om upphovsrätt. När en datapublicist behöver referera ett större upphovsrättsligt yttrande och/eller relaterad vägledning så bör egenskapen copyrightStatement användas istället."
   },
   "styles": [
     "multiline"
