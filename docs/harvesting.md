@@ -95,7 +95,7 @@ administrativt korrekta hemvisten är inom den egna organisationen.
 ### Beskriv en utgivande organisation enbart en gång
 
 Att beskriva en utgivande organisation flera gånger motsvarar att ha duplicerade identifierare. Risken är att man beskriver
-samma organisation med en aning olika namn, t.ex. "SKL - Sveriges Kommuner och Landsting" samt "Sveriges Kommuner och Landsting".
+samma organisation med en aning olika namn, t.ex. "SKR - Sveriges Kommuner och Regioner" samt "Sveriges Kommuner och Regioner".
 Det är svårt att automatiskt upptäcka att dessa två titlar motsvarar samma utgivande organisation med säkerhet.
 
 Effekten av beskriva samma organisation flera gånger är både att det ser illa ut med dupletter i sökgränsnittet på portalen

@@ -20,7 +20,7 @@ dct:license | Katalog | O | R | ?
 
 ### Utelämnade egenskaper
 Punkterna nedan berättar om olika egenskaper som vi valt att inte ta med i den svenska profilen. Observera att detta inte betyder att det är förbjudet att använda dessa egenskaper. Utelämnade egenskaper som tillhandahålls av en aktör kommer ändå skördas in och skickas vidare till Europeiska dataportalen, men, de kommer inte visas upp på dataportalen.
-Orsaken till att vissa egenskaper är utelämänade ur den svenska profilen är att det gjorts en bedömning av att värdet / behovet av dessa ännu inte är så stort att det meriterar en inklusion. I några av fallen är en del av orsaken också att det fortfarande är oklart hur de ska uttryckas i detalj, ofta saknas en tydlig best practise. Se också ärende [37](https://github.com/DIGGSweden/DCAT-AP-SE/issues/37).
+Orsaken till att vissa egenskaper är utelämänade ur den svenska profilen är att det gjorts en bedömning av att värdet / behovet av dessa ännu inte är så stort att det meriterar en inklusion. I några av fallen är en del av orsaken också att det fortfarande är oklart hur de ska uttryckas i detalj, ofta saknas en tydlig best practice. Se också ärende [37](https://github.com/DIGGSweden/DCAT-AP-SE/issues/37).
 
 Egenskap | Klass | Ändring
 :--- | :--- | :---
