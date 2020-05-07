@@ -7,7 +7,8 @@
     "sv": "Upphovsrättsdokument"
   },
   "description": {
-    "en": "A link (URL) to a document that includes a statement about the copyright status of the content of a dataset. The web page might include both a copyright notice for a dataset, and any relevant guidance for re-users."
+    "en": "A link (URL) to a document that includes a statement about the copyright status of the content of a dataset. The web page might include both a copyright notice for a dataset, and any relevant guidance for re-users.",
+    "sv": "En länk (URL) till ett dokument som inkluderar ett yttrande om upphovsrättsstatusen av innehållet för en databas. Webbsidan kan inkludera både en notis om upphovsrätt för en datamängd och någon relevant vägledning för återanvändare."
   },
   "cardinality": {
     "min": 0,
