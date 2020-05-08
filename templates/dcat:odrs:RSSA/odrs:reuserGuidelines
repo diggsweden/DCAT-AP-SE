@@ -6,7 +6,7 @@
   },
   "description": {
     "en": "Link (URL) to a document that provides guidelines for re-users of data that is covered by a specific rights statement. The guidelines may include more detail on attribution guidelines, a fuller copyright statement, and general guidance on how the data might be re-used",
-    "sv": "Länk (URL) till ett dokument som tillhandahåller riktlinjer för återanvändare av data som omfattas av ett specifikt rättsutlåtande. Riktlinjerna kan inkludera fler detaljer om riktlinjer för erkännande, en mer komplett text om upphovsrätten, och generell vägledning om hur datan kan bli återanvänd"
+    "sv": "Länk (URL) till ett dokument som tillhandahåller riktlinjer för återanvändare av data som omfattas av en specifik rättighetsförklaring. Riktlinjerna kan inkludera fler detaljer om riktlinjer för erkännande, en mer komplett text om upphovsrätten, och generell vägledning om hur datan kan bli återanvänd"
   },
   "property": "odrs:reuserGuidelines",
   "nodetype": "URI",

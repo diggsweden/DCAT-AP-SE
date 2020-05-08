@@ -5,11 +5,11 @@
   },
   "label": {
     "en": "Rights statement",
-    "sv": "Rättigheter"
+    "sv": "Rättighetsförklaring"
   },
   "description": {
     "en": "This property refers to a statement that specifies rights.",
-    "sv": "Egenskapen anger förklaring för rättigheterna."
+    "sv": "Egenskapen refererar till en rättighetsförklaring som syftar till att gruppera en mängd egenskaper som upphovsrätt, ägare av upphovsrätt, jurisdiktion, rekommendationer kring återanvändning osv."
   },
   "items": [
     "odrs:attributionText",

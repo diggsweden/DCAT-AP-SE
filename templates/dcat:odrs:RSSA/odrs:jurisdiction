@@ -8,7 +8,7 @@
   },
   "description": {
     "en": "A reference (URI) to the jurisdiction in which copyright and/or database rights have been asserts. It is recommended that this refer to the URI for a country or region.",
-    "sv": "En referens (URI) till jurisdiktionen varvid upphovsrätt och/eller databasrättigheter har blivit hävdad. Det är rekommenderat att denna refererar till URI:en för ett land eller region."
+    "sv": "En referens (URI) till den jurisdiktionen där upphovsrätt och/eller databasrättigheter hävdas. Det är rekommenderat att referera till ett land eller region (via en URI)."
   },
   "cardinality": {
     "min": 0,

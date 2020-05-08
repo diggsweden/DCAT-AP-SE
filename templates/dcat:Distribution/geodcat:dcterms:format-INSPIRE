@@ -99,8 +99,8 @@
         "sv": "x-oracledump"
       },
       "description": {
-        "en": "The media type shall be used for Oracle dumps. This media type is incomplete as it misses a reference to the specification of the format.",
-        "sv": "Mediatypen ska användas för Oracle-säkerhetskopieringar. Denna mediatyp är inkomplett då den saknar en referens till specifikationen av formatet."
+        "en": "The media type shall be used for Oracle dumps.",
+        "sv": "Mediatypen ska användas för Oracle-säkerhetskopieringar."
       }
     },
     {
@@ -121,8 +121,8 @@
         "sv": "x-laz"
       },
       "description": {
-        "en": "The media type shall be used for compressed LAS files. This media type is incomplete as it misses a reference to the specification of the format.",
-        "sv": "Mediatypen ska användas för komprimerade LAS-filer. Denna mediatyp är ofullständig då den saknar en referens till specifikationen av formatet:"
+        "en": "The media type shall be used for compressed LAS files.",
+        "sv": "Mediatypen ska användas för komprimerade LAS-filer."
       }
     },
     {
@@ -143,8 +143,8 @@
         "sv": "x-tab-raster"
       },
       "description": {
-        "en": "The media type shall be used for the MapInfo Raster TAB format. This media type is incomplete as it misses a reference to the specification of the format.",
-        "sv": "Mediatypen ska användas för formatet MapInfo Raster TAB. Denna mediatyp är ofullständig då den saknar en referens till specifikationen av formatet."
+        "en": "The media type shall be used for the MapInfo Raster TAB format.",
+        "sv": "Mediatypen ska användas för formatet MapInfo Raster TAB."
       }
     },
     {

@@ -32,7 +32,7 @@
       },
       "description": {
         "en": "This property provides a lower case hexadecimal encoded digest value produced using a specific algorithm.",
-        "sv": "Ett hexadecimalt Digest-värde i gemener som genereras med hjälp av en särskild algoritm."
+        "sv": "Ett hexadecimalt digest-värde i gemener som genereras med hjälp av en särskild algoritm."
       },
       "cardinality": {
         "min": 1,

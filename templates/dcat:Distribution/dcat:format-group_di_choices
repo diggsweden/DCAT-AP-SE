@@ -101,7 +101,7 @@
     {
       "value": "application/vnd.ms-excel",
       "label": {
-        "en": "Microsoft Excel (.xls)"
+        "en": "Microsoft Excel (.xls)",
         "sv": "Microsoft Excel (.xls)"
       },
       "description": {
@@ -112,7 +112,8 @@
     {
       "value": "application/pdf",
       "description": {
-        "en": "Portable Document Format (PDF) is a file format used to present documents encapsulating a complete description of a fixed-layout flat document, including the text, fonts, graphics, and other information needed to display it."
+        "en": "Portable Document Format (PDF) is a file format used to present documents encapsulating a complete description of a fixed-layout flat document, including the text, fonts, graphics, and other information needed to display it.",
+        "sv": "Portable Document Format (PDF) är ett filformat som används för att presentera dokument som innehåller en fullständig beskrivning av ett dokument med fast layout, inklusive text, teckensnitt, grafik och annan information som behövs för att visa det."
       },
       "label": {
         "en": "PDF (.pdf)",

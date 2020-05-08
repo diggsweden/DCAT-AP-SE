@@ -67,7 +67,8 @@
             "en": "CC BY 4.0 (Attribution)"
           },
           "description": {
-            "en": "The owner ALLOWS commercial uses AND changes to the resource"
+            "en": "The licensor allows you to share (copy and redistribute in any medium or format) as well as adapt (remix, transform, and build upon) the material for any purpose, even commercially. You are required to give credit, link to the license and indicate if changes where made.",
+            "sv": "Licensgivaren tillåter dig att dela (kopiera och vidaredistribuera oavsett medium eller format) samt att bearbeta (remixa, transformera, och bygga vidare på) materialet för alla ändamål, även kommersiellt. Du måste ge ett korrekt erkännande, ange en hyperlänk till licensen och ange om bearbetningar är gjorda."
           }
         },
         {
@@ -76,7 +77,8 @@
             "en": "CC BY-NC 4.0 (Attribution, Non-Commercial)"
           },
           "description": {
-            "en": "The owner does NOT allow commercial uses but ALLOWS changes to the resource"
+            "en": "The licensor does not allow commercial uses, but allows you to share (copy and redistribute in any medium or format) as well as adapt (remix, transform, and build upon) the material for any other purpose. You are required to give credit, link to the license and indicate if changes where made.",
+            "sv": "Licensgivaren tillåter inte kommersiell användning, men tillåter dig att dela (kopiera och vidaredistribuera oavsett medium eller format) samt att bearbeta (remixa, transformera, och bygga vidare på) materialet för andra ändamål. Du måste ge ett korrekt erkännande, ange en hyperlänk till licensen och ange om bearbetningar är gjorda."
           }
         },
         {
@@ -85,13 +87,18 @@
             "en": "CC BY-NC-ND 4.0 (Attribution, Non-Commercial, No Derivative Works)"
           },
           "description": {
-            "en": "The owner does NOT allow commercial uses OR changes to the resource"
+            "en": "The licensor does not allow commercial use but allows you to share (copy and redistribute in any medium or format) the material for any other purpose. The licensor does not allow you to distribute any adaptions of the material. You are required to give credit, link to the license and indicate if changes where made.",
+            "sv": "Licensgivaren tillåter inte kommersiell användning men tillåter dig att dela (kopiera och vidaredistribuera oavsett medium eller format) materialet för andra ändamål. Licensgivaren tillåter inte att bearbetningar av materialet distribueras vidare. Du måste ge ett korrekt erkännande, ange en hyperlänk till licensen och ange om bearbetningar är gjorda."
           }
         },
         {
           "value": "http://creativecommons.org/licenses/by-nc-sa/4.0/",
           "label": {
             "en": "CC BY-NC-SA 4.0 (Attribution, Non-Commercial, Share Alike)"
+          },
+          "description": {
+            "en": "The licensor does not allow commercial use but allows you to share (copy and redistribute in any medium or format) the material for any other purpose, but only if you distribute your contributions under the same license. You are required to give credit, link to the license and indicate if changes where made.",
+            "sv": "Licensgivaren tillåter inte kommersiell användning men tillåter dig att dela (kopiera och vidaredistribuera oavsett medium eller format) materialet för andra ändamål, men endast om du distribuerar dina bidrag under samma licens. Du måste ge ett korrekt erkännande, ange en hyperlänk till licensen och ange om bearbetningar är gjorda."
           }
         },
         {
@@ -100,19 +107,28 @@
             "en": "CC BY-ND 4.0 (Attribution, No Derivative Works)"
           },
           "description": {
-            "en": "The owner ALLOWS commercial uses but does NOT allow changes to the resource"
+            "en": "The licensor allows you to share (copy and redistribute in any medium or format) the material for any other purpose, even commercially. The licensor does not allow you to distribute any adaptions of the material. You are required to give credit, link to the license and indicate if changes where made.",
+            "sv": "Licensgivaren tillåter dig att dela (kopiera och vidaredistribuera oavsett medium eller format) materialet för andra ändamål, även kommersiella. Licensgivaren tillåter inte att bearbetningar av materialet distribueras vidare. Du måste ge ett korrekt erkännande, ange en hyperlänk till licensen och ange om bearbetningar är gjorda."
           }
         },
         {
           "value": "http://creativecommons.org/licenses/by-sa/4.0/",
           "label": {
             "en": "CC BY-SA 4.0 (Attribution, Share Alike)"
+          },
+          "description": {
+            "en": "The licensor allows you to share (copy and redistribute in any medium or format) as well as adapt (remix, transform, and build upon) the material for any purpose, even commercially, but only if you distribute your contributions under the same license. You are required to give credit, link to the license and indicate if changes where made.",
+            "sv": "Licensgivaren tillåter dig att dela (kopiera och vidaredistribuera oavsett medium eller format) samt att bearbeta (remixa, transformera, och bygga vidare på) material för alla ändamål, även kommersiellt, men endast om du distribuerar dina bidrag under samma licens. Du måste ge ett korrekt erkännande, ange en hyperlänk till licensen och ange om bearbetningar är gjorda."
           }
         },
         {
           "value": "http://creativecommons.org/publicdomain/zero/1.0/",
           "label": {
             "en": "CC0 1.0 (Public Domain Dedication, No Copyright)"
+          },
+          "description": {
+            "en": "The licensor has dedicated the work to the public domain by waiving all of his or her rights to the work worldwide under copyright law, including all related and neighboring rights, to the extent allowed by law. You can copy, modify, distribute and perform the work, even for commercial purposes, all without asking permission.",
+            "sv": "Licensgivaren har dedikerat verket till public domain genom att avsäga sig sina rättigheter till verket i hela världen enligt upphovsrättslagstiftningen, inklusive alla relaterade och närstående rättigheter, så lågt lagen tillåter. Du får kopiera, modifiera, distribuera och framföra verket, även i kommersiellt syfte, utan att fråga om lov."
           }
         }
       ],
@@ -1380,10 +1396,12 @@
         {
           "value": "http://publications.europa.eu/resource/authority/data-theme",
           "label": {
-            "en": "Data Theme Vocabulary"
+            "en": "Data Theme Vocabulary",
+            "sv": "Vokabulär för Data-Teman"
           },
           "description": {
-            "en": "MRD Data Themes Named Authority List"
+            "en": "MDR Data Themes Named Authority List",
+            "sv": "Lista över namngivna MDR Data-Teman"
           }
         }
       ],
@@ -2422,7 +2440,8 @@
             "sv": "Start"
           },
           "description": {
-            "en": "Start date of the validity period of a dataset. Deprecated in favour of dcat:startDate."
+            "en": "Start date of the validity period of a dataset. Deprecated in favour of dcat:startDate.",
+            "sv": "Startdatum för giltighetsperioden av en datamängd. Övergiven till stöd för dcat:startDate."
           },
           "datatype": [
             "http://www.w3.org/2001/XMLSchema#date",
@@ -2442,7 +2461,8 @@
             "sv": "Slut"
           },
           "description": {
-            "en": "End date of the validity period of a dataset. Deprecated in favour of dcat:endDate."
+            "en": "End date of the validity period of a dataset. Deprecated in favour of dcat:endDate.",
+            "sv": "Slutdatum för giltighetsperioden av en datamängd. Övergiven till stöd för dcat:endDate."
           },
           "datatype": [
             "http://www.w3.org/2001/XMLSchema#date",
@@ -2574,7 +2594,8 @@
             "sv": "Dagligen"
           },
           "description": {
-            "en": "The event occurs once a day."
+            "en": "The event occurs once a day.",
+            "sv": "Uppdateringen sker en gång per dag."
           }
         },
         {
@@ -2584,7 +2605,8 @@
             "sv": "Oregelbunden"
           },
           "description": {
-            "en": "The event occurs at uneven intervals."
+            "en": "The event occurs at uneven intervals.",
+            "sv": "Uppdateringen sker vid oregelbundna intervaller."
           }
         },
         {
@@ -2594,7 +2616,8 @@
             "sv": "Månatlig"
           },
           "description": {
-            "en": "The event occurs once a month."
+            "en": "The event occurs once a month.",
+            "sv": "Uppdateringen sker en gång per månad."
           }
         },
         {
@@ -2604,7 +2627,8 @@
             "sv": "Kvartalsvis"
           },
           "description": {
-            "en": "The event occurs every three months."
+            "en": "The event occurs every three months.",
+            "sv": "Uppdateringen sker var tredje månad."
           }
         },
         {
@@ -2614,7 +2638,8 @@
             "sv": "Halvårlig"
           },
           "description": {
-            "en": "The event occurs twice a year."
+            "en": "The event occurs twice a year.",
+            "sv": "Uppdateringen sker två gånger per år."
           }
         },
         {
@@ -2624,7 +2649,8 @@
             "sv": "Varannan månad"
           },
           "description": {
-            "en": "The event occurs twice a month."
+            "en": "The event occurs twice a month.",
+            "sv": "Uppdateringen sker två gånger per månad."
           }
         },
         {
@@ -2634,7 +2660,8 @@
             "sv": "Två gånger per vecka"
           },
           "description": {
-            "en": "The event occurs twice a week."
+            "en": "The event occurs twice a week.",
+            "sv": "Uppdateringen sker två gånger per vecka."
           }
         },
         {
@@ -2644,7 +2671,8 @@
             "sv": "Tre gånger per månad"
           },
           "description": {
-            "en": "The event occurs three times a month."
+            "en": "The event occurs three times a month.",
+            "sv": "Uppdateringen sker tre gånger per månad."
           }
         },
         {
@@ -2654,7 +2682,8 @@
             "sv": "Tre gånger per vecka"
           },
           "description": {
-            "en": "The event occurs three times a week."
+            "en": "The event occurs three times a week.",
+            "sv": "Uppdateringen sker tre gånger per vecka."
           }
         },
         {
@@ -2664,7 +2693,8 @@
             "sv": "Tre gånger per år"
           },
           "description": {
-            "en": "The event occurs three times a year."
+            "en": "The event occurs three times a year.",
+            "sv": "Uppdateringen sker tre gånger per år."
           }
         },
         {
@@ -2674,7 +2704,8 @@
             "sv": "Vart tredje år"
           },
           "description": {
-            "en": "The event occurs every three years."
+            "en": "The event occurs every three years.",
+            "sv": "Uppdateringen sker vart tredje år."
           }
         },
         {
@@ -2684,7 +2715,8 @@
             "sv": "Varje vecka"
           },
           "description": {
-            "en": "The event occurs once a week."
+            "en": "The event occurs once a week.",
+            "sv": "Uppdateringen sker veckovis."
           }
         }
       ],
@@ -3270,7 +3302,8 @@
           "type": "text",
           "property": "dcterms:format",
           "description": {
-            "en": "If you cannot find your mediatype in the list above you can provide one by hand. See list of established mediatypes at: http://www.iana.org/assignments/media-types/media-types.xhtml."
+            "en": "If you cannot find your mediatype in the list above you can provide one by hand. See list of established mediatypes at: http://www.iana.org/assignments/media-types/media-types.xhtml.",
+            "sv": "Om du inte kan hitta din mediatyp i listan ovanför kan du tillhandahålla en för hand. Se lista över etablerade mediatyper på: http://www.iana.org/assignments/media-types/media-types.xhtml."
           },
           "label": {
             "en": "Other mediatypes",
@@ -3296,17 +3329,19 @@
         "sv": "Vanliga mediatyper"
       },
       "description": {
-        "en": "A selection of common mediatypes.",
-        "sv": "A samling vanliga mediatyper."
+        "en": "A selection of common mediatypes according to the list suggested by the DCAT-AP recommendation.",
+        "sv": "Ett urval av vanliga mediatyper enligt listan föreslaget av rekommendationen DCAT-AP."
       },
       "choices": [
         {
           "value": "text/csv",
           "label": {
-            "en": "CSV (.csv)"
+            "en": "CSV (.csv)",
+            "sv": "CSV (.csv)"
           },
           "description": {
-            "en": "CSV is a simple spreadsheet format where rows are separeted by newlines and columns by commas, semicolon or some other special character."
+            "en": "CSV is a simple spreadsheet format where rows are separeted by newlines and columns by commas, semicolon or some other special character.",
+            "sv": "CSV är ett enkelt format för kalkylark där rader är separerade av radbrytningar och kolumner av kommatecken, semikolon eller någon annan specialkaraktär."
           }
         },
         {
@@ -3316,16 +3351,19 @@
             "sv": "CSV (.csv) i en zip"
           },
           "description": {
-            "en": "A zip file containing csv files."
+            "en": "A zip file containing CSV files.",
+            "sv": "En zip-fil som innehåller CSV-filer."
           }
         },
         {
           "value": "application/xml",
           "label": {
-            "en": "XML (.xml)"
+            "en": "XML (.xml)",
+            "sv": "XML (.xml)"
           },
           "description": {
-            "en": "Extensible Markup Language (XML) is a markup language that defines a set of rules for encoding documents in a format that is both human-readable and machine-readable. It is defined in the XML 1.0 Specification produced by the W3C."
+            "en": "Extensible Markup Language (XML) is a markup language that defines a set of rules for encoding documents in a format that is both human-readable and machine-readable. It is defined in the XML 1.0 Specification produced by the W3C.",
+            "sv": "Extensible Markup Language (XML) är ett märkspråk som definierar en grupp av regler för att koda dokument i ett format som är både läsbart för människor och maskinläsbart. Det är definierat i XML 1.0 Specifikationen producerat av W3C."
           }
         },
         {
@@ -3335,16 +3373,19 @@
             "sv": "XML (.xml) i en zip"
           },
           "description": {
-            "en": "A zip file containing xml files."
+            "en": "A zip file containing XML files.",
+            "sv": "En zip-fil som innehåller XML-filer."
           }
         },
         {
           "value": "application/json",
           "label": {
-            "en": "JSON (.json)"
+            "en": "JSON (.json)",
+            "sv": "JSON (.json)"
           },
           "description": {
-            "en": "JSON or JavaScript Object Notation, is an open standard format that uses human-readable text to transmit data objects consisting of attribute–value pairs. It is used primarily to transmit data between a server and web application, as an alternative to XML."
+            "en": "JSON or JavaScript Object Notation, is an open standard format that uses human-readable text to transmit data objects consisting of attribute–value pairs. It is used primarily to transmit data between a server and web application, as an alternative to XML.",
+            "sv": "JSON eller JavaScript Object Notation, är ett öppet standard-format som använder text läsbar för människor för att överföra dataobjekt består av egenskap-värdepar. Det är använd primärt för att överföra data mellan en server och en webb-applikation, som ett alternativ till XML."
           }
         },
         {
@@ -3354,7 +3395,8 @@
             "sv": "JSON (.json) i en zip"
           },
           "description": {
-            "en": "A zip file containing xml files."
+            "en": "A zip file containing JSON files.",
+            "sv": "En zip-fil som innehåller JSON-filer."
           }
         },
         {
@@ -3363,41 +3405,52 @@
             "en": "ZIP (.zip)"
           },
           "description": {
-            "en": ".ZIP is an archive file format that supports lossless data compression."
+            "en": ".ZIP is an archive file format that supports lossless data compression.",
+            "sv": ".ZIP är ett format för filarkiv som stödjer icke-förstörande datakomprimering."
           }
         },
         {
           "value": "text/html",
           "label": {
-            "en": "HTML (.html)"
+            "en": "HTML (.html)",
+            "sv": "HTML (.html)"
           },
           "description": {
-            "en": "HTML or HyperText Markup Language is the standard markup language used to create web pages."
+            "en": "HTML or HyperText Markup Language is the standard markup language used to create web pages.",
+            "sv": "HTML eller HyperText Markup Language är ett standardiserat märkspråk som används för att skapa webbsidor."
           }
         },
         {
           "value": "application/vnd.ms-excel",
           "label": {
-            "en": "Microsoft Excel (.xls)"
+            "en": "Microsoft Excel (.xls)",
+            "sv": "Microsoft Excel (.xls)"
           },
-          "description": {}
+          "description": {
+            "en": "Microsot Excel (.xls) is a proprietary, non-standardized, spreadsheet file format created by the Microsoft Corporation.",
+            "sv": "Microsoft Excel (.xls) är ett proprietärt, icke-standardiserat filformat för kalkylark skapat av Microsoft Corporation."
+          }
         },
         {
           "value": "application/pdf",
           "description": {
-            "en": "Portable Document Format (PDF) is a file format used to present documents encapsulating a complete description of a fixed-layout flat document, including the text, fonts, graphics, and other information needed to display it."
+            "en": "Portable Document Format (PDF) is a file format used to present documents encapsulating a complete description of a fixed-layout flat document, including the text, fonts, graphics, and other information needed to display it.",
+            "sv": "Portable Document Format (PDF) är ett filformat som används för att presentera dokument som innehåller en fullständig beskrivning av ett dokument med fast layout, inklusive text, teckensnitt, grafik och annan information som behövs för att visa det."
           },
           "label": {
-            "en": "PDF (.pdf)"
+            "en": "PDF (.pdf)",
+            "sv": "PDF (.pdf)"
           }
         },
         {
           "value": "text/plain",
           "label": {
-            "en": "Text (.txt)"
+            "en": "Text (.txt)",
+            "sv": "Text (.txt)"
           },
           "description": {
-            "en": "Plain text file."
+            "en": "Plain text file.",
+            "sv": "Enkel textfil."
           }
         },
         {
@@ -3407,49 +3460,59 @@
             "sv": "RDF som N-Triples (.n3)"
           },
           "description": {
-            "en": "A line-based syntax for an RDF graph."
+            "en": "A line-based syntax for an RDF graph.",
+            "sv": "En radbaserad syntax för att uttrycka RDF-grafer."
           }
         },
         {
           "value": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
           "label": {
-            "en": "Microsoft Excel XML (.xlsx)"
+            "en": "Microsoft Excel XML (.xlsx)",
+            "sv": "Microsoft Excel XML (.xlsx)"
           },
           "description": {
-            "en": "Office Open XML Spreadsheet is a zipped, XML-based file format developed by Microsoft, standardized in ECMA-376 and later in ISO/IEC 29500."
+            "en": "Office Open XML Spreadsheet is a zipped, XML-based file format developed by Microsoft, standardized in ECMA-376 and later in ISO/IEC 29500.",
+            "sv": "Office Open XML Spreadsheet är en zippad, XML-baserat filformat utvecklat av Microsoft, standardiserad i ECMA-376 och senare i ISO/IEC 29500."
           }
         },
         {
           "value": "application/vnd.oasis.opendocument.spreadsheet",
           "label": {
-            "en": "OpenDocument Spreadsheet (.ods)"
+            "en": "OpenDocument Spreadsheet (.ods)",
+            "sv": "OpenDocument Spreadsheet (.ods)"
           },
           "description": {
-            "en": "The Open Document Format for spreadsheets is an XML based format standardized first by OASIS and later by ISO/IEC: ISO/IEC 26300:2006/Amd 1:2012 — Open Document Format for Office Applications (OpenDocument) v1.1."
+            "en": "The Open Document Format for spreadsheets is an XML based format standardized first by OASIS and later by ISO/IEC: ISO/IEC 26300:2006/Amd 1:2012 — Open Document Format for Office Applications (OpenDocument) v1.1.",
+            "sv": "Open Document Format (Öppna Dokumentformatet) för kalkylark är ett XML-baserat format standardiserat först av OASIS och senare av ISO/IEC: ISO/IEC 26300:2006/Amd 1:2012 — Open Document Format for Office Applications (OpenDocument) v1.1."
           }
         },
         {
           "value": "application/rdf+xml",
           "label": {
-            "en": "RDF/XML (.rdf)"
+            "en": "RDF/XML (.rdf)",
+            "sv": "RDF/XML (.rdf)"
           },
           "description": {
-            "en": "This is an XML syntax for RDF as introduced in the RDF/XML Syntax Specification by W3C in 2004."
+            "en": "This is an XML syntax for RDF as introduced in the RDF/XML Syntax Specification by W3C in 2004.",
+            "sv": "Detta är ett XML-syntax för RDF som introducerades i specifikationen RDF/XML Syntax Specification av W3C år 2004."
           }
         },
         {
           "value": "application/sparql-query",
           "label": {
-            "en": "RDF query (SPARQL)"
+            "en": "RDF query (SPARQL)",
+            "sv": "RDF sökning (SPARQL)"
           },
           "description": {
-            "en": "SPARQL (pronounced \"sparkle\", an acronym for SPARQL Protocol and RDF Query Language) is an RDF query language, that is, a query language for databases, able to retrieve and manipulate data stored in Resource Description Framework format."
+            "en": "SPARQL (pronounced \"sparkle\", an acronym for SPARQL Protocol and RDF Query Language) is an RDF query language, that is, a query language for databases, able to retrieve and manipulate data stored in Resource Description Framework format.",
+            "sv": "SPARQL (uttalat \"sparkle\", är en akronym för SPARQL Protocol and RDF Query Language) är ett RDF query-språk, som är, ett frågespråk för databaser, kunnigt att hämta och manipulera data lagrat i Resource Description Framework-formatet."
           }
         },
         {
           "value": "text/turtle",
           "description": {
-            "en": "Turtle is a syntax for RDF that allows an RDF graph to be completely written in a compact and natural text form, with abbreviations for common usage patterns and datatypes. "
+            "en": "Turtle is a syntax for RDF that allows an RDF graph to be completely written in a compact and natural text form, with abbreviations for common usage patterns and datatypes.",
+            "sv": "Turtle är ett syntax för RDF som tillåter en RDF-graf att bli helt skriven i en kompakt och naturlig textform, med förkortningar för vanliga användningsmönster och datatyper."
           },
           "label": {
             "en": "RDF as Turtle (.ttl)",
@@ -3488,170 +3551,199 @@
         {
           "value": "application/x-shapefile",
           "label": {
-            "en": "x-shapefile"
+            "en": "x-shapefile",
+            "sv": "x-shapefile"
           },
           "description": {
-            "en": "The media type shall be used for Esri shapefiles. The file is a zip archive that contains at least the shp, shx and dbf files."
+            "en": "The media type shall be used for Esri shapefiles. The file is a zip archive that contains at least the shp, shx and dbf files.",
+            "sv": "Mediatypen ska användas för Esri shapefiles. Filen är ett zip-arkiv som innehåller åtminstone shp-, shx- och dbf-filer."
           }
         },
         {
           "value": "application/x-filegdb",
           "label": {
-            "en": "x-filegdb"
+            "en": "x-filegdb",
+            "sv": "xfilegdb"
           },
           "description": {
-            "en": "The media type shall be used for Esri file geodatabases. The file is a zip archive that contains the gdb directory."
+            "en": "The media type shall be used for Esri file geodatabases. The file is a zip archive that contains the gdb directory.",
+            "sv": "Mediatypen ska användas för Esri geodatabas-filer. Filen är ett zip-arkiv som innehåller gdp-filkatalogen."
           }
         },
         {
           "value": "application/gml+xml",
           "label": {
-            "en": "gml+xml"
+            "en": "gml+xml",
+            "sv": "gml+xml"
           }
         },
         {
           "value": "application/x-gmz",
           "label": {
-            "en": "x-gmz"
+            "en": "x-gmz",
+            "sv": "x-gmz"
           },
           "description": {
-            "en": "The media type shall be used for a zip archive that contains one or more GML documents."
+            "en": "The media type shall be used for a zip archive that contains one or more GML documents.",
+            "sv": "Mediatypen ska användas för ett zip-arkiv som innehåller ett eller fler GML-dokument."
           }
         },
         {
           "value": "application/vnd.google-earth.kml+xml",
           "label": {
-            "en": "vnd.google-earth.kml+xml"
+            "en": "vnd.google-earth.kml+xml",
+            "sv": "vnd.google-earth.kml+xml"
           }
         },
         {
           "value": "application/vnd.google-earth.kmz",
           "label": {
-            "en": "vnd.google-earth.kmz"
+            "en": "vnd.google-earth.kmz",
+            "sv": "vnd.google-earth.kmz"
           }
         },
         {
           "value": "application/x-ecw",
           "label": {
-            "en": "x-ecw"
+            "en": "x-ecw",
+            "sv": "x-ecw"
           },
           "description": {
-            "en": "The media type shall be used for Enhanced Compressed Wavelet (ECW) files."
+            "en": "The media type shall be used for Enhanced Compressed Wavelet (ECW) files.",
+            "sv": "Mediatypen ska användas för Enhanced Compressed Wavelet (ECW)-filer."
           }
         },
         {
           "value": "application/x-ascii-grid",
           "label": {
-            "en": "x-ascii-grid"
+            "en": "x-ascii-grid",
+            "sv": "x-ascii-grid"
           },
           "description": {
-            "en": "The media type shall be used for ASCII GRID files."
+            "en": "The media type shall be used for ASCII GRID files.",
+            "sv": "Mediatypen ska användas för ASCII GRID-filer."
           }
         },
         {
           "value": "application/x-oracledump",
           "label": {
-            "en": "x-oracledump"
+            "en": "x-oracledump",
+            "sv": "x-oracledump"
           },
           "description": {
-            "en": "The media type shall be used for Oracle dumps. This media type is incomplete as it misses a reference to the specification of the format."
+            "en": "The media type shall be used for Oracle dumps.",
+            "sv": "Mediatypen ska användas för Oracle-säkerhetskopieringar."
           }
         },
         {
           "value": "application/x-las",
           "label": {
-            "en": "x-las"
+            "en": "x-las",
+            "sv": "x-las"
           },
           "description": {
-            "en": "The media type shall be used for the LASer file format (LAS)."
+            "en": "The media type shall be used for the LASer file format (LAS).",
+            "sv": "Mediatypen ska användas för filformatet LASer,"
           }
         },
         {
           "value": "application/x-laz",
           "label": {
-            "en": "x-laz"
+            "en": "x-laz",
+            "sv": "x-laz"
           },
           "description": {
-            "en": "The media type shall be used for compressed LAS files. This media type is incomplete as it misses a reference to the specification of the format."
+            "en": "The media type shall be used for compressed LAS files.",
+            "sv": "Mediatypen ska användas för komprimerade LAS-filer."
           }
         },
         {
           "value": "application/x-tab",
           "label": {
-            "en": "x-tab"
+            "en": "x-tab",
+            "sv": "x-tab"
           },
           "description": {
-            "en": "The media type shall be used for the MapInfo TAB format. The file is a zip archive that contains at least the tab, dat, map and id files."
+            "en": "The media type shall be used for the MapInfo TAB format. The file is a zip archive that contains at least the tab, dat, map and id files.",
+            "sv": "Mediatypen ska användas för formatet MapInfo TAB. Filen är ett zip-arkiv som innehåller åtminstone tab-, dat-, map- och id-filer."
           }
         },
         {
           "value": "application/x-tab-raster",
           "label": {
-            "en": "x-tab-raster"
+            "en": "x-tab-raster",
+            "sv": "x-tab-raster"
           },
           "description": {
-            "en": "The media type shall be used for the MapInfo Raster TAB format. This media type is incomplete as it misses a reference to the specification of the format."
+            "en": "The media type shall be used for the MapInfo Raster TAB format.",
+            "sv": "Mediatypen ska användas för formatet MapInfo Raster TAB."
           }
         },
         {
           "value": "application/x-worldfile",
           "label": {
-            "en": "x-worldfile"
+            "en": "x-worldfile",
+            "sv": "x-worldfile"
           },
           "description": {
-            "en": "The media type shall be used for world files. The file extension usually depends on the format of the associated image, e.g. .jgw for JPEG (2000) oder .tfw for TIFF."
+            "en": "The media type shall be used for world files. The file extension usually depends on the format of the associated image, e.g. .jgw for JPEG (2000) or .tfw for TIFF.",
+            "sv": "Mediatypen ska användas för world-filer. Filändelsen är oftast beroende på formatet av den associerade bilden, t.ex. .jgw för JPEG (2000) eller .tfw för TIFF."
           }
         },
         {
           "value": "application/vnd.sqlite3",
           "label": {
-            "en": "vnd.sqlite3"
+            "en": "vnd.sqlite3",
+            "sv": "vnd.sqlite3"
           }
         },
         {
           "value": "application/geopackage+sqlite3",
           "label": {
-            "en": "geopackage+sqlite3"
+            "en": "geopackage+sqlite3",
+            "sv": "geopackage+sqlite3"
           }
         },
         {
           "value": "image/tiff",
           "label": {
-            "en": "tiff"
+            "en": "tiff",
+            "sv": "tiff"
           }
         },
         {
           "value": "image/jp2",
           "label": {
-            "en": "jp2"
+            "en": "jp2",
+            "sv": "jp2"
           }
         },
         {
           "value": "application/vnd.ogc.wms_xml",
           "label": {
             "en": "WMS service",
-            "sv": "WMS tjänst"
+            "sv": "WMS-tjänst"
           }
         },
         {
           "value": "application/vnd.ogc.wmts_xml",
           "label": {
             "en": "WMTS service",
-            "sv": "WMTS tjänst"
+            "sv": "WMTS-tjänst"
           }
         },
         {
           "value": "application/vnd.ogc.wfs_xml",
           "label": {
             "en": "WFS service",
-            "sv": "WFS tjänst"
+            "sv": "WFS-tjänst"
           }
         },
         {
           "value": "application/vnd.ogc.wcs_xml",
           "label": {
             "en": "WCS service",
-            "sv": "WCS tjänst"
+            "sv": "WCS-tjänst"
           }
         }
       ],
@@ -3996,7 +4088,7 @@
           },
           "description": {
             "en": "This property provides a lower case hexadecimal encoded digest value produced using a specific algorithm.",
-            "sv": "Ett hexadecimalt Digest-värde i gemener som genereras med hjälp av en särskild algoritm."
+            "sv": "Ett hexadecimalt digest-värde i gemener som genereras med hjälp av en särskild algoritm."
           },
           "cardinality": {
             "min": 1,
@@ -4011,7 +4103,8 @@
             {
               "value": "http://spdx.org/rdf/terms#checksumAlgorithm_sha1",
               "label": {
-                "en": "SHA-1"
+                "en": "SHA-1",
+                "sv": "SHA-1"
               }
             }
           ],
@@ -4022,7 +4115,7 @@
           },
           "description": {
             "en": "This property identifies the algorithm used to produce the subject Checksum. Currently, SHA-1 is the only supported algorithm. It is anticipated that other algorithms will be supported at a later time.",
-            "sv": "Algoritmen som används för att generera checksumman."
+            "sv": "Algoritmen som används för att generera checksumman. För närvarande är SHA-1 den enda algoritm som stöds. Det förväntas att andra algoritmer kommer att stödjas vid ett senare tillfälle."
           },
           "cardinality": {
             "min": 1,
@@ -4522,11 +4615,11 @@
       },
       "label": {
         "en": "Rights statement",
-        "sv": "Rättigheter"
+        "sv": "Rättighetsförklaring"
       },
       "description": {
         "en": "This property refers to a statement that specifies rights.",
-        "sv": "Egenskapen anger förklaring för rättigheterna."
+        "sv": "Egenskapen refererar till en rättighetsförklaring som syftar till att gruppera en mängd egenskaper som upphovsrätt, ägare av upphovsrätt, jurisdiktion, rekommendationer kring återanvändning osv."
       },
       "items": [
         "odrs:attributionText",
@@ -4580,7 +4673,8 @@
         "sv": "Erkännande URL"
       },
       "description": {
-        "en": "The link (URL) which should be used when attributing a data source. The URL could be a reference to the dataset or publisher homepage, but may also be a dedicated attribution page. This is useful when providing onward attribution to upstream sources."
+        "en": "The link (URL) which should be used when attributing a data source. The URL could be a reference to the dataset or publisher homepage, but may also be a dedicated attribution page. This is useful when providing onward attribution to upstream sources.",
+        "sv": "Länken (URL) som ska användas när en erkänner källa till data. URL:en kan bli refererad till datamängden eller publicistens hemsida, men kan också vara en hemsida dedicerad för erkännanden. Det här är användbart när en tillhandahåller vidare erkännande till källor uppströms."
       },
       "cardinality": {
         "min": 0,
@@ -4597,7 +4691,8 @@
         "sv": "Meddelande om upphovsrätt"
       },
       "description": {
-        "en": "The copyright notice associated with a rights statement. A notice must typically be preserved and displayed when acknowledging the source of some data. This property is expressed as a simple literal value and so is suitable for simple copyright notices. Where a data publisher needs to reference a larger copyright statement and/or related guidance then the copyrightStatement property should be used instead."
+        "en": "The copyright notice associated with a rights statement. A notice must typically be preserved and displayed when acknowledging the source of some data. This property is expressed as a simple literal value and so is suitable for simple copyright notices. Where a data publisher needs to reference a larger copyright statement and/or related guidance then the copyrightStatement property should be used instead.",
+        "sv": "Meddelandet om upphovsrätt som associeras med en rättighetsförklaring. Ett sådant meddelande bör typiskt anges i samband med att man anger datas ursprung. Denna egenskap är uttryckt som en kortare oformaterad text och är därför lämplig för enkla notiser om upphovsrätt. När en datapublicist behöver referera ett större upphovsrättsligt yttrande och/eller relaterad vägledning så bör egenskapen copyrightStatement användas istället."
       },
       "styles": [
         "multiline"
@@ -4614,7 +4709,8 @@
         "sv": "Upphovsrättsdokument"
       },
       "description": {
-        "en": "A link (URL) to a document that includes a statement about the copyright status of the content of a dataset. The web page might include both a copyright notice for a dataset, and any relevant guidance for re-users."
+        "en": "A link (URL) to a document that includes a statement about the copyright status of the content of a dataset. The web page might include both a copyright notice for a dataset, and any relevant guidance for re-users.",
+        "sv": "En länk (URL) till ett dokument som inkluderar ett yttrande om upphovsrättsstatusen av innehållet för en datamängd. Webbsidan kan inkludera både ett meddelande om upphovsrätt och vägledning för de som tänkt vidareutnyttja en datatmängd."
       },
       "cardinality": {
         "min": 0,
@@ -4634,7 +4730,8 @@
         "sv": "Upphovsrättsår"
       },
       "description": {
-        "en": "The year from which copyright over the content of the dataset is asserted."
+        "en": "The year from which copyright over the content of the dataset is asserted.",
+        "sv": "Det år från när upphovsrätt över innehållet av datamängden gäller."
       },
       "id": "odrs:copyrightYear"
     },
@@ -4649,7 +4746,8 @@
         "sv": "Ägare av upphovsrätten"
       },
       "description": {
-        "en": "A reference to the organization that holds copyright over the content of the dataset"
+        "en": "A reference to the organization that holds copyright over the content of the dataset.",
+        "sv": "En referens till den organisation som har upphovsrätt över innehållet av datamängden."
       },
       "cardinality": {
         "min": 0,
@@ -4670,7 +4768,8 @@
         "sv": "Jurisdiktion"
       },
       "description": {
-        "en": "A reference (URI) to the jurisdiction in which copyright and/or database rights have been asserts. It is recommended that this refer to the URI for a country or region."
+        "en": "A reference (URI) to the jurisdiction in which copyright and/or database rights have been asserts. It is recommended that this refer to the URI for a country or region.",
+        "sv": "En referens (URI) till den jurisdiktionen där upphovsrätt och/eller databasrättigheter hävdas. Det är rekommenderat att referera till ett land eller region (via en URI)."
       },
       "cardinality": {
         "min": 0,
@@ -4686,7 +4785,8 @@
         "sv": "Riktlinjer för återanvändning"
       },
       "description": {
-        "en": "Link (URL) to a document that provides guidelines for re-users of data that is covered by a specific rights statement. The guidelines may include more detail on attribution guidelines, a fuller copyright statement, and general guidance on how the data might be re-used"
+        "en": "Link (URL) to a document that provides guidelines for re-users of data that is covered by a specific rights statement. The guidelines may include more detail on attribution guidelines, a fuller copyright statement, and general guidance on how the data might be re-used",
+        "sv": "Länk (URL) till ett dokument som tillhandahåller riktlinjer för återanvändare av data som omfattas av en specifik rättighetsförklaring. Riktlinjerna kan inkludera fler detaljer om riktlinjer för erkännande, en mer komplett text om upphovsrätten, och generell vägledning om hur datan kan bli återanvänd"
       },
       "property": "odrs:reuserGuidelines",
       "nodetype": "URI",

@@ -9,16 +9,17 @@
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/default.min.css">
     <link rel="stylesheet" type="text/css" href="../libs/style.css">
+    <script src="https://unpkg.com/mermaid@8.4.6/dist/mermaid.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
 </head>
 <body class="h-entry">
 <div class="head">
-    <h1 class="title">DCAT-AP-SE version 2.0.0 - <strong style="color:red">UTKAST</strong></h1>
+    <h1 class="title">DCAT-AP-SE version 2.0.0 - <strong style="color:red">Utkast</strong></h1>
     <h2 class="subtitle">Förtydlingar, översättningar och rekommendationer av DCAT-AP för Sverige.</h2>
     <div>
         <dl>
             <dt>Publiceringsdatum:</dt>
-            <dd>27 April 2020</dd>
+            <dd>7 Maj 2020</dd>
             <dt>Senaste versionen:</dt>
             <dd><a class="u-url" href="https://diggsweden.github.io/DCAT-AP-SE/sv/">https://diggsweden.github.io/DCAT-AP-SE/sv/</a></dd>
             <dt>Denna version:</dt>
@@ -70,7 +71,7 @@
     <section>
         <p>DCAT-AP-SE är en metadataspecifikation som syftar till att beskriva datamängder. Mer specifikt är DCAT-AP-SE en svensk anpassning (en så kallad profil) av den europeiska metadataspecifikationen DCAT-AP. DCAT-AP är i sin tur en anpassning (profil) av den internationella rekommendationen DCAT som utges av W3C.</p>
         <p>I diagrammet nedan visas endast de primära klasserna, relationer mellan dem samt deras obligatoriska och rekommenderade egenskaper. Notera att för läsbarhet så anges klasser och egenskaper med svenska namn både i rubriker och i diagrammet. De faktiska metadatauttrycken är listade i detalj under respektive rubrik.</p>
-        <div class="mermaid" style="width: 1000px">
+        <div id="diagram" class="mermaid">
             classDiagram
 
             Katalog --> Datamängd : datamängd
@@ -135,9 +136,7 @@
     </section>
 </main>
 </body>
-
-<script src="https://unpkg.com/mermaid@8.4.6/dist/mermaid.min.js"></script>
-<script>mermaid.initialize({startOnLoad:true});</script>
+<script>mermaid.init(document.getElementById("diagram"));</script>
 <script src="https://lankadedata.se/spec/assets/fixup.js"></script>
 <script src="../libs/bmd.rdforms.js"></script>
 <script src="../libs/rdfjson.js"></script>

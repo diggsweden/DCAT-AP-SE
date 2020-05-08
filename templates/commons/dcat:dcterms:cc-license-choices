@@ -8,7 +8,8 @@
         "en": "CC BY 4.0 (Attribution)"
       },
       "description": {
-        "en": "The owner ALLOWS commercial uses AND changes to the resource"
+        "en": "The licensor allows you to share (copy and redistribute in any medium or format) as well as adapt (remix, transform, and build upon) the material for any purpose, even commercially. You are required to give credit, link to the license and indicate if changes where made.",
+        "sv": "Licensgivaren tillåter dig att dela (kopiera och vidaredistribuera oavsett medium eller format) samt att bearbeta (remixa, transformera, och bygga vidare på) materialet för alla ändamål, även kommersiellt. Du måste ge ett korrekt erkännande, ange en hyperlänk till licensen och ange om bearbetningar är gjorda."
       }
     },
     {
@@ -17,7 +18,8 @@
         "en": "CC BY-NC 4.0 (Attribution, Non-Commercial)"
       },
       "description": {
-        "en": "The owner does NOT allow commercial uses but ALLOWS changes to the resource"
+        "en": "The licensor does not allow commercial uses, but allows you to share (copy and redistribute in any medium or format) as well as adapt (remix, transform, and build upon) the material for any other purpose. You are required to give credit, link to the license and indicate if changes where made.",
+        "sv": "Licensgivaren tillåter inte kommersiell användning, men tillåter dig att dela (kopiera och vidaredistribuera oavsett medium eller format) samt att bearbeta (remixa, transformera, och bygga vidare på) materialet för andra ändamål. Du måste ge ett korrekt erkännande, ange en hyperlänk till licensen och ange om bearbetningar är gjorda."
       }
     },
     {
@@ -26,13 +28,18 @@
         "en": "CC BY-NC-ND 4.0 (Attribution, Non-Commercial, No Derivative Works)"
       },
       "description": {
-        "en": "The owner does NOT allow commercial uses OR changes to the resource"
+        "en": "The licensor does not allow commercial use but allows you to share (copy and redistribute in any medium or format) the material for any other purpose. The licensor does not allow you to distribute any adaptions of the material. You are required to give credit, link to the license and indicate if changes where made.",
+        "sv": "Licensgivaren tillåter inte kommersiell användning men tillåter dig att dela (kopiera och vidaredistribuera oavsett medium eller format) materialet för andra ändamål. Licensgivaren tillåter inte att bearbetningar av materialet distribueras vidare. Du måste ge ett korrekt erkännande, ange en hyperlänk till licensen och ange om bearbetningar är gjorda."
       }
     },
     {
       "value": "http://creativecommons.org/licenses/by-nc-sa/4.0/",
       "label": {
         "en": "CC BY-NC-SA 4.0 (Attribution, Non-Commercial, Share Alike)"
+      },
+      "description": {
+        "en": "The licensor does not allow commercial use but allows you to share (copy and redistribute in any medium or format) the material for any other purpose, but only if you distribute your contributions under the same license. You are required to give credit, link to the license and indicate if changes where made.",
+        "sv": "Licensgivaren tillåter inte kommersiell användning men tillåter dig att dela (kopiera och vidaredistribuera oavsett medium eller format) materialet för andra ändamål, men endast om du distribuerar dina bidrag under samma licens. Du måste ge ett korrekt erkännande, ange en hyperlänk till licensen och ange om bearbetningar är gjorda."
       }
     },
     {
@@ -41,19 +48,28 @@
         "en": "CC BY-ND 4.0 (Attribution, No Derivative Works)"
       },
       "description": {
-        "en": "The owner ALLOWS commercial uses but does NOT allow changes to the resource"
+        "en": "The licensor allows you to share (copy and redistribute in any medium or format) the material for any other purpose, even commercially. The licensor does not allow you to distribute any adaptions of the material. You are required to give credit, link to the license and indicate if changes where made.",
+        "sv": "Licensgivaren tillåter dig att dela (kopiera och vidaredistribuera oavsett medium eller format) materialet för andra ändamål, även kommersiella. Licensgivaren tillåter inte att bearbetningar av materialet distribueras vidare. Du måste ge ett korrekt erkännande, ange en hyperlänk till licensen och ange om bearbetningar är gjorda."
       }
     },
     {
       "value": "http://creativecommons.org/licenses/by-sa/4.0/",
       "label": {
         "en": "CC BY-SA 4.0 (Attribution, Share Alike)"
+      },
+      "description": {
+        "en": "The licensor allows you to share (copy and redistribute in any medium or format) as well as adapt (remix, transform, and build upon) the material for any purpose, even commercially, but only if you distribute your contributions under the same license. You are required to give credit, link to the license and indicate if changes where made.",
+        "sv": "Licensgivaren tillåter dig att dela (kopiera och vidaredistribuera oavsett medium eller format) samt att bearbeta (remixa, transformera, och bygga vidare på) material för alla ändamål, även kommersiellt, men endast om du distribuerar dina bidrag under samma licens. Du måste ge ett korrekt erkännande, ange en hyperlänk till licensen och ange om bearbetningar är gjorda."
       }
     },
     {
       "value": "http://creativecommons.org/publicdomain/zero/1.0/",
       "label": {
         "en": "CC0 1.0 (Public Domain Dedication, No Copyright)"
+      },
+      "description": {
+        "en": "The licensor has dedicated the work to the public domain by waiving all of his or her rights to the work worldwide under copyright law, including all related and neighboring rights, to the extent allowed by law. You can copy, modify, distribute and perform the work, even for commercial purposes, all without asking permission.",
+        "sv": "Licensgivaren har dedikerat verket till public domain genom att avsäga sig sina rättigheter till verket i hela världen enligt upphovsrättslagstiftningen, inklusive alla relaterade och närstående rättigheter, så lågt lagen tillåter. Du får kopiera, modifiera, distribuera och framföra verket, även i kommersiellt syfte, utan att fråga om lov."
       }
     }
   ],
