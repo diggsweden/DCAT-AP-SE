@@ -8,28 +8,28 @@
     <title>DCAT-AP-SE version 2.0.0</title>
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/default.min.css">
-    <link rel="stylesheet" type="text/css" href="../libs/style.css">
+    <link rel="stylesheet" type="text/css" href="../../libs/style.css">
     <script src="https://unpkg.com/mermaid@8.4.6/dist/mermaid.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
 </head>
 <body class="h-entry">
 <div class="head">
     <h1 class="title">DCAT-AP-SE version 2.0.0</h1>
-    <h2 class="subtitle">Clarifications, translations and explanations of DCAT-AP for Sweden.</h2>
+    <h2 class="subtitle">Förtydlingar, översättningar och rekommendationer av DCAT-AP för Sverige.</h2>
     <div>
         <dl>
-            <dt>Publication date:</dt>
+            <dt>Publiceringsdatum:</dt>
             <dd>19 Maj 2020</dd>
-            <dt>Latest version:</dt>
-            <dd><a class="u-url" href="https://diggsweden.github.io/DCAT-AP-SE/en/">https://diggsweden.github.io/DCAT-AP-SE/en/</a></dd>
-            <dt>This version:</dt>
-            <dd><a class="u-url" href="https://diggsweden.github.io/DCAT-AP-SE/2.0.0/en">https://diggsweden.github.io/DCAT-AP-SE/2.0.0/en/</a></dd>
-            <dt>Previous stable version:</dt>
+            <dt>Senaste versionen:</dt>
+            <dd><a class="u-url" href="https://diggsweden.github.io/DCAT-AP-SE/sv/">https://diggsweden.github.io/DCAT-AP-SE/sv/</a></dd>
+            <dt>Denna version:</dt>
+            <dd><a class="u-url" href="https://diggsweden.github.io/DCAT-AP-SE/2.0.0/sv">https://diggsweden.github.io/DCAT-AP-SE/2.0.0/sv/</a></dd>
+            <dt>Tidigare stabil version:</dt>
             <dd><a href="https://lankadedata.se/spec/DCAT-AP-SE">https://lankadedata.se/spec/DCAT-AP-SE</a></dd>
-            <dt class="editor">Editor:</dt>
+            <dt class="editor">Redaktör:</dt>
             <dd class="editor p-author h-card vcard"><a class="p-name fn u-url url"
                                                         href="mailto:matthias@metasolutions.se">Matthias Palmér</a> - <a href="https://entryscape.com">MetaSolutions AB</a></dd>
-            <dt class="editor">Contributors:</dt>
+            <dt class="editor">Med bidrag från:</dt>
             <dd class="editor p-author h-card vcard">Caspar Almalander - Sveriges Kommuner och Regioner (SKR)</dd>
             <dd class="editor p-author h-card vcard">John Cunningham - Bolagsverket</dd>
             <dd class="editor p-author h-card vcard">Ulrika Domellöf-Mattsson - Naturvårdsverket</dd>
@@ -47,102 +47,101 @@
             <dd class="editor p-author h-card vcard">Mats Åhlin - Svenska Institutet för Standarder (SIS)</dd>
             <dd class="editor p-author h-card vcard">Øystein Åsnes - Digitaliseringsdirektoratet (Norge)</dd>
             <dd class="editor p-author h-card vcard">Michael Östling - Metagis</dd>
-            <dt class="editor">Submissions of comments and general feedback:</dt>
+            <dt class="editor">Remissvar och återkopplingar:</dt>
             <dd class="editor p-author h-card vcard">Statistiska centralbyrån (SCB)</dd>
             <dd class="editor p-author h-card vcard">Kungliga Biblioteket</dd>
             <dd class="editor p-author h-card vcard">Lantmäteriet</dd>
             <dd class="editor p-author h-card vcard">Trafikverket</dd>
             <dd class="editor p-author h-card vcard">SUHF:s nationella arbetsgrupp för forskningsdata</dd>
-            <dd class="editor p-author h-card vcard">As well as suggestions and comments on Github.</dd>
-            <dt class="editor">On behalf of:</dt>
-            <dd class="editor p-author h-card vcard"><a href="https://www.digg.se/">Swedish Agency for Digital Government</a></dd>
+            <dd class="editor p-author h-card vcard">Samt synpunkter och kommentarer på Github.</dd>
+            <dt class="editor">På uppdrag av:</dt>
+            <dd class="editor p-author h-card vcard"><a href="https://www.digg.se/">Myndigheten för digital förvaltning</a></dd>
             <dt>Licens:</dt>
             <dd><a href="http://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a></dd>
         </dl>
     </div>
     <p class="copyright">Copyright © 2019 <a
-            href="https://entryscape.com">MetaSolutions AB</a></p>
+            href="https://digg.se">DIGG</a></p>
     <hr title="Avdelare till header">
 </div>
 <nav id="toc"></nav>
 <main>
     <section>
-        <p>DCAT-AP-SE is a metadata specification introduced for the purpose of describing datasets. More specifically, DCAT-AP-SE is a Swedish adaption (a profile) of the European metadata specification DCAT-AP. DCAT-AP in turn, is an adaption (profile) of the W3C recommendation DCAT.</p>
-        <p>The diagram below shows only the primary classes, their relationships and their mandatory and recommended properties. Note that for readability, classes and properties are introduced using friendly labels in both headings and the diagram below. The actual metadata expressions, i.e. the full URIs of classes and properties, are listed in the details under each respective heading.
-        </p>
+        <p>DCAT-AP-SE är en metadataspecifikation som syftar till att beskriva datamängder. Mer specifikt är DCAT-AP-SE en svensk anpassning (en så kallad profil) av den europeiska metadataspecifikationen DCAT-AP. DCAT-AP är i sin tur en anpassning (profil) av den internationella rekommendationen DCAT som utges av W3C.</p>
+        <p>I diagrammet nedan visas endast de primära klasserna, relationer mellan dem samt deras obligatoriska och rekommenderade egenskaper. Notera att för läsbarhet så anges klasser och egenskaper med svenska namn både i rubriker och i diagrammet. De faktiska metadatauttrycken är listade i detalj under respektive rubrik.</p>
         <div id="diagram" class="mermaid">
             classDiagram
 
-            Catalog --> Dataset : dataset
-            Catalog --> Agent : publisher
-            Dataset --> Distribution : distribution
-            Dataset --> Agent : publisher
-            Dataset --> Contact_point : contactpoint
-            Distribution --> Data_service : access service
-            class Catalog {
-              title
-              description
+            Katalog --> Datamängd : datamängd
+            Katalog --> Aktör : utgivare
+            Datamängd --> Distribution : distribution
+            Datamängd --> Aktör : utgivare
+            Datamängd --> Kontaktuppgift : kontaktuppgift
+            Distribution --> Datatjänst : åtkomst via datatjänst
+            class Katalog {
+              titel
+              beskrivning
               licens
-              release date
-              language
-              date modified
-              homepage
-              theme taxonomy
+              utgivningsdatum
+              språk
+              ändringsdatum
+              hemsida
+              taxonomi för tema
             }
 
-            class Dataset {
-              title
-              description
-              contact point
-              keyword
-              theme
-              time period
-              release date
-              access rights
-              geographical area
+            class Datamängd {
+              titel
+              beskrivning
+              kontaktuppgift
+              nyckelord
+              kategori
+              tidsperiod
+              utgivningsdatum
+              åtkomsträttigheter
+              geografiskt område
             }
 
 
             class Distribution {
-              web address for access
-              description
-              mediatype
-              availability
+              webbadress för åtkomst
+              beskrivning
+              mediatyp
+              tillgänglighet
               licens
             }
 
-            Catalog --> Data_service : dataservice
-            class Data_service {
-              title
-              endpoint URL
-              endpoint description
+            Katalog --> Datatjänst : datatjänst
+            class Datatjänst {
+              titel
+              åtkomstadress
+              beskrivning åtkomstadress
               licens
-              access rights
+              åtkomsträttigheter
             }
 
-            class Agent {
-              name
-              type
+            class Aktör {
+              namn
+              typ
             }
 
-            class Contact_point {
-              kind
-              formatted name
-              email
+            class Kontaktuppgift {
+              typ
+              namn
+              e-postadress
             }
 
         </div>
     </section>
 </main>
 </body>
-    <script>mermaid.init(document.getElementById("diagram"));</script>
-    <script src="https://lankadedata.se/spec/assets/fixup.js"></script>
-    <script src="../libs/bmd.rdforms.js"></script>
-    <script src="../libs/rdfjson.js"></script>
-    <script>
-      document.targetLanguage = 'en';
-    </script>
-    <script src="../libs/recommendations.js"></script>
-    <script src="../config.js"></script>
-    <link rel="stylesheet" href="https://lankadedata.se/spec/assets/style.css">
+<script>mermaid.init(document.getElementById("diagram"));</script>
+<script src="https://lankadedata.se/spec/assets/fixup.js"></script>
+<script src="../../libs/bmd.rdforms.js"></script>
+<script src="../../libs/rdfjson.js"></script>
+<script>
+    document.targetLanguage = 'sv';
+</script>
+<script src="../../libs/recommendations.js"></script>
+<script src="../config.js"></script>
+<link rel="stylesheet" href="https://lankadedata.se/spec/assets/style.css">
 </html>

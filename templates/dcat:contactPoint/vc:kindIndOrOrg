@@ -8,7 +8,7 @@
   },
   "description": {
     "en": "This property tells wether the contect point corresponds to an Individual or an Organisation.",
-    "sv": "Egenskapen anger om kontaktuppgiften motsvar en individ eller organisation."
+    "sv": "Egenskapen anger om kontaktuppgiften motsvarar en individ eller organisation."
   },
   "choices": [
     {

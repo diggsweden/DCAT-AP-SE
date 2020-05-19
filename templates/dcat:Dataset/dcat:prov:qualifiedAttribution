@@ -6,6 +6,10 @@
     "en": "Attribution",
     "sv": "Övrig aktör"
   },
+  "description": {
+    "en": "A qualified attribution makes it possible to point to actors in other roles than publisher and creator.",
+    "sv": "Konstruktionen med övrig aktör gör det möjligt att peka ut aktörer i andra roller än utgivare (dct:publisher) och producent (dct:creator)."
+  },
   "constraints": {
     "rdf:type": [
       "prov:Attribution"

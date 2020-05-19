@@ -8,7 +8,7 @@
   },
   "description": {
     "en": "This property is about a related resource, such as a publication, that references, cites, or otherwise points to the dataset.",
-    "sv": "Relaterad resurs, t.ex. en pubilkation, som refererar, citerar eller på något annat sätt pekar på datamängden."
+    "sv": "Relaterad resurs, t.ex. en publikation, som refererar, citerar eller på något annat sätt pekar på datamängden."
   },
   "pattern": "https?://.+"
 }
