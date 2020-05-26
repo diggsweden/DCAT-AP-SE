@@ -36,3 +36,7 @@ g.classGroup line {
 hr {
     height: 0px;
 }
+
+#appendicies-content {
+    display: none;
+}
