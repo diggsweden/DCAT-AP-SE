@@ -32,7 +32,7 @@ Ulrika Domellöf-Mattsson | Naturvårdsverket
 Hannes Ebner | MetaSolutions
 Mattias Ekhem | DIGG
 Hans Ekstål | Bolagsverket
-Björn Hagström | Konsult inom öppna data
+Björn Hagström | Hagström Consulting (på uppdrag av DIGG)
 Kjell Hjorth | Lantmäteriet
 Lars-olof Hjärp | Trafikverket
 Peter Israelsson | Bolagsverket
