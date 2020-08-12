@@ -29,6 +29,6 @@
 	vcard:fn "Öppna data gruppen på exempel organisationen" ;
 	vcard:hasEmail <mailto:oppnadata@example.com> .
 
-<https://example.com/dataservice1> a dcat:DatasetService ;
+<https://example.com/dataservice1> a dcat:DataService ;
 	dcterms:title "Exempel API"@sv ;
 	dcat:endpointURL <http://example.com/api> .

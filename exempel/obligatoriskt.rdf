@@ -30,8 +30,8 @@
 	<vcard:fn>Öppna data gruppen på exempel organisationen</vcard:fn>
 	<vcard:hasEmail rdf:resource="mailto:oppnadata@example.com"/>
 </vcard:Organization>
-<dcat:DatasetService rdf:about="https://example.com/dataservice1">
+<dcat:DataService rdf:about="https://example.com/dataservice1">
         <dcterms:title xml:lang="sv">Exempel API</dcterms:title>
         <dcat:endpointURL rdf:resource="http://example.com/api"/>
-</dcat:DatasetService>
+</dcat:DataService>
 </rdf:RDF>

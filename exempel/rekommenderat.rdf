@@ -75,11 +75,11 @@
 	<dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/"/>
 	<dcat:accessService rdf:resource="https://example.com/dataservice1"/>
 </dcat:Distribution>
-<dcat:DatasetService rdf:about="https://example.com/dataservice1">
+<dcat:DataService rdf:about="https://example.com/dataservice1">
 	<dcterms:title xml:lang="sv">API exempel</dcterms:title>
 	<dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/"/>
 	<dcterms:accessRights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC"/>
 	<dcat:endpointURL rdf:resource="http://example.com/api"/>
 	<dcat:endpointDescription rdf:resource="http://example.com/apidescription"/>
-</dcat:DatasetService>
+</dcat:DataService>
 </rdf:RDF>

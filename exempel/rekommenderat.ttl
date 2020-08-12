@@ -67,7 +67,7 @@ _:node1e07tikr4x2 vcard:hasValue <tel:+46012345678> .
 	dcterms:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 	dcat:accessService <https://example.com/dataservice1> .
 
-<https://example.com/dataservice1> a dcat:DatasetService ;
+<https://example.com/dataservice1> a dcat:DataService ;
 	dcterms:title "API exempel"@sv ;
 	dcterms:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 	dcterms:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
