@@ -32,4 +32,9 @@ Att ge rådgivning för enskilda datamängder är ett mer långtgående åtagand
 Då DCAT-AP-SE följer den europeiska versionen DCAT-AP så är vår förhoppning att denna specifikation kan uppdateras med ungefär samma regelbundenhet. Framförallt är det de större uppdatering som är planerade för DCAT-AP vartannat år som är prioriterade att hålla sig kompatibel med.
 
 ## Jag levererar redan DCAT-AP-SE till portalen, kommer jag behöva ändra något?
-Målsättningen är att vara bakåtkompatibel i så stor utsträckning som möjligt. Sannolikt kommer du behöva göra någon mindre justering för att inte tappa information. För att dra nytta av de större ändringarna kommer du potentiellt behöva kontakta din verktygsleverantör för att se i vilken utsträckning det kommer stödjas, t.ex. uttrycka datatjänster.
+Det finns ett fåtal fält som inte är bakåtkompatibla som du bör åtgärda för att din information ska synas på rätt sätt. Men att uppdatera till DCAT-AP2.0.0 ger möjlighet att beskriva dina datamängder på ett rikare sätt och bör inte endast involvera att åtgärda de ej bakåtkompatibla ändringarna.
+Läs mer på sidan om [avvikelser och ändringslogg](changes)
+
+Med det sagt så följer Sveriges dataportal i dagsläget principen om att varna dataägare när information om datamängder och kataloger är fel eller saknas snarare än att blockera deras information från att synas.
+
+Så även om du inte gör något kommer den information du leverar nu fortsätta att synas.

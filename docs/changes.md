@@ -71,9 +71,11 @@ Nedan följer i stora drag de ändringar som gjorts i DCAT-AP-2.0.0 och också i
 * Uttrycket för tidsperiod använder nu dcat:startDate och dcat:endDate istället för schema:startDate och schema:endDate.
 
 ## Ej bakåtkompatibla ändringar
-Majoriteten av ändringarna som gjorts mellan versionerna innefattar ändring i kardinalitet eller tillägg av egenskaper och klasser. Det innebär att det endast är ett fåtal platser som det kommer bli problem när man uppgraderar.
+Majoriteten av ändringarna som gjorts mellan versionerna innefattar ändring i kardinalitet eller tillägg av egenskaper och klasser. Det innebär att det endast är ett fåtal platser som är problematiska vid uppgradering.
 
-1. Fält som blivit obligatoriska, dcterms:publisher på datamängdsnivån och dcterms:license på katalognivån.
+1. Fält som blivit obligatoriska, dcterms:publisher på datamängdsnivån och dcterms:license på katalognivån. 
 2. Egenskaper som ändrats, endast schema:startDate och schema:endDate som bytts ut mot dcat:startDate och dcat:endDate respektive.
 
-Dock, bara för att det är få "breaking changes" är det viktigt att notera att det finns en hel del nya möjligheter som man bör dra nytta av. Att dra nytta av dessa nya möjligheter kräver en större insats.
+**Observeration 1:** Sveriges dataportal kommer visa upp den information den kan lista ut även om 1 och 2 ovan inte åtgärdas. Detta beror på att Sveriges dataportal i dagsläget följer principen om att varna dataägare när information om datamängder eller kataloger är fel eller saknas snarare än att blockera deras information från att synas.
+
+**Observation 2:** Att uppdatera till DCAT-AP2.0.0 ger möjlighet att beskriva sina datamängder på ett rikare sätt och bör inte endast involvera att åtgärda de ej bakåtkompatibla ändringarna.
