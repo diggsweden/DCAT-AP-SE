@@ -73,7 +73,7 @@ Med `utgivare` menas den organisation som är ansvarig för en datamängd. Ett s
 
 Det är utgivaren som ansvarar att datamängden kommer med i en PSI-förteckning som därmed gör datamängden synlig på vår nationella dataportal.
 
-I vissa situationer är producenten av datamängden inte samma som utgivaren. Det kan vara så att en myndighet tar hjälp av en annan organisation för att ta fram hela eller delar av datamängden. I de fallen kan man ange att den organisation är producent (eng. creator) av datamängden. Om man just producentrollen inte passar för att beskriva hur en annan organisation hjälper till i hantering av datamängden kan man använda fältet [övrig aktör](https://diggsweden.github.io/DCAT-AP-SE/sv/#prov%3AAttribution) för att ange detta. De aktörsroller som finns att välja på där är användare, distributör, förvaltare, leverantör, undersökningsledare, upphovsman, vidareförädlare, ägare.
+I vissa situationer är producenten av datamängden inte samma som utgivaren. Det kan vara så att en myndighet tar hjälp av en annan organisation för att ta fram hela eller delar av datamängden. I de fallen kan man ange att den organisation är producent (eng. creator) av datamängden. Om man just producentrollen inte passar för att beskriva hur en annan organisation hjälper till i hantering av datamängden kan man använda fältet [övrig aktör](/dcat/sv/#prov%3AAttribution) för att ange detta. De aktörsroller som finns att välja på där är användare, distributör, förvaltare, leverantör, undersökningsledare, upphovsman, vidareförädlare, ägare.
 
 Dessa aktörsroller kommer från INSPIRE-standarden där utgivare, prodcuent och kontaktuppgift är bortrensade för att inte möjliggöra två olika sätt att uttrycka samma aktörsroll.
 
@@ -91,7 +91,7 @@ Om man har nyckelord som motsvarar "ekonomi" och "faktura" ska de uttryckas som 
 
 Det är rekommenderat att ange en licens per distribution. Att man inte anger det på datamängdsnivån har att göra med att olika licenser kan ha olika licenser, t.ex. olika upplösningar i en karttjänst.
 
-När man anger en licens måste man peka ut en webbadress (URI) där licensen beskrivs. Då det finns väldigt många licenser kan vi inte tillhandahålla en komplett lista med alla möjliga licenser. Däremot har vi som en del av specifikationen listat de [vanligaste licenserna från Creative Commons](https://diggsweden.github.io/DCAT-AP-SE/sv/#dcat_Distribution-dcterms_license) för att tillhandahålla viss vägledning.
+När man anger en licens måste man peka ut en webbadress (URI) där licensen beskrivs. Då det finns väldigt många licenser kan vi inte tillhandahålla en komplett lista med alla möjliga licenser. Däremot har vi som en del av specifikationen listat de [vanligaste licenserna från Creative Commons](/dcat/sv/#dcat_Distribution-dcterms_license) för att tillhandahålla viss vägledning.
 
 I vissa situationer kan en licens ha flera olika webbadresser, t.ex. CC BY 4.0 (CC är en förkortning av Creative Commons) kan läsas på svenska här:
 

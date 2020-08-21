@@ -20,7 +20,7 @@ DCAT-AP är en Europeisk standard som är rikare än det som schema.org erbjuder
 Ja, det som inte ingår i DCAT-AP-SE kommer helt enkelt att ignoreras. Informationen kommer också sparas och skickas vidare till Europeiska dataportalen.
 
 ## Vår data uttrycks i format X enligt specifikation Y, är det ok?
-Ja, DCAT-AP-SE gör det möjligt att tala om i vilket format och i enlighet med vilken specifikation din data uttrycks. Ni hänvisar till vilken specifikation som datamängden följer i metadatan. Denna information läggs till i fältet [dcterms:conformsTo](https://diggsweden.github.io/DCAT-AP-SE/sv/#dcat_Dataset-dcterms_conformsTo).
+Ja, DCAT-AP-SE gör det möjligt att tala om i vilket format och i enlighet med vilken specifikation din data uttrycks. Ni hänvisar till vilken specifikation som datamängden följer i metadatan. Denna information läggs till i fältet [dcterms:conformsTo](/dcat/sv/#dcat_Dataset-dcterms_conformsTo).
 
 ## Kommer det finnas en guide för hur man ska uttrycka sin data?
 Sveriges dataportal utvecklar under hösten 2020 två stödjande tjänster för att hjälpa olika aktörer att beskriva sina data på ett mer stabilt sätt:
