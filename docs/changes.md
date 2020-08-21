@@ -52,11 +52,11 @@ dcat:theme | Vi använder samma kategorier som på datamängder.
 dcat:keyword | Nyckelord kompletterar teman på samma sätt som på datamängder.
 
 ### Övriga tillägg
-För att ange en eventuell avgift pekar man ut en [Avgift med hjälp av klassen schema:Offer](https://diggsweden.github.io/DCAT-AP-SE/sv/#schema%3AOffer) via schema:offers på datamängden. Avgiften kan innefatta både en beskrivning och en vidare pekning till en webbsida där mer information finns. 
+För att ange en eventuell avgift pekar man ut en [Avgift med hjälp av klassen schema:Offer](/dcat/sv/#schema%3AOffer) via schema:offers på datamängden. Avgiften kan innefatta både en beskrivning och en vidare pekning till en webbsida där mer information finns. 
 
 ### Förtydlingar
 * Licensen på katalognivån måste vara CC-0.
-* Användning av [en delmängd av Inspires roller](https://diggsweden.github.io/DCAT-AP-SE/sv/#5.13) vid prov:qualifiedAttribution (range för dcat:role på prov:QualifiedAttribtion klassen). Roller som motsvarar dct:publisher, dct:creator eller dcat:contactPoint bör inte användas.
+* Användning av [en delmängd av Inspires roller](/dcat/sv/#5.13) vid prov:qualifiedAttribution (range för dcat:role på prov:QualifiedAttribtion klassen). Roller som motsvarar dct:publisher, dct:creator eller dcat:contactPoint bör inte användas.
 
 ## Ändringar mellan DCAT-AP-1.2.1 och DCAT-AP-2.0.0
 För en detaljerad förteckning hänvisas läsaren till Annex II i [DCAT-AP-2.0.0 specifikationen](https://joinup.ec.europa.eu/solution/dcat-application-profile-data-portals-europe/release/200).
