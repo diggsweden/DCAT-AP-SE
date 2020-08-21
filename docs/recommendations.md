@@ -1,5 +1,5 @@
 # Rekommendationer
-Följande rekommendationer handlar om hur man ska tänka kring olika metadatafält i DCAT-AP-SE.
+Här kan du läsa rekommendationer om hur man bör tänka och tolka olika metadatafält i DCAT-AP-SE. 
 
 ## 1. Bra namn ska vara korta och beskrivande
 En datamängd bör ges ett namn som är någorlunda kort och beskrivande. Som en princip bör man hålla sig under 10 ord.
@@ -7,8 +7,7 @@ En datamängd bör ges ett namn som är någorlunda kort och beskrivande. Som en
 Det kan vara frestande att inkludera utgivaren i titeln, t.ex. "Luftkvalitet i Sala". Men betänk då att denna information endast blir sökbar som fritext, vilket blir problem när man har datamängder från liknande orter, t.ex. så kommer en fritextsökning efter datamängder från "sala" inkludera även datamängder från "Uppsala". En bättre lösning är att förlita sig på utgivaren (dcterms:publisher) för varje datamängd. På samma sätt kan man argumentera för att titeln inte behöver inkludera tidsspan (t.ex. år), format eller annan information som bättre uttrycks i andra fält. Om samma utgivare har många datamängder som är snarlika kan det ändå vara rimligt att uttrycka det som skiljer dem åt i titeln, men då måste denna information uttryckas dubbelt, den får inte tas bort från de andra fälten där den egentligen hör hemma då det skulle försämra möjligheter till mer avancerad filtrering.
 
 ## 2. Översätt fritextfält till andra språk
-Det är en bra idé att översätta fritextfält som titel och beskrivning iallafall till engelska.
-I dagsläget automatöversätter Europeiska Data Portalen ett antal fält, vilket har sina begränsningar, särskilt på korta och kärnfulla titlar. För de fält där man väljer mellan färdiga värden, t.ex. kategorier i form av URI:er, så finns redan översättningar till olika många språk.
+Man ska översätta fritextfält som titel och beskrivning till åtminstone engelska. För de fält där man väljer mellan färdiga värden, t.ex. kategorier i form av URI:er, så finns redan översättningar till olika många språk.
 
 ## 3. Distributioner motsvarar samma data i olika format
 En enskild datamängd kan man i många fall komma åt på olika sätt. Det vanligaste scenariot är att en datamängd finns uttryckt i flera format, t.ex. både i Excel och CSV. Men det kan också vara så att man kan komma åt en datamängd antingen genom en nattlig dump eller genom att göra slagningar mot ett API. I båda dessa två scenarior betraktar vi det som att det finns en datamängd med två olika distributioner. Distributionerna motsvarar samma data (samma datamängd) men i olika format eller via olika mekanismer för åtkomst.
