@@ -1,4 +1,4 @@
-# Interoperabilitet, standarder och profiler
+# Interoperabilitet, standarder och profiler i relation till DCAT-AP
 
 Sveriges specifikation för metadata heter DCAT-AP-SE och är en svensk anpassning (en så kallad profil) av den europeiska metadataspecifikationen DCAT-AP. DCAT-AP är i sin tur är en anpassning (profil) av den internationella rekommendationen DCAT som utges av W3C. DCAT-AP-SE och de metadataspecifikationer den bygger på uttrycks alla i metadataspråket RDF.
 
