@@ -1,4 +1,4 @@
-# Introduktion till DCAT-AP-SE
+# Publicera metadata på Sveriges dataportal
 
 Sveriges dataportal synliggör information om datamängder (d.v.s. metadata) där själva datamängderna och åtkomstpunkterna finns publicerade hos olika aktörer. Detta går till genom att Sveriges dataportal automatiskt ”skördar” informationen hos publicerande aktör. En aktör kan vara både från offentlig och privat sektor samt från civilsamhället.
 
