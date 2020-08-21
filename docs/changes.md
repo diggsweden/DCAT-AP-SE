@@ -78,7 +78,7 @@ Majoriteten av ändringarna som gjorts mellan versionerna innefattar ändring i 
 
 **Observeration 1:** Sveriges dataportal kommer visa upp den information den kan lista ut även om 1 och 2 ovan inte åtgärdas. Detta beror på att Sveriges dataportal i dagsläget följer principen om att varna dataägare när information om datamängder eller kataloger är fel eller saknas snarare än att blockera deras information från att synas.
 
-**Observation 2:** Att uppdatera till DCAT-AP2.0.0 ger möjlighet att beskriva sina datamängder på ett rikare sätt och bör inte endast involvera att åtgärda de ej bakåtkompatibla ändringarna.
+**Observation 2:** Att uppdatera till DCAT-AP-SE 2.0.0 ger möjlighet att beskriva sina datamängder på ett rikare sätt och bör inte endast involvera att åtgärda de ej bakåtkompatibla ändringarna.
 
 ## Bakgrund metadataspecifikationen
 
