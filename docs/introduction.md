@@ -16,14 +16,14 @@ Den här dokumentationen syftar till att ge riktlinjer och rekommendationer för
 
 - [Introduktion](docs/introduction.md) - bakgrund och syfte med den tekniska dokumentationen om publicering av metadata
 - [Skördningsspecifikation](docs/harvesting.md) - instruktioner för hur man blir skördad till [Sveriges dataportal](https://dataportal.se)
-- [Metadata på dataportalen](docs/dataportal.md) - hur syns metadata på Sveriges dataportal och sandlåda
+- [Metadata på dataportalen](docs/dataportal.md) - så syns metadata på Sveriges dataportal och sandlåda
 - [Exempel](docs/examples.md) - exempel som visar obligatorisk och rekommenderad metadata uttryckt i Turtle och RDF/XML
 
 - [Metadataspecifikation](/dcat/sv){target=_blank} - information om det exakta metadatauttrycket, finns också på [engelska](/dcat/en){target=_blank}.
 - [Rekommendationer](docs/recommendations.md) - information om hur man bör beskriva och tolka de olika fälten i metadatan.
 
 - [Exempel](docs/examples.md) - exempel som visar obligatorisk och rekommenderad metadata uttryckt i Turtle och RDF/XML
-- [Vanliga frågor](docs/faq.md) - här samlar vi frågor kring specifikationen, skördning och kopplingen till portalen.
+- [Vanliga frågor](docs/faq.md) - frågor kring specifikationen, skördning och kopplingen till portalen.
 
 ## Fördjupningar
 - [Interoperabilitet, standarder och profiler](docs/standards.md) - likheter och skillnader till DCAT-AP, BREG, DCAT etc.
