@@ -1,23 +1,30 @@
 # Publicera metadata på Sveriges dataportal
 
-Sveriges dataportal synliggör information om datamängder (d.v.s. metadata) där själva datamängderna och åtkomstpunkterna finns publicerade hos olika aktörer. Detta går till genom att Sveriges dataportal automatiskt ”skördar” informationen hos publicerande aktör. En aktör kan vara både från offentlig och privat sektor samt från civilsamhället.
+Det ska vara enkelt för potentiella användare att hitta det man söker efter och förstå om data passar för de ändamål man har, både innehållsmässigt och tekniskt. Därför är det viktigt att den metadata som samlas in är standardiserad, relevant och aktuell för de aktörer som använder portalen.
 
-En förutsättning för att dataportalen ska kunna skörda och därmed synliggöra information om datamängder är att aktörerna upprättar och publicerar informationen enligt en gemensam och standardiserad specifikation som kallas DCAT-AP-SE.
+Sveriges dataportal synliggör information om datamängder (d.v.s. metadata) där själva datamängderna och åtkomstpunkterna finns publicerade hos olika aktörer. Detta går till genom att Sveriges dataportal automatiskt inhämtar, ”skördar”, informationen hos publicerande aktör. En aktör kan vara både från offentlig och privat sektor samt från civilsamhället.
 
-DCAT-AP-SE är speciellt framtagen för att passa Sveriges dataportal på grund av den är tillräckligt övergripande för att passa inhämtning av metadata från olika typer av organisationer och datadomäner. 
+En förutsättning för att dataportalen ska kunna skörda och därmed synliggöra information om datamängder är att aktörerna upprättar och publicerar informationen enligt en gemensam och standardiserad metadataspecifikation. Den specifikationen heter DCAT-AP-SE och är speciellt framtagen för att passa Sveriges dataportal på grund av den är tillräckligt övergripande för att passa inhämtning av metadata från olika typer av organisationer och datadomäner. Det möjliggör en enhetlig beskrivning av datamängder för att förenkla insamling, sökning och presentation av data på Sveriges dataportal.
 
 Specifikationen är uppbyggd av olika klasser. Klasserna innehåller obligatoriska, rekommenderade och valfria fält.
 
-## Syfte och behov
+## Syfte och målgrupp
 
-Det ska vara enkelt för potentiella användare att hitta det man söker efter och förstå om data passar för de ändamål man har, både innehållsmässigt och tekniskt.
+Den här dokumentationen syftar till att ge riktlinjer och rekommendationer för det tekniska ramverk som ligger till grund för hur metadata ska publiceras till Sveriges dataportal. Målgruppen är primärt utvecklare och metadataexperter. Även andra målgrupper kan ha nytta av informationen. 
 
-Därför är det viktigt att den metadata som samlas in är standardiserad, relevant och aktuell för de aktörer som använder portalen. Kvaliteten på metadatan är viktig för att uppnå en god användar-och sökupplevelse på Sveriges dataportal. Potentiella användare är både från privat och offentlig sektor såväl som enskilda medborgare. Därför ska beskrivningarna hålla ett lättbegripligt språk. 
+# Innehåll och förklaringar
 
-## Bakgrund lagar och direktiv
+- [Introduktion](docs/introduction.md) - bakgrund och syfte med den tekniska dokumentationen om publicering av metadata
+- [Skördningsspecifikation](docs/harvesting.md) - instruktioner för hur man blir skördad till [Sveriges dataportal](https://dataportal.se)
+- [Metadata på dataportalen](docs/dataportal.md) - hur syns metadata på Sveriges dataportal och sandlåda
+- [Exempel](docs/examples.md) - exempel som visar obligatorisk och rekommenderad metadata uttryckt i Turtle och RDF/XML
 
-EU antog 2003 det så kallade [PSI-direktivet (2003/98/EG)](https://eur-lex.europa.eu/legal-content/en/ALL/?uri=CELEX:32003L0098) i syfte att göra offentlig information mer tillgänglig. Det innebär bland annat att olika aktörer i samhället ska kunna använda offentlig information för att skapa nya produkter och tjänster. Direktivet har införlivats svensk lagstiftning genom lagen [(2010:566) om vidareutnyttjande av handlingar från den offentliga förvaltningen](https://www.riksdagen.se/sv/dokument-lagar/dokument/svensk-forfattningssamling/lag-2010566-om-vidareutnyttjande-av-handlingar_sfs-2010-566) (PSI-lagen).
+- [Metadataspecifikation](/dcat/sv){target=_blank} - information om det exakta metadatauttrycket, finns också på [engelska](/dcat/en){target=_blank}.
+- [Rekommendationer](docs/recommendations.md) - information om hur man bör beskriva och tolka de olika fälten i metadatan.
 
-Svenska myndigheter är enligt PSI-lagen skyldiga att publicera en förteckning över vilka typer av handlingar som vanligen kan tillhandahållas elektroniskt för vidareutnyttjande samt tillhörande information. I syfte att underlätta för de som vill hitta och använda denna information bör myndigheter publicera informationen genom att upprätta och publicera förteckningen i form av en metadatakatalog samt publicera denna till den Sveriges dataportal. 
+- [Exempel](docs/examples.md) - exempel som visar obligatorisk och rekommenderad metadata uttryckt i Turtle och RDF/XML
+- [Vanliga frågor](docs/faq.md) - här samlar vi frågor kring specifikationen, skördning och kopplingen till portalen.
 
-Även organisationer som inte omfattas av PSI-lagen kan välja att publicera metadata till Sveriges dataportal.
+## Fördjupningar
+- [Interoperabilitet, standarder och profiler](docs/standards.md) - likheter och skillnader till DCAT-AP, BREG, DCAT etc.
+- [Avvikelser och ändringslogg](docs/changes.md) - vad som skiljer sig i den svenska profilen visavi DCAT-AP och vad som ändrats sedan förra versionen.
