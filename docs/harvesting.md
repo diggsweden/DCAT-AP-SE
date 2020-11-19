@@ -106,20 +106,15 @@ därmed med stor sannolikhet kunna slutleda att de har samma ursprung. Men, på 
 denna information vilket gör att man endast har fritextsökning att förlita sig på.
 
 ### Identifierare för utgivande organisationer
-Det finns situationer när datamängder för en enskild utgivande organisation skördas från olika kataloger.
-Det vanligaste exemplet är när en organisation både erbjuder en egen katalog samt att en del av deras datamängder skördas
-från en annan portal, som t.ex. geodataportalen. För att undvika att samma utgivande organisation registreras fler än en
-gång är det rekommenderat att man använder en välkänd identifierare för den utgivande organisationen.
-Kungliga Biblioteket har etablerat identifierare i samband med e-plikt, man kan läsa om det bland annat i [specifikationen
-för RSS-levernas](http://www.kb.se/namespace/digark/deliveryspecification/deposit/rssfeeds/rssfeeds.pdf) 
-i kapitlet format under sektionen "utgivare" (R104). I korthet sägs att den URI som ska användas för en utgivare är:
-```
-http://id.kb.se/organisations/SE<orgnr>[-suffix]
-```
-Där orgnr är ett 10-siffrigt organisationsnummer och den valfria suffixet används efter överenskommelse om flera
-utgivande organisationer delar organisationsnummer.
+Det finns situationer när datamängder för en enskild utgivande organisation skördas från olika kataloger. Det vanligaste exemplet är när en organisation både erbjuder en egen katalog samt att en del av deras datamängder skördas från en annan portal, som t.ex. geodataportalen. För att undvika att samma utgivande organisation registreras fler än en gång är det rekommenderat att man använder en välkänd identifierare för den utgivande organisationen. För att detektion och sammanslagning ska fungera bör följande adress användas:
 
-För att förbättra interoperabiliteten i Sverige rekommenderas att samma identifierare används för utgivande organisationer.
+```
+http://dataportal.se/organisation/SE<orgnr>[-suffix]
+```
+Där orgnr är ett 10-siffrigt organisationsnummer och den valfria suffixet används efter överenskommelse om flera utgivande organisationer delar organisationsnummer. Observera att organisationsnummret ska anges utan mellanslag eller bindestreck.
+
+Strukturen på adressen följer samma mönster som Kungliga Biblioteket har etablerat i samband med e-plikt, man kan läsa om det bland annat i [specifikationen
+för RSS-levernas](http://www.kb.se/namespace/digark/deliveryspecification/deposit/rssfeeds/rssfeeds.pdf) i kapitlet format under sektionen "utgivare" (R104). Vi har dock valt att mynta nya adresser i dataportalens domän för att det gör möjlighet att på lite sikt att etablera en landningssida per organisation.
 
 ### Undvik separat utgivande organisation på katalognivån
 Av samma skäl som man inte ska ha flera utgivande organisationer för datamängder bör man undvika att ha en separat
