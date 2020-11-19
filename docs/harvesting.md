@@ -116,6 +116,8 @@ Där orgnr är ett 10-siffrigt organisationsnummer och den valfria suffixet anv�
 Strukturen på adressen följer samma mönster som Kungliga Biblioteket har etablerat i samband med e-plikt, man kan läsa om det bland annat i [specifikationen
 för RSS-levernas](http://www.kb.se/namespace/digark/deliveryspecification/deposit/rssfeeds/rssfeeds.pdf) i kapitlet format under sektionen "utgivare" (R104). Vi har dock valt att mynta nya adresser i dataportalens domän för att det gör möjlighet att på lite sikt att etablera en landningssida per organisation.
 
+Se ärende [15](https://github.com/DIGGSweden/DCAT-AP-SE/issues/15) för en vidare diskussion.
+
 ### Undvik separat utgivande organisation på katalognivån
 Av samma skäl som man inte ska ha flera utgivande organisationer för datamängder bör man undvika att ha en separat
 för katalogen själv. Man kan tycka att katalogens egen utgivande organisation skulle kunna särskiljas, men eftersom DCAT-AP
