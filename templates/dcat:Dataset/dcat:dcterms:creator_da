@@ -1,6 +1,7 @@
 {
   "type": "choice",
   "property": "dcterms:creator",
+  "nodetype": "RESOURCE",
   "label": {
     "en": "Creator",
     "sv": "Producent"
