@@ -35,6 +35,10 @@ window.addRecommendations = function(lang, recs) {
         textLink += textLinkArr[0].substr(0, 1).toUpperCase() + textLinkArr[0].substr(1) + ' ';
         textLinkArr.shift();
         textLink += textLinkArr.join(' ');
+        // Remove åäö from link
+        target = target.replace(/å/g,'a');
+        target = target.replace(/ä/g,'a');
+        target = target.replace(/ö/g,'o');
 
         var recLink = document.createElement('a');
         recLink.innerText = textLink;
