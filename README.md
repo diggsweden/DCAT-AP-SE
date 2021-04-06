@@ -40,5 +40,5 @@ Resultatet är att filen `bundle.json` uppdateras vilken sedemera laddas av meta
 - Skapa nya ärenden
 - Kommentera på existerande
 - Skapa pull-requests för konkreta ändringar
-Du kan även mejla till [info@digg.se](mailto:info@digg.se)
+- Du kan även mejla till [info@digg.se](mailto:info@digg.se)
 
