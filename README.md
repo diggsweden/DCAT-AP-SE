@@ -3,7 +3,7 @@
 I det här Github-arkivet hanterar vi den svenska anpassningen till DCAT-AP.
 Den senaste uppdateringen skedde hösten 2019 och våren 2020 på uppdag av [Myndigheten för digital förvaltning (DIGG)](https://www.digg.se).
 
-Den senaste versionen av anpassningen kan ses här: [https://docs.dataportal.se/dcat/main](https://docs.dataportal.se/dcat/main)
+Den senaste versionen av anpassningen kan ses här: [https://docs.dataportal.se/dcat/sv/](https://docs.dataportal.se/dcat/sv/)
 
 Startpunkten för anpassningen var den [tidigare specifikationen som togs fram på uppdrag av VINNOVA](https://lankadedata.se/spec/DCAT-AP-SE/). Till detta har följande att beaktats:
 
