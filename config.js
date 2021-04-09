@@ -55,6 +55,22 @@ var spec2recs = {
   "11-licenser" : [
     "dcat_Distribution-dcterms_license",
     "dcat_Distribution-dcterms_license-2"
+  ],
+  "12-språkangivelse": [
+    "dcat_Catalog-dcterms_title",
+    "dcat_Dataset-dcterms_title",
+    "dcat_Distribution-dcterms_title",
+    "dcat_DataService-dcterms_title",
+    "dcat_Catalog-dcterms_description",
+    "dcat_Dataset-dcterms_description",
+    "dcat_Distribution-dcterms_description",
+    "dcat_DataService-dcterms_description",
+    "dcat_Dataset-adms_versionNotes",
+    "dcat_Dataset-dcterms_provenance",
+    "dcat_Distribution-dcterms_title",
+    "dcat_Distribution-dcterms_description",
+    "dcat_Catalog-dcterms_title",
+    "dcat_Catalog-dcterms_description"
   ]
 };
 
