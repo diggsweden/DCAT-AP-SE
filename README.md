@@ -3,7 +3,7 @@
 I det här Github-arkivet hanterar vi den svenska anpassningen till DCAT-AP.
 Den senaste uppdateringen skedde hösten 2019 och våren 2020 på uppdag av [Myndigheten för digital förvaltning (DIGG)](https://www.digg.se).
 
-Den senaste versionen av anpassningen kan ses här: [https://docs.dataportal.se/dcat/main](https://docs.dataportal.se/dcat/main)
+Den senaste versionen av anpassningen kan ses här: [https://docs.dataportal.se/dcat/sv/](https://docs.dataportal.se/dcat/sv/)
 
 Startpunkten för anpassningen var den [tidigare specifikationen som togs fram på uppdrag av VINNOVA](https://lankadedata.se/spec/DCAT-AP-SE/). Till detta har följande att beaktats:
 
@@ -40,5 +40,5 @@ Resultatet är att filen `bundle.json` uppdateras vilken sedemera laddas av meta
 - Skapa nya ärenden
 - Kommentera på existerande
 - Skapa pull-requests för konkreta ändringar
-- Delta i referensgruppen, hör av dig till [oppnadata@digg.se](mailto:oppnadata@digg.se) om du vill ingå där
-- I slutet av processen är det möjligt att delta i ett möte med en större grupp med intressenter
+- Du kan även mejla till [info@digg.se](mailto:info@digg.se)
+
