@@ -66,11 +66,7 @@ var spec2recs = {
     "dcat_Distribution-dcterms_description",
     "dcat_DataService-dcterms_description",
     "dcat_Dataset-adms_versionNotes",
-    "dcat_Dataset-dcterms_provenance",
-    "dcat_Distribution-dcterms_title",
-    "dcat_Distribution-dcterms_description",
-    "dcat_Catalog-dcterms_title",
-    "dcat_Catalog-dcterms_description"
+    "dcat_Dataset-dcterms_provenance"
   ]
 };
 
