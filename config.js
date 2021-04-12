@@ -107,5 +107,9 @@ rdforms.spec({
   ],
   onDone: function() {
     window.addRecommendations(document.targetLanguage, spec2recs);
+    var pos = document.location.hash;
+    if (pos) {
+      document.getElementById(pos.substr(1)).scrollIntoView();
+    }
   }
 });
