@@ -20,10 +20,7 @@ DCAT-AP är en Europeisk standard som är rikare än det som schema.org erbjuder
 Ja, det som inte ingår i DCAT-AP-SE kommer helt enkelt att ignoreras. Informationen kommer också sparas och skickas vidare till Europeiska dataportalen.
 
 ## Måste man ange språk på alla fritextfält
-Ja, det måste man, det är viktigt för tillgängligheten på dataportalen. Läs mer om språkangivelser i [rekommendation 12](recommendations.md#12-sprakangivelse). Notera också att man bör tillhandahålla översättningar, särskilt för titeln, läs mer om detta i [rekommendation 2](recommendations.md#2-oversatt-fritextfalt-till-andra-sprak).
-
-Nyttan med att språkangivelsen på katalogen är tveksam då det går att räkna fram utifrån enskilda fälts språkangivelser.
-
+Ja, det måste man, det är viktigt för tillgängligheten på dataportalen. Läs mer om språkangivelser i [rekommendation 12](recommendations.md#12-sprakangivelse). Notera också att man bör tillhandahålla översättningar för fritextfält, läs mer om detta i [rekommendation 2](recommendations.md#2-oversatt-fritextfalt-till-andra-sprak).
 
 ## Vår data uttrycks i format X enligt specifikation Y, är det ok?
 Ja, DCAT-AP-SE gör det möjligt att tala om i vilket format och i enlighet med vilken specifikation din data uttrycks. Ni hänvisar till vilken specifikation som datamängden följer i metadatan. Denna information läggs till i fältet [dcterms:conformsTo](/dcat/sv/#dcat_Dataset-dcterms_conformsTo).
