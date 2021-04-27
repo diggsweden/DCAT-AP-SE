@@ -1,12 +1,12 @@
 # Skördning av DCAT-AP-SE till Sveriges dataportal
 
 Nedan beskrivs under vilka villkor Sveriges dataportal kan skörda en förteckning
-av datamängder uttryckt i DCAT-AP-SE. Härefter kommer vi kalla [Sveriges dataportal](https://oppnadata.se)
+av datamängder uttryckt i DCAT-AP-SE. Härefter kommer vi kalla [Sveriges dataportal](https://www.dataportal.se/)
 för "portalen" och en förteckningen av datamängder uttryckt i DCAT-AP-SE för en "katalog".
-I anslutning till portalen finns ett administrativt gränsnitt på [registrera.oppnadata.se](https://registrera.oppnadata.se) 
-som riktar sig till utvecklare och katalogansvariga, härefter kommer vi referera till detta gränsnitt som "registrera".
+I anslutning till portalen finns ett administrativt gränsnitt på [admin.dataportal.se](https://admin.dataportal.se/start) 
+som riktar sig till utvecklare och katalogansvariga, härefter kommer vi referera till detta gränsnitt som "Admin".
 
-Under 2020 kommer det finnas två adresser/gränssnitt för Sveriges dataportal som är nåbara på [oppnadata.se](https://oppnadata.se) och [dataportal.se](https://dataportal.se) respektive. Detta är för att det sker ett iterativt utvecklingsarbete med att skapa nya gränsnitt och ny funktionalitet. Under hösten 2020 kommer oppnadata.se att stängas ned och ersättas fullt ut av dataportal.se. Det är viktigt att notera dock att båda gränssnitten slår mot samma API som tillhandahålls av registrera. Dvs. för dataleverantörer är det inget som ändras, man behvöver inte registrera sina datamängder mer än en gång. 
+Under 2020 har Nationella plattformen för öppna data och PSI (oppnadata.se) ersatts  Sveriges dataportal, [dataportal.se](https://dataportal.se). Det är viktigt att notera dock att båda gränssnitten slår mot samma API som tillhandahålls av Admin. Dvs. för dataleverantörer är det inget som ändras, man behöver inte registrera sina datamängder mer än en gång. 
 
 Nedan går vi igenom skördningsmekanismen samt också ett antal principer som man måste följa kring val av identifierare
 och hur man uttrycker utgivande organisationer. Sist i dokumentet finns principer man ska följa om man vill leverera mer än 
@@ -17,7 +17,7 @@ en katalog per skördad organisation.
 För att skördning ska lyckas måste man:
 1. Stödja rätt protokoll.
 2. Levera i rätt format.
-3. Följa den föreskrivna metadataprofilen [DCAT-AP-SE](../sv).
+3. Följa den föreskrivna metadataprofilen [DCAT-AP-SE](https://docs.dataportal.se/dcat/sv/).
 
 ### Protokoll
 Skördning sker via endera HTTP eller HTTPS protokollen. Portalen skördar genom att ladda från en enskild angiven webbadress.
@@ -34,22 +34,22 @@ Portalen kräver att alla IRI:er är absoluta i kataloguttrycket (detta innebär
 
 För den som är osäker på om man producerat korrekt RDF så kan man använda [W3C's RDF validator](https://www.w3.org/RDF/Validator/). 
 Observera att den dock inte kollar om IRI:er är absoluta eller inte.
-Man kan också använda [verktygslådan](https://registrera.oppnadata.se/toolkit/source) på registrera för att få mer detaljerad återkoppling kring framförallt hur väl man uppfyller DCAT-AP-SE.
+Man kan också använda [verktygslådan](https://sandbox.admin.dataportal.se/toolkit/cataloge) på Admin för att få mer detaljerad återkoppling kring framförallt hur väl man uppfyller DCAT-AP-SE.
 
 ### Skördningstid
 Skördning sker en gång per dygn, oftast vid ca. 4 på morgonen. Utöver det kan den som ansvarar för en katalog tvinga fram
-ytterligare skördningar närhelst så passar. Detta sker på registrera. Efter att man tvingat fram en omskördning
+ytterligare skördningar närhelst så passar. Detta sker på Admin. Efter att man tvingat fram en omskördning
 sker skördningen normalt inom 10 minuter.
 
 ### Registrera skördning
-I sverige har vi valt att förregistrera alla offentliga aktörer, man kan enkelt kolla om man är
+I Sverige har vi valt att förregistrera alla offentliga aktörer, man kan enkelt kolla om man är
 [förregistrerad på registrera](https://registrera.oppnadata.se/status/public).
 Förregistrerade aktörer har en angiven skördningskälla på formen:
 ```
 http://<organisation>.se/datasets/dcat
 ```
 Offentliga aktörer ska därmed inte registrera sig på nytt utan endast vid behov ändra skördningskällan. Privata aktörer
-är dock aldrig förregistrerade utan måste registrera sig explicit.
+är dock aldrig förregistrerade utan måste skapa en användare explicit.
  
 ## Val av identifierare
 
@@ -68,9 +68,7 @@ fungera väl är blanka noder inte tillåtet för Katalogen, datamängder, distr
 En viktig princip är att aldrig använda en identifierare för två olika ting. Ur RDF perspektivet innebär detta att all 
 information som uttrycks kring de två tingen kommer att slås samman och betraktas som påstående om ett enskilt ting.
 För att undvika detta bör man använda globala identifierare, gärna baserade på *http* eller *https* protokollen där man
-utnyttjar den egna organisationens namnrymd för att säkerställa att man inte skapar olyckliga krockar. För mer
-information om hur man väljer identifierare se rapporten 
-[Rekommendation om beständiga identifierare](https://oppnadata.se/2018/05/31/rekommendation-om-bestandiga-identifierare-publicerad/).
+utnyttjar den egna organisationens namnrymd för att säkerställa att man inte skapar olyckliga krockar.
 
 ### Undvik duplicerade identifierare
 
@@ -89,7 +87,7 @@ vad som är möjligt och vad man bör undvika.
 Det är fullt möjligt att ha flera olika utgivande organisationer inom samma katalog, t.ex. motsvarande olika avdelningar
 eller förvaltningar inom en större organisation. Notera dock att det som är möjligt inte nödvändigtvis är eftersträvansvärt.
 Att använda en mängd olika utgivande organisationer kan göra det svårare för den som vill vidareuttnytja datamängder att hitta rätt.
-Dataägare uppmuntras här tänka ur ett kund- och marknadsföringsperspektiv snarare än vad den exakta
+Dataägare uppmuntras här tänka ur ett användarperspektiv snarare än vad den exakta
 administrativt korrekta hemvisten är inom den egna organisationen.
 
 ### Beskriv en utgivande organisation enbart en gång
@@ -101,12 +99,12 @@ Det är svårt att automatiskt upptäcka att dessa två titlar motsvarar samma u
 Effekten av beskriva samma organisation flera gånger är både att det ser illa ut med dupletter i sökgränsnittet på portalen
 samt att det blir svårare att söka fram datamängder utifrån en utgivande organisation.
 
-Notera att på den svenska portalen (öppnadata.se) är det möjligt att se att datamängder kommer från samma katalog och 
-därmed med stor sannolikhet kunna slutleda att de har samma ursprung. Men, på den europeiska dataportalen bevaras inte 
+Notera att på Portalen är det möjligt att se att datamängder kommer från samma katalog och 
+därmed med stor sannolikhet kunna slutleda att de har samma ursprung. Men, på den Europeiska dataportalen bevaras inte 
 denna information vilket gör att man endast har fritextsökning att förlita sig på.
 
 ### Identifierare för utgivande organisationer
-Det finns situationer när datamängder för en enskild utgivande organisation skördas från olika kataloger. Det vanligaste exemplet är när en organisation både erbjuder en egen katalog samt att en del av deras datamängder skördas från en annan portal, som t.ex. geodataportalen. För att undvika att samma utgivande organisation registreras fler än en gång är det rekommenderat att man använder en välkänd identifierare för den utgivande organisationen. För att detektion och sammanslagning ska fungera bör följande adress användas:
+Det finns situationer när datamängder för en enskild utgivande organisation skördas från olika kataloger. Det vanligaste exemplet är när en organisation både erbjuder en egen katalog samt att en del av deras datamängder skördas från en annan portal, som t.ex. Geodataportalen. För att undvika att samma utgivande organisation registreras fler än en gång är det rekommenderat att man använder en välkänd identifierare för den utgivande organisationen. För att detektion och sammanslagning ska fungera bör följande adress användas:
 
 ```
 http://dataportal.se/organisation/SE<orgnr>[-suffix]
@@ -129,7 +127,7 @@ av portalen och därmed får de inte blandas samman. Man får alltså inte anvä
 utgivande organisation.
 
 ## Multipla kataloger per organisation
-Registrera skördar från en skördningskälla per organisation. Skördningskällan innebär att en RDF graf laddas och det är
+Portalen skördar från en skördningskälla per organisation. Skördningskällan innebär att en RDF graf laddas och det är
 tillåtet att denna graf innehåller mer än en katalog. Om det finns mer än en katalog är det nödvändigt att de är
 organiserade via propertyn dct:hasPart. Endast en nivå av kataloger och inga cirkulära referenser är tillåtna,
 alla kataloger måste vara typade som dcat:Catalog.
@@ -146,7 +144,7 @@ underkatalog2 rdf:type    dcat:Catalog .
 
 Inga ytterligare dct:hasPart är tillåtna för tre kataloger, ytterligare metadata enligt DCAT-AP-SE bör dock finnas,
 t.ex. titlar, relationer till datamängder, utgivande organisationer etc.
-Notera att registrera kommer att slå samman alla kataloger och flytta upp alla datamängder till huvudkatalogen.
+Notera att portalen kommer att slå samman alla kataloger och flytta upp alla datamängder till huvudkatalogen.
 Angående övrig metadata på katalogerna så är det enbart huvudkatalogens metadata som kommer bevaras. 
 
 ### Ladda underkataloger från separata skördningskällor
