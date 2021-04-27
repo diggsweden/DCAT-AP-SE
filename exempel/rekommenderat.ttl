@@ -5,6 +5,7 @@
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dcatap: <http://data.europa.eu/r5r/> .
 
 <https://example.com/catalog1> a dcat:Catalog ;
 	dcterms:modified "2020-02-04"^^xsd:date ;
@@ -34,10 +35,12 @@
 	dcat:theme <http://publications.europa.eu/resource/authority/data-theme/EDUC> ;
 	dcterms:issued "2020-01-01"^^xsd:date ;
 	dcat:contactPoint <https://example.com/contactpoint1> ;
+	dcterms:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
 	dcterms:temporal _:node1e07u274fx1 .
 
 _:node1e07u274fx1 a dcterms:PeriodOfTime ;
-	dcat:startDate "2010-01-01"^^xsd:date .
+	dcat:startDate "2010-01-01"^^xsd:date ;
+	dcat:endDate "2012-01-01"^^xsd:date .
 
 <https://example.com/contactpoint1> a vcard:Organization ;
 	vcard:fn "Öppna data gruppen på exempel organisationen" ;
@@ -58,17 +61,22 @@ _:node1e07tikr4x2 vcard:hasValue <tel:+46012345678> .
 	dcterms:format "text/csv" ;
 	dcat:accessURL <http://example.com/download> ;
 	dcterms:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
-	dcat:downloadURL <http://example.com/download> .
+	dcat:downloadURL <http://example.com/download> ;
+	dcatap:availability <http://data.europa.eu/r5r/availability/experimental> .
+
 
 <https://example.com/distribution2> a dcat:Distribution ;
 	dcterms:description "Åtkomst till bibliotek via ett API"@sv ;
 	dcterms:format "application/json" ;
 	dcat:accessURL <http://example.com/api> ;
 	dcterms:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
-	dcat:accessService <https://example.com/dataservice1> .
+	dcat:accessService <https://example.com/dataservice1> ;
+	dcatap:availability <http://data.europa.eu/r5r/availability/experimental> .
 
 <https://example.com/dataservice1> a dcat:DataService ;
 	dcterms:title "API exempel"@sv ;
+	dcat:contactPoint <https://example.com/contactpoint1> ;
+	dcat:keyword "bibliotek"@sv , "library"@en ;
 	dcterms:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 	dcterms:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
 	dcat:endpointURL <http://example.com/api> ;

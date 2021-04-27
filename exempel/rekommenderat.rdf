@@ -6,6 +6,7 @@
 	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 	xmlns:vcard="http://www.w3.org/2006/vcard/ns#"
 	xmlns:dcat="http://www.w3.org/ns/dcat#"
+	xmlns:dcatap="http://data.europa.eu/r5r/"
 	xmlns:foaf="http://xmlns.com/foaf/0.1/">
 <dcat:Catalog rdf:about="https://example.com/catalog1">
 	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-02-04</dcterms:modified>
@@ -42,8 +43,10 @@
 	<dcterms:temporal>
 		<dcterms:PeriodOfTime rdf:nodeID="node1e07u274fx1">
 			<dcat:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-01-01</dcat:startDate>
+			<dcat:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2012-01-01</dcat:endDate>
 		</dcterms:PeriodOfTime>
 	</dcterms:temporal>
+	<dcterms:accessRights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC"/>
 </dcat:Dataset>
 <vcard:Organization rdf:about="https://example.com/contactpoint1">
 	<vcard:fn>Öppna data gruppen på exempel organisationen</vcard:fn>
@@ -67,6 +70,7 @@
 	<dcat:accessURL rdf:resource="http://example.com/download"/>
 	<dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/"/>
 	<dcat:downloadURL rdf:resource="http://example.com/download"/>
+	<dcatap:availability rdf:resource="http://data.europa.eu/r5r/availability/experimental"/>
 </dcat:Distribution>
 <dcat:Distribution rdf:about="https://example.com/distribution2">
 	<dcterms:description xml:lang="sv">Åtkomst till bibliotek via ett API</dcterms:description>
@@ -74,9 +78,13 @@
 	<dcat:accessURL rdf:resource="http://example.com/api"/>
 	<dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/"/>
 	<dcat:accessService rdf:resource="https://example.com/dataservice1"/>
+	<dcatap:availability rdf:resource="http://data.europa.eu/r5r/availability/experimental"/>
 </dcat:Distribution>
 <dcat:DataService rdf:about="https://example.com/dataservice1">
 	<dcterms:title xml:lang="sv">API exempel</dcterms:title>
+	<dcat:keyword xml:lang="sv">bibliotek</dcat:keyword>
+    <dcat:keyword xml:lang="en">library</dcat:keyword>
+	<dcat:contactPoint rdf:resource="https://example.com/contactpoint1"/>
 	<dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/"/>
 	<dcterms:accessRights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC"/>
 	<dcat:endpointURL rdf:resource="http://example.com/api"/>
