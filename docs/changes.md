@@ -95,5 +95,5 @@ Under hösten och våren 2019-2020 har arbetsgruppen för DCAT-AP-SE 2.0.0 baser
 - [Data Catalog Vocabulary (DCAT) - Version 2, W3C Editor's Draft](https://w3c.github.io/dxwg/dcat/) - under utveckling.
 - [D02.01 Draft specification BReg-DCAT-AP - 2019-07-01 Editor's Draft](https://joinup.ec.europa.eu/solution/abr-specification-registry-registries) - under utveckling.
 
-(*) Driftsattes aldrig på registrera.oppnadata.se.
+(*) Driftsattes aldrig på den tidigare versionen av Sveriges dataportal, oppnadata.se.
 
