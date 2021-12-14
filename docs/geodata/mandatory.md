@@ -7,14 +7,14 @@
 
     gmd:citation>gmd:CI_Citation>gmd:title>gco:CharacterString
 
-Språk sätts enligt [språkprincipen](principles#sprakprincipen).
+Språk sätts enligt [språkprincipen](principles.md#sprakprincipen).
 
 ### Beskrivning
 Återfinns i IdentificationInfo under sökvägen:
 
     gmd:abstract>gco:CharacterString
 
-Språk sätts enligt [språkprincipen](principles#sprakprincipen).
+Språk sätts enligt [språkprincipen](principles.md#sprakprincipen).
 
 ### Utgivare
 Återfinns i IdentificationInfo som en `gmd:CI_ResponsibleParty` under sökvägen `gmd:pointOfContact`, när rollen är `owner`.
