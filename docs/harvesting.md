@@ -50,7 +50,33 @@ http://<organisation>.se/datasets/dcat
 ```
 Offentliga aktörer ska därmed inte registrera sig på nytt utan endast vid behov ändra skördningskällan. Privata aktörer
 är dock aldrig förregistrerade utan måste skapa en användare explicit.
- 
+
+### Hantering av identifierare
+En princip hos dataportalen är att varje datamängd (och även andra entiteter) måste ha en URI som sätts av den utgivande organisationen. Denna URI bevaras av skördningsprocessen och finns kvar i metadatan. Utöver datamängdens URI behöver dataportalen ha en egen adress till en metadatapost där datamängdens metadata förvaltas. Detta för att man behöver kunna ladda metadata om en datamängd (och andra entiteter) från admin.dataportal.se via ett REST API. Det skapas också en landningssida för varje datamängd som har en annan men snarlik webbadress (URI).
+
+Notera att i DCAT-AP-SE finns det också en möjlighet att [uttrycka en identifierare](https://docs.dataportal.se/dcat/sv/#dcat_Dataset-dcterms_identifier) för datamängden. Denna identifierare är frivillig och inte samma sak som datamängdens URI (som istället förekommer i subjektposition i tripplarna i RDF grafen). I dagsläget används inte identifieraren i skördningsprocessen, så den kan sättas till vad som helst. Dock är det en rekommendation, för att ta hänsyn till framtida förbättringar i skördninsprocessen, att om man sätter identifierare för sina datamängder så bör de vara unika inom varje datakatalog.
+
+**Sammanfattningsvis:**
+1. Varje datamängd måste ha en unik URI.
+2. En datamängd kan ha en identifierare, men den används inte idag av skördningsprocessen.
+3. Det skapas en metadatapost på dataportalen för varje datamängd (och andra entiteter).
+4. Varje metadatapost har en URI som bildas som en kombination av en identifierare för katalogen och en identifierare för datamängden (ett genererat löpnummer, en eventuell identifierare på datamängden används inte i dagsläget).
+5. I metadataposten finns den ursprungliga URI:n för datamängden bevarad.
+
+#### Exempel
+
+Datalevernatör | Värde 
+:--- | :---
+Datamängdens titel | Badvattentemp
+Katalog | Göteborgs katalog
+Datamängdens URI | https://catalog.goteborg.se/store/6/resource/20190
+Identifierare | - 
+
+Dataportalen | Värde
+:--- | :---
+URI metadatapost |  https://admin.dataportal.se/store/66/metadata/71946
+URI landningssida | https://www.dataportal.se/sv/datasets/66_71946
+
 ## Val av identifierare
 
 En central princip när man uttrycker information om ting med hjälp av RDF är att man ger identifierare till dessa ting.
