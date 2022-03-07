@@ -57,6 +57,7 @@ En princip hos dataportalen är att varje datamängd (och även andra entiteter)
 Notera att i DCAT-AP-SE finns det också en möjlighet att [uttrycka en identifierare](https://docs.dataportal.se/dcat/sv/#dcat_Dataset-dcterms_identifier) för datamängden. Denna identifierare är frivillig och inte samma sak som datamängdens URI (som istället förekommer i subjektposition i tripplarna i RDF grafen). I dagsläget används inte identifieraren i skördningsprocessen, så den kan sättas till vad som helst. Dock är det en rekommendation, för att ta hänsyn till framtida förbättringar i skördninsprocessen, att om man sätter identifierare för sina datamängder så bör de vara unika inom varje datakatalog.
 
 **Sammanfattningsvis:**
+
 1. Varje datamängd måste ha en unik URI.
 2. En datamängd kan ha en identifierare, men den används inte idag av skördningsprocessen.
 3. Det skapas en metadatapost på dataportalen för varje datamängd (och andra entiteter).
