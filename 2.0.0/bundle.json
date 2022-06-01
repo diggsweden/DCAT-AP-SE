@@ -1908,6 +1908,7 @@
     {
       "type": "choice",
       "property": "dcterms:creator",
+      "nodetype": "RESOURCE",
       "label": {
         "en": "Creator",
         "sv": "Producent"
@@ -2845,7 +2846,7 @@
           "value": "http://publications.europa.eu/resource/authority/frequency/WEEKLY_2",
           "label": {
             "en": "semiweekly",
-            "sv": "två gånge per vecka"
+            "sv": "två gånger per vecka"
           }
         },
         {
