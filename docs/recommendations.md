@@ -21,6 +21,7 @@ För den som upprepar `dcat:downloadURL` kan det vara lämpligt att tillhandahå
 Datamängder som arkiveras hamnar i en arkivredovisning. Hur en datamängd arkiveras hur kan variera även om det finns så kallade Förvaltnings Gemensamma Specifikationer (FGS). För arkivinstitutioner som levererar till Nationella Arkiv Databasen (NAD) används standarden EAD som påbjuder användning av referenskoder. Referenskoder kan uppges på olika nivåer, exempelvis klassificeringsstruktur, strukturenhet, förvaringsenhet, beroende på hur informationen har strukturerats. Följande är ett exempel på en referenskod `SE/RA/420508.02`.
  
 För att koppla samman en datamängd med arkivredovisningen finns två vägar att gå:
+
 1. Man kan använda en referenskod till en nivå i arkivredovisningen som en identifierare (dcterms:identifier).
 2. Man betraktar arkivet som ett annat sätt att komma åt datamängden, dvs en ytterligare distribution. Beroende på hur tillgängligt arkivet är får man antingen nöja sig med att ange en webbadress för åtkomst (dcat:accessURL) till en sida som ger vidare information om hur man kommer åt arkivet eller så kan man också ange en webbadress för nedladdning.  
 
@@ -28,30 +29,11 @@ Notera att man kan välja att använda båda alternativen.
 Om man väljer alternativ 2 får man vara noga så man inte pekar på en gallrad version som isåfall måste representeras som en egen datamängd snarare än en distribution då den inte innehåller samma data. 
 
 ## 6. Hur en datatjänst används
-I sin enklaste form kan man se en datatjänst som en beskrivning av ett API, dvs en digital tjänst som man kan anropa med olika parametrar för att få ut data från en eller flera datamängder. Innan introduktionen av datatjänst var enda sättet att beskriva ett API som en distribution där man endast kunde använda en kombination av beskrivande text, extern dokumentation och länkade scheman för att berätta om API:ets beskaffning. Med hjälp av en datatjänst kan man nu beskriva API:et i mer detalj och peka på det från distributionen.
-Vän av ordning kanske tycker att ytterligare fält skulle kunna läggas till på en distribution istället för att introducera en datatjänst. Men det finns i huvudsak tre goda argument för modellen där datatjänst är separat från distribution:
-1. Det motsvarar bättre hur information representeras inom geodata området vilket leder till bättre interoperabilitet.
-2. Om ett enskilt API innehåller data för flera datamängder slipper man upprepa informationen.
-3. Vissa datatjänster har en mer processande karaktär och kan inte ses som enbart åtkomst till en datamängd. Ett gott exempel är hur en valutakonverterare är en datatjänst som utför beräkningar utifrån kunskap om växelkurser snarare än ger åtkomst till en ändlig datamängd.
+I sin enklaste form kan man se en datatjänst som en beskrivning av ett API, dvs en digital tjänst som man kan anropa med olika parametrar för att få ut data från en eller flera datamängder. Rekommendationen är att för alla datamängder som är nåbara via API:er ska detta uttryckas med hjälp av en datatjänst som beskriver API:et i mer detalj. Kopplingen mellan datamängden och datatjänsten görs via en distribution som pekar ut datatjänsten via relationen [Åtkomst via datatjänst](https://docs.dataportal.se/dcat/sv/#dcat_Distribution-dcat_accessService).
 
-Utifrån detta kan vi beskriva två olika scenarior:
+Flera datamängder kan peka ut samma datatjänst (via distributioner). Ibland kan en enskild datamängd peka ut samma datatjänst via flera olika distributioner. Detta händer framförallt när man vill berätta om att datatjänsten kan leverera flera olika format då detta bara kan uttryckas på distributionen, inte på datatjänsten.
 
-**A. Hur man använder datatjänster för datamängder**
-1. Skapa en datamängd och peka ut den från katalogen.
-2. Skapa en distribution och peka ut den från datamängden.
-3. Beskriv ditt API som en datatjänst och peka ut den från distributionen.
-4. Ange på distributionen vilket format man får tillbaka från API:et.
-
-Obs 1, i detta fall pekar vi inte ut datatjänsten från katalogen. Det är möjligt att pekar från datatjänsten till datamängden, men då vi pekar från distributionen till datatjänsten är detta onödigt.
-
-Obs 2, om möjligt bör man bara beskriva ett API som en datatjänst en gång och peka på samma instans från flera distributioner. 
-
-**B. Hur man beskriver datatjänster oberoende av datamängder** 
-1. Beskriv ditt API som en datatjänst
-2. Fyll i information som behövs för att datatjänsten ska vara lätt att hitta och utvärdera självständigt, t.ex. utgivare, landningssida, dokumentation, tema, nyckelord etc.
-3. Peka ut datatjänsten från katalogen
-
-För scenario B finns inget visningsstöd i den nationella dataportalen.
+I vissa fall finns datatjänster som är mer av processande karaktär och kan inte ses som enbart åtkomst till en datamängd. Ett gott exempel är hur en valutakonverterare är en datatjänst som utför beräkningar utifrån kunskap om växelkurser snarare än ger åtkomst till en ändlig datamängd. I dessa fall beskriver man datatjänsten utan att det finns en förbindelse via en distribution. Observera att i denna situation är det viktigt att tillhandahålla den information som behövs för att datatjänsten ska vara lätt att hitta och utvärdera självständigt, t.ex. utgivare, landningssida, dokumentation, tema, nyckelord etc.
 
 ## 7. Utgivningsdatum, modifieringsdatum och uppdateringsfrekvens
 Det är viktigt att notera att utgivningsdatum och modifieringsdatum motsvarar den tidpunkt då datat i datamängden gavs ut respektive senast uppdaterats. Datumen refererar alltså **inte** till när man ändrat beskrivningen av datamängden. Vidare handlar uppdateringsfrekvens om hur ofta datat uppdateras, t.ex. årligen, månatligen eller dagligen, inte hur ofta man ser över beskrivningen av datamängden.
@@ -112,3 +94,11 @@ Notera att även om det bara finns ett värde, t.ex en titel, är det viktigt ur
 **Observation 1:** Språkangivelse på datamängden och distribution ska inte blandas samman med språkangivelse per fält. Språkangivelse på datamängden och distribution motsvarar vilket språk som används i själva datat (om något språk används där över huvud taget).
 
 **Observation 2:** Språkangivelse på katalogen är lätt förvirrande då den på ytan tycks ersätta språkangivelse per fält. Men den är en indikation om vilka språk som katalogens metadata är översatt till och ersätter inte språkangivelse per fält. Språkangivelse på katalogen som helhet hjälper oss inte att avgöra vilken av två titlar som är på engelska och vilken som är på svenska.
+
+## 13. Ange API beskrivning
+En API beskrivning är en resurs som beskriver hur API:et fungerar. De två vanligaste uttrycken för API beskrivningar är Swagger och OpenAPI i formatet json eller yaml. Det är rekommenderat att man anger API beskrivningen som en webbadress på två ställen:
+
+* På distributionen - använd fältet [länkade scheman](https://docs.dataportal.se/dcat/sv/#dcat_Distribution-dcterms_conformsTo).
+* På datatjänsten (om man har en) - använd fältet [beskrivning åtkomstadress](https://docs.dataportal.se/dcat/sv/#dcat_DataService-dcat_endpointDescription).
+
+Observera att det INTE är lämpligt att ange API beskrivningen i fältet [Uppfyller](https://docs.dataportal.se/dcat/sv/#dcat_Dataset-dcterms_conformsTo).

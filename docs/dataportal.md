@@ -26,3 +26,22 @@ På [sandbox.admin.dataportal.se/toolkit](https://sandbox.admin.dataportal.se/to
 För att tillåta testskördningar finns en så kallad sandlåda (sandbox på engelska) uppsatt med både en Admin och en dataportal.
 
 Dvs. på [https://sandbox.admin.dataportal.se](https://sandbox.admin.dataportal.se/start) finns det möjlighet att lägga upp en test-organisation och få den skördad med samma infrastruktur som skördar till den skarpa skördningen. Resultatet blir sen synligt på testinstansen av gränssnittet [www-sandbox.dataportal.se](https://www-sandbox.dataportal.se). 
+
+## API Utforskning på distribution eller datatjänster
+Om en datamängd eller datatjänst pekar ut en API beskrivning så kan man utforska API:et direkt på dataportalen. För att det ska fungera måste man peka ut antingen en Swagger eller en OpenAPI fil i antingen JSON eller Yaml formatet. Filen måste vara nåbar på en address där CORS för dataportal.se är påslaget.
+
+* Uforska API på en distribution - använd fältet [länkade scheman](https://docs.dataportal.se/dcat/sv/#dcat_Distribution-dcterms_conformsTo).
+* Uforska API på en datatjänst - använd fältet [beskrivning åtkomstadress](https://docs.dataportal.se/dcat/sv/#dcat_DataService-dcat_endpointDescription).
+
+Detektion av vilka API beskrivningar som finns görs en gång per dygn och rapporteras [i följande JSON rapport](https://admin.dataportal.se/detectedapis.json).
+
+## API filtrering och självständiga datatjänster
+På dataportalen söker man efter data och API:er. Det innebär att det man ser i träfflistan är en blandning av datamängder och datatjänster. Tyvärr innebär detta att det kan upplevas som att det finns dubletter i träfflistan då man får träff både på en datamängd och dess tillhörande datatjänst som ofta har är namngiven snarlikt.
+
+För att komma runt detta problem filtrerar dataportalen bort alla datatjänster som enbart pekas ut av en enskild datamängd eftersom man ändå kan klicka sig vidare till datatjänsten via datamängdens distributioner.
+
+Datatjänster som inte pekas ut av någon datamängd eller alternativt av många datamängder betraktas som självständiga datatjänster och visas alltid upp i träfflistan.
+
+Dataportalen sätter en API markör på alla (självständiga) datatjänster samt på de datamängder (och distributioner) som har en koppling till en datatjänst. Det är möjligt att filtrera på denna markör för att få upp all data som är åtkomligt via API:er.
+
+För de aktörer som inte har börjat använda datatjänster ännu finns en genväg. Inkludera förkortningen "API" (stora eller små bokstäver) någonstans i titeln på datamängden eller distributionen så sätts API markören.

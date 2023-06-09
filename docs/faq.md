@@ -38,3 +38,13 @@ Då DCAT-AP-SE följer den europeiska versionen DCAT-AP så är vår förhoppnin
 Att uppdatera till DCAT-AP2.0.0 ger möjlighet att beskriva dina datamängder på ett rikare sätt. Vi rekommenderar att ni startar upp ett arbete för att uppdatera er metadata. 
 
 Det finns ett fåtal fält som inte är bakåtkompatibla som du bör åtgärda för att din information ska synas på rätt sätt, se [avvikelser och ändringslogg](changes). Om du inte ändrar något kommer Sveriges dataportal tillsvidare att fortsätta inhämta och visa upp den information enligt den gamla specifikationen. Även om ingen information går förlorad kan det innebära att informationen inte visas upp i gränssnittet på ett bra sätt. 
+
+## Varför får min datamängd ingen API märkning?
+Huvudspåret är att datamängden måste peka ut en datatjänst från minst en av sina distributioner via relationen [Åkomst via datatjänst](https://docs.dataportal.se/dcat/sv/#dcat_Distribution-dcat_accessService). Ett annat enklare men mindre framtidssäkert sätt för en datamängd att få en API märkning är att inkludera förkortningen "API" med stora eller små bokstäver i titeln eller i titeln för en av datamängdens distributioner.
+
+## Varför dyker knappen "utforska API" inte upp på min datamängd eller datatjänst
+Om du följt instruktionera och fyllt i nödvändig metadata är följande de vanligaste skälen att du inte får upp knappen:
+
+1. Du har angett fel adress till API beskrivningen, dvs du ska peka på själva beskrivningsfilen (JSON eller yaml) inte på en applikation som visar upp beskrivningsfilen.
+2. Adressen du angett stödjer inte CORS, leta reda adressen i [JSON rapporten](https://admin.dataportal.se/detectedapis.json) och se till så det inte står `null` i `allowOrigin` attributet för din adress.
+3. Du har inte väntat till nästa dag, API detektionen görs en gång per natt. Datakatalogen måste skördas och en check att adressen pekar ut en API beskrivningen görs nattligen (det går i dagsläget inte att skynda via manuell omskördning).

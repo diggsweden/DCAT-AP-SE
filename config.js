@@ -67,6 +67,10 @@ var spec2recs = {
     "dcat_DataService-dcterms_description",
     "dcat_Dataset-adms_versionNotes",
     "dcat_Dataset-dcterms_provenance"
+  ],
+  "13-ange-api-beskrivning": [
+    "dcat_Distribution-dcterms_conformsTo",
+    "dcat_DataService-dcat_endpointDescription"
   ]
 };
 
