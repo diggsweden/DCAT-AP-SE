@@ -16,7 +16,9 @@ en katalog per skördad organisation.
 
 1. Om organisationen har en egen lokal källa i form av t.ex. en metadatakatalog eller en RDF-fil, se [hur du registrerar din katalog på admin.dataportal.se](https://docs.dataportal.se/registry/start/)
 2. Om organisationen vill skapa en lokal källa på den delade metadatakatalogen kontaktas [info@digg.se](mailto:info@digg.se), förbered med max två e-postadresser per organisation för registrering. Se dokumentation om [delad katalog](https://docs.dataportal.se/catalog/).
-3. Via en samkatalog (med flera dataproducenter) som redan är ansluten till Sveriges dataportal (t.ex. Geodataportalen, Statistikdatabasen, SUSA-navet)
+3. Via en samkatalog (med flera dataproducenter) som redan är ansluten till Sveriges dataportal (t.ex. Geodataportalen, Statistikdatabasen, SUSA-navet).
+
+Leveransmetod 1 och 2 går inte att kombinera men båda dessa går att kombinera med leveransmetod 3.
 
 ## Skördningsmekanism
 
