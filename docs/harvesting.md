@@ -178,7 +178,7 @@ För att undvika duplicering finns en mekanism för att identifiera och filtrera
 2. Identitet etableras i andra hand utifrån datamängden / datatjänstens egen URI.
 
 ```
-   Regulärt uttryck för att matcha UUID:
+   Reguljärt uttryck för att matcha UUID:
    /^[0-9a-fA-F]{8}\-[0-9a-fA-F]{4}\-[0-9a-fA-F]{4}\-[0-9a-fA-F]{4}\-[0-9a-fA-F]{12}$/
 ```
 
