@@ -162,6 +162,34 @@ Kontakter och utgivande organisationer har olika uttryck i RDF, även om de har 
 av portalen och därmed får de inte blandas samman. Man får alltså inte använda samma identifierare för en kontakt och en
 utgivande organisation.
 
+## Hantering av duplikat
+
+Sveriges dataportal hämtar metadata från många kataloger vilket medför att duplikat kan uppkomma. Till exempel kan detta hända om samma datamängd eller utgivare finns representerade i flera kataloger.
+
+För att undvika duplicering finns en mekanism för att identifiera och filtrera duplikat vid skördningstillfället. Det finns tre typer av entiteter som berörs av mekanismen: datamängder, datatjänster (API) samt aktörer (utgivare, producenter och övriga aktörer). En förutsättning för att kunna hantera duplikat är att det går att slå fast att det är samma entitet, det vill säga att vi behöver hitta något som ger entiteten en unik identitet. Mekanismen för att hitta en unik identitet är annorlunda för aktörer än för datamängder och datatjänster:
+
+**Aktörer (utgivare, producent, övrig aktör):**<br>
+
+1. Identitet ges via aktörens egen URI, se kapitlet ovan om [identifierare för utgivande organisationer](#identifierare-for-utgivande-organisationer).
+
+**Datamängd eller datatjänst:**
+
+1. Identitet ges i första hand om det finns en explicit identifierare i metadatan (dcterms:identifier) som är tillräckligt unik. I dagsläget krävs att identifieraren är en UUID, se det reguljära uttrycket nedan.
+2. Identitet etableras i andra hand utifrån datamängden / datatjänstens egen URI.
+
+```
+   Regulärt uttryck för att matcha UUID:
+   /^[0-9a-fA-F]{8}\-[0-9a-fA-F]{4}\-[0-9a-fA-F]{4}\-[0-9a-fA-F]{4}\-[0-9a-fA-F]{12}$/
+```
+
+När ett duplikat hittats via sin identifierare, så behövs en prioritering för att kunna avgöra vilken entitet som ska ha företräde i skördningen till dataportalen, dvs vilka entiteter som ska filtreras bort. Prioriteringen görs genom att ta hänsyn till vilken datakatalog entiteterna tillhör. Datakataloger kan vara klassificerade som antingen privat sektor eller publik sektor. Kataloger klassade som publik sektor ges företräde över privat sektor. I vissa fall kan det vara så att vissa kataloger behöver särskild prioritering, då sker det via ett manuellt förfarande. Prioriteringsordningen mellan kataloger är alltså:
+
+1. Enskilda kataloger om de har prioriterats individuellt.
+2. Kataloger som klassificerats som offentlig sektor.
+3. Kataloger som klassifierats som privat sektor.
+
+Det finns kataloger som betraktas som samlingskataloger då de innefattar datamängder från olika aktörer. Dessa samlingskataloger ska ha lägre prioritet än de kataloger vars innehåll kan kopplas till en enskild aktör. Detta åstadkoms antingen genom att prioritera de senare katalogerna enligt (1), eller genom att klassificera samlingskatalogen som privat sektor enligt (3).
+
 ## Multipla kataloger per organisation
 Portalen skördar från en skördningskälla per organisation. Skördningskällan innebär att en RDF graf laddas och det är
 tillåtet att denna graf innehåller mer än en katalog. Om det finns mer än en katalog är det nödvändigt att de är
