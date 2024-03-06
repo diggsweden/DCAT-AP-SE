@@ -19,6 +19,7 @@ Den här dokumentationen syftar till att ge riktlinjer och rekommendationer för
 - [Exempel](docs/examples.md) - exempel som visar obligatorisk och rekommenderad metadata uttryckt i Turtle och RDF/XML
 - [Metadataspecifikation](/dcat/sv){target=_blank} - information om det exakta metadatauttrycket, finns också på [engelska](/dcat/en){target=_blank}.
 - [Rekommendationer](docs/recommendations.md) - information om hur man bör beskriva och tolka de olika fälten i metadatan.
+- [Kvalitet](docs/quality.md) - information om hur kvalitet för metadata och data bedöms.
 - [Vanliga frågor](docs/faq.md) - frågor kring specifikationen, skördning och kopplingen till portalen.
 
 ## Fördjupningar
