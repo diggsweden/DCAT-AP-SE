@@ -17,34 +17,6 @@
   },
   "choices": [
     {
-      "value": "http://publications.europa.eu/resource/authority/frequency/ANNUAL",
-      "label": {
-        "en": "annual",
-        "sv": "årlig"
-      }
-    },
-    {
-      "value": "http://publications.europa.eu/resource/authority/frequency/BIENNIAL",
-      "label": {
-        "en": "biennial",
-        "sv": "vartannat år"
-      }
-    },
-    {
-      "value": "http://publications.europa.eu/resource/authority/frequency/BIMONTHLY",
-      "label": {
-        "en": "bimonthly",
-        "sv": "varannan månad"
-      }
-    },
-    {
-      "value": "http://publications.europa.eu/resource/authority/frequency/BIWEEKLY",
-      "label": {
-        "en": "biweekly",
-        "sv": "var fjortonde dag"
-      }
-    },
-    {
       "value": "http://publications.europa.eu/resource/authority/frequency/CONT",
       "label": {
         "en": "continuous",
@@ -59,66 +31,17 @@
       }
     },
     {
+      "value": "http://publications.europa.eu/resource/authority/frequency/DAILY_2",
+      "label": {
+        "en": "twice a day",
+        "sv": "två gånger per dag"
+      }
+    },
+    {
       "value": "http://publications.europa.eu/resource/authority/frequency/DAILY",
       "label": {
         "en": "daily",
         "sv": "dagligen"
-      }
-    },
-    {
-      "value": "http://publications.europa.eu/resource/authority/frequency/IRREG",
-      "label": {
-        "en": "irregular",
-        "sv": "oregelbundet"
-      }
-    },
-    {
-      "value": "http://publications.europa.eu/resource/authority/frequency/MONTHLY",
-      "label": {
-        "en": "monthly",
-        "sv": "månatligen"
-      }
-    },
-    {
-      "value": "http://publications.europa.eu/resource/authority/frequency/OTHER",
-      "label": {
-        "en": "other",
-        "sv": "andra"
-      }
-    },
-    {
-      "value": "http://publications.europa.eu/resource/authority/frequency/QUARTERLY",
-      "label": {
-        "en": "quarterly",
-        "sv": "kvartalsvis"
-      }
-    },
-    {
-      "value": "http://publications.europa.eu/resource/authority/frequency/ANNUAL_2",
-      "label": {
-        "en": "semiannual",
-        "sv": "halvårs"
-      }
-    },
-    {
-      "value": "http://publications.europa.eu/resource/authority/frequency/MONTHLY_2",
-      "label": {
-        "en": "semimonthly",
-        "sv": "två gånger per månad"
-      }
-    },
-    {
-      "value": "http://publications.europa.eu/resource/authority/frequency/WEEKLY_2",
-      "label": {
-        "en": "semiweekly",
-        "sv": "två gånger per vecka"
-      }
-    },
-    {
-      "value": "http://publications.europa.eu/resource/authority/frequency/MONTHLY_3",
-      "label": {
-        "en": "three times a month",
-        "sv": "tre gånger per månad"
       }
     },
     {
@@ -129,10 +52,87 @@
       }
     },
     {
+      "value": "http://publications.europa.eu/resource/authority/frequency/WEEKLY_2",
+      "label": {
+        "en": "semiweekly",
+        "sv": "två gånger per vecka"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/frequency/WEEKLY",
+      "label": {
+        "en": "weekly",
+        "sv": "veckovis"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/frequency/MONTHLY_3",
+      "label": {
+        "en": "three times a month",
+        "sv": "tre gånger per månad"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/frequency/BIWEEKLY",
+      "label": {
+        "en": "every two weeks",
+        "sv": "varannan vecka"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/frequency/MONTHLY_2",
+      "label": {
+        "en": "semimonthly",
+        "sv": "två gånger per månad"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/frequency/MONTHLY",
+      "label": {
+        "en": "monthly",
+        "sv": "månatligen"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/frequency/BIMONTHLY",
+      "label": {
+        "en": "every two months",
+        "sv": "varannan månad"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/frequency/QUARTERLY",
+      "label": {
+        "en": "quarterly",
+        "sv": "kvartalsvis"
+      }
+    },
+    {
       "value": "http://publications.europa.eu/resource/authority/frequency/ANNUAL_3",
       "label": {
         "en": "three times a year",
         "sv": "tre gånger per år"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/frequency/ANNUAL_2",
+      "label": {
+        "en": "semiannual",
+        "sv": "halvårsvis"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/frequency/ANNUAL",
+      "label": {
+        "en": "annual",
+        "sv": "årligen"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/frequency/BIENNIAL",
+      "label": {
+        "en": "biennial",
+        "sv": "vartannat år"
       }
     },
     {
@@ -143,24 +143,31 @@
       }
     },
     {
-      "value": "http://publications.europa.eu/resource/authority/frequency/DAILY_2",
+      "value": "http://publications.europa.eu/resource/authority/frequency/IRREG",
       "label": {
-        "en": "twice a day",
-        "sv": "två gånger per dag"
+        "en": "irregular",
+        "sv": "oregelbundet"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/frequency/OTHER",
+      "label": {
+        "en": "other",
+        "sv": "annan"
       }
     },
     {
       "value": "http://publications.europa.eu/resource/authority/frequency/UNKNOWN",
       "label": {
         "en": "unknown",
-        "sv": "obekant"
+        "sv": "okänd"
       }
     },
     {
-      "value": "http://publications.europa.eu/resource/authority/frequency/WEEKLY",
+      "value": "http://publications.europa.eu/resource/authority/frequency/NEVER",
       "label": {
-        "en": "weekly",
-        "sv": "veckovis"
+        "en": "never",
+        "sv": "aldrig"
       }
     }
   ]

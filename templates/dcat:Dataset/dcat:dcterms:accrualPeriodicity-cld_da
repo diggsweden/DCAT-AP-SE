@@ -1,7 +1,7 @@
 {
   "type": "choice",
   "label": {
-    "en": "Frequency of update",
+    "en": "Update frequency",
     "sv": "Uppdateringsfrekvens"
   },
   "styles": [
@@ -204,7 +204,7 @@
   "nodetype": "URI",
   "property": "dcterms:accrualPeriodicity",
   "description": {
-    "en": "This property refers to the frequency at which Dataset is updated.",
-    "sv": "Denna egenskapen avser den datamängdens uppdateringsfrekvens."
+    "en": "This property refers to the frequency at which a Dataset is updated.",
+    "sv": "Denna egenskapen avser datamängdens uppdateringsfrekvens."
   }
 }

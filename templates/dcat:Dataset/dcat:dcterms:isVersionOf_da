@@ -1,7 +1,7 @@
 {
   "type": "choice",
   "nodetype": "URI",
-  "property": "dcat:isVersionOf",
+  "property": "dcterms:isVersionOf",
   "label": {
     "en": "Is version of",
     "sv": "Är version av"
