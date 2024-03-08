@@ -973,8 +973,8 @@
       "nodetype": "URI",
       "property": "http://data.europa.eu/r5r/hvdCategory",
       "label": {
-        "en": "Category - High-value dataset ",
-        "sv": "Kategori - Särskilt värdefull datamängd"
+        "en": "Category for high-value datasets",
+        "sv": "Kategori för värdefulla datamängder"
       },
       "description": {
         "en": "Categorization of high value dataset as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022, Annex, Section 3"
