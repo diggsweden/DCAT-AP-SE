@@ -3,6 +3,8 @@
 Nedan redovisar vi först avvikelser i den svenska profilen mot DCAT-AP2.0.0.
 Vi delar in ändringar som handlar om kardinalitet, utelämnade delar, tillägg samt förtydlingar. Därefter redovisar vi i korthet vad som ändrats sedan den tidigare versionen av den svenska profilen.
 
+## Ändringar i DCAT-AP-2.1.1
+
 ## Avvikelser från DCAT-AP-2.0.0 i den svenska profilen
 
 ### Kardinalitetsändringar
@@ -57,6 +59,13 @@ För att ange en eventuell avgift pekar man ut en [Avgift med hjälp av klassen 
 ### Förtydlingar
 * Licensen på katalognivån måste vara CC-0.
 * Användning av [en delmängd av Inspires roller](/dcat/sv/#5.13) vid prov:qualifiedAttribution (range för dcat:role på prov:QualifiedAttribtion klassen). Roller som motsvarar dct:publisher, dct:creator eller dcat:contactPoint bör inte användas.
+
+## Ändringar mellan DCAT-AP-2.0.0 och DCAT-AP-2.2.0
+* Ändrat felaktiga namnrymder (dcat:hasVersion och dcat:isVersionOf till dcterms:hasVersion och dcterms:isVersionOf). [Ärende 90](https://github.com/diggsweden/DCAT-AP-SE/issues/90).
+* Stöd för att tillhandahålla information om värdefulla datamängder i enlighet med [https://semiceu.github.io/DCAT-AP/releases/2.2.0-hvd/](https://semiceu.github.io/DCAT-AP/releases/2.2.0-hvd/). - [ärende 97](https://github.com/diggsweden/DCAT-AP-SE/issues/97)
+* Länk till Github repositoryt från specifikationen. - [ärende 93](https://github.com/diggsweden/DCAT-AP-SE/issues/93)
+* Förbättringar kring uppdateringsfrekvens. - [ärende 87](https://github.com/diggsweden/DCAT-AP-SE/issues/87) och [ärende 98](https://github.com/diggsweden/DCAT-AP-SE/issues/98)
+* Korrigera datatyp på dcat:byteSize [ärende 83](https://github.com/diggsweden/DCAT-AP-SE/issues/83)
 
 ## Ändringar mellan DCAT-AP-1.2.1 och DCAT-AP-2.0.0
 För en detaljerad förteckning hänvisas läsaren till Annex II i [DCAT-AP-2.0.0 specifikationen](https://joinup.ec.europa.eu/solution/dcat-application-profile-data-portals-europe/release/200).
