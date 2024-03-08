@@ -1,0 +1,9 @@
+{
+  "extends": "dcatap:applicableLegislation",
+  "type": "choice",
+  "nodetype": "URI",
+  "description": {
+    "en": "Legislation that mandates the creation or management of the Data Service.",
+    "sv": "Lagstiftning som kräver att datatjänsten skapas och/eller hanteras."
+  }
+}

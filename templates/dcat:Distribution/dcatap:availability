@@ -17,7 +17,7 @@
   "property": "http://data.europa.eu/r5r/availability",
   "choices": [
     {
-      "value": "http://data.europa.eu/r5r/availability/temporary",
+      "value": "http://publications.europa.eu/resource/authority/planned-availability/TEMPORARY",
       "label": {
         "en": "Temporary",
         "sv": "Temporär"
@@ -28,7 +28,7 @@
       }
     },
     {
-      "value": "http://data.europa.eu/r5r/availability/experimental",
+      "value": "http://publications.europa.eu/resource/authority/planned-availability/EXPERIMENTAL",
       "label": {
         "en": "Experimental",
         "sv": "Experimentell"
@@ -39,7 +39,7 @@
       }
     },
     {
-      "value": "http://data.europa.eu/r5r/availability/available",
+      "value": "http://publications.europa.eu/resource/authority/planned-availability/AVAILABLE",
       "label": {
         "en": "Available",
         "sv": "Tillgänglig"
@@ -50,7 +50,7 @@
       }
     },
     {
-      "value": "http://data.europa.eu/r5r/availability/stable",
+      "value": "http://publications.europa.eu/resource/authority/planned-availability/STABLE",
       "label": {
         "en": "Stable",
         "sv": "Stabil"
