@@ -3833,9 +3833,7 @@
         "sv": "Distributionens storleken kan uppskattas när den exakta storleken är okänd."
       },
       "datatype": [
-        "http://www.w3.org/2001/XMLSchema#date",
-        "http://www.w3.org/2001/XMLSchema#dateTime",
-        "http://www.w3.org/2001/XMLSchema#gYear"
+        "http://www.w3.org/2001/XMLSchema#decimal"
       ],
       "id": "dcat:byteSize_di"
     },
