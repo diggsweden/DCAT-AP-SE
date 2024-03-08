@@ -74,7 +74,7 @@ var spec2recs = {
   ]
 };
 
-rdforms.spec({
+rdforms_specs.init({
   language: document.targetLanguage,
   namespaces: {
     spdx: 'http://spdx.org/rdf/terms#',
@@ -110,6 +110,7 @@ rdforms.spec({
     'schema:Offer'
   ],
   onDone: function() {
+    debugger
     window.addRecommendations(document.targetLanguage, spec2recs);
     var pos = document.location.hash;
     if (pos) {
