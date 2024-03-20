@@ -72,7 +72,7 @@ var spec2recs = {
     "dcat_Distribution-dcterms_conformsTo",
     "dcat_DataService-dcat_endpointDescription"
   ],
-  "14-vardefulla datamangder": [
+  "14-vardefulla-datamangder": [
     "dcat_Dataset-dcatap_applicableLegislation",
     "dcat_Dataset-dcatap_hvdCategory",
     "dcat_Dataset-dcat_distribution",
