@@ -102,3 +102,12 @@ En API beskrivning är en resurs som beskriver hur API:et fungerar. De två vanl
 * På datatjänsten (om man har en) - använd fältet [beskrivning åtkomstadress](https://docs.dataportal.se/dcat/sv/#dcat_DataService-dcat_endpointDescription).
 
 Observera att det INTE är lämpligt att ange API beskrivningen i fältet [Uppfyller](https://docs.dataportal.se/dcat/sv/#dcat_Dataset-dcterms_conformsTo).
+
+## 14. Värdefulla datamängder
+Enligt öppna datalagen, se [DIGGs vägledning](https://www.digg.se/kunskap-och-stod/oppna-och-delade-data/offentliga-aktorer/vagledning-om-oppna-datalagen), och dess [genomförandeförordning](https://eur-lex.europa.eu/legal-content/SV/TXT/?uri=PI_COM:C(2022)9562) är det ett krav för vissa aktörer att redovisa värdefulla datamängder. I samband med DCAT-AP-SE2.2.0 infördes stöd för hur man ska redovisa värdefulla datamängder. En fullständig beskrivning av hur man uttrycker värdefulla datamängder i DCAT-AP ges i specifikationen [DCAT-AP High Value Datasets](https://semiceu.github.io/DCAT-AP/releases/2.2.0-hvd), nedan följer en sammanfattning:
+
+* Markerar de datamängder, distributioner och datatjänster som är värdefulla genom att peka på en [stabil adress](https://docs.dataportal.se/dcat/sv/#http%3A%2F%2Fdata.europa.eu%2Feli%2Freg_impl%2F2023%2F138%2Foj) för genomförandeförodningen i fältet [tillämpbar lagstiftning](https://docs.dataportal.se/dcat/sv/#dcat_Dataset-dcatap_applicableLegislation) (obs, fält med samma namn på [distribution](https://docs.dataportal.se/dcat/sv/#dcat_Distribution-dcatap_applicableLegislation) och [datatjänst](https://docs.dataportal.se/dcat/sv/#dcat_DataService-dcatap_applicableLegislation)).
+* För de datamängder och datatjänster som är värdefulla måste man också ange en speciell [kategorisering](https://docs.dataportal.se/dcat/sv/#5.5) i fältet [kategori för värdefulla datamängder](https://docs.dataportal.se/dcat/sv/#dcat_Dataset-dcatap_hvdCategory), motsvarande [fält på datatjänst](https://docs.dataportal.se/dcat/sv/#dcat_DataService-dcatap_hvdCategory) (obs, anges inte på distributionen).
+* Varje värdefull datamängd måste ha minst en distribution som är markerad som värdefull.
+* För datatjänster som är värdefulla är det ett krav att man anger en kontakt och pekar ut dokumentation som informerar om tjänstens kvalitet (quality of service).
+* Pekar ut den datamängd som datatjänst stödjer via fältet [försörjer datamängd](https://docs.dataportal.se/dcat/sv/#dcat_DataService-dcat_servesDataset) (det finns inga krav på självständiga datatjänster).

@@ -71,6 +71,17 @@ var spec2recs = {
   "13-ange-api-beskrivning": [
     "dcat_Distribution-dcterms_conformsTo",
     "dcat_DataService-dcat_endpointDescription"
+  ],
+  "14-vardefulla datamangder": [
+    "dcat_Dataset-dcatap_applicableLegislation",
+    "dcat_Dataset-dcatap_hvdCategory",
+    "dcat_Dataset-dcat_distribution",
+    "dcat_Distribution-dcatap_applicableLegislation",
+    "dcat_DataService-dcatap_applicableLegislation",
+    "dcat_DataService-dcatap_hvdCategory",
+    "dcat_DataService-dcat_contactPoint",
+    "dcat_DataService-foaf_page",
+    "dcat_DataService-dcat_servesDataset"
   ]
 };
 
