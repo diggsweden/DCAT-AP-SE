@@ -1,44 +1,34 @@
 # DCAT-AP-SE
 
-I det här Github-arkivet hanterar vi den svenska anpassningen till DCAT-AP.
-Den senaste uppdateringen skedde hösten 2019 och våren 2020 på uppdag av [Myndigheten för digital förvaltning (DIGG)](https://www.digg.se).
+I det här Github-arkivet hanterar vi den svenska anpassningen till DCAT-AP som benämns DCAT-AP-SE. Specifikationen förvaltas av [Myndigheten för digital förvaltning (DIGG)](https://www.digg.se) och aktuell dokumentation finner ni på [docs.dataportal.se/dcat](https://docs.dataportal.se/dcat/).
 
-Den senaste versionen av anpassningen kan ses här: [https://docs.dataportal.se/dcat/sv/](https://docs.dataportal.se/dcat/sv/)
+Under våren 2024 påbörjas ett arbete med att uppdatera till version 3.0 av DCAT-AP. Se de olika versionerna och tillhörande arbetsprocesser:
 
-Startpunkten för anpassningen var den [tidigare specifikationen som togs fram på uppdrag av VINNOVA](https://lankadedata.se/spec/DCAT-AP-SE/). Till detta har följande att beaktats:
+* [Senaste versionen, utkast](https://docs.dataportal.se/dcat/sv/) kommer under våren uppdateras som en del av arbetet med att uppdatera till version 3.0. Se [arbetsprocess](process/3.0/index.md).
+* [Senaste stabila versionen, 2.2.0](https://docs.dataportal.se/dcat/2.0.0/sv/) togs fram under hösten 2023 och början på våren 2024 innefattande i huvudsak stöd för värdefulla datamängder las till.
+* [Version 2.0.0](https://docs.dataportal.se/dcat/2.2.0/sv) togs fram hösten 2019 och våren 2020.
 
-- [Data Catalog Vocabulary (DCAT) - W3C Recommendation 16 January 2014](https://www.w3.org/TR/vocab-dcat/) - stabil.
-- [DCAT Application Profile for data portals in Europe Version 1.2.1](https://joinup.ec.europa.eu/release/dcat-ap/121) - stabil.
-- [Rekommendation och svensk anpassning av DCAT-AP - 2018-06-20, Riksarkivet/SIS](https://oppnadata.se/wp-content/uploads/2018/06/Bilaga_8_DCAT-AP1.1-Svensk-rekommendation.pdf) - stabil
-- [Data Catalog Vocabulary (DCAT) - Version 2, W3C Editor's Draft](https://w3c.github.io/dxwg/dcat/) - under utveckling, färdig oktober 2019.
-- [Major semantic release of DCAT-AP 1.3](https://joinup.ec.europa.eu/solution/dcat-application-profile-data-portals-europe/news/dcat-ap-releases-2019)
-- [D02.01 Draft specification BReg-DCAT-AP - 2019-07-01 Editor's Draft](https://joinup.ec.europa.eu/solution/abr-specification-registry-registries) - under utveckling.
+## Hur man bidrar / ger återkoppling
 
-(*) Driftsattes aldrig på registrera.oppnadata.se.
+- Skapa nya / kommentera på existerande [ärenden på GitHub](https://github.com/diggsweden/DCAT-AP-SE/issues)
+- Skapa [pull-requests](https://github.com/diggsweden/DCAT-AP-SE/pulls) för konkreta ändringsförslag.
+- Som en del av arbetsprocessen när sådan pågår:
+   - Delta i en arbetsgrupp.
+   - Ge återkoppling i form av en remiss.
+- Mejla till [info@digg.se](mailto:info@digg.se).
 
-## Arbetsprocess
-Se [separat dokument](process/index.md).
-
-## Specifikationens delar
+## Förvaltning av specifikationens delar
 
 Specifikationen kan delas upp i två delar.
 
-1. Markdown dokument i katalogen [docs](docs) som genereras av Jekyll på Github pages
-2. Metadata specifikationen som drivs av en JSON konfiguration
+1. En formell metadataspecifikationen som drivs av en [JSON konfiguration](bundle.json) via ramverket [RDForms-specs](https://bitbucket.org/metasolutions/rdforms-specs/src/main/).
+2. Stödjande dokumentation uttryckt i markdown, se material i katalogen [docs](docs). Dokumentationssidor genereras av [MkDocs](https://www.mkdocs.org/).
 
-Metadata specifikationen förvaltas på både engelska och svenska.
+Den formella metadataspecifikationen förvaltas på både engelska och svenska.
 
 Observera att JSON konfigurationen är uppdelad i en mängd olika JSON filer (för ökad läsbarhet och förvaltning) som byggs ihop med ett node.js script till en stor JSON fil för att göra renderingen snabbare (minska mängden requests).
 Så här bygger man:
 
     node buildBundle.js
     
-Resultatet är att filen `bundle.json` uppdateras vilken sedemera laddas av metadata specifikationen vid rendering.
-
-## Hur man ger återkoppling
-
-- Skapa nya ärenden
-- Kommentera på existerande
-- Skapa pull-requests för konkreta ändringar
-- Du kan även mejla till [info@digg.se](mailto:info@digg.se)
-
+Resultatet är att filen [`bundle.json`](bundle.json) uppdateras vilken sedemera laddas av metadata specifikationen vid rendering.
