@@ -7,12 +7,14 @@ Startpunkten för anpassningen är följande:
 - [DCAT-AP 3.0](https://semiceu.github.io/DCAT-AP/releases/3.0.0/) - stabil.
 
 ## Process
-TODO
+Vi siktar på att ha fyra möten som är planerade att ungefär innefatta följande steg. Vid behov kan processen komma att ändras, t.ex. genom att fler möten läggs till.
 
-## Möten
-* Möte referensgrupp - 2024-04-08 
+- Första mötet 8/4 kl. 10:30 - Koncept och bakgrund, genomgång av material. Förslag kring bland annat dataserier, EU-lista licenser, filter/märkning (grunddata etc). Diskussion och frågor.
+- Andra mötet - Samla in återkoppling diskutera alternativ.
+- Tredje mötet - Framtaget förslag gås igenom.
+- Fjärde mötet - Beslut
 
 ## Referensgrupp
 Referensgruppen är listad i bokstavsordning.
 
-TODO
+TODO - efter bekräftelse från deltagarna.

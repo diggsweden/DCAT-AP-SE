@@ -6,7 +6,7 @@ Under våren 2024 påbörjas ett arbete med att uppdatera till version 3.0 av DC
 
 * [Senaste versionen, utkast](https://docs.dataportal.se/dcat/sv/) kommer under våren uppdateras som en del av arbetet med att uppdatera till version 3.0. Se [arbetsprocess](process/3.0/index.md).
 * [Senaste stabila versionen, 2.2.0](https://docs.dataportal.se/dcat/2.0.0/sv/) togs fram under hösten 2023 och början på våren 2024 innefattande i huvudsak stöd för värdefulla datamängder las till.
-* [Version 2.0.0](https://docs.dataportal.se/dcat/2.2.0/sv) togs fram hösten 2019 och våren 2020.
+* [Version 2.0.0](https://docs.dataportal.se/dcat/2.2.0/sv) togs fram hösten 2019 och våren 2020. Se [arbetsprocess](process/index.md).
 
 ## Hur man bidrar / ger återkoppling
 
