@@ -11,10 +11,10 @@ Vi siktar på att ha fyra möten som är planerade att ungefär innefatta följa
 
 - Första mötet 8/4 kl. 10:30 - Koncept och bakgrund, genomgång av material. Förslag kring bland annat dataserier, EU-lista licenser, filter/märkning (grunddata etc). Diskussion och frågor.
     - [Presentation](https://docs.google.com/presentation/d/11vgozN0Yxrz0R_8a1kgCH0YdjXH8-dOK3INs851erxY/edit?usp=sharing)
-    - Mötesanteckningar
-- Andra mötet - Samla in återkoppling diskutera alternativ.
-- Tredje mötet - Framtaget förslag gås igenom.
-- Fjärde mötet - Beslut
+    - [Mötesanteckningar](meet1.pdf)
+- Andra mötet 25/4 kl. 12-14 - Samla in återkoppling och diskutera alternativ.
+- Tredje mötet 17/5 kl. 13-15 - Framtaget förslag gås igenom.
+- Fjärde mötet 30/5 kl. 10-12 - Beslut
 
 ## Referensgrupp
 Referensgruppen är listad i bokstavsordning.
