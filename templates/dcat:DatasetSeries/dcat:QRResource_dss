@@ -1,0 +1,14 @@
+{
+  "type": "text",
+  "nodetype": "URI",
+  "property": "dcterms:relation",
+  "label": {
+    "en": "Resource",
+    "sv": "Resurs"
+  },
+  "cardinality": {
+    "min": 1,
+    "max": 1
+  },
+  "pattern": "https?://.+"
+}

@@ -102,6 +102,7 @@ rdforms_specs.init({
     'dcat:Dataset',
     'dcat:Distribution',
     'dcat:DataService',
+    'dcat:DatasetSeries',
     'dcat:foaf:Agent',
     'dcat:contactPoint',
   ],

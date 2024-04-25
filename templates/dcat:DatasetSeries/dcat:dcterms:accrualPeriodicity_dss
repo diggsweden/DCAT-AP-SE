@@ -1,0 +1,174 @@
+{
+  "type": "choice",
+  "nodetype": "URI",
+  "property": "dcterms:accrualPeriodicity",
+  "label": {
+    "en": "Frequency of update",
+    "sv": "Uppdateringsfrekvens"
+  },
+  "description": {
+    "en": "This property refers to the frequency at which new Datasets are added to the series.",
+    "sv": "Avser uppdateringsfrekvensen för nya datamängder i serien."
+  },
+  "cardinality": {
+    "min": 0,
+    "pref": 0,
+    "max": 1
+  },
+  "choices": [
+    {
+      "value": "http://publications.europa.eu/resource/authority/frequency/CONT",
+      "label": {
+        "en": "continuous",
+        "sv": "kontinuerlig"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/frequency/UPDATE_CONT",
+      "label": {
+        "en": "continuously updated",
+        "sv": "uppdateras kontinuerligt"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/frequency/DAILY_2",
+      "label": {
+        "en": "twice a day",
+        "sv": "två gånger per dag"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/frequency/DAILY",
+      "label": {
+        "en": "daily",
+        "sv": "dagligen"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/frequency/WEEKLY_3",
+      "label": {
+        "en": "three times a week",
+        "sv": "tre gånger per vecka"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/frequency/WEEKLY_2",
+      "label": {
+        "en": "semiweekly",
+        "sv": "två gånger per vecka"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/frequency/WEEKLY",
+      "label": {
+        "en": "weekly",
+        "sv": "veckovis"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/frequency/MONTHLY_3",
+      "label": {
+        "en": "three times a month",
+        "sv": "tre gånger per månad"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/frequency/BIWEEKLY",
+      "label": {
+        "en": "every two weeks",
+        "sv": "varannan vecka"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/frequency/MONTHLY_2",
+      "label": {
+        "en": "semimonthly",
+        "sv": "två gånger per månad"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/frequency/MONTHLY",
+      "label": {
+        "en": "monthly",
+        "sv": "månatligen"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/frequency/BIMONTHLY",
+      "label": {
+        "en": "every two months",
+        "sv": "varannan månad"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/frequency/QUARTERLY",
+      "label": {
+        "en": "quarterly",
+        "sv": "kvartalsvis"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/frequency/ANNUAL_3",
+      "label": {
+        "en": "three times a year",
+        "sv": "tre gånger per år"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/frequency/ANNUAL_2",
+      "label": {
+        "en": "semiannual",
+        "sv": "halvårsvis"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/frequency/ANNUAL",
+      "label": {
+        "en": "annual",
+        "sv": "årligen"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/frequency/BIENNIAL",
+      "label": {
+        "en": "biennial",
+        "sv": "vartannat år"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/frequency/TRIENNIAL",
+      "label": {
+        "en": "triennial",
+        "sv": "vart tredje år"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/frequency/IRREG",
+      "label": {
+        "en": "irregular",
+        "sv": "oregelbundet"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/frequency/OTHER",
+      "label": {
+        "en": "other",
+        "sv": "annan"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/frequency/UNKNOWN",
+      "label": {
+        "en": "unknown",
+        "sv": "okänd"
+      }
+    },
+    {
+      "value": "http://publications.europa.eu/resource/authority/frequency/NEVER",
+      "label": {
+        "en": "never",
+        "sv": "aldrig"
+      }
+    }
+  ]
+}

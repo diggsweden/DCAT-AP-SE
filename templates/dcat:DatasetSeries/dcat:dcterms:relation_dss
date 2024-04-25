@@ -1,0 +1,14 @@
+{
+  "property": "dcterms:relation",
+  "label": {
+    "en": "Related resource",
+    "sv": "Relaterad resurs"
+  },
+  "description": {
+    "en": "This property refers to a related resource.",
+    "sv": "Egenskapen pekar ut en relaterad resurs."
+  },
+  "type": "text",
+  "nodetype": "URI",
+  "pattern": "https?://.+"
+}

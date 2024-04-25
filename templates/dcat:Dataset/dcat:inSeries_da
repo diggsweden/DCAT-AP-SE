@@ -1,0 +1,16 @@
+{
+  "type": "choice",
+  "nodetype": "URI",
+  "description": {
+    "en": "A dataset series of which the dataset is part.",
+    "sv": "En datamängdsserie som datamängden ingår i."
+  },
+  "label": {
+    "en": "In series",
+    "sv": "Del i serie"
+  },
+  "property": "dcat:inSeries",
+  "constraints": {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "http://www.w3.org/ns/dcat#DatasetSeries"
+  }
+}

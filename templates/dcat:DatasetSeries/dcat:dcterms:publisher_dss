@@ -1,0 +1,32 @@
+{
+  "type": "choice",
+  "nodetype": "RESOURCE",
+  "property": "dcterms:publisher",
+  "constraints": {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+      "http://xmlns.com/foaf/0.1/Agent",
+      "http://xmlns.com/foaf/0.1/Person",
+      "http://xmlns.com/foaf/0.1/Organization"
+    ]
+  },
+  "label": {
+    "en": "Publisher",
+    "sv": "Utgivare"
+  },
+  "labelProperties": [
+    "http://xmlns.com/foaf/0.1/name",
+    [
+      "http://xmlns.com/foaf/0.1/givenName",
+      "http://xmlns.com/foaf/0.1/familyName"
+    ]
+  ],
+  "description": {
+    "en": "This property refers to an entity (organisation) responsible for making the Dataset series available.",
+    "sv": "Egenskapen hänvisar till en enhet (organisation) som ansvarar för att göra datamängdsserien tillgänglig."
+  },
+  "cardinality": {
+    "min": 1,
+    "pref": 1,
+    "max": 1
+  }
+}

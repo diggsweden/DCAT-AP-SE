@@ -1,0 +1,71 @@
+{
+  "type": "group",
+  "property": "dcterms:temporal",
+  "nodetype": "RESOURCE",
+  "label": {
+    "en": "Time period",
+    "sv": "Tidsperiod"
+  },
+  "constraints": {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "http://purl.org/dc/terms/PeriodOfTime"
+  },
+  "cardinality": {
+    "min": 0,
+    "pref": 1
+  },
+  "cls": [
+    "cardgroup"
+  ],
+  "items": [
+    {
+      "type": "text",
+      "nodetype": "DATATYPE_LITERAL",
+      "property": "dcat:startDate",
+      "label": {
+        "en": "Start",
+        "sv": "Start"
+      },
+      "description": {
+        "en": "Start date of the period for which the dataset series contains data.",
+        "sv": "Startdatum för den period då datamängdsserien innehåller data."
+      },
+      "datatype": [
+        "http://www.w3.org/2001/XMLSchema#date",
+        "http://www.w3.org/2001/XMLSchema#dateTime",
+        "http://www.w3.org/2001/XMLSchema#gYear"
+      ],
+      "cardinality": {
+        "min": 0,
+        "pref": 1,
+        "max": 1
+      }
+    },
+    {
+      "type": "text",
+      "nodetype": "DATATYPE_LITERAL",
+      "property": "dcat:endDate",
+      "label": {
+        "en": "End",
+        "sv": "Slut"
+      },
+      "description": {
+        "en": "End date of the period for which the dataset series contains data.",
+        "sv": "Slutdatum för den period då datamängdserien innehåller data."
+      },
+      "datatype": [
+        "http://www.w3.org/2001/XMLSchema#date",
+        "http://www.w3.org/2001/XMLSchema#dateTime",
+        "http://www.w3.org/2001/XMLSchema#gYear"
+      ],
+      "cardinality": {
+        "min": 0,
+        "pref": 1,
+        "max": 1
+      }
+    }
+  ],
+  "description": {
+    "en": "Validity period of a dataset series (start and end date)",
+    "sv": "Datamängdsseriens giltighetsperiod (startdatum och slutdatum)"
+  }
+}

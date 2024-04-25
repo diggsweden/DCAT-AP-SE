@@ -1,0 +1,31 @@
+{
+  "type": "group",
+  "label": {
+    "en": "Dataset series",
+    "sv": "Datamängdsserie"
+  },
+  "constraints": {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "http://www.w3.org/ns/dcat#DatasetSeries"
+  },
+  "items": [
+    "dcat:dcterms:title_dss",
+    "dcat:dcterms:description_dss",
+    "dcat:dcterms:publisher_dss",
+    "dcat:contactPoint_dss",
+    "dcat:keyword_dss",
+    "dcat:theme-dss",
+    "dcatap:applicableLegislation_dss",
+    "dcatap:hvdCategory_dss",
+    "dcat:dcterms:conformsTo_dss",
+    "dcat:dcterms:issued_dss",
+    "dcat:dcterms:modified_dss",
+    "dcat:landingPage_dss",
+    "dcat:dcterms:spatial_dss",
+    "dcat:dcterms:spatial_bb_dss",
+    "dcat:dcterms:temporal_dss",
+    "dcat:dcterms:accrualPeriodicity_dss",
+    "dcat:dcterms:relation_dss",
+    "dcat:qualifiedRelation_dss",
+    "dcat:foaf:page_dss"
+  ]
+}

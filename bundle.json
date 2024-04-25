@@ -1944,7 +1944,8 @@
         "dcat:qualifiedRelation",
         "dcat:foaf:page_da",
         "dcat:dcterms:provenance_da",
-        "dcat:distribution_da"
+        "dcat:distribution_da",
+        "dcat:inSeries_da"
       ],
       "id": "dcat:Dataset"
     },
@@ -3307,6 +3308,714 @@
         "rdf:type": "dcat:Distribution"
       },
       "id": "dcat:distribution_da"
+    },
+    {
+      "type": "choice",
+      "nodetype": "URI",
+      "description": {
+        "en": "A dataset series of which the dataset is part.",
+        "sv": "En datamängdsserie som datamängden ingår i."
+      },
+      "label": {
+        "en": "In series",
+        "sv": "Del i serie"
+      },
+      "property": "dcat:inSeries",
+      "constraints": {
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "http://www.w3.org/ns/dcat#DatasetSeries"
+      },
+      "id": "dcat:inSeries_da"
+    },
+    {
+      "type": "group",
+      "label": {
+        "en": "Dataset series",
+        "sv": "Datamängdsserie"
+      },
+      "constraints": {
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "http://www.w3.org/ns/dcat#DatasetSeries"
+      },
+      "items": [
+        "dcat:dcterms:title_dss",
+        "dcat:dcterms:description_dss",
+        "dcat:dcterms:publisher_dss",
+        "dcat:contactPoint_dss",
+        "dcat:keyword_dss",
+        "dcat:theme-dss",
+        "dcatap:applicableLegislation_dss",
+        "dcatap:hvdCategory_dss",
+        "dcat:dcterms:conformsTo_dss",
+        "dcat:dcterms:issued_dss",
+        "dcat:dcterms:modified_dss",
+        "dcat:landingPage_dss",
+        "dcat:dcterms:spatial_dss",
+        "dcat:dcterms:spatial_bb_dss",
+        "dcat:dcterms:temporal_dss",
+        "dcat:dcterms:accrualPeriodicity_dss",
+        "dcat:dcterms:relation_dss",
+        "dcat:qualifiedRelation_dss",
+        "dcat:foaf:page_dss"
+      ],
+      "id": "dcat:DatasetSeries"
+    },
+    {
+      "property": "dcterms:title",
+      "label": {
+        "sv": "Titel",
+        "en": "Title"
+      },
+      "description": {
+        "en": "This property contains a name given to the Dataset series. This property can be repeated for parallel language versions of the name.",
+        "sv": "Datamängdsseriens namn. Denna egenskap kan upprepas för parallella språkversioner av namnet."
+      },
+      "type": "text",
+      "nodetype": "LANGUAGE_LITERAL",
+      "cardinality": {
+        "min": 1,
+        "pref": 0
+      },
+      "id": "dcat:dcterms:title_dss"
+    },
+    {
+      "property": "dcterms:description",
+      "label": {
+        "sv": "Beskrivning",
+        "en": "Description"
+      },
+      "description": {
+        "en": "This property contains a free-text description of the dataset series. This property can be repeated for parallel language versions of the description.",
+        "sv": "Datamängdsseriens beskrivning. Denna egenskap kan upprepas för parallella språkversioner av beskrivningen."
+      },
+      "type": "text",
+      "nodetype": "LANGUAGE_LITERAL",
+      "styles": [
+        "multiline"
+      ],
+      "cardinality": {
+        "min": 1,
+        "pref": 0
+      },
+      "id": "dcat:dcterms:description_dss"
+    },
+    {
+      "type": "choice",
+      "nodetype": "RESOURCE",
+      "property": "dcterms:publisher",
+      "constraints": {
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+          "http://xmlns.com/foaf/0.1/Agent",
+          "http://xmlns.com/foaf/0.1/Person",
+          "http://xmlns.com/foaf/0.1/Organization"
+        ]
+      },
+      "label": {
+        "en": "Publisher",
+        "sv": "Utgivare"
+      },
+      "labelProperties": [
+        "http://xmlns.com/foaf/0.1/name",
+        [
+          "http://xmlns.com/foaf/0.1/givenName",
+          "http://xmlns.com/foaf/0.1/familyName"
+        ]
+      ],
+      "description": {
+        "en": "This property refers to an entity (organisation) responsible for making the Dataset series available.",
+        "sv": "Egenskapen hänvisar till en enhet (organisation) som ansvarar för att göra datamängdsserien tillgänglig."
+      },
+      "cardinality": {
+        "min": 1,
+        "pref": 1,
+        "max": 1
+      },
+      "id": "dcat:dcterms:publisher_dss"
+    },
+    {
+      "type": "choice",
+      "nodetype": "RESOURCE",
+      "labelProperties": [
+        "http://www.w3.org/2006/vcard/ns#fn"
+      ],
+      "property": "dcat:contactPoint",
+      "description": {
+        "en": "This property contains contact information that can be used for flagging errors in the Dataset series or sending comments.",
+        "sv": "Egenskapen innehåller kontaktuppgifter som kan användas för att flagga fel i datamängdsserien eller för att skicka kommentarer"
+      },
+      "label": {
+        "en": "Contact point",
+        "sv": "Kontaktuppgift"
+      },
+      "cardinality": {
+        "min": 0,
+        "pref": 1
+      },
+      "constraints": {
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+          "http://www.w3.org/2006/vcard/ns#Organization",
+          "http://www.w3.org/2006/vcard/ns#Individual",
+          "http://www.w3.org/2006/vcard/ns#Kind"
+        ]
+      },
+      "id": "dcat:contactPoint_dss"
+    },
+    {
+      "type": "text",
+      "nodetype": "LANGUAGE_LITERAL",
+      "label": {
+        "en": "Keyword",
+        "sv": "Nyckelord"
+      },
+      "property": "dcat:keyword",
+      "cardinality": {
+        "min": 0,
+        "pref": 1
+      },
+      "description": {
+        "en": "This property contains a keyword or tag describing the Dataset series",
+        "sv": "Egenskapen innehåller ett nyckelord som beskriver datamängdsserien"
+      },
+      "styles": [
+        "viewAllTranslations"
+      ],
+      "id": "dcat:keyword_dss"
+    },
+    {
+      "type": "choice",
+      "extends": "dcat:theme",
+      "description": {
+        "en": "This property refers to a category of the Dataset series. A Dataset series may be associated with multiple themes.",
+        "sv": "En kategori för datamängdsserien. En datamängdsserie kan associeras med flera teman."
+      },
+      "cardinality": {
+        "min": 0,
+        "pref": 1
+      },
+      "id": "dcat:theme-dss"
+    },
+    {
+      "extends": "dcatap:applicableLegislation",
+      "type": "choice",
+      "nodetype": "URI",
+      "description": {
+        "en": "Legislation that mandates the creation or management of the Dataset series.",
+        "sv": "Lagstiftning som kräver att datamängdsseries skapas och/eller hanteras."
+      },
+      "id": "dcatap:applicableLegislation_dss"
+    },
+    {
+      "type": "choice",
+      "extends": "dcatap:hvdCategory",
+      "description": {
+        "en": "Categorization of high value dataset series as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022, Annex, Section 3. Note that this field is only mandatory if the applicable legislation specifies that the dataset series is a \"high value dataset\", in fact, otherwise it should not be expressed at all.",
+        "sv": "Kategori för värdefulla datamängdsseries i enlighet med Kommissionens genomförandeförordning (EU) 2023/138 från 21 december 2022, annex, sektion 3. Observera att detta fält bara är obligatoriskt om den tillämplig lagstiftning på datamängdsserien är satt till \"värdefull datamängd\", annars bör man inte uttrycka en kategori över huvud taget."
+      },
+      "id": "dcatap:hvdCategory_dss"
+    },
+    {
+      "property": "dcterms:conformsTo",
+      "label": {
+        "en": "Conforms to",
+        "sv": "Uppfyller"
+      },
+      "description": {
+        "en": "This property refers to an implementing rule or other specification.",
+        "sv": "Egenskapen hänvisar till en tillämpningsföreskrift eller annan specifikation."
+      },
+      "constraints": {
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "dcterms:Standard"
+      },
+      "type": "choice",
+      "automatic": true,
+      "nodetype": "URI",
+      "id": "dcat:dcterms:conformsTo_dss"
+    },
+    {
+      "property": "dcterms:issued",
+      "label": {
+        "en": "Release date",
+        "sv": "Utgivningsdatum"
+      },
+      "description": {
+        "en": "This property contains the date of formal issuance (e.g., publication) of the Dataset series.",
+        "sv": "Egenskapen anger datamängdsseriens utgivningsdatum."
+      },
+      "type": "text",
+      "nodetype": "DATATYPE_LITERAL",
+      "datatype": [
+        "http://www.w3.org/2001/XMLSchema#date",
+        "http://www.w3.org/2001/XMLSchema#dateTime",
+        "http://www.w3.org/2001/XMLSchema#gYear"
+      ],
+      "cardinality": {
+        "min": 0,
+        "pref": 1,
+        "max": 1
+      },
+      "id": "dcat:dcterms:issued_dss"
+    },
+    {
+      "property": "dcterms:modified",
+      "label": {
+        "en": "Date modified",
+        "sv": "Ändringsdatum"
+      },
+      "description": {
+        "en": "This property contains the most recent date on which the Dataset series was changed or modified.",
+        "sv": "Datum för senaste ändring av datamängdsserien."
+      },
+      "type": "text",
+      "nodetype": "DATATYPE_LITERAL",
+      "datatype": [
+        "http://www.w3.org/2001/XMLSchema#date",
+        "http://www.w3.org/2001/XMLSchema#dateTime",
+        "http://www.w3.org/2001/XMLSchema#gYear"
+      ],
+      "cardinality": {
+        "min": 0,
+        "pref": 0,
+        "max": 1
+      },
+      "id": "dcat:dcterms:modified_dss"
+    },
+    {
+      "type": "text",
+      "nodetype": "URI",
+      "label": {
+        "en": "Landing page",
+        "sv": "Ingångssida"
+      },
+      "property": "dcat:landingPage",
+      "cardinality": {
+        "min": 0,
+        "pref": 0
+      },
+      "description": {
+        "en": "This property refers to a web page that provides access to the Dataset series. It is intended to point to a landing page at the original data provider, not to a page on a site of a third party, such as an aggregator.",
+        "sv": "Den här egenskapen hänvisar till en webbsida som ger tillgång till datamängdsserie. Den bör peka på en landningssida hos den ursprungliga dataleverantören och inte till en sida på en webbplats av en tredje part, såsom en aggregator."
+      },
+      "pattern": "https?://.+",
+      "id": "dcat:landingPage_dss"
+    },
+    {
+      "property": "dcterms:spatial",
+      "label": {
+        "en": "Named geographical area",
+        "sv": "Namngivet geografiskt område"
+      },
+      "description": {
+        "en": "A spatial region or named place. The geographical area covered by the dataset series. It is recommended to use URIs from Geonames in the form: http://sws.geonames.org/6695072",
+        "sv": "Det geografiska området som omfattas av datamängdsserien. Det rekommenderas att använda Geonames URI:er i följande form: http://sws.geonames.org/6695072"
+      },
+      "constraints": {
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "http://purl.org/dc/terms/Location"
+      },
+      "type": "text",
+      "automatic": true,
+      "nodetype": "URI",
+      "cardinality": {
+        "pref": 1
+      },
+      "id": "dcat:dcterms:spatial_dss"
+    },
+    {
+      "property": "dcterms:spatial",
+      "label": {
+        "en": "Geographical area",
+        "sv": "Geografiskt område"
+      },
+      "type": "group",
+      "nodetype": "RESOURCE",
+      "cardinality": {
+        "min": 0,
+        "pref": 1
+      },
+      "constraints": {
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "http://purl.org/dc/terms/Location"
+      },
+      "items": [
+        {
+          "type": "text",
+          "nodetype": "DATATYPE_LITERAL",
+          "cardinality": {
+            "min": 0,
+            "pref": 1,
+            "max": 1
+          },
+          "datatype": "http://www.opengis.net/ont/geosparql#wktLiteral",
+          "property": "dcat:centroid",
+          "label": {
+            "en": "Center coordinate",
+            "sv": "Centrumkoordinat"
+          }
+        },
+        {
+          "type": "text",
+          "nodetype": "DATATYPE_LITERAL",
+          "cardinality": {
+            "min": 0,
+            "pref": 1,
+            "max": 1
+          },
+          "datatype": "http://www.opengis.net/ont/geosparql#wktLiteral",
+          "property": "dcat:bbox",
+          "label": {
+            "en": "Boundingbox",
+            "sv": "Omskrivande rektangel"
+          }
+        },
+        {
+          "type": "text",
+          "nodetype": "DATATYPE_LITERAL",
+          "cardinality": {
+            "min": 0,
+            "max": 1
+          },
+          "datatype": "http://www.opengis.net/ont/geosparql#wktLiteral",
+          "property": "locn:geometry",
+          "label": {
+            "en": "Geographic shape",
+            "sv": "Geografisk form"
+          }
+        }
+      ],
+      "id": "dcat:dcterms:spatial_bb_dss"
+    },
+    {
+      "type": "group",
+      "property": "dcterms:temporal",
+      "nodetype": "RESOURCE",
+      "label": {
+        "en": "Time period",
+        "sv": "Tidsperiod"
+      },
+      "constraints": {
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "http://purl.org/dc/terms/PeriodOfTime"
+      },
+      "cardinality": {
+        "min": 0,
+        "pref": 1
+      },
+      "cls": [
+        "cardgroup"
+      ],
+      "items": [
+        {
+          "type": "text",
+          "nodetype": "DATATYPE_LITERAL",
+          "property": "dcat:startDate",
+          "label": {
+            "en": "Start",
+            "sv": "Start"
+          },
+          "description": {
+            "en": "Start date of the period for which the dataset series contains data.",
+            "sv": "Startdatum för den period då datamängdsserien innehåller data."
+          },
+          "datatype": [
+            "http://www.w3.org/2001/XMLSchema#date",
+            "http://www.w3.org/2001/XMLSchema#dateTime",
+            "http://www.w3.org/2001/XMLSchema#gYear"
+          ],
+          "cardinality": {
+            "min": 0,
+            "pref": 1,
+            "max": 1
+          }
+        },
+        {
+          "type": "text",
+          "nodetype": "DATATYPE_LITERAL",
+          "property": "dcat:endDate",
+          "label": {
+            "en": "End",
+            "sv": "Slut"
+          },
+          "description": {
+            "en": "End date of the period for which the dataset series contains data.",
+            "sv": "Slutdatum för den period då datamängdserien innehåller data."
+          },
+          "datatype": [
+            "http://www.w3.org/2001/XMLSchema#date",
+            "http://www.w3.org/2001/XMLSchema#dateTime",
+            "http://www.w3.org/2001/XMLSchema#gYear"
+          ],
+          "cardinality": {
+            "min": 0,
+            "pref": 1,
+            "max": 1
+          }
+        }
+      ],
+      "description": {
+        "en": "Validity period of a dataset series (start and end date)",
+        "sv": "Datamängdsseriens giltighetsperiod (startdatum och slutdatum)"
+      },
+      "id": "dcat:dcterms:temporal_dss"
+    },
+    {
+      "type": "choice",
+      "nodetype": "URI",
+      "property": "dcterms:accrualPeriodicity",
+      "label": {
+        "en": "Frequency of update",
+        "sv": "Uppdateringsfrekvens"
+      },
+      "description": {
+        "en": "This property refers to the frequency at which new Datasets are added to the series.",
+        "sv": "Avser uppdateringsfrekvensen för nya datamängder i serien."
+      },
+      "cardinality": {
+        "min": 0,
+        "pref": 0,
+        "max": 1
+      },
+      "choices": [
+        {
+          "value": "http://publications.europa.eu/resource/authority/frequency/CONT",
+          "label": {
+            "en": "continuous",
+            "sv": "kontinuerlig"
+          }
+        },
+        {
+          "value": "http://publications.europa.eu/resource/authority/frequency/UPDATE_CONT",
+          "label": {
+            "en": "continuously updated",
+            "sv": "uppdateras kontinuerligt"
+          }
+        },
+        {
+          "value": "http://publications.europa.eu/resource/authority/frequency/DAILY_2",
+          "label": {
+            "en": "twice a day",
+            "sv": "två gånger per dag"
+          }
+        },
+        {
+          "value": "http://publications.europa.eu/resource/authority/frequency/DAILY",
+          "label": {
+            "en": "daily",
+            "sv": "dagligen"
+          }
+        },
+        {
+          "value": "http://publications.europa.eu/resource/authority/frequency/WEEKLY_3",
+          "label": {
+            "en": "three times a week",
+            "sv": "tre gånger per vecka"
+          }
+        },
+        {
+          "value": "http://publications.europa.eu/resource/authority/frequency/WEEKLY_2",
+          "label": {
+            "en": "semiweekly",
+            "sv": "två gånger per vecka"
+          }
+        },
+        {
+          "value": "http://publications.europa.eu/resource/authority/frequency/WEEKLY",
+          "label": {
+            "en": "weekly",
+            "sv": "veckovis"
+          }
+        },
+        {
+          "value": "http://publications.europa.eu/resource/authority/frequency/MONTHLY_3",
+          "label": {
+            "en": "three times a month",
+            "sv": "tre gånger per månad"
+          }
+        },
+        {
+          "value": "http://publications.europa.eu/resource/authority/frequency/BIWEEKLY",
+          "label": {
+            "en": "every two weeks",
+            "sv": "varannan vecka"
+          }
+        },
+        {
+          "value": "http://publications.europa.eu/resource/authority/frequency/MONTHLY_2",
+          "label": {
+            "en": "semimonthly",
+            "sv": "två gånger per månad"
+          }
+        },
+        {
+          "value": "http://publications.europa.eu/resource/authority/frequency/MONTHLY",
+          "label": {
+            "en": "monthly",
+            "sv": "månatligen"
+          }
+        },
+        {
+          "value": "http://publications.europa.eu/resource/authority/frequency/BIMONTHLY",
+          "label": {
+            "en": "every two months",
+            "sv": "varannan månad"
+          }
+        },
+        {
+          "value": "http://publications.europa.eu/resource/authority/frequency/QUARTERLY",
+          "label": {
+            "en": "quarterly",
+            "sv": "kvartalsvis"
+          }
+        },
+        {
+          "value": "http://publications.europa.eu/resource/authority/frequency/ANNUAL_3",
+          "label": {
+            "en": "three times a year",
+            "sv": "tre gånger per år"
+          }
+        },
+        {
+          "value": "http://publications.europa.eu/resource/authority/frequency/ANNUAL_2",
+          "label": {
+            "en": "semiannual",
+            "sv": "halvårsvis"
+          }
+        },
+        {
+          "value": "http://publications.europa.eu/resource/authority/frequency/ANNUAL",
+          "label": {
+            "en": "annual",
+            "sv": "årligen"
+          }
+        },
+        {
+          "value": "http://publications.europa.eu/resource/authority/frequency/BIENNIAL",
+          "label": {
+            "en": "biennial",
+            "sv": "vartannat år"
+          }
+        },
+        {
+          "value": "http://publications.europa.eu/resource/authority/frequency/TRIENNIAL",
+          "label": {
+            "en": "triennial",
+            "sv": "vart tredje år"
+          }
+        },
+        {
+          "value": "http://publications.europa.eu/resource/authority/frequency/IRREG",
+          "label": {
+            "en": "irregular",
+            "sv": "oregelbundet"
+          }
+        },
+        {
+          "value": "http://publications.europa.eu/resource/authority/frequency/OTHER",
+          "label": {
+            "en": "other",
+            "sv": "annan"
+          }
+        },
+        {
+          "value": "http://publications.europa.eu/resource/authority/frequency/UNKNOWN",
+          "label": {
+            "en": "unknown",
+            "sv": "okänd"
+          }
+        },
+        {
+          "value": "http://publications.europa.eu/resource/authority/frequency/NEVER",
+          "label": {
+            "en": "never",
+            "sv": "aldrig"
+          }
+        }
+      ],
+      "id": "dcat:dcterms:accrualPeriodicity_dss"
+    },
+    {
+      "property": "dcterms:relation",
+      "label": {
+        "en": "Related resource",
+        "sv": "Relaterad resurs"
+      },
+      "description": {
+        "en": "This property refers to a related resource.",
+        "sv": "Egenskapen pekar ut en relaterad resurs."
+      },
+      "type": "text",
+      "nodetype": "URI",
+      "pattern": "https?://.+",
+      "id": "dcat:dcterms:relation_dss"
+    },
+    {
+      "type": "group",
+      "nodetype": "RESOURCE",
+      "property": "dcat:qualifiedRelation",
+      "label": {
+        "en": "Qualified related resource",
+        "sv": "Kvalificerad relaterad resurs"
+      },
+      "description": {
+        "en": "A qualified related resource makes it possible to point to a related resources togheter with a role that clarifies the character of the relation.",
+        "sv": "En kvalificerad relation gör det möjligt att peka på en relaterad resurs tillsammans med en roll som förtydligar relationens karaktär."
+      },
+      "constraints": {
+        "rdf:type": [
+          "dcat:Relationship"
+        ]
+      },
+      "items": [
+        "dcat:hadRole_dss",
+        "dcat:QRResource_dss"
+      ],
+      "id": "dcat:qualifiedRelation_dss"
+    },
+    {
+      "type": "text",
+      "nodetype": "URI",
+      "property": "dcat:hadRole",
+      "label": {
+        "en": "Role",
+        "sv": "Roll"
+      },
+      "description": {
+        "en": "The role of a datset series with respect to another dataset (series).",
+        "sv": "Anger på vilket sätt (vilken roll) en datamängdsserie är relaterad till en annan datamängd(serie)."
+      },
+      "cardinality": {
+        "max": 1,
+        "min": 1
+      },
+      "pattern": "https?://.+",
+      "id": "dcat:hadRole_dss"
+    },
+    {
+      "type": "text",
+      "nodetype": "URI",
+      "property": "dcterms:relation",
+      "label": {
+        "en": "Resource",
+        "sv": "Resurs"
+      },
+      "cardinality": {
+        "min": 1,
+        "max": 1
+      },
+      "pattern": "https?://.+",
+      "id": "dcat:QRResource_dss"
+    },
+    {
+      "type": "choice",
+      "nodetype": "URI",
+      "label": {
+        "en": "Documentation",
+        "sv": "Dokumentation"
+      },
+      "property": "foaf:page",
+      "pattern": "https?://.+",
+      "description": {
+        "en": "This property refers to a page or document about this Dataset series.",
+        "sv": "En sida eller ett dokument om denna datamängdsserie."
+      },
+      "constraints": {
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "foaf:Document"
+      },
+      "id": "dcat:foaf:page_dss"
     },
     {
       "type": "group",

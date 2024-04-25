@@ -1,0 +1,23 @@
+{
+  "property": "dcterms:issued",
+  "label": {
+    "en": "Release date",
+    "sv": "Utgivningsdatum"
+  },
+  "description": {
+    "en": "This property contains the date of formal issuance (e.g., publication) of the Dataset series.",
+    "sv": "Egenskapen anger datamängdsseriens utgivningsdatum."
+  },
+  "type": "text",
+  "nodetype": "DATATYPE_LITERAL",
+  "datatype": [
+    "http://www.w3.org/2001/XMLSchema#date",
+    "http://www.w3.org/2001/XMLSchema#dateTime",
+    "http://www.w3.org/2001/XMLSchema#gYear"
+  ],
+  "cardinality": {
+    "min": 0,
+    "pref": 1,
+    "max": 1
+  }
+}

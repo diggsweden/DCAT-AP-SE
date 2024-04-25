@@ -45,6 +45,7 @@
     "dcat:qualifiedRelation",
     "dcat:foaf:page_da",
     "dcat:dcterms:provenance_da",
-    "dcat:distribution_da"
+    "dcat:distribution_da",
+    "dcat:inSeries_da"
   ]
 }

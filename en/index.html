@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700">
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/icon?family=Material+Icons">
-    <title>DCAT-AP-SE version 2.2.0</title>
+    <title>DCAT-AP-SE version 3.0.0 - Draft</title>
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/default.min.css">
     <link rel="stylesheet" type="text/css" href="../libs/style.css">
@@ -14,7 +14,7 @@
 </head>
 <body class="h-entry rdforms-specs">
 <div class="head">
-    <h1 class="title">DCAT-AP-SE version 2.2.0</h1>
+    <h1 class="title">DCAT-AP-SE version 3.0.0 - Draft</h1>
     <h2 class="subtitle">Clarifications, translations and explanations of DCAT-AP for Sweden.</h2>
     <div>
         <dl>
@@ -77,10 +77,17 @@
 
             Catalog --> Dataset : dataset
             Catalog --> Agent : publisher
-            Dataset --> Distribution : distribution
+            Dataset --> DatasetSeries : in series
             Dataset --> Agent : publisher
-            Dataset --> Contact_point : contactpoint
             Distribution --> Data_service : access service
+            DatasetSeries --> Agent : publisher
+            Data_service --> Agent : publisher
+            DatasetSeries --> Contact_point : contactpoint
+            Dataset --> Contact_point : contactpoint
+            Catalog --> DatasetSeries : dataset
+            Catalog --> Data_service : dataservice
+            Dataset --> Distribution : distribution
+
             class Catalog {
               title
               description
@@ -95,7 +102,6 @@
             class Dataset {
               title
               description
-              contact point
               keyword
               theme
               time period
@@ -104,6 +110,15 @@
               geographical area
             }
 
+            class DatasetSeries {
+              title
+              description
+              keyword
+              theme
+              time period
+              release date
+              geographical area
+            }
 
             class Distribution {
               web address for access
