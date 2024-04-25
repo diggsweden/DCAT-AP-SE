@@ -13,6 +13,7 @@ Vi siktar på att ha fyra möten som är planerade att ungefär innefatta följa
     - [Presentation](https://docs.google.com/presentation/d/11vgozN0Yxrz0R_8a1kgCH0YdjXH8-dOK3INs851erxY/edit?usp=sharing)
     - [Mötesanteckningar](meet1.pdf)
 - Andra mötet 25/4 kl. 12-14 - Samla in återkoppling och diskutera alternativ.
+    - [Presentation](https://docs.google.com/presentation/d/1ZoXKedpct7gFPDGO_sigg45oWmYd23-sUUMEj2ybL-U/edit?usp=sharing)
 - Tredje mötet 17/5 kl. 13-15 - Framtaget förslag gås igenom.
 - Fjärde mötet 30/5 kl. 10-12 - Beslut
 
