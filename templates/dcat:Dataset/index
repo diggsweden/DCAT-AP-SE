@@ -18,6 +18,7 @@
     "dcat:theme-da",
     "dcatap:applicableLegislation_da",
     "dcatap:hvdCategory_da",
+    "dcterms:subject:grunddata_da",
     "dcat:dcterms:identifier_da",
     "dcat:adms:identifier_da",
     "dcat:dcterms:issued_da",

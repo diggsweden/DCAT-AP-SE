@@ -1,5 +1,5 @@
 {
-  "type": "text",
+  "type": "choice",
   "nodetype": "URI",
   "property": "dcat:hadRole",
   "label": {
@@ -7,12 +7,16 @@
     "sv": "Roll"
   },
   "description": {
-    "en": "The role of a datset with respect to another dataset.",
-    "sv": "Anger på vilket sätt (vilken roll) en datamängd är relaterad till en annan datamängd."
+    "en": "The role of a datset with respect to another dataset. See list of roles to use in Sweden here: https://www.dataportal.se/en/terminology/resource-role.",
+    "sv": "Anger på vilket sätt (vilken roll) en datamängd är relaterad till en annan datamängd. Se lista med roller vi valt att använda i Sverige här: https://www.dataportal.se/sv/terminology/resource-role."
   },
   "cardinality": {
     "max": 1,
     "min": 1
   },
-  "pattern": "https?://.+"
+  "constraints": {
+     "rdf:type": "skos:Concept",
+     "skos:inScheme": "https://www.dataportal.se/terminology/resource-role"
+  },
+  "pattern": "https://www.dataportal.se/terminology/resource-role/.*"
 }

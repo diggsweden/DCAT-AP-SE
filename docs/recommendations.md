@@ -155,3 +155,6 @@ Notera att vilket angreppsätt man än tar bör man tänka på att man inte tapp
 1. Dela upp stora datamängder för mer hanterlig åtkomst.
 2. Ge direkt åtkomst till partitioner av data som är efterfrågade var för sig.
 3. Förenkla uppdatering av data för dataägaren.
+
+## 20. Datatjänster för datamängdsserier
+När man vill erbjuda en datatjänst (API) för all data i en datamängdsserie är det inte lämpligt att skapa en distribution på varje datamängd i serien (som är rekommendationen för datamängder som inte ligger i datamängdsserier). Istället räcker det att man skapar en datatjänst och pekar ut datamängdsserien via `dcat:servesDataset`.

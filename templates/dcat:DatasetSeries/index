@@ -16,6 +16,7 @@
     "dcat:theme-dss",
     "dcatap:applicableLegislation_dss",
     "dcatap:hvdCategory_dss",
+    "dcterms:subject:grunddata_dss",
     "dcat:dcterms:conformsTo_dss",
     "dcat:dcterms:issued_dss",
     "dcat:dcterms:modified_dss",

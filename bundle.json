@@ -1562,6 +1562,7 @@
         "dcat:theme-ds",
         "dcatap:applicableLegislation_ds",
         "dcatap:hvdCategory_ds",
+        "dcterms:subject:grunddata_ds",
         "dcat:dcterms:conformsTo_ds",
         "dcat:servesDataset",
         "dcat:dcterms:license_ds",
@@ -1788,6 +1789,25 @@
       "id": "dcatap:hvdCategory_ds"
     },
     {
+      "type": "choice",
+      "nodetype": "URI",
+      "property": "dcterms:subject",
+      "label": {
+        "en": "Category for data domains",
+        "sv": "Kategori för grunddata"
+      },
+      "description": {
+        "en": "Categorization of basic data domains in the Swedish sector. See list of domains here: https://www.dataportal.se/en/terminology/grunddata",
+        "sv": "Kategorisering motsvarande grunddatadomäner. Se lista med domäner: https://www.dataportal.se/sv/terminology/grunddata."
+      },
+      "constraints": {
+        "rdf:type": "skos:Concept",
+        "skos:inScheme": "https://www.dataportal.se/terminology/grunddata"
+      },
+      "pattern": "https://www.dataportal.se/terminology/grunddata/.*",
+      "id": "dcterms:subject:grunddata_ds"
+    },
+    {
       "property": "dcterms:conformsTo",
       "label": {
         "en": "Conforms to",
@@ -1917,6 +1937,7 @@
         "dcat:theme-da",
         "dcatap:applicableLegislation_da",
         "dcatap:hvdCategory_da",
+        "dcterms:subject:grunddata_da",
         "dcat:dcterms:identifier_da",
         "dcat:adms:identifier_da",
         "dcat:dcterms:issued_da",
@@ -2292,6 +2313,25 @@
         "sv": "Kategori för värdefulla datamängder i enlighet med Kommissionens genomförandeförordning (EU) 2023/138 från 21 december 2022, annex, sektion 3. Observera att detta fält bara är obligatoriskt om den tillämplig lagstiftning på datamängden är satt till \"värdefull datamängd\", annars bör man inte uttrycka en kategori över huvud taget."
       },
       "id": "dcatap:hvdCategory_da"
+    },
+    {
+      "type": "choice",
+      "nodetype": "URI",
+      "property": "dcterms:subject",
+      "label": {
+        "en": "Category for data domains",
+        "sv": "Kategori för grunddata"
+      },
+      "description": {
+        "en": "Categorization of basic data domains in the Swedish sector. See list of domains here: https://www.dataportal.se/en/terminology/grunddata",
+        "sv": "Kategorisering motsvarande grunddatadomäner. Se lista med domäner: https://www.dataportal.se/sv/terminology/grunddata."
+      },
+      "constraints": {
+        "rdf:type": "skos:Concept",
+        "skos:inScheme": "https://www.dataportal.se/terminology/grunddata"
+      },
+      "pattern": "https://www.dataportal.se/terminology/grunddata/.*",
+      "id": "dcterms:subject:grunddata_da"
     },
     {
       "property": "dcterms:identifier",
@@ -3207,7 +3247,7 @@
       "id": "dcat:qualifiedRelation"
     },
     {
-      "type": "text",
+      "type": "choice",
       "nodetype": "URI",
       "property": "dcat:hadRole",
       "label": {
@@ -3215,14 +3255,18 @@
         "sv": "Roll"
       },
       "description": {
-        "en": "The role of a datset with respect to another dataset.",
-        "sv": "Anger på vilket sätt (vilken roll) en datamängd är relaterad till en annan datamängd."
+        "en": "The role of a datset with respect to another dataset. See list of roles to use in Sweden here: https://www.dataportal.se/en/terminology/resource-role.",
+        "sv": "Anger på vilket sätt (vilken roll) en datamängd är relaterad till en annan datamängd. Se lista med roller vi valt att använda i Sverige här: https://www.dataportal.se/sv/terminology/resource-role."
       },
       "cardinality": {
         "max": 1,
         "min": 1
       },
-      "pattern": "https?://.+",
+      "constraints": {
+        "rdf:type": "skos:Concept",
+        "skos:inScheme": "https://www.dataportal.se/terminology/resource-role"
+      },
+      "pattern": "https://www.dataportal.se/terminology/resource-role/.*",
       "id": "dcat:hadRole"
     },
     {
@@ -3344,6 +3388,7 @@
         "dcat:theme-dss",
         "dcatap:applicableLegislation_dss",
         "dcatap:hvdCategory_dss",
+        "dcterms:subject:grunddata_dss",
         "dcat:dcterms:conformsTo_dss",
         "dcat:dcterms:issued_dss",
         "dcat:dcterms:modified_dss",
@@ -3510,6 +3555,25 @@
         "sv": "Kategori för värdefulla datamängdsseries i enlighet med Kommissionens genomförandeförordning (EU) 2023/138 från 21 december 2022, annex, sektion 3. Observera att detta fält bara är obligatoriskt om den tillämplig lagstiftning på datamängdsserien är satt till \"värdefull datamängd\", annars bör man inte uttrycka en kategori över huvud taget."
       },
       "id": "dcatap:hvdCategory_dss"
+    },
+    {
+      "type": "choice",
+      "nodetype": "URI",
+      "property": "dcterms:subject",
+      "label": {
+        "en": "Category for data domains",
+        "sv": "Kategori för grunddata"
+      },
+      "description": {
+        "en": "Categorization of basic data domains in the Swedish sector. See list of domains here: https://www.dataportal.se/en/terminology/grunddata",
+        "sv": "Kategorisering motsvarande grunddatadomäner. Se lista med domäner: https://www.dataportal.se/sv/terminology/grunddata."
+      },
+      "constraints": {
+        "rdf:type": "skos:Concept",
+        "skos:inScheme": "https://www.dataportal.se/terminology/grunddata"
+      },
+      "pattern": "https://www.dataportal.se/terminology/grunddata/.*",
+      "id": "dcterms:subject:grunddata_dss"
     },
     {
       "property": "dcterms:conformsTo",
@@ -3761,8 +3825,8 @@
         "sv": "Uppdateringsfrekvens"
       },
       "description": {
-        "en": "This property refers to the frequency at which new Datasets are added to the series.",
-        "sv": "Avser uppdateringsfrekvensen för nya datamängder i serien."
+        "en": "This property refers to the frequency at which new data are added to the series.",
+        "sv": "Avser uppdateringsfrekvensen för när ny data läggs till i serien."
       },
       "cardinality": {
         "min": 0,
@@ -3964,25 +4028,6 @@
         "dcat:QRResource_dss"
       ],
       "id": "dcat:qualifiedRelation_dss"
-    },
-    {
-      "type": "text",
-      "nodetype": "URI",
-      "property": "dcat:hadRole",
-      "label": {
-        "en": "Role",
-        "sv": "Roll"
-      },
-      "description": {
-        "en": "The role of a datset series with respect to another dataset (series).",
-        "sv": "Anger på vilket sätt (vilken roll) en datamängdsserie är relaterad till en annan datamängd(serie)."
-      },
-      "cardinality": {
-        "max": 1,
-        "min": 1
-      },
-      "pattern": "https?://.+",
-      "id": "dcat:hadRole_dss"
     },
     {
       "type": "text",
