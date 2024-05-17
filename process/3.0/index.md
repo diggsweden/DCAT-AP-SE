@@ -16,7 +16,7 @@ Vi siktar på att ha fyra möten som är planerade att ungefär innefatta följa
     - [Presentation](https://docs.google.com/presentation/d/1ZoXKedpct7gFPDGO_sigg45oWmYd23-sUUMEj2ybL-U/edit?usp=sharing)
     - [Mötesanteckningar](meet2.pdf)
 - Tredje mötet 17/5 kl. 13-15 - Framtaget förslag gås igenom.
-    - [Presentation]()
+    - [Presentation](https://docs.google.com/presentation/d/1RU-NtkQFu1FN1qbUkSpNif2TKvS7cM9rZL1qpz1x-Jg/edit?usp=sharing)
     - Mötesanteckningar
 - Fjärde mötet 30/5 kl. 10-12 - Beslut
     - Presentation
