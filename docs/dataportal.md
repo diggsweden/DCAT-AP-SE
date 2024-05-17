@@ -17,6 +17,14 @@ De viktigaste fälten är de som är markerade som obligatoriska eller rekommend
 2. De lyfts fram i användargränsnittet för att ge användare en möjlighet till snabb överblick.
 3. De är nyttiga för att ge användaren en möjlighet att bedömma om datamängden motsvarar vissa behov.
 
+## Datamängdsserier på dataportalen
+Observera att stöd för datamängdsserier kommer införas först efter att DCAT-AP-SE v3.0 slagits fast, detta beräknas till hösten 2024. Texten nedan är därmed att betrakta som en preliminär plan för hur datamängdsserier kommer behandlas på dataportalen.
+
+Datamängder som hör till en datamängdsserie kommer per default inte att synas i träfflistan. Om man vill kan detta beteende ändras genom att man slår av ett filter. Datamängdsserierna själva påverkas dock inte av filtret utan visas alltid i träfflistan (förutsatt att de inte påverkas av något annat filter).
+Om man går in på en datamängdsserie får man utöver informationen om datamängdsserien själv också en listning av alla datamängder som ingår i serien. Om det finns en datatjänst som erbjuder data motsvarande hela datamängdsserien (genom att peka ut datamängdsserien via propertyn `dcat:servesDataset`) kommer detta också visas tydligt på landningssidan för datamängdsserien.
+
+På landningssidor för datamängder som hör till datamängdsserier kommer det finnas en tydlig markering och en länk till den datamängdsserie datamängden hör till.
+
 ## Vilket stöd finns för mig som utvecklare
 
 ### Validera min metadata
