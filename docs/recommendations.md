@@ -13,6 +13,8 @@ Man ska översätta fritextfält som titel och beskrivning till åtminstone enge
 En enskild datamängd kan man i många fall komma åt på olika sätt. Det vanligaste scenariot är att en datamängd finns uttryckt i flera format, t.ex. både i Excel och CSV. Men det kan också vara så att man kan komma åt en datamängd antingen genom en nattlig dump eller genom att göra slagningar mot ett API. I båda dessa två scenarior betraktar vi det som att det finns en datamängd med två olika distributioner. Distributionerna motsvarar samma data (samma datamängd) men i olika format eller via olika mekanismer för åtkomst.
 
 ## 4. Vissa datamängder delas med fördel upp i flera filer
+**Denna rekommendation är överspelad, se istället rekommendation 19. Den ursprungliga rekommendationen står kvar nedan.**
+
 Ibland vill man ge åtkomst till en datamängd via en mängd filer av samma slag, t.ex. uppdelade efter tid eller geografi. Det kan handla om att filerna blir för stora, att det över tid tillkommer nya filer eller bara att existerande system fungerar på det sättet. Som vi såg ovan är det inte lämpligt att ha en distribution per fil då filerna inte motsvarar olika sätt att komma åt samma data. Den lösningen vi istället valt i Sverige är att peka ut de olika filerna genom att upprepa `dcat:downloadURL` från en enskild distribution.Denna lösning är så länge specifik för Sverige i väntan på en mer permanent lösning i DCAT3, om du är nyfiken kan du läsa mer om [denna fråga i ärende 868](https://github.com/w3c/dxwg/issues/868#issuecomment-532769918).
 
 För den som upprepar `dcat:downloadURL` kan det vara lämpligt att tillhandahålla en `dcterms:title` på varje URL för att ge användare en möjlighet att särskilja de olika filerna. Till exempel, om filerna motsvarar en tidsserie där varje fil innehåller ett år kan titeln helt enkelt vara året.
@@ -111,3 +113,43 @@ Enligt öppna datalagen, se [DIGGs vägledning](https://www.digg.se/kunskap-och-
 * Varje värdefull datamängd måste ha minst en distribution som är markerad som värdefull.
 * För datatjänster som är värdefulla är det ett krav att man anger en kontakt och pekar ut dokumentation som informerar om tjänstens kvalitet (quality of service).
 * För värdefulla datatjänster måste man peka ut den datamängd som datatjänst stödjer via fältet [försörjer datamängd](https://docs.dataportal.se/dcat/sv/#dcat_DataService-dcat_servesDataset) (det finns inga krav på självständiga datatjänster).
+
+## 15. Datamängdsseriers dimensioner
+De enskilda datamängder som ingår i en datamängdsserie ska alla ha samma karaktär och självständiga. Det ska också vara givet hur man kombinerar datamängderna i en serie för att få tillgång till en större mängd data. Uppdelningen i enskilda datamängder förväntas ske enligt en enhetlig princip, en dimension. Följande dimensioner har beaktats och bedömts som lämpliga att dela upp data enligt:
+
+1. Tidsdimension - varje datamängd i serien motsvarar typiskt data för ett tidsintervall, t.ex. en månad, ett kvartal eller ett år.
+2. Rumsdimension - varje datamängd motsvarar ett avskilt geografiskt område, t.ex. en kommun, en region eller landsdel.
+3. Kategoridimension - varje datamängd motsvarar en mängd data som kan särskiljas unikt från andra data, t.ex. statistik för olika åldersgrupper, elproduktion per energislag eller koldioxidutsläpp per fordonsslag.
+
+Däremot är det inte tillrådligt att låta datamängder i en datamängdsserie ha olika karaktär som komplettera varandra. T.ex. om man har en datamängd som innefattar information om fastigheter och fastighetsägare så är det inte lämpligt att dela upp så att en datamängd innehåller fastigheter och en datamängd innehåller fastighetsägare och att de tillsammans utgör en datamängdsserie. Orsaken är att dessa två datamängderna inte har samma karaktär och att de inte heller är självständiga.
+
+En följd av att alla datamängder i en datamängdsserie har samma karaktär och är självständiga är att om en specifikation anges (via `dcterms:conformsTo`), ska det vara samma för alla datamängder i serien.
+
+## 16 Överlappande data i en datamängdsserie
+Datamängderna i en i datamängdsserie kan innehålla samma data. Till exempel kan samma datamängdsserie innehålla datamängder som innehåller data per månad och även datamängder som innehåller data per år. Syftet kan vara att förenkla åtkomst till olika partitioner av data.
+
+## 17. Antalet datamängder i en datamängdsserie
+Man bör inte ha fler än 50 datamängder i en datamängdsserie. Till exempel innebär det för tidsdimensioner att man inte bör dela upp i mer än månatliga datamängder. Vid behov kan slå samman tidigare års månatliga datamängder till årliga datamängder och på det sättet minska mängden datamängder i en datamängdsserie.
+
+Denna rekommendation syftar till att:
+1. Förenkla för användare att hitta till rätt data.
+2. Förenkla gränssnittet i dataportalen.
+
+## 18. Inga datamängdsserier i datamängdsserier
+Enligt DCAT är en datamängdsserie också en datamängd och därmed är det tillåtet att datamängdsserier får ingå i andra datamängdsserier. I Sverige har vi valt att inte tillåta detta av samma skäl som vi begränsat antalet datamängder i en datamängdsserie (rekommendation 17). Dvs vi vill förenkla för använvändare att hitta till rätt data och också förenkla gränssnittet i dataportalen.
+
+## 19. Alternativ till datamängdsserier
+Datamängdsserier är ibland exakt vad man behöver. Men i vissa situationer kan det upplevas som onödigt komplext, till exempel på grund av den extra metadata som behöver skapas / underhållas. Det innebär att datamängdsserier inte alltid är det bästa valet för data som uppdateras periodiskt, låt oss kort lista andra alternativ:
+1. Uppdatera en distributionen som motsvarar en fil så den innefattar mera data (uppdatera filen).
+2. Uppdatera en distributionen som motsvarar en packetering genom att lägga till fler filer (typiskt en zip-fil som byts ut mot en ny zip-fil med fler filer).
+3. Lägg upp flera filer på en publik delningsyta och peka ut den (via `dcat:accessURL` och inte `dcat:downloadURL`).
+4. Skapa ett specifikt API (som beskrivs som en datatjänst som pekas ut från datamängdens distribution via `dcat:accessService`) där man kan få ut olika stora mängder data beroende på hur man frågar.
+5. Lägg till flera filer på en distribution (upprepa `dcat:accessURL` och `dcat:downloadURL`)
+
+Obs, alternativ 5 motsvarar den lösning som togs fram i Sverige i väntan på att arbetet med datamängdsserier mognade och beskrivs i rekommendation 4. Detta alternativ kommer fortsättningsvis att stödjas av dataportalen för att vara bakåtkompatibel med DCAT-AP-SE v. 2.2.0 under en tid framåt. Dataportalen kan eventuellt komma att göra en automatisk transform till datamängdsserier för att vara kompatibel med skördning till data.europa.eu. Därmed är det rekommenderat för mjukvaruleverantörer att migrera över till antingen datamängdsserier eller alternativ 1-4. 
+
+Notera att vilket angreppsätt man än tar bör man tänka på att man inte tappar bort det ursprungliga syftet med uppdelningen, oftast är det en av följande tre:
+
+1. Dela upp stora datamängder för mer hanterlig åtkomst.
+2. Ge direkt åtkomst till partitioner av data som är efterfrågade var för sig.
+3. Förenkla uppdatering av data för dataägaren.
