@@ -3207,7 +3207,7 @@
       "id": "dcat:qualifiedRelation"
     },
     {
-      "type": "text",
+      "type": "choice",
       "nodetype": "URI",
       "property": "dcat:hadRole",
       "label": {
@@ -3215,14 +3215,18 @@
         "sv": "Roll"
       },
       "description": {
-        "en": "The role of a datset with respect to another dataset.",
-        "sv": "Anger på vilket sätt (vilken roll) en datamängd är relaterad till en annan datamängd."
+        "en": "The role of a datset with respect to another dataset. See list of roles to use in Sweden here: https://www.dataportal.se/en/terminology/resource-role.",
+        "sv": "Anger på vilket sätt (vilken roll) en datamängd är relaterad till en annan datamängd. Se lista med roller vi valt att använda i Sverige här: https://www.dataportal.se/sv/terminology/resource-role."
       },
       "cardinality": {
         "max": 1,
         "min": 1
       },
-      "pattern": "https?://.+",
+      "constraints": {
+        "rdf:type": "skos:Concept",
+        "skos:inScheme": "https://www.dataportal.se/terminology/resource-role"
+      },
+      "pattern": "https://www.dataportal.se/terminology/resource-role/.*",
       "id": "dcat:hadRole"
     },
     {
@@ -3761,8 +3765,8 @@
         "sv": "Uppdateringsfrekvens"
       },
       "description": {
-        "en": "This property refers to the frequency at which new Datasets are added to the series.",
-        "sv": "Avser uppdateringsfrekvensen för nya datamängder i serien."
+        "en": "This property refers to the frequency at which new data are added to the series.",
+        "sv": "Avser uppdateringsfrekvensen för när ny data läggs till i serien."
       },
       "cardinality": {
         "min": 0,
@@ -3964,25 +3968,6 @@
         "dcat:QRResource_dss"
       ],
       "id": "dcat:qualifiedRelation_dss"
-    },
-    {
-      "type": "text",
-      "nodetype": "URI",
-      "property": "dcat:hadRole",
-      "label": {
-        "en": "Role",
-        "sv": "Roll"
-      },
-      "description": {
-        "en": "The role of a datset series with respect to another dataset (series).",
-        "sv": "Anger på vilket sätt (vilken roll) en datamängdsserie är relaterad till en annan datamängd(serie)."
-      },
-      "cardinality": {
-        "max": 1,
-        "min": 1
-      },
-      "pattern": "https?://.+",
-      "id": "dcat:hadRole_dss"
     },
     {
       "type": "text",
