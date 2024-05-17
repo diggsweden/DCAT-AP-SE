@@ -19,6 +19,7 @@
     "dcat:theme-ds",
     "dcatap:applicableLegislation_ds",
     "dcatap:hvdCategory_ds",
+    "dcterms:subject:grunddata_ds",
     "dcat:dcterms:conformsTo_ds",
     "dcat:servesDataset",
     "dcat:dcterms:license_ds",

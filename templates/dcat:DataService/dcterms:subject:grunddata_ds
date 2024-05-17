@@ -1,0 +1,18 @@
+{
+  "type": "choice",
+  "nodetype": "URI",
+  "property": "dcterms:subject",
+  "label": {
+    "en": "Category for data domains",
+    "sv": "Kategori för grunddata"
+  },
+  "description": {
+    "en": "Categorization of basic data domains in the Swedish sector. See list of domains here: https://www.dataportal.se/en/terminology/grunddata",
+    "sv": "Kategorisering motsvarande grunddatadomäner. Se lista med domäner: https://www.dataportal.se/sv/terminology/grunddata."
+  },
+  "constraints": {
+     "rdf:type": "skos:Concept",
+     "skos:inScheme": "https://www.dataportal.se/terminology/grunddata"
+  },
+  "pattern": "https://www.dataportal.se/terminology/grunddata/.*"
+}
