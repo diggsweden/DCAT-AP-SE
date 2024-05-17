@@ -132,6 +132,7 @@ Datamängderna i en i datamängdsserie kan innehålla samma data. Till exempel k
 Man bör inte ha fler än 50 datamängder i en datamängdsserie. Till exempel innebär det för tidsdimensioner att man inte bör dela upp i mer än månatliga datamängder. Vid behov kan slå samman tidigare års månatliga datamängder till årliga datamängder och på det sättet minska mängden datamängder i en datamängdsserie.
 
 Denna rekommendation syftar till att:
+
 1. Förenkla för användare att hitta till rätt data.
 2. Förenkla gränssnittet i dataportalen.
 
@@ -140,6 +141,7 @@ Enligt DCAT är en datamängdsserie också en datamängd och därmed är det til
 
 ## 19. Alternativ till datamängdsserier
 Datamängdsserier är ibland exakt vad man behöver. Men i vissa situationer kan det upplevas som onödigt komplext, till exempel på grund av den extra metadata som behöver skapas / underhållas. Det innebär att datamängdsserier inte alltid är det bästa valet för data som uppdateras periodiskt, låt oss kort lista andra alternativ:
+
 1. Uppdatera en distributionen som motsvarar en fil så den innefattar mera data (uppdatera filen).
 2. Uppdatera en distributionen som motsvarar en packetering genom att lägga till fler filer (typiskt en zip-fil som byts ut mot en ny zip-fil med fler filer).
 3. Lägg upp flera filer på en publik delningsyta och peka ut den (via `dcat:accessURL` och inte `dcat:downloadURL`).
