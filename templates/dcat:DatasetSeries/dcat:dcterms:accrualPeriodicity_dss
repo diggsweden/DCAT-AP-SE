@@ -7,8 +7,8 @@
     "sv": "Uppdateringsfrekvens"
   },
   "description": {
-    "en": "This property refers to the frequency at which new Datasets are added to the series.",
-    "sv": "Avser uppdateringsfrekvensen för nya datamängder i serien."
+    "en": "This property refers to the frequency at which new data are added to the series.",
+    "sv": "Avser uppdateringsfrekvensen för när ny data läggs till i serien."
   },
   "cardinality": {
     "min": 0,
