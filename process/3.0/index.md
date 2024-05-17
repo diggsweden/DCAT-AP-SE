@@ -14,8 +14,13 @@ Vi siktar på att ha fyra möten som är planerade att ungefär innefatta följa
     - [Mötesanteckningar](meet1.pdf)
 - Andra mötet 25/4 kl. 12-14 - Samla in återkoppling och diskutera alternativ.
     - [Presentation](https://docs.google.com/presentation/d/1ZoXKedpct7gFPDGO_sigg45oWmYd23-sUUMEj2ybL-U/edit?usp=sharing)
+    - [Mötesanteckningar](meet2.pdf)
 - Tredje mötet 17/5 kl. 13-15 - Framtaget förslag gås igenom.
+    - [Presentation]()
+    - Mötesanteckningar
 - Fjärde mötet 30/5 kl. 10-12 - Beslut
+    - Presentation
+    - Mötesanteckningar
 
 ## Referensgrupp
 Referensgruppen är listad i bokstavsordning.
