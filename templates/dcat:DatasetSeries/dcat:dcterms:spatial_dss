@@ -5,8 +5,8 @@
     "sv": "Namngivet geografiskt område"
   },
   "description": {
-    "en": "A spatial region or named place. The geographical area covered by the dataset series. It is recommended to use URIs from Geonames in the form: http://sws.geonames.org/6695072",
-    "sv": "Det geografiska området som omfattas av datamängdsserien. Det rekommenderas att använda Geonames URI:er i följande form: http://sws.geonames.org/6695072"
+    "en": "A spatial region or named place. The geographical area covered by the data in the dataset series. It is recommended to use URIs from Geonames in the form: http://sws.geonames.org/6695072. If a named geographical area is provided on the series it should correspond to the union of all named geographical areas of the datasets therein.",
+    "sv": "Det geografiska området som omfattas av datamängdsserien. Det rekommenderas att använda Geonames URI:er i följande form: http://sws.geonames.org/6695072. Om ett namgivet geografiskt område tillhandahålls på serien ska det motsvara unionen av de namngivna geografiska områdena på alla datamängder i serien."
   },
   "constraints": {
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "http://purl.org/dc/terms/Location"

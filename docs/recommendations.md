@@ -158,3 +158,7 @@ Notera att vilket angreppsätt man än tar bör man tänka på att man inte tapp
 
 ## 20. Datatjänster för datamängdsserier
 När man vill erbjuda en datatjänst (API) för all data i en datamängdsserie är det inte lämpligt att skapa en distribution på varje datamängd i serien (som är rekommendationen för datamängder som inte ligger i datamängdsserier). Istället räcker det att man skapar en datatjänst och pekar ut datamängdsserien via `dcat:servesDataset`.
+
+## 21. Egenskaper med samma värde på datamängder i datamängdsserier
+Datamängder som är i samma datamängdsserie ska ha samma karaktär (se rekommendation 15). Det medför att för alla datamängder i en datamängdsserie finns ett antal fält som inte bör skilja sig åt sinsemellan. Om samma fält uttrycks på datamängdsserien själv bör de vara samma även där. Detta inkluderar fälten utgivare, nyckelord, kategori, tillämplig lagstiftning, kategori för värdefulla datamängder, kategori för grunddata, uppfyller, ingångssida, relaterad resurs, kvalificerad relaterad resurs samt dokumentation.
+

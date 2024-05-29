@@ -2,8 +2,8 @@
   "type": "choice",
   "extends": "dcat:theme",
   "description": {
-    "en": "This property refers to a category of the Dataset series. A Dataset series may be associated with multiple themes.",
-    "sv": "En kategori för datamängdsserien. En datamängdsserie kan associeras med flera teman."
+    "en": "This property refers to a category of the data in the Dataset series. A Dataset series may be associated with multiple themes.",
+    "sv": "En kategori för datat i datamängdsserien. En datamängdsserie kan associeras med flera teman."
   },
   "cardinality": {
     "min": 0,

@@ -5,8 +5,8 @@
     "sv": "Utgivningsdatum"
   },
   "description": {
-    "en": "This property contains the date of formal issuance (e.g., publication) of the Dataset series.",
-    "sv": "Egenskapen anger datamängdsseriens utgivningsdatum."
+    "en": "This property contains the date of formal issuance (e.g., publication) of the earlies data in the Dataset series. This must correspond to the earliest dataset release date.",
+    "sv": "Egenskapen anger utgivningsdatum av datat i datamängdsserien. Detta ska sammanfalla med det tidigaste utgivningsdatumet för datamängderna i serien."
   },
   "type": "text",
   "nodetype": "DATATYPE_LITERAL",

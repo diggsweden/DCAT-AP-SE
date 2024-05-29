@@ -1435,6 +1435,17 @@
       },
       "choices": [
         {
+          "value": "application/geo+json",
+          "label": {
+            "en": "GeoJSON",
+            "sv": "GeoJSON"
+          },
+          "description": {
+            "en": "GeoJSON is a format designed for representing simple geographical features, along with their non-spatial attributes. It is based on the JSON format.",
+            "sv": "GeoJSON är ett format designat för att representera enkla geografiska egenskaper, tillsammans med deras icke-rumsliga attribut. GeoJSON är baserad på JSON-formatet."
+          }
+        },
+        {
           "value": "application/x-shapefile",
           "label": {
             "en": "x-shapefile",
@@ -3978,8 +3989,8 @@
         "pref": 1
       },
       "description": {
-        "en": "This property contains a keyword or tag describing the Dataset series",
-        "sv": "Egenskapen innehåller ett nyckelord som beskriver datamängdsserien"
+        "en": "This property contains a keyword or tag describing the data in the Dataset series",
+        "sv": "Egenskapen innehåller ett nyckelord som beskriver data i datamängdsserien"
       },
       "styles": [
         "viewAllTranslations"
@@ -3990,8 +4001,8 @@
       "type": "choice",
       "extends": "dcat:theme",
       "description": {
-        "en": "This property refers to a category of the Dataset series. A Dataset series may be associated with multiple themes.",
-        "sv": "En kategori för datamängdsserien. En datamängdsserie kan associeras med flera teman."
+        "en": "This property refers to a category of the data in the Dataset series. A Dataset series may be associated with multiple themes.",
+        "sv": "En kategori för datat i datamängdsserien. En datamängdsserie kan associeras med flera teman."
       },
       "cardinality": {
         "min": 0,
@@ -4053,6 +4064,9 @@
       "type": "choice",
       "automatic": true,
       "nodetype": "URI",
+      "cardinality": {
+        "pref": 1
+      },
       "id": "dcat:dcterms:conformsTo_dss"
     },
     {
@@ -4062,8 +4076,8 @@
         "sv": "Utgivningsdatum"
       },
       "description": {
-        "en": "This property contains the date of formal issuance (e.g., publication) of the Dataset series.",
-        "sv": "Egenskapen anger datamängdsseriens utgivningsdatum."
+        "en": "This property contains the date of formal issuance (e.g., publication) of the earlies data in the Dataset series. This must correspond to the earliest dataset release date.",
+        "sv": "Egenskapen anger utgivningsdatum av datat i datamängdsserien. Detta ska sammanfalla med det tidigaste utgivningsdatumet för datamängderna i serien."
       },
       "type": "text",
       "nodetype": "DATATYPE_LITERAL",
@@ -4086,8 +4100,8 @@
         "sv": "Ändringsdatum"
       },
       "description": {
-        "en": "This property contains the most recent date on which the Dataset series was changed or modified.",
-        "sv": "Datum för senaste ändring av datamängdsserien."
+        "en": "This property corresponds to the modification date of the data in the the Dataset series. This must be the same as the earliest modification date of the datasets in the series.",
+        "sv": "Datum för senaste ändring av datat i datamängdsserien. Detta ska vara samma datum som det tidigaste modifieringsdatumet hos datamängderna i serien."
       },
       "type": "text",
       "nodetype": "DATATYPE_LITERAL",
@@ -4129,8 +4143,8 @@
         "sv": "Namngivet geografiskt område"
       },
       "description": {
-        "en": "A spatial region or named place. The geographical area covered by the dataset series. It is recommended to use URIs from Geonames in the form: http://sws.geonames.org/6695072",
-        "sv": "Det geografiska området som omfattas av datamängdsserien. Det rekommenderas att använda Geonames URI:er i följande form: http://sws.geonames.org/6695072"
+        "en": "A spatial region or named place. The geographical area covered by the data in the dataset series. It is recommended to use URIs from Geonames in the form: http://sws.geonames.org/6695072. If a named geographical area is provided on the series it should correspond to the union of all named geographical areas of the datasets therein.",
+        "sv": "Det geografiska området som omfattas av datamängdsserien. Det rekommenderas att använda Geonames URI:er i följande form: http://sws.geonames.org/6695072. Om ett namgivet geografiskt område tillhandahålls på serien ska det motsvara unionen av de namngivna geografiska områdena på alla datamängder i serien."
       },
       "constraints": {
         "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "http://purl.org/dc/terms/Location"
@@ -4148,6 +4162,10 @@
       "label": {
         "en": "Geographical area",
         "sv": "Geografiskt område"
+      },
+      "description": {
+        "en": "Bounding box for the data in the dataset series. If provided it should be the union of the bounding box of the individual datasets within the series.",
+        "sv": "Omskrivande rektangel för data i datmängdsserien. Om en omskrivande rektangel uttrycks på serien ska den motsvara unionen av de omskrivande rektanglarna på datamängderna i serien."
       },
       "type": "group",
       "nodetype": "RESOURCE",
@@ -4273,8 +4291,8 @@
         }
       ],
       "description": {
-        "en": "Validity period of a dataset series (start and end date)",
-        "sv": "Datamängdsseriens giltighetsperiod (startdatum och slutdatum)"
+        "en": "Validity period of data in a dataset series (start and end date). If a time period is expressed on the serie it must correspond to the union of the time periods on the datasets in the series.",
+        "sv": "Giltighetsperiod för data i datamängdsserien (startdatum och slutdatum). Om det uttrycks på serien ska det motsvara unionen av motsvarande uttryck på de ingående datamängderna."
       },
       "id": "dcat:dcterms:temporal_dss"
     },

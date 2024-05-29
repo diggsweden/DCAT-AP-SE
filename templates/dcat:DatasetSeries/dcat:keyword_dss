@@ -11,8 +11,8 @@
     "pref": 1
   },
   "description": {
-    "en": "This property contains a keyword or tag describing the Dataset series",
-    "sv": "Egenskapen innehåller ett nyckelord som beskriver datamängdsserien"
+    "en": "This property contains a keyword or tag describing the data in the Dataset series",
+    "sv": "Egenskapen innehåller ett nyckelord som beskriver data i datamängdsserien"
   },
   "styles": [
     "viewAllTranslations"

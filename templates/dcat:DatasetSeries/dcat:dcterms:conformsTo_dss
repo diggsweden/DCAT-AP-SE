@@ -13,5 +13,8 @@
   },
   "type": "choice",
   "automatic": true,
-  "nodetype": "URI"
+  "nodetype": "URI",
+  "cardinality": {
+    "pref": 1
+  }
 }

@@ -82,6 +82,30 @@ var spec2recs = {
     "dcat_DataService-dcat_contactPoint",
     "dcat_DataService-foaf_page",
     "dcat_DataService-dcat_servesDataset"
+  ],
+  "21-egenskaper-med-samma-varde-pa-datamangder-i-datamangdsserier": [
+    "dcat_DatasetSeries-dcterms_publisher",
+    "dcat_Dataset-dcterms_publisher",
+    "dcat_DatasetSeries-dcat_keyword",
+    "dcat_Dataset-dcat_keyword",
+    "dcat_DatasetSeries-dcat_theme",
+    "dcat_Dataset-dcat_theme",
+    "dcat_DatasetSeries-dcatap_applicableLegislation",
+    "dcat_Dataset-dcatap_applicableLegislation",
+    "dcat_DatasetSeries-dcatap_hvdCategory",
+    "dcat_Dataset-dcatap_hvdCategory",
+    "dcat_DatasetSeries-dcterms_subject",
+    "dcat_Dataset-dcterms_subject",
+    "dcat_DatasetSeries-dcterms_conformsTo",
+    "dcat_Dataset-dcterms_conformsTo",
+    "dcat_DatasetSeries-dcat_landingPage",
+    "dcat_Dataset-dcat_landingPage",
+    "dcat_DatasetSeries-dcterms_relation",
+    "dcat_Dataset-dcterms_relation",
+    "dcat_DatasetSeries-dcat_qualifiedRelation",
+    "dcat_Dataset-dcat_qualifiedRelation",
+    "dcat_DatasetSeries-foaf_page",
+    "dcat_Dataset-foaf_page",
   ]
 };
 

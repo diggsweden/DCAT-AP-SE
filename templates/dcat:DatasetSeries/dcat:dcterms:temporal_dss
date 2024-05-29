@@ -65,7 +65,7 @@
     }
   ],
   "description": {
-    "en": "Validity period of a dataset series (start and end date)",
-    "sv": "Datamängdsseriens giltighetsperiod (startdatum och slutdatum)"
+    "en": "Validity period of data in a dataset series (start and end date). If a time period is expressed on the serie it must correspond to the union of the time periods on the datasets in the series.",
+    "sv": "Giltighetsperiod för data i datamängdsserien (startdatum och slutdatum). Om det uttrycks på serien ska det motsvara unionen av motsvarande uttryck på de ingående datamängderna."
   }
 }
