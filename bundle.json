@@ -4764,7 +4764,7 @@
         "sv": "Distributionens storleken kan uppskattas när den exakta storleken är okänd."
       },
       "datatype": [
-        "http://www.w3.org/2001/XMLSchema#decimal"
+        "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
       ],
       "id": "dcat:byteSize_di"
     },
