@@ -4838,28 +4838,28 @@
       },
       "choices": [
         {
-          "value": "http://purl.org/adms/status/Completed",
+          "value": "http://publications.europa.eu/resource/authority/distribution-status/COMPLETED",
           "label": {
             "en": "Completed",
             "sv": "Färdig"
           }
         },
         {
-          "value": "http://purl.org/adms/status/Deprecated",
+          "value": "http://publications.europa.eu/resource/authority/distribution-status/DEPRECATED",
           "label": {
             "en": "Deprecated",
             "sv": "Avvecklad"
           }
         },
         {
-          "value": "http://purl.org/adms/status/UnderDevelopment",
+          "value": "http://publications.europa.eu/resource/authority/distribution-status/DEVELOP",
           "label": {
             "en": "Under development",
             "sv": "Under utveckling"
           }
         },
         {
-          "value": "http://purl.org/adms/status/Withdrawn",
+          "value": "http://publications.europa.eu/resource/authority/distribution-status/WITHDRAWN",
           "label": {
             "en": "Withdrawn",
             "sv": "Tillbakadragen"
