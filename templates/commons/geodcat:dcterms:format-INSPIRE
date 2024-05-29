@@ -17,6 +17,17 @@
   },
   "choices": [
     {
+      "value": "application/geo+json",
+      "label": {
+        "en": "GeoJSON",
+        "sv": "GeoJSON"
+      },
+      "description": {
+        "en": "GeoJSON is a format designed for representing simple geographical features, along with their non-spatial attributes. It is based on the JSON format.",
+        "sv": "GeoJSON är ett format designat för att representera enkla geografiska egenskaper, tillsammans med deras icke-rumsliga attribut. GeoJSON är baserad på JSON-formatet."
+      }
+    },
+    {
       "value": "application/x-shapefile",
       "label": {
         "en": "x-shapefile",
