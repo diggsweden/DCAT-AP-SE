@@ -14,7 +14,8 @@
     "vc:fn",
     "vc:hasEmail",
     "vc:hasTelephone",
-    "vc:hasAddress"
+    "vc:hasAddress",
+    "vc:hasURL"
   ],
   "property": "dcat:contactPoint",
   "constraints": {
