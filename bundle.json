@@ -832,6 +832,235 @@
     },
     {
       "type": "choice",
+      "property": "dcterms:format",
+      "nodetype": "ONLY_LITERAL",
+      "label": {
+        "en": "Common mediatypes",
+        "sv": "Vanliga mediatyper"
+      },
+      "description": {
+        "en": "A selection of common mediatypes according to the list suggested by the DCAT-AP recommendation.",
+        "sv": "Ett urval av vanliga mediatyper enligt listan föreslaget av rekommendationen DCAT-AP."
+      },
+      "choices": [
+        {
+          "value": "text/csv",
+          "label": {
+            "en": "CSV (.csv)",
+            "sv": "CSV (.csv)"
+          },
+          "description": {
+            "en": "CSV is a simple spreadsheet format where rows are separeted by newlines and columns by commas, semicolon or some other special character.",
+            "sv": "CSV är ett enkelt format för kalkylark där rader är separerade av radbrytningar och kolumner av kommatecken, semikolon eller någon annan specialkaraktär."
+          }
+        },
+        {
+          "value": "text/csv+zip",
+          "label": {
+            "en": "CSV (.csv) in a zip",
+            "sv": "CSV (.csv) i en zip"
+          },
+          "description": {
+            "en": "A zip file containing CSV files.",
+            "sv": "En zip-fil som innehåller CSV-filer."
+          }
+        },
+        {
+          "value": "application/xml",
+          "label": {
+            "en": "XML (.xml)",
+            "sv": "XML (.xml)"
+          },
+          "description": {
+            "en": "Extensible Markup Language (XML) is a markup language that defines a set of rules for encoding documents in a format that is both human-readable and machine-readable. It is defined in the XML 1.0 Specification produced by the W3C.",
+            "sv": "Extensible Markup Language (XML) är ett märkspråk som definierar en grupp av regler för att koda dokument i ett format som är både läsbart för människor och maskinläsbart. Det är definierat i XML 1.0 Specifikationen producerat av W3C."
+          }
+        },
+        {
+          "value": "application/xml+zip",
+          "label": {
+            "en": "XML (.xml) in a zip",
+            "sv": "XML (.xml) i en zip"
+          },
+          "description": {
+            "en": "A zip file containing XML files.",
+            "sv": "En zip-fil som innehåller XML-filer."
+          }
+        },
+        {
+          "value": "application/json",
+          "label": {
+            "en": "JSON (.json)",
+            "sv": "JSON (.json)"
+          },
+          "description": {
+            "en": "JSON or JavaScript Object Notation, is an open standard format that uses human-readable text to transmit data objects consisting of attribute–value pairs. It is used primarily to transmit data between a server and web application, as an alternative to XML.",
+            "sv": "JSON eller JavaScript Object Notation, är ett öppet standard-format som använder text läsbar för människor för att överföra dataobjekt består av egenskap-värdepar. Det är använd primärt för att överföra data mellan en server och en webb-applikation, som ett alternativ till XML."
+          }
+        },
+        {
+          "value": "application/json+zip",
+          "label": {
+            "en": "JSON (.json) in a zip",
+            "sv": "JSON (.json) i en zip"
+          },
+          "description": {
+            "en": "A zip file containing JSON files.",
+            "sv": "En zip-fil som innehåller JSON-filer."
+          }
+        },
+        {
+          "value": "application/zip",
+          "label": {
+            "en": "ZIP (.zip)"
+          },
+          "description": {
+            "en": ".ZIP is an archive file format that supports lossless data compression.",
+            "sv": ".ZIP är ett format för filarkiv som stödjer icke-förstörande datakomprimering."
+          }
+        },
+        {
+          "value": "text/html",
+          "label": {
+            "en": "HTML (.html)",
+            "sv": "HTML (.html)"
+          },
+          "description": {
+            "en": "HTML or HyperText Markup Language is the standard markup language used to create web pages.",
+            "sv": "HTML eller HyperText Markup Language är ett standardiserat märkspråk som används för att skapa webbsidor."
+          }
+        },
+        {
+          "value": "application/vnd.ms-excel",
+          "label": {
+            "en": "Microsoft Excel (.xls)",
+            "sv": "Microsoft Excel (.xls)"
+          },
+          "description": {
+            "en": "Microsot Excel (.xls) is a proprietary, non-standardized, spreadsheet file format created by the Microsoft Corporation.",
+            "sv": "Microsoft Excel (.xls) är ett proprietärt, icke-standardiserat filformat för kalkylark skapat av Microsoft Corporation."
+          }
+        },
+        {
+          "value": "application/pdf",
+          "description": {
+            "en": "Portable Document Format (PDF) is a file format used to present documents encapsulating a complete description of a fixed-layout flat document, including the text, fonts, graphics, and other information needed to display it.",
+            "sv": "Portable Document Format (PDF) är ett filformat som används för att presentera dokument som innehåller en fullständig beskrivning av ett dokument med fast layout, inklusive text, teckensnitt, grafik och annan information som behövs för att visa det."
+          },
+          "label": {
+            "en": "PDF (.pdf)",
+            "sv": "PDF (.pdf)"
+          }
+        },
+        {
+          "value": "text/plain",
+          "label": {
+            "en": "Text (.txt)",
+            "sv": "Text (.txt)"
+          },
+          "description": {
+            "en": "Plain text file.",
+            "sv": "Enkel textfil."
+          }
+        },
+        {
+          "value": "application/n-triples",
+          "label": {
+            "en": "RDF as N-Triples (.n3)",
+            "sv": "RDF som N-Triples (.n3)"
+          },
+          "description": {
+            "en": "A line-based syntax for an RDF graph.",
+            "sv": "En radbaserad syntax för att uttrycka RDF-grafer."
+          }
+        },
+        {
+          "value": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+          "label": {
+            "en": "Microsoft Excel XML (.xlsx)",
+            "sv": "Microsoft Excel XML (.xlsx)"
+          },
+          "description": {
+            "en": "Office Open XML Spreadsheet is a zipped, XML-based file format developed by Microsoft, standardized in ECMA-376 and later in ISO/IEC 29500.",
+            "sv": "Office Open XML Spreadsheet är en zippad, XML-baserat filformat utvecklat av Microsoft, standardiserad i ECMA-376 och senare i ISO/IEC 29500."
+          }
+        },
+        {
+          "value": "application/vnd.oasis.opendocument.spreadsheet",
+          "label": {
+            "en": "OpenDocument Spreadsheet (.ods)",
+            "sv": "OpenDocument Spreadsheet (.ods)"
+          },
+          "description": {
+            "en": "The Open Document Format for spreadsheets is an XML based format standardized first by OASIS and later by ISO/IEC: ISO/IEC 26300:2006/Amd 1:2012 — Open Document Format for Office Applications (OpenDocument) v1.1.",
+            "sv": "Open Document Format (Öppna Dokumentformatet) för kalkylark är ett XML-baserat format standardiserat först av OASIS och senare av ISO/IEC: ISO/IEC 26300:2006/Amd 1:2012 — Open Document Format for Office Applications (OpenDocument) v1.1."
+          }
+        },
+        {
+          "value": "application/rdf+xml",
+          "label": {
+            "en": "RDF/XML (.rdf)",
+            "sv": "RDF/XML (.rdf)"
+          },
+          "description": {
+            "en": "This is an XML syntax for RDF as introduced in the RDF/XML Syntax Specification by W3C in 2004.",
+            "sv": "Detta är ett XML-syntax för RDF som introducerades i specifikationen RDF/XML Syntax Specification av W3C år 2004."
+          }
+        },
+        {
+          "value": "application/sparql-query",
+          "label": {
+            "en": "RDF query (SPARQL)",
+            "sv": "RDF sökning (SPARQL)"
+          },
+          "description": {
+            "en": "SPARQL (pronounced \"sparkle\", an acronym for SPARQL Protocol and RDF Query Language) is an RDF query language, that is, a query language for databases, able to retrieve and manipulate data stored in Resource Description Framework format.",
+            "sv": "SPARQL (uttalat \"sparkle\", är en akronym för SPARQL Protocol and RDF Query Language) är ett RDF query-språk, som är, ett frågespråk för databaser, kunnigt att hämta och manipulera data lagrat i Resource Description Framework-formatet."
+          }
+        },
+        {
+          "value": "text/turtle",
+          "description": {
+            "en": "Turtle is a syntax for RDF that allows an RDF graph to be completely written in a compact and natural text form, with abbreviations for common usage patterns and datatypes.",
+            "sv": "Turtle är ett syntax för RDF som tillåter en RDF-graf att bli helt skriven i en kompakt och naturlig textform, med förkortningar för vanliga användningsmönster och datatyper."
+          },
+          "label": {
+            "en": "RDF as Turtle (.ttl)",
+            "sv": "RDF som Turtle (.ttl)"
+          }
+        }
+      ],
+      "cardinality": {
+        "min": 0,
+        "pref": 1,
+        "max": 1
+      },
+      "styles": [
+        "strictmatch"
+      ],
+      "id": "dcat:format-group_common_choices"
+    },
+    {
+      "type": "text",
+      "property": "dcterms:format",
+      "description": {
+        "en": "If you cannot find your mediatype in the list above you can provide one by hand. See list of established mediatypes at: http://www.iana.org/assignments/media-types/media-types.xhtml.",
+        "sv": "Om du inte kan hitta din mediatyp i listan ovanför kan du tillhandahålla en för hand. Se lista över etablerade mediatyper på: http://www.iana.org/assignments/media-types/media-types.xhtml."
+      },
+      "label": {
+        "en": "Other mediatypes",
+        "sv": "Övriga mediatyper"
+      },
+      "nodetype": "ONLY_LITERAL",
+      "cardinality": {
+        "min": 0,
+        "max": 1
+      },
+      "pattern": "^\\w+\\/[-.\\w]+(?:\\+[-.\\w]+)?(\\s*;\\s*\\w+=\\w+)?$",
+      "id": "dcat:format_generic"
+    },
+    {
+      "type": "choice",
       "nodetype": "RESOURCE",
       "property": "dcat:theme",
       "styles": [
@@ -1186,6 +1415,228 @@
         "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "foaf:Document"
       },
       "id": "foaf:Document"
+    },
+    {
+      "type": "choice",
+      "nodetype": "LITERAL",
+      "property": "dcterms:format",
+      "label": {
+        "en": "Geographical mediatypes",
+        "sv": "Geografiska mediatyper"
+      },
+      "description": {
+        "en": "This list contains the media types applications should use for spatial data sets in INSPIRE, in particular in INSPIRE download services. Whenever sub-types exist that are registered with IANA or are in the registration process these are used. For all other formats, no commonly used sub-type exists and INSPIRE has to - at least temporarily - define their own types. In accordance with the rules for media types in RFC 2046/RFC 4288, these start with x-. In addition to the data-oriented mediatypes we also list four protocoll oriented formats (application/vnd.ogc.[wms|wmts|wfs|wcs]_xml) to cover for the cases where a single protocoll-oriented distribution is created for a dataset rather one per data format.",
+        "sv": "Denna lista innehåller mediatyper som bör användas för datamängder inom INSPIRE, mer specifikt i INSPIREs nedladdningstjänster. Närhelst etablerade IANA mediatyper finns används dessa. När mediatyper saknas har INSPIRE - i allafall temporärt - definierat egna mediatyper. I enlighet med reglerna RFC 2046/RFC 4288 startas subtypen för dessa med x-. Utöver de dataorienterade mediatyperna listas också fyra protokollorienterade format (application/vnd.ogc.[wms|wmts|wfs|wcs]_xml) för att täcka in de fall när man skapar upp enbart en distribution som motsvarar protokollet istället för en distribution per format. "
+      },
+      "cardinality": {
+        "min": 0,
+        "pref": 0,
+        "max": 1
+      },
+      "choices": [
+        {
+          "value": "application/x-shapefile",
+          "label": {
+            "en": "x-shapefile",
+            "sv": "x-shapefile"
+          },
+          "description": {
+            "en": "The media type shall be used for Esri shapefiles. The file is a zip archive that contains at least the shp, shx and dbf files.",
+            "sv": "Mediatypen ska användas för Esri shapefiles. Filen är ett zip-arkiv som innehåller åtminstone shp-, shx- och dbf-filer."
+          }
+        },
+        {
+          "value": "application/x-filegdb",
+          "label": {
+            "en": "x-filegdb",
+            "sv": "xfilegdb"
+          },
+          "description": {
+            "en": "The media type shall be used for Esri file geodatabases. The file is a zip archive that contains the gdb directory.",
+            "sv": "Mediatypen ska användas för Esri geodatabas-filer. Filen är ett zip-arkiv som innehåller gdp-filkatalogen."
+          }
+        },
+        {
+          "value": "application/gml+xml",
+          "label": {
+            "en": "gml+xml",
+            "sv": "gml+xml"
+          }
+        },
+        {
+          "value": "application/x-gmz",
+          "label": {
+            "en": "x-gmz",
+            "sv": "x-gmz"
+          },
+          "description": {
+            "en": "The media type shall be used for a zip archive that contains one or more GML documents.",
+            "sv": "Mediatypen ska användas för ett zip-arkiv som innehåller ett eller fler GML-dokument."
+          }
+        },
+        {
+          "value": "application/vnd.google-earth.kml+xml",
+          "label": {
+            "en": "vnd.google-earth.kml+xml",
+            "sv": "vnd.google-earth.kml+xml"
+          }
+        },
+        {
+          "value": "application/vnd.google-earth.kmz",
+          "label": {
+            "en": "vnd.google-earth.kmz",
+            "sv": "vnd.google-earth.kmz"
+          }
+        },
+        {
+          "value": "application/x-ecw",
+          "label": {
+            "en": "x-ecw",
+            "sv": "x-ecw"
+          },
+          "description": {
+            "en": "The media type shall be used for Enhanced Compressed Wavelet (ECW) files.",
+            "sv": "Mediatypen ska användas för Enhanced Compressed Wavelet (ECW)-filer."
+          }
+        },
+        {
+          "value": "application/x-ascii-grid",
+          "label": {
+            "en": "x-ascii-grid",
+            "sv": "x-ascii-grid"
+          },
+          "description": {
+            "en": "The media type shall be used for ASCII GRID files.",
+            "sv": "Mediatypen ska användas för ASCII GRID-filer."
+          }
+        },
+        {
+          "value": "application/x-oracledump",
+          "label": {
+            "en": "x-oracledump",
+            "sv": "x-oracledump"
+          },
+          "description": {
+            "en": "The media type shall be used for Oracle dumps.",
+            "sv": "Mediatypen ska användas för Oracle-säkerhetskopieringar."
+          }
+        },
+        {
+          "value": "application/x-las",
+          "label": {
+            "en": "x-las",
+            "sv": "x-las"
+          },
+          "description": {
+            "en": "The media type shall be used for the LASer file format (LAS).",
+            "sv": "Mediatypen ska användas för filformatet LASer,"
+          }
+        },
+        {
+          "value": "application/x-laz",
+          "label": {
+            "en": "x-laz",
+            "sv": "x-laz"
+          },
+          "description": {
+            "en": "The media type shall be used for compressed LAS files.",
+            "sv": "Mediatypen ska användas för komprimerade LAS-filer."
+          }
+        },
+        {
+          "value": "application/x-tab",
+          "label": {
+            "en": "x-tab",
+            "sv": "x-tab"
+          },
+          "description": {
+            "en": "The media type shall be used for the MapInfo TAB format. The file is a zip archive that contains at least the tab, dat, map and id files.",
+            "sv": "Mediatypen ska användas för formatet MapInfo TAB. Filen är ett zip-arkiv som innehåller åtminstone tab-, dat-, map- och id-filer."
+          }
+        },
+        {
+          "value": "application/x-tab-raster",
+          "label": {
+            "en": "x-tab-raster",
+            "sv": "x-tab-raster"
+          },
+          "description": {
+            "en": "The media type shall be used for the MapInfo Raster TAB format.",
+            "sv": "Mediatypen ska användas för formatet MapInfo Raster TAB."
+          }
+        },
+        {
+          "value": "application/x-worldfile",
+          "label": {
+            "en": "x-worldfile",
+            "sv": "x-worldfile"
+          },
+          "description": {
+            "en": "The media type shall be used for world files. The file extension usually depends on the format of the associated image, e.g. .jgw for JPEG (2000) or .tfw for TIFF.",
+            "sv": "Mediatypen ska användas för world-filer. Filändelsen är oftast beroende på formatet av den associerade bilden, t.ex. .jgw för JPEG (2000) eller .tfw för TIFF."
+          }
+        },
+        {
+          "value": "application/vnd.sqlite3",
+          "label": {
+            "en": "vnd.sqlite3",
+            "sv": "vnd.sqlite3"
+          }
+        },
+        {
+          "value": "application/geopackage+sqlite3",
+          "label": {
+            "en": "geopackage+sqlite3",
+            "sv": "geopackage+sqlite3"
+          }
+        },
+        {
+          "value": "image/tiff",
+          "label": {
+            "en": "tiff",
+            "sv": "tiff"
+          }
+        },
+        {
+          "value": "image/jp2",
+          "label": {
+            "en": "jp2",
+            "sv": "jp2"
+          }
+        },
+        {
+          "value": "application/vnd.ogc.wms_xml",
+          "label": {
+            "en": "WMS service",
+            "sv": "WMS-tjänst"
+          }
+        },
+        {
+          "value": "application/vnd.ogc.wmts_xml",
+          "label": {
+            "en": "WMTS service",
+            "sv": "WMTS-tjänst"
+          }
+        },
+        {
+          "value": "application/vnd.ogc.wfs_xml",
+          "label": {
+            "en": "WFS service",
+            "sv": "WFS-tjänst"
+          }
+        },
+        {
+          "value": "application/vnd.ogc.wcs_xml",
+          "label": {
+            "en": "WCS service",
+            "sv": "WCS-tjänst"
+          }
+        }
+      ],
+      "styles": [
+        "strictmatch"
+      ],
+      "id": "geodcat:dcterms:format-INSPIRE"
     },
     {
       "type": "group",
@@ -1559,10 +2010,11 @@
         "dcat:contactPoint_ds",
         "dcat:dcterms:type_ds",
         "dcat:keyword_ds",
-        "dcat:theme-ds",
+        "dcat:theme_ds",
         "dcatap:applicableLegislation_ds",
         "dcatap:hvdCategory_ds",
         "dcterms:subject:grunddata_ds",
+        "dcat:format-group_ds",
         "dcat:dcterms:conformsTo_ds",
         "dcat:servesDataset",
         "dcat:dcterms:license_ds",
@@ -1767,7 +2219,7 @@
         "en": "This property refers to a category of the Dataservice. A Dataservice may be associated with multiple themes.",
         "sv": "En kategori för datatjänsten. En datatjänst kan associeras med flera teman."
       },
-      "id": "dcat:theme-ds"
+      "id": "dcat:theme_ds"
     },
     {
       "extends": "dcatap:applicableLegislation",
@@ -1806,6 +2258,34 @@
       },
       "pattern": "https://www.dataportal.se/terminology/grunddata/.*",
       "id": "dcterms:subject:grunddata_ds"
+    },
+    {
+      "type": "group",
+      "label": {
+        "en": "Format",
+        "sv": "Format"
+      },
+      "description": {
+        "en": "This property refers to the data format of the data service.",
+        "sv": "Denna egenskap motsvarar datatjänstens format."
+      },
+      "cardinality": {
+        "min": 1,
+        "pref": 1,
+        "max": 1
+      },
+      "styles": [
+        "disjoint"
+      ],
+      "cls": [
+        "cardgroup"
+      ],
+      "items": [
+        "dcat:format-group_common_choices",
+        "geodcat:dcterms:format-INSPIRE",
+        "dcat:format_generic"
+      ],
+      "id": "dcat:format-group_ds"
     },
     {
       "property": "dcterms:conformsTo",
@@ -1953,13 +2433,12 @@
         "dcat:dcterms:accrualPeriodicity-cld_da",
         "dcat:dcterms:accrualPeriodicity_da",
         "dcat:adms:version",
-        "dcat:owl:versionInfo_da",
+        "dcat:version_da",
         "dcat:adms:versionNotes_da",
         "dcat:dcterms:source_da",
         "dcat:dcterms:accessRights",
         "schema:Offer",
-        "dcat:dcterms:hasVersion_da",
-        "dcat:dcterms:isVersionOf_da",
+        "dcat:hasVersion_da",
         "dcat:dcterms:isReferencedBy",
         "dcat:dcterms:relation_da",
         "dcat:qualifiedRelation",
@@ -3113,7 +3592,7 @@
         "en": "Version",
         "sv": "Version"
       },
-      "property": "owl:versionInfo",
+      "property": "dcat:version",
       "cardinality": {
         "min": 0,
         "pref": 0,
@@ -3123,7 +3602,7 @@
         "en": "This property contains a version number or other version designation of the Dataset.",
         "sv": "Ett versionsnummer eller annan versionsbeteckning för datamängden."
       },
-      "id": "dcat:owl:versionInfo_da"
+      "id": "dcat:version_da"
     },
     {
       "type": "text",
@@ -3162,7 +3641,7 @@
     {
       "type": "choice",
       "nodetype": "URI",
-      "property": "dcterms:hasVersion",
+      "property": "dcat:hasVersion",
       "constraints": {
         "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "http://www.w3.org/ns/dcat#Dataset"
       },
@@ -3174,24 +3653,7 @@
         "en": "This property refers to a related Dataset that is a version, edition, or adaptation of the described Dataset.",
         "sv": "En relaterad datamängd som är en version, utgåva, eller anpassning av den beskrivna datamängden."
       },
-      "id": "dcat:dcterms:hasVersion_da"
-    },
-    {
-      "type": "choice",
-      "nodetype": "URI",
-      "property": "dcterms:isVersionOf",
-      "label": {
-        "en": "Is version of",
-        "sv": "Är version av"
-      },
-      "description": {
-        "en": "This property refers to a related Dataset of which the described Dataset is a version, edition, or adaptation.",
-        "sv": "En relaterad datamängd som den beskrivna datamängden är en version, utgåva, eller anpassning av."
-      },
-      "constraints": {
-        "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "http://www.w3.org/ns/dcat#Dataset"
-      },
-      "id": "dcat:dcterms:isVersionOf_da"
+      "id": "dcat:hasVersion_da"
     },
     {
       "type": "text",
@@ -4030,6 +4492,29 @@
       "id": "dcat:qualifiedRelation_dss"
     },
     {
+      "type": "choice",
+      "nodetype": "URI",
+      "property": "dcat:hadRole",
+      "label": {
+        "en": "Role",
+        "sv": "Roll"
+      },
+      "description": {
+        "en": "The role of a datset series with respect to another dataset (series). See list of roles to use in Sweden here: https://www.dataportal.se/en/terminology/resource-role.",
+        "sv": "Anger på vilket sätt (vilken roll) en datamängdsserie är relaterad till en annan datamängd(serie). Se lista med roller vi valt att använda i Sverige här: https://www.dataportal.se/sv/terminology/resource-role."
+      },
+      "cardinality": {
+        "max": 1,
+        "min": 1
+      },
+      "constraints": {
+        "rdf:type": "skos:Concept",
+        "skos:inScheme": "https://www.dataportal.se/terminology/resource-role"
+      },
+      "pattern": "https://www.dataportal.se/terminology/resource-role/.*",
+      "id": "dcat:hadRole_dss"
+    },
+    {
       "type": "text",
       "nodetype": "URI",
       "property": "dcterms:relation",
@@ -4201,461 +4686,11 @@
         "cardgroup"
       ],
       "items": [
-        "dcat:format-group_di_choices",
+        "dcat:format-group_common_choices",
         "geodcat:dcterms:format-INSPIRE",
-        {
-          "type": "text",
-          "property": "dcterms:format",
-          "description": {
-            "en": "If you cannot find your mediatype in the list above you can provide one by hand. See list of established mediatypes at: http://www.iana.org/assignments/media-types/media-types.xhtml.",
-            "sv": "Om du inte kan hitta din mediatyp i listan ovanför kan du tillhandahålla en för hand. Se lista över etablerade mediatyper på: http://www.iana.org/assignments/media-types/media-types.xhtml."
-          },
-          "label": {
-            "en": "Other mediatypes",
-            "sv": "Övriga mediatyper"
-          },
-          "nodetype": "ONLY_LITERAL",
-          "cardinality": {
-            "min": 0,
-            "pref": 1,
-            "max": 1
-          },
-          "pattern": "^\\w+\\/[-.\\w]+(?:\\+[-.\\w]+)?(\\s*;\\s*\\w+=\\w+)?$"
-        }
+        "dcat:format_generic"
       ],
       "id": "dcat:format-group_di"
-    },
-    {
-      "type": "choice",
-      "property": "dcterms:format",
-      "nodetype": "ONLY_LITERAL",
-      "label": {
-        "en": "Common mediatypes",
-        "sv": "Vanliga mediatyper"
-      },
-      "description": {
-        "en": "A selection of common mediatypes according to the list suggested by the DCAT-AP recommendation.",
-        "sv": "Ett urval av vanliga mediatyper enligt listan föreslaget av rekommendationen DCAT-AP."
-      },
-      "choices": [
-        {
-          "value": "text/csv",
-          "label": {
-            "en": "CSV (.csv)",
-            "sv": "CSV (.csv)"
-          },
-          "description": {
-            "en": "CSV is a simple spreadsheet format where rows are separeted by newlines and columns by commas, semicolon or some other special character.",
-            "sv": "CSV är ett enkelt format för kalkylark där rader är separerade av radbrytningar och kolumner av kommatecken, semikolon eller någon annan specialkaraktär."
-          }
-        },
-        {
-          "value": "text/csv+zip",
-          "label": {
-            "en": "CSV (.csv) in a zip",
-            "sv": "CSV (.csv) i en zip"
-          },
-          "description": {
-            "en": "A zip file containing CSV files.",
-            "sv": "En zip-fil som innehåller CSV-filer."
-          }
-        },
-        {
-          "value": "application/xml",
-          "label": {
-            "en": "XML (.xml)",
-            "sv": "XML (.xml)"
-          },
-          "description": {
-            "en": "Extensible Markup Language (XML) is a markup language that defines a set of rules for encoding documents in a format that is both human-readable and machine-readable. It is defined in the XML 1.0 Specification produced by the W3C.",
-            "sv": "Extensible Markup Language (XML) är ett märkspråk som definierar en grupp av regler för att koda dokument i ett format som är både läsbart för människor och maskinläsbart. Det är definierat i XML 1.0 Specifikationen producerat av W3C."
-          }
-        },
-        {
-          "value": "application/xml+zip",
-          "label": {
-            "en": "XML (.xml) in a zip",
-            "sv": "XML (.xml) i en zip"
-          },
-          "description": {
-            "en": "A zip file containing XML files.",
-            "sv": "En zip-fil som innehåller XML-filer."
-          }
-        },
-        {
-          "value": "application/json",
-          "label": {
-            "en": "JSON (.json)",
-            "sv": "JSON (.json)"
-          },
-          "description": {
-            "en": "JSON or JavaScript Object Notation, is an open standard format that uses human-readable text to transmit data objects consisting of attribute–value pairs. It is used primarily to transmit data between a server and web application, as an alternative to XML.",
-            "sv": "JSON eller JavaScript Object Notation, är ett öppet standard-format som använder text läsbar för människor för att överföra dataobjekt består av egenskap-värdepar. Det är använd primärt för att överföra data mellan en server och en webb-applikation, som ett alternativ till XML."
-          }
-        },
-        {
-          "value": "application/json+zip",
-          "label": {
-            "en": "JSON (.json) in a zip",
-            "sv": "JSON (.json) i en zip"
-          },
-          "description": {
-            "en": "A zip file containing JSON files.",
-            "sv": "En zip-fil som innehåller JSON-filer."
-          }
-        },
-        {
-          "value": "application/zip",
-          "label": {
-            "en": "ZIP (.zip)"
-          },
-          "description": {
-            "en": ".ZIP is an archive file format that supports lossless data compression.",
-            "sv": ".ZIP är ett format för filarkiv som stödjer icke-förstörande datakomprimering."
-          }
-        },
-        {
-          "value": "text/html",
-          "label": {
-            "en": "HTML (.html)",
-            "sv": "HTML (.html)"
-          },
-          "description": {
-            "en": "HTML or HyperText Markup Language is the standard markup language used to create web pages.",
-            "sv": "HTML eller HyperText Markup Language är ett standardiserat märkspråk som används för att skapa webbsidor."
-          }
-        },
-        {
-          "value": "application/vnd.ms-excel",
-          "label": {
-            "en": "Microsoft Excel (.xls)",
-            "sv": "Microsoft Excel (.xls)"
-          },
-          "description": {
-            "en": "Microsot Excel (.xls) is a proprietary, non-standardized, spreadsheet file format created by the Microsoft Corporation.",
-            "sv": "Microsoft Excel (.xls) är ett proprietärt, icke-standardiserat filformat för kalkylark skapat av Microsoft Corporation."
-          }
-        },
-        {
-          "value": "application/pdf",
-          "description": {
-            "en": "Portable Document Format (PDF) is a file format used to present documents encapsulating a complete description of a fixed-layout flat document, including the text, fonts, graphics, and other information needed to display it.",
-            "sv": "Portable Document Format (PDF) är ett filformat som används för att presentera dokument som innehåller en fullständig beskrivning av ett dokument med fast layout, inklusive text, teckensnitt, grafik och annan information som behövs för att visa det."
-          },
-          "label": {
-            "en": "PDF (.pdf)",
-            "sv": "PDF (.pdf)"
-          }
-        },
-        {
-          "value": "text/plain",
-          "label": {
-            "en": "Text (.txt)",
-            "sv": "Text (.txt)"
-          },
-          "description": {
-            "en": "Plain text file.",
-            "sv": "Enkel textfil."
-          }
-        },
-        {
-          "value": "application/n-triples",
-          "label": {
-            "en": "RDF as N-Triples (.n3)",
-            "sv": "RDF som N-Triples (.n3)"
-          },
-          "description": {
-            "en": "A line-based syntax for an RDF graph.",
-            "sv": "En radbaserad syntax för att uttrycka RDF-grafer."
-          }
-        },
-        {
-          "value": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
-          "label": {
-            "en": "Microsoft Excel XML (.xlsx)",
-            "sv": "Microsoft Excel XML (.xlsx)"
-          },
-          "description": {
-            "en": "Office Open XML Spreadsheet is a zipped, XML-based file format developed by Microsoft, standardized in ECMA-376 and later in ISO/IEC 29500.",
-            "sv": "Office Open XML Spreadsheet är en zippad, XML-baserat filformat utvecklat av Microsoft, standardiserad i ECMA-376 och senare i ISO/IEC 29500."
-          }
-        },
-        {
-          "value": "application/vnd.oasis.opendocument.spreadsheet",
-          "label": {
-            "en": "OpenDocument Spreadsheet (.ods)",
-            "sv": "OpenDocument Spreadsheet (.ods)"
-          },
-          "description": {
-            "en": "The Open Document Format for spreadsheets is an XML based format standardized first by OASIS and later by ISO/IEC: ISO/IEC 26300:2006/Amd 1:2012 — Open Document Format for Office Applications (OpenDocument) v1.1.",
-            "sv": "Open Document Format (Öppna Dokumentformatet) för kalkylark är ett XML-baserat format standardiserat först av OASIS och senare av ISO/IEC: ISO/IEC 26300:2006/Amd 1:2012 — Open Document Format for Office Applications (OpenDocument) v1.1."
-          }
-        },
-        {
-          "value": "application/rdf+xml",
-          "label": {
-            "en": "RDF/XML (.rdf)",
-            "sv": "RDF/XML (.rdf)"
-          },
-          "description": {
-            "en": "This is an XML syntax for RDF as introduced in the RDF/XML Syntax Specification by W3C in 2004.",
-            "sv": "Detta är ett XML-syntax för RDF som introducerades i specifikationen RDF/XML Syntax Specification av W3C år 2004."
-          }
-        },
-        {
-          "value": "application/sparql-query",
-          "label": {
-            "en": "RDF query (SPARQL)",
-            "sv": "RDF sökning (SPARQL)"
-          },
-          "description": {
-            "en": "SPARQL (pronounced \"sparkle\", an acronym for SPARQL Protocol and RDF Query Language) is an RDF query language, that is, a query language for databases, able to retrieve and manipulate data stored in Resource Description Framework format.",
-            "sv": "SPARQL (uttalat \"sparkle\", är en akronym för SPARQL Protocol and RDF Query Language) är ett RDF query-språk, som är, ett frågespråk för databaser, kunnigt att hämta och manipulera data lagrat i Resource Description Framework-formatet."
-          }
-        },
-        {
-          "value": "text/turtle",
-          "description": {
-            "en": "Turtle is a syntax for RDF that allows an RDF graph to be completely written in a compact and natural text form, with abbreviations for common usage patterns and datatypes.",
-            "sv": "Turtle är ett syntax för RDF som tillåter en RDF-graf att bli helt skriven i en kompakt och naturlig textform, med förkortningar för vanliga användningsmönster och datatyper."
-          },
-          "label": {
-            "en": "RDF as Turtle (.ttl)",
-            "sv": "RDF som Turtle (.ttl)"
-          }
-        }
-      ],
-      "cardinality": {
-        "min": 0,
-        "pref": 1,
-        "max": 1
-      },
-      "styles": [
-        "strictmatch"
-      ],
-      "id": "dcat:format-group_di_choices"
-    },
-    {
-      "type": "choice",
-      "nodetype": "LITERAL",
-      "property": "dcterms:format",
-      "label": {
-        "en": "Geographical mediatypes",
-        "sv": "Geografiska mediatyper"
-      },
-      "description": {
-        "en": "This list contains the media types applications should use for spatial data sets in INSPIRE, in particular in INSPIRE download services. Whenever sub-types exist that are registered with IANA or are in the registration process these are used. For all other formats, no commonly used sub-type exists and INSPIRE has to - at least temporarily - define their own types. In accordance with the rules for media types in RFC 2046/RFC 4288, these start with x-. In addition to the data-oriented mediatypes we also list four protocoll oriented formats (application/vnd.ogc.[wms|wmts|wfs|wcs]_xml) to cover for the cases where a single protocoll-oriented distribution is created for a dataset rather one per data format.",
-        "sv": "Denna lista innehåller mediatyper som bör användas för datamängder inom INSPIRE, mer specifikt i INSPIREs nedladdningstjänster. Närhelst etablerade IANA mediatyper finns används dessa. När mediatyper saknas har INSPIRE - i allafall temporärt - definierat egna mediatyper. I enlighet med reglerna RFC 2046/RFC 4288 startas subtypen för dessa med x-. Utöver de dataorienterade mediatyperna listas också fyra protokollorienterade format (application/vnd.ogc.[wms|wmts|wfs|wcs]_xml) för att täcka in de fall när man skapar upp enbart en distribution som motsvarar protokollet istället för en distribution per format. "
-      },
-      "cardinality": {
-        "min": 0,
-        "pref": 0,
-        "max": 1
-      },
-      "choices": [
-        {
-          "value": "application/x-shapefile",
-          "label": {
-            "en": "x-shapefile",
-            "sv": "x-shapefile"
-          },
-          "description": {
-            "en": "The media type shall be used for Esri shapefiles. The file is a zip archive that contains at least the shp, shx and dbf files.",
-            "sv": "Mediatypen ska användas för Esri shapefiles. Filen är ett zip-arkiv som innehåller åtminstone shp-, shx- och dbf-filer."
-          }
-        },
-        {
-          "value": "application/x-filegdb",
-          "label": {
-            "en": "x-filegdb",
-            "sv": "xfilegdb"
-          },
-          "description": {
-            "en": "The media type shall be used for Esri file geodatabases. The file is a zip archive that contains the gdb directory.",
-            "sv": "Mediatypen ska användas för Esri geodatabas-filer. Filen är ett zip-arkiv som innehåller gdp-filkatalogen."
-          }
-        },
-        {
-          "value": "application/gml+xml",
-          "label": {
-            "en": "gml+xml",
-            "sv": "gml+xml"
-          }
-        },
-        {
-          "value": "application/x-gmz",
-          "label": {
-            "en": "x-gmz",
-            "sv": "x-gmz"
-          },
-          "description": {
-            "en": "The media type shall be used for a zip archive that contains one or more GML documents.",
-            "sv": "Mediatypen ska användas för ett zip-arkiv som innehåller ett eller fler GML-dokument."
-          }
-        },
-        {
-          "value": "application/vnd.google-earth.kml+xml",
-          "label": {
-            "en": "vnd.google-earth.kml+xml",
-            "sv": "vnd.google-earth.kml+xml"
-          }
-        },
-        {
-          "value": "application/vnd.google-earth.kmz",
-          "label": {
-            "en": "vnd.google-earth.kmz",
-            "sv": "vnd.google-earth.kmz"
-          }
-        },
-        {
-          "value": "application/x-ecw",
-          "label": {
-            "en": "x-ecw",
-            "sv": "x-ecw"
-          },
-          "description": {
-            "en": "The media type shall be used for Enhanced Compressed Wavelet (ECW) files.",
-            "sv": "Mediatypen ska användas för Enhanced Compressed Wavelet (ECW)-filer."
-          }
-        },
-        {
-          "value": "application/x-ascii-grid",
-          "label": {
-            "en": "x-ascii-grid",
-            "sv": "x-ascii-grid"
-          },
-          "description": {
-            "en": "The media type shall be used for ASCII GRID files.",
-            "sv": "Mediatypen ska användas för ASCII GRID-filer."
-          }
-        },
-        {
-          "value": "application/x-oracledump",
-          "label": {
-            "en": "x-oracledump",
-            "sv": "x-oracledump"
-          },
-          "description": {
-            "en": "The media type shall be used for Oracle dumps.",
-            "sv": "Mediatypen ska användas för Oracle-säkerhetskopieringar."
-          }
-        },
-        {
-          "value": "application/x-las",
-          "label": {
-            "en": "x-las",
-            "sv": "x-las"
-          },
-          "description": {
-            "en": "The media type shall be used for the LASer file format (LAS).",
-            "sv": "Mediatypen ska användas för filformatet LASer,"
-          }
-        },
-        {
-          "value": "application/x-laz",
-          "label": {
-            "en": "x-laz",
-            "sv": "x-laz"
-          },
-          "description": {
-            "en": "The media type shall be used for compressed LAS files.",
-            "sv": "Mediatypen ska användas för komprimerade LAS-filer."
-          }
-        },
-        {
-          "value": "application/x-tab",
-          "label": {
-            "en": "x-tab",
-            "sv": "x-tab"
-          },
-          "description": {
-            "en": "The media type shall be used for the MapInfo TAB format. The file is a zip archive that contains at least the tab, dat, map and id files.",
-            "sv": "Mediatypen ska användas för formatet MapInfo TAB. Filen är ett zip-arkiv som innehåller åtminstone tab-, dat-, map- och id-filer."
-          }
-        },
-        {
-          "value": "application/x-tab-raster",
-          "label": {
-            "en": "x-tab-raster",
-            "sv": "x-tab-raster"
-          },
-          "description": {
-            "en": "The media type shall be used for the MapInfo Raster TAB format.",
-            "sv": "Mediatypen ska användas för formatet MapInfo Raster TAB."
-          }
-        },
-        {
-          "value": "application/x-worldfile",
-          "label": {
-            "en": "x-worldfile",
-            "sv": "x-worldfile"
-          },
-          "description": {
-            "en": "The media type shall be used for world files. The file extension usually depends on the format of the associated image, e.g. .jgw for JPEG (2000) or .tfw for TIFF.",
-            "sv": "Mediatypen ska användas för world-filer. Filändelsen är oftast beroende på formatet av den associerade bilden, t.ex. .jgw för JPEG (2000) eller .tfw för TIFF."
-          }
-        },
-        {
-          "value": "application/vnd.sqlite3",
-          "label": {
-            "en": "vnd.sqlite3",
-            "sv": "vnd.sqlite3"
-          }
-        },
-        {
-          "value": "application/geopackage+sqlite3",
-          "label": {
-            "en": "geopackage+sqlite3",
-            "sv": "geopackage+sqlite3"
-          }
-        },
-        {
-          "value": "image/tiff",
-          "label": {
-            "en": "tiff",
-            "sv": "tiff"
-          }
-        },
-        {
-          "value": "image/jp2",
-          "label": {
-            "en": "jp2",
-            "sv": "jp2"
-          }
-        },
-        {
-          "value": "application/vnd.ogc.wms_xml",
-          "label": {
-            "en": "WMS service",
-            "sv": "WMS-tjänst"
-          }
-        },
-        {
-          "value": "application/vnd.ogc.wmts_xml",
-          "label": {
-            "en": "WMTS service",
-            "sv": "WMTS-tjänst"
-          }
-        },
-        {
-          "value": "application/vnd.ogc.wfs_xml",
-          "label": {
-            "en": "WFS service",
-            "sv": "WFS-tjänst"
-          }
-        },
-        {
-          "value": "application/vnd.ogc.wcs_xml",
-          "label": {
-            "en": "WCS service",
-            "sv": "WCS-tjänst"
-          }
-        }
-      ],
-      "styles": [
-        "strictmatch"
-      ],
-      "id": "geodcat:dcterms:format-INSPIRE"
     },
     {
       "type": "choice",

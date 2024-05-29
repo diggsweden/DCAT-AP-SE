@@ -5,7 +5,7 @@
     "en": "Version",
     "sv": "Version"
   },
-  "property": "owl:versionInfo",
+  "property": "dcat:version",
   "cardinality": {
     "min": 0,
     "pref": 0,

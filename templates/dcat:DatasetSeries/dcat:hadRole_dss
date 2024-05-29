@@ -17,6 +17,6 @@
   "constraints": {
      "rdf:type": "skos:Concept",
      "skos:inScheme": "https://www.dataportal.se/terminology/resource-role"
-  }
+  },
   "pattern": "https://www.dataportal.se/terminology/resource-role/.*"
 }

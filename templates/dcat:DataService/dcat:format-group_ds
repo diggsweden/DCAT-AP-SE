@@ -5,8 +5,8 @@
     "sv": "Format"
   },
   "description": {
-    "en": "This property refers to the data format of the distribution.",
-    "sv": "Denna egenskap motsvarar distributionens format."
+    "en": "This property refers to the data format of the data service.",
+    "sv": "Denna egenskap motsvarar datatjänstens format."
   },
   "cardinality": {
     "min": 1,
