@@ -18,8 +18,11 @@ Vi siktar på att ha fyra möten som är planerade att ungefär innefatta följa
 - Tredje mötet 17/5 kl. 13-15 - Framtaget förslag gås igenom.
     - [Presentation](https://docs.google.com/presentation/d/1RU-NtkQFu1FN1qbUkSpNif2TKvS7cM9rZL1qpz1x-Jg/edit?usp=sharing)
     - [Mötesanteckningar](meet3.pdf)
-- Fjärde mötet 30/5 kl. 10-12 - Beslut
+- Fjärde mötet 30/5 kl. 10-12 - Framtaget förslag gås igenom fortsättning.
     - [Presentation](https://docs.google.com/presentation/d/1D-XCxAFr116w5XYHDaBb1ISQSb41D3G7Q81hOFIkknI/edit?usp=sharing)
+    - [Mötesanteckningar](meet4.pdf)
+- Femte mötet 17/6 kl. 13-14:30 - Beslut
+    - Presentation
     - Mötesanteckningar
 
 ## Referensgrupp
