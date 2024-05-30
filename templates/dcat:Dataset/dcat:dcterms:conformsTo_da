@@ -11,6 +11,9 @@
   "constraints": {
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "dcterms:Standard"
   },
+  "cardinality": {
+    "pref": 1
+  },
   "type": "choice",
   "automatic": true,
   "nodetype": "URI"

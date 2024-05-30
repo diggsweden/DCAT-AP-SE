@@ -4,6 +4,10 @@
     "en": "Data service",
     "sv": "Datatjänst"
   },
+  "description": {
+    "en": "A collection of operations that provides access to one or more datasets or data processing functions.",
+    "sv": "En samling operationer som ger tillgång till en eller flera datamängder eller tjänster för data processning."
+  },
   "constraints": {
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "http://www.w3.org/ns/dcat#DataService"
   },

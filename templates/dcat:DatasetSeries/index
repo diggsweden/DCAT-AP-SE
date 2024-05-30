@@ -4,6 +4,10 @@
     "en": "Dataset series",
     "sv": "Datamängdsserie"
   },
+  "description": {
+    "en": "A collection of datasets that are published separately, but share some characteristics that group them.",
+    "sv": "En samling datamängder som publiceras separat men grupperas utifrån en gemensam karaktär."
+  },
   "constraints": {
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "http://www.w3.org/ns/dcat#DatasetSeries"
   },

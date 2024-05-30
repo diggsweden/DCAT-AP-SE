@@ -77,5 +77,9 @@
   "label": {
     "en": "Agent",
     "sv": "Aktör"
+  },
+  "description": {
+    "en": "Any entity carrying out actions with respect to the entities Catalogue, Dataset, Data Service or Dataset Series.",
+    "sv": "En aktör som bedriver aktiviteter i förhållande till entiteterna katalog, datamängd, datatjänst eller datamängdsserie."
   }
 }

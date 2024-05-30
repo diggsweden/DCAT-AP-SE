@@ -1656,6 +1656,10 @@
         "en": "Catalog",
         "sv": "Katalog"
       },
+      "description": {
+        "en": "A curated collection of metadata about Datasets or Data Services.",
+        "sv": "En kurerad mängd metadata om datamängder eller datatjänster."
+      },
       "constraints": {
         "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "http://www.w3.org/ns/dcat#Catalog"
       },
@@ -2008,6 +2012,10 @@
       "label": {
         "en": "Data service",
         "sv": "Datatjänst"
+      },
+      "description": {
+        "en": "A collection of operations that provides access to one or more datasets or data processing functions.",
+        "sv": "En samling operationer som ger tillgång till en eller flera datamängder eller tjänster för data processning."
       },
       "constraints": {
         "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "http://www.w3.org/ns/dcat#DataService"
@@ -2413,6 +2421,10 @@
       "label": {
         "en": "Dataset",
         "sv": "Datamängd"
+      },
+      "description": {
+        "en": "A collection of data, published or curated by a single agent, and available for access or download in one or more representations.",
+        "sv": "En samling data, publicerad eller förvaltad av en enskild aktör, tillgänglig för åtkomst eller nedladdning i en eller flera representationer."
       },
       "constraints": {
         "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "http://www.w3.org/ns/dcat#Dataset"
@@ -2946,6 +2958,9 @@
       },
       "constraints": {
         "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "dcterms:Standard"
+      },
+      "cardinality": {
+        "pref": 1
       },
       "type": "choice",
       "automatic": true,
@@ -3849,6 +3864,10 @@
         "en": "Dataset series",
         "sv": "Datamängdsserie"
       },
+      "description": {
+        "en": "A collection of datasets that are published separately, but share some characteristics that group them.",
+        "sv": "En samling datamängder som publiceras separat men grupperas utifrån en gemensam karaktär."
+      },
       "constraints": {
         "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "http://www.w3.org/ns/dcat#DatasetSeries"
       },
@@ -4574,6 +4593,10 @@
         "en": "Distribution",
         "sv": "Distribution"
       },
+      "description": {
+        "en": "A specific representation of a dataset. A dataset might be available in multiple serializations that may differ in various ways, including natural language, media-type or format, schematic organization, temporal and spatial resolution, level of detail or profiles (which might specify any or all of the above).",
+        "sv": "En specifik representation av en datamängd. En datamängd kan vara tillgänlig i flera olika varianter som skiljer sig åt i naturligt språk, mediatyp eller format, schematisk organisation, tidsmässig eller rumslig upplösning eller detaljeringsgrad via profiler (som kan specificera någon eller flera av de tidigare nämnda dimensionerna)."
+      },
       "items": [
         "dcat:dcterms:title_di",
         "dcat:dcterms:description_di",
@@ -4600,7 +4623,6 @@
         "min": 0,
         "pref": 0
       },
-      "description": {},
       "nodetype": "URI",
       "id": "dcat:Distribution"
     },
@@ -5137,8 +5159,8 @@
         "sv": "Kontaktuppgift"
       },
       "description": {
-        "en": "This property contains contact information that can be used for flagging errors in the Dataset / Data service or sending comments",
-        "sv": "Egenskapen innehåller kontaktuppgifter som kan användas för att flagga fel i datamängden / datatjänsten eller för att skicka kommentarer"
+        "en": "Contact information to an organization.",
+        "sv": "Kontaktinformation till en organisation."
       },
       "items": [
         "vc:kindIndOrOrg",
@@ -5493,6 +5515,10 @@
       "label": {
         "en": "Agent",
         "sv": "Aktör"
+      },
+      "description": {
+        "en": "Any entity carrying out actions with respect to the entities Catalogue, Dataset, Data Service or Dataset Series.",
+        "sv": "En aktör som bedriver aktiviteter i förhållande till entiteterna katalog, datamängd, datatjänst eller datamängdsserie."
       },
       "id": "dcat:foaf:Agent"
     },

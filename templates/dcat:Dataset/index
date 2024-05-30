@@ -4,6 +4,10 @@
     "en": "Dataset",
     "sv": "Datamängd"
   },
+  "description": {
+    "en": "A collection of data, published or curated by a single agent, and available for access or download in one or more representations.",
+    "sv": "En samling data, publicerad eller förvaltad av en enskild aktör, tillgänglig för åtkomst eller nedladdning i en eller flera representationer."
+  },
   "constraints": {
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "http://www.w3.org/ns/dcat#Dataset"
   },

@@ -115,7 +115,7 @@ Enligt öppna datalagen, se [DIGGs vägledning](https://www.digg.se/kunskap-och-
 * För värdefulla datatjänster måste man peka ut den datamängd som datatjänst stödjer via fältet [försörjer datamängd](https://docs.dataportal.se/dcat/sv/#dcat_DataService-dcat_servesDataset) (det finns inga krav på självständiga datatjänster).
 
 ## 15. Datamängdsseriers dimensioner
-De enskilda datamängder som ingår i en datamängdsserie ska alla ha samma karaktär och självständiga. Det ska också vara givet hur man kombinerar datamängderna i en serie för att få tillgång till en större mängd data. Uppdelningen i enskilda datamängder förväntas ske enligt en enhetlig princip, en dimension. Följande dimensioner har beaktats och bedömts som lämpliga att dela upp data enligt:
+De enskilda datamängder som ingår i en datamängdsserie ska alla ha samma karaktär men samtidigt vara självständiga. Det ska också vara givet hur man kombinerar datamängderna i en serie för att få tillgång till en större mängd data. Uppdelningen i enskilda datamängder förväntas ske enligt en enhetlig princip, en dimension. Följande dimensioner har beaktats och bedömts som lämpliga att dela upp data enligt:
 
 1. Tidsdimension - varje datamängd i serien motsvarar typiskt data för ett tidsintervall, t.ex. en månad, ett kvartal eller ett år.
 2. Rumsdimension - varje datamängd motsvarar ett avskilt geografiskt område, t.ex. en kommun, en region eller landsdel.

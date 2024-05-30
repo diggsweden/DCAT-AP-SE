@@ -1,38 +1,41 @@
 {
-  "type": "group",
-  "constraints": {
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "http://www.w3.org/ns/dcat#Distribution"
-  },
-  "label": {
-      "en": "Distribution",
-      "sv": "Distribution"
-  },
-  "items": [
-    "dcat:dcterms:title_di",
-    "dcat:dcterms:description_di",
-    "dcat:accessURL_di",
-    "dcat:downloadURL_di",
-    "dcat:format-group_di",
-    "dcat:accessService",
-    "dcat:temporalResolution_di",
-    "dcat:spatialResolutionInMeters_di",
-    "dcat:byteSize_di",
-    "dcat:dcterms:language_di",
-    "dcat:dcterms:issued_di",
-    "dcat:dcterms:modified_di",
-    "dcat:adms:status_di",
-    "dcatap:availability",
-    "dcatap:applicableLegislation_di",
-    "dcat:dcterms:license_di",
-    "dcat:odrs:RSSA",
-    "dcat:spdx:checksum_di",
-    "dcat:foaf:page_di",
-    "dcat:dcterms:conformsTo_di"
-  ],
-  "cardinality": {
-    "min": 0,
-    "pref": 0
-  },
-  "description": {},
-  "nodetype": "URI"
+    "type": "group",
+    "constraints": {
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "http://www.w3.org/ns/dcat#Distribution"
+    },
+    "label": {
+        "en": "Distribution",
+        "sv": "Distribution"
+    },
+    "description": {
+        "en": "A specific representation of a dataset. A dataset might be available in multiple serializations that may differ in various ways, including natural language, media-type or format, schematic organization, temporal and spatial resolution, level of detail or profiles (which might specify any or all of the above).",
+        "sv": "En specifik representation av en datamängd. En datamängd kan vara tillgänlig i flera olika varianter som skiljer sig åt i naturligt språk, mediatyp eller format, schematisk organisation, tidsmässig eller rumslig upplösning eller detaljeringsgrad via profiler (som kan specificera någon eller flera av de tidigare nämnda dimensionerna)."
+    },
+    "items": [
+        "dcat:dcterms:title_di",
+        "dcat:dcterms:description_di",
+        "dcat:accessURL_di",
+        "dcat:downloadURL_di",
+        "dcat:format-group_di",
+        "dcat:accessService",
+        "dcat:temporalResolution_di",
+        "dcat:spatialResolutionInMeters_di",
+        "dcat:byteSize_di",
+        "dcat:dcterms:language_di",
+        "dcat:dcterms:issued_di",
+        "dcat:dcterms:modified_di",
+        "dcat:adms:status_di",
+        "dcatap:availability",
+        "dcatap:applicableLegislation_di",
+        "dcat:dcterms:license_di",
+        "dcat:odrs:RSSA",
+        "dcat:spdx:checksum_di",
+        "dcat:foaf:page_di",
+        "dcat:dcterms:conformsTo_di"
+    ],
+    "cardinality": {
+        "min": 0,
+        "pref": 0
+    },
+    "nodetype": "URI"
 }
