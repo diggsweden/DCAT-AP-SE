@@ -5,8 +5,8 @@
     "sv": "Ändringsdatum"
   },
   "description": {
-    "en": "This property corresponds to the modification date of the data in the the Dataset series. This must be the same as the earliest modification date of the datasets in the series.",
-    "sv": "Datum för senaste ändring av datat i datamängdsserien. Detta ska vara samma datum som det tidigaste modifieringsdatumet hos datamängderna i serien."
+    "en": "This property corresponds to the modification date of the data in the the Dataset series. This must be the same as the latest modification date of the datasets in the series.",
+    "sv": "Datum för senaste ändring av datat i datamängdsserien. Detta ska vara samma datum som det senaste modifieringsdatumet hos datamängderna i serien."
   },
   "type": "text",
   "nodetype": "DATATYPE_LITERAL",

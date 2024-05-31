@@ -7,8 +7,8 @@
       "sv": "Licens"
   },
   "description": {
-    "en": "In Sweden we require the license on the catalog to be CC0-1.0 (Public domain), i.e. to use the URI http://creativecommons.org/publicdomain/zero/1.0/",
-    "sv": "I Sverige kräver vi licensen CC0-1.0 (Public domain) på katalogen, dvs man ska använda URI:n http://creativecommons.org/publicdomain/zero/1.0/"
+    "en": "In Sweden we require the license on the metadata in the catalog to be CC0-1.0 (Public domain), i.e. to use the URI http://creativecommons.org/publicdomain/zero/1.0/",
+    "sv": "I Sverige kräver vi licensen CC0-1.0 (Public domain) på metadata i katalogen, dvs man ska använda URI:n http://creativecommons.org/publicdomain/zero/1.0/"
   },
   "cardinality": {
     "min": 1,

@@ -6,8 +6,8 @@
         "sv": "Katalog"
    },
   "description": {
-    "en": "A curated collection of metadata about Datasets or Data Services.",
-    "sv": "En kurerad mängd metadata om datamängder eller datatjänster."
+    "en": "A managed collection of metadata about Datasets and/or Data Services.",
+    "sv": "En förvaltad mängd metadata om datamängder och/eller datatjänster."
   },
   "constraints": {
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "http://www.w3.org/ns/dcat#Catalog"

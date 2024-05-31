@@ -8,8 +8,8 @@
         "sv": "Distribution"
     },
     "description": {
-        "en": "A specific representation of a dataset. A dataset might be available in multiple serializations that may differ in various ways, including natural language, media-type or format, schematic organization, temporal and spatial resolution, level of detail or profiles (which might specify any or all of the above).",
-        "sv": "En specifik representation av en datamängd. En datamängd kan vara tillgänlig i flera olika varianter som skiljer sig åt i naturligt språk, mediatyp eller format, schematisk organisation, tidsmässig eller rumslig upplösning eller detaljeringsgrad via profiler (som kan specificera någon eller flera av de tidigare nämnda dimensionerna)."
+        "en": "A specific representation of a dataset. A dataset might be available in multiple serializations that may differ in various ways, including natural language, format, schematic organization, temporal and spatial resolution, level of detail or profiles (which might specify any or all of the above).",
+        "sv": "En specifik representation av en datamängd. En datamängd kan vara tillgänlig i flera olika varianter som skiljer sig åt i naturligt språk, format, schematisk organisation, tidsmässig eller rumslig upplösning eller detaljeringsgrad via profiler (som kan specificera någon eller flera av de tidigare nämnda dimensionerna)."
     },
     "items": [
         "dcat:dcterms:title_di",

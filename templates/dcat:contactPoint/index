@@ -6,8 +6,8 @@
     "sv": "Kontaktuppgift"
   },
   "description": {
-    "en": "Contact information to an organization.",
-    "sv": "Kontaktinformation till en organisation."
+    "en": "Contact information to an individual or organization.",
+    "sv": "Kontaktinformation till en individ eller organisation."
   },
   "items": [
     "vc:kindIndOrOrg",
