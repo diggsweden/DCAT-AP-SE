@@ -1657,8 +1657,8 @@
         "sv": "Katalog"
       },
       "description": {
-        "en": "A curated collection of metadata about Datasets or Data Services.",
-        "sv": "En kurerad mängd metadata om datamängder eller datatjänster."
+        "en": "A managed collection of metadata about Datasets and/or Data Services.",
+        "sv": "En förvaltad mängd metadata om datamängder och/eller datatjänster."
       },
       "constraints": {
         "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "http://www.w3.org/ns/dcat#Catalog"
@@ -1871,8 +1871,8 @@
         "sv": "Licens"
       },
       "description": {
-        "en": "In Sweden we require the license on the catalog to be CC0-1.0 (Public domain), i.e. to use the URI http://creativecommons.org/publicdomain/zero/1.0/",
-        "sv": "I Sverige kräver vi licensen CC0-1.0 (Public domain) på katalogen, dvs man ska använda URI:n http://creativecommons.org/publicdomain/zero/1.0/"
+        "en": "In Sweden we require the license on the metadata in the catalog to be CC0-1.0 (Public domain), i.e. to use the URI http://creativecommons.org/publicdomain/zero/1.0/",
+        "sv": "I Sverige kräver vi licensen CC0-1.0 (Public domain) på metadata i katalogen, dvs man ska använda URI:n http://creativecommons.org/publicdomain/zero/1.0/"
       },
       "cardinality": {
         "min": 1,
@@ -2015,7 +2015,7 @@
       },
       "description": {
         "en": "A collection of operations that provides access to one or more datasets or data processing functions.",
-        "sv": "En samling operationer som ger tillgång till en eller flera datamängder eller tjänster för data processning."
+        "sv": "En samling operationer som ger tillgång till en eller flera datamängder eller tjänster för databearbetning."
       },
       "constraints": {
         "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "http://www.w3.org/ns/dcat#DataService"
@@ -4119,8 +4119,8 @@
         "sv": "Ändringsdatum"
       },
       "description": {
-        "en": "This property corresponds to the modification date of the data in the the Dataset series. This must be the same as the earliest modification date of the datasets in the series.",
-        "sv": "Datum för senaste ändring av datat i datamängdsserien. Detta ska vara samma datum som det tidigaste modifieringsdatumet hos datamängderna i serien."
+        "en": "This property corresponds to the modification date of the data in the the Dataset series. This must be the same as the latest modification date of the datasets in the series.",
+        "sv": "Datum för senaste ändring av datat i datamängdsserien. Detta ska vara samma datum som det senaste modifieringsdatumet hos datamängderna i serien."
       },
       "type": "text",
       "nodetype": "DATATYPE_LITERAL",
@@ -4594,8 +4594,8 @@
         "sv": "Distribution"
       },
       "description": {
-        "en": "A specific representation of a dataset. A dataset might be available in multiple serializations that may differ in various ways, including natural language, media-type or format, schematic organization, temporal and spatial resolution, level of detail or profiles (which might specify any or all of the above).",
-        "sv": "En specifik representation av en datamängd. En datamängd kan vara tillgänlig i flera olika varianter som skiljer sig åt i naturligt språk, mediatyp eller format, schematisk organisation, tidsmässig eller rumslig upplösning eller detaljeringsgrad via profiler (som kan specificera någon eller flera av de tidigare nämnda dimensionerna)."
+        "en": "A specific representation of a dataset. A dataset might be available in multiple serializations that may differ in various ways, including natural language, format, schematic organization, temporal and spatial resolution, level of detail or profiles (which might specify any or all of the above).",
+        "sv": "En specifik representation av en datamängd. En datamängd kan vara tillgänlig i flera olika varianter som skiljer sig åt i naturligt språk, format, schematisk organisation, tidsmässig eller rumslig upplösning eller detaljeringsgrad via profiler (som kan specificera någon eller flera av de tidigare nämnda dimensionerna)."
       },
       "items": [
         "dcat:dcterms:title_di",
@@ -5159,8 +5159,8 @@
         "sv": "Kontaktuppgift"
       },
       "description": {
-        "en": "Contact information to an organization.",
-        "sv": "Kontaktinformation till en organisation."
+        "en": "Contact information to an individual or organization.",
+        "sv": "Kontaktinformation till en individ eller organisation."
       },
       "items": [
         "vc:kindIndOrOrg",
