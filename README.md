@@ -1,5 +1,7 @@
 # DCAT-AP-SE
 
+In this repository we maintain the Swedish adaption to DCAT-AP, referred to as DCAT-AP-SE. The specification is maintained by [Agency for digital government (DIGG)](https://www.digg.se/en), you will find the latest version of the documentation on [docs.dataportal.se/dcat](https://docs.dataportal.se/dcat/). Please note only the [formal specification document](https://docs.dataportal.se/dcat/en/) is available in english at this time.
+
 I det här Github-arkivet hanterar vi den svenska anpassningen till DCAT-AP som benämns DCAT-AP-SE. Specifikationen förvaltas av [Myndigheten för digital förvaltning (DIGG)](https://www.digg.se) och aktuell dokumentation finner ni på [docs.dataportal.se/dcat](https://docs.dataportal.se/dcat/).
 
 Under våren 2024 påbörjas ett arbete med att uppdatera till version 3.0 av DCAT-AP. Se de olika versionerna och tillhörande arbetsprocesser:
