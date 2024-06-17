@@ -22,7 +22,7 @@ Vi siktar på att ha fyra möten som är planerade att ungefär innefatta följa
     - [Presentation](https://docs.google.com/presentation/d/1D-XCxAFr116w5XYHDaBb1ISQSb41D3G7Q81hOFIkknI/edit?usp=sharing)
     - [Mötesanteckningar](meet4.pdf)
 - Femte mötet 17/6 kl. 13-14:30 - Beslut
-    - Presentation
+    - [Presentation](https://docs.google.com/presentation/d/1q2aUt8yoyxfP9WHmldZZNPhv--q4IaKLFzn_-dGaKbs/edit?usp=sharing)
     - Mötesanteckningar
 
 ## Referensgrupp
