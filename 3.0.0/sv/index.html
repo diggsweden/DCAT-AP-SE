@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/icon?family=Material+Icons">
+    <title>DCAT-AP-SE version 3.0.0</title>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/default.min.css">
+    <link rel="stylesheet" type="text/css" href="../../libs/style.css">
+    <script src="https://unpkg.com/mermaid@8.4.6/dist/mermaid.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+</head>
+<body class="h-entry rdforms-specs">
+<div class="head">
+    <h1 class="title">DCAT-AP-SE version 3.0.0</h1>
+    <h2 class="subtitle">Förtydlingar, översättningar och rekommendationer av DCAT-AP för Sverige.</h2>
+    <div>
+        <dl>
+            <dt>Publiceringsdatum:</dt>
+            <dd>17 Juni 2024</dd>
+            <dt>Senaste versionen:</dt>
+            <dd><a class="u-url" href="/dcat/sv/">https://docs.dataportal.se/dcat/sv/</a></dd>
+            <dt>Denna version:</dt>
+            <dd><a class="u-url" href="/dcat/3.0.0/sv">https://docs.dataportal.se/dcat/3.0.0/sv/</a></dd>
+            <dt>Denna version på engelska:</dt>
+            <dd><a class="u-url" href="/dcat/3.0.0/en">https://docs.dataportal.se/dcat/3.0.0/en/</a></dd>
+            <dt>Tidigare stabil version:</dt>
+            <dd><a href="/dcat/2.2.0/sv">https://docs.dataportal.se/dcat/2.2.0/sv</a></dd>
+            <dt class="editor">Redaktör:</dt>
+            <dd class="editor p-author h-card vcard"><a class="p-name fn u-url url"
+                                                        href="mailto:matthias@metasolutions.se">Matthias Palmér</a> - <a href="https://www.digg.se/">Myndigheten för digital förvaltning</a> och <a href="https://entryscape.com">MetaSolutions AB</a></dd>
+            <dt class="editor">Med bidrag från referensgruppen (i alfabetisk ordning):</dt>
+            <dd class="editor p-author h-card vcard">Benny Lund - Bolagsverket</dd>
+            <dd class="editor p-author h-card vcard">Cilla Öhnfeldt - Naturvårdsverket</dd>
+            <dd class="editor p-author h-card vcard">Edris Yaghob - Svenska kraftnät</dd>
+            <dd class="editor p-author h-card vcard">Fredrik Emanuelsson - Riksarkivet</dd>
+            <dd class="editor p-author h-card vcard">Fredrik Erikssson - VGR</dd>
+            <dd class="editor p-author h-card vcard">Fredrik Persäter - Lantmäteriet</dd>
+            <dd class="editor p-author h-card vcard">Johanna Fröjdenlund Runarsson - SKR</dd>
+            <dd class="editor p-author h-card vcard">Lars Näslund - Trafikverket</dd>
+            <dd class="editor p-author h-card vcard">Leon Lindbäck - Skolverket</dd>
+            <dd class="editor p-author h-card vcard">Manne Andersson - E-hälsomyndigheten</dd>
+            <dd class="editor p-author h-card vcard">Marcus Smith - Riksantikvarieämbetet</dd>
+            <dd class="editor p-author h-card vcard">Markus Gylling - Riksantikvarieämbetet</dd>
+            <dd class="editor p-author h-card vcard">Mattias Ekhem - Myndigheten för digital förvaltning</dd>
+            <dd class="editor p-author h-card vcard">Olof Olsson - SND</dd>
+            <dd class="editor p-author h-card vcard">Ricardo Curiel Sanchez - VGR</dd>
+            <dd class="editor p-author h-card vcard">Susanne Gullberg Brännström - SCB</dd>
+            <dd class="editor p-author h-card vcard">Tomas Lindberg - SGU</dd>
+            <dd class="editor p-author h-card vcard">Tomas Monsén - Töreboda kommun</dd>
+            <dd class="editor p-author h-card vcard">Ulrika Domellöf-Mattsson - Myndigheten för digital förvaltning</dd>
+            <dt class="editor">Remissvar och återkopplingar:</dt>
+
+            <dt class="editor">Återkoppling:</dt>
+            <dd class="editor p-author h-card vcard"><a href="https://github.com/diggsweden/DCAT-AP-SE">GitHub diggsweden/DCAT-AP-SE</a> (<a href="https://github.com/diggsweden/DCAT-AP-SE/issues">ärenden</a>, <a href="https://github.com/diggsweden/DCAT-AP-SE/issues">pull requests</a>)</dd>
+            <dt class="editor">På uppdrag av:</dt>
+            <dd class="editor p-author h-card vcard"><a href="https://www.digg.se/">Myndigheten för digital förvaltning</a></dd>
+            <dt>Licens:</dt>
+            <dd><a href="http://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a></dd>
+        </dl>
+    </div>
+    <p class="copyright">Copyright © 2024 <a
+            href="https://digg.se">DIGG</a></p>
+    <hr title="Avdelare till header">
+</div>
+<nav id="toc"></nav>
+<main>
+    <section>
+        <p>DCAT-AP-SE är en metadataspecifikation som syftar till att beskriva datamängder. Mer specifikt är DCAT-AP-SE en svensk anpassning (en så kallad profil) av den europeiska metadataspecifikationen DCAT-AP. DCAT-AP är i sin tur en anpassning (profil) av den internationella rekommendationen DCAT som utges av W3C.</p>
+        <p>I diagrammet nedan visas endast de primära klasserna, relationer mellan dem samt deras obligatoriska och rekommenderade egenskaper. Notera att för läsbarhet så anges klasser och egenskaper med svenska namn både i rubriker och i diagrammet. De faktiska metadatauttrycken är listade i detalj under respektive rubrik.</p>
+        <div id="diagram" class="mermaid">
+            classDiagram
+
+            Katalog --> Datamängd : datamängd
+            Katalog --> Aktör : utgivare
+            Datamängd --> Datamängdsserie : i serie
+            Datamängd --> Aktör : utgivare
+            Distribution --> Datatjänst : åtkomst via datatjänst
+            Datamängdsserie --> Aktör : utgivare
+            Datatjänst --> Aktör : utgivare
+            Datamängdsserie --> Kontaktuppgift : kontaktuppgift
+            Datamängd --> Kontaktuppgift : kontaktuppgift
+            Katalog --> Datamängdsserie : datamängd
+            Katalog --> Datatjänst : datatjänst
+            Datamängd --> Distribution : distribution
+            class Katalog {
+              titel
+              beskrivning
+              licens
+              utgivningsdatum
+              språk
+              ändringsdatum
+              hemsida
+              taxonomi för tema
+            }
+
+            class Datamängd {
+              titel
+              beskrivning
+              nyckelord
+              kategori
+              tidsperiod
+              utgivningsdatum
+              åtkomsträttigheter
+              geografiskt område
+            }
+
+            class Datamängdsserie {
+              titel
+              beskrivning
+              nyckelord
+              kategori
+              tidsperiod
+              utgivningsdatum
+              geografiskt område
+            }
+
+            class Distribution {
+              webbadress för åtkomst
+              beskrivning
+              mediatyp
+              tillgänglighet
+              licens
+            }
+
+            class Datatjänst {
+              titel
+              åtkomstadress
+              beskrivning åtkomstadress
+              licens
+              åtkomsträttigheter
+            }
+
+            class Aktör {
+              namn
+              typ
+            }
+
+            class Kontaktuppgift {
+              typ
+              namn
+              e-postadress
+            }
+
+        </div>
+    </section>
+</main>
+</body>
+<script>mermaid.init(document.getElementById("diagram"));</script>
+<script src="../../libs/specs.js"></script>
+<script>
+    document.targetLanguage = 'sv';
+</script>
+<script src="../../libs/recommendations.js"></script>
+<script src="../../config.js"></script>
+<link rel="stylesheet" href="https://lankadedata.se/spec/assets/style.css">
+</html>

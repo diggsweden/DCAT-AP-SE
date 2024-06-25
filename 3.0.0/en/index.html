@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/icon?family=Material+Icons">
+    <title>DCAT-AP-SE version 3.0.0</title>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/default.min.css">
+    <link rel="stylesheet" type="text/css" href="../../libs/style.css">
+    <script src="https://unpkg.com/mermaid@8.4.6/dist/mermaid.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+</head>
+<body class="h-entry rdforms-specs">
+<div class="head">
+    <h1 class="title">DCAT-AP-SE version 3.0.0</h1>
+    <h2 class="subtitle">Clarifications, translations and explanations of DCAT-AP for Sweden.</h2>
+    <div>
+        <dl>
+            <dt>Publication date:</dt>
+            <dd>17:th of June 2024</dd>
+            <dt>Latest version:</dt>
+            <dd><a class="u-url" href="/dcat/en/">https://docs.dataportal.se/dcat/en/</a></dd>
+            <dt>This version:</dt>
+            <dd><a class="u-url" href="/dcat/3.0.0/en">https://docs.dataportal.se/dcat/3.0.0/en/</a></dd>
+            <dt>This version in Swedish:</dt>
+            <dd><a class="u-url" href="/dcat/3.0.0/sv">https://docs.dataportal.se/dcat/3.0.0/sv/</a></dd>
+            <dt>Previous stable version:</dt>
+            <dd><a class="u-url" href="/dcat/2.2.0/en">https://docs.dataportal.se/dcat/2.2.0/en/</a></dd>
+            <dt class="editor">Editor:</dt>
+            <dd class="editor p-author h-card vcard"><a class="p-name fn u-url url"
+                                                        href="mailto:matthias@metasolutions.se">Matthias Palmér</a> -  <a href="https://www.digg.se/">Swedish Agency for Digital Government</a> and <a href="https://entryscape.com">MetaSolutions AB</a></dd>
+            <dt class="editor">Contributions from the reference group (in alphabetic order):</dt>
+            <dd class="editor p-author h-card vcard">Benny Lund - Bolagsverket</dd>
+            <dd class="editor p-author h-card vcard">Cilla Öhnfeldt - Naturvårdsverket</dd>
+            <dd class="editor p-author h-card vcard">Edris Yaghob - Svenska kraftnät</dd>
+            <dd class="editor p-author h-card vcard">Fredrik Emanuelsson - Riksarkivet</dd>
+            <dd class="editor p-author h-card vcard">Fredrik Erikssson - VGR</dd>
+            <dd class="editor p-author h-card vcard">Fredrik Persäter - Lantmäteriet</dd>
+            <dd class="editor p-author h-card vcard">Johanna Fröjdenlund Runarsson - SKR</dd>
+            <dd class="editor p-author h-card vcard">Lars Näslund - Trafikverket</dd>
+            <dd class="editor p-author h-card vcard">Leon Lindbäck - Skolverket</dd>
+            <dd class="editor p-author h-card vcard">Manne Andersson - E-hälsomyndigheten</dd>
+            <dd class="editor p-author h-card vcard">Marcus Smith - Riksantikvarieämbetet</dd>
+            <dd class="editor p-author h-card vcard">Markus Gylling - Riksantikvarieämbetet</dd>
+            <dd class="editor p-author h-card vcard">Mattias Ekhem - Myndigheten för digital förvaltning</dd>
+            <dd class="editor p-author h-card vcard">Olof Olsson - SND</dd>
+            <dd class="editor p-author h-card vcard">Ricardo Curiel Sanchez - VGR</dd>
+            <dd class="editor p-author h-card vcard">Susanne Gullberg Brännström - SCB</dd>
+            <dd class="editor p-author h-card vcard">Tomas Lindberg - SGU</dd>
+            <dd class="editor p-author h-card vcard">Tomas Monsén - Töreboda kommun</dd>
+            <dd class="editor p-author h-card vcard">Ulrika Domellöf-Mattsson - Swedish Agency for Digital Government</dd>
+            <dt class="editor">Submissions of comments and general feedback:</dt>
+            <dt class="editor">Feedback:</dt>
+            <dd class="editor p-author h-card vcard"><a href="https://github.com/diggsweden/DCAT-AP-SE">GitHub diggsweden/DCAT-AP-SE</a> (<a href="https://github.com/diggsweden/DCAT-AP-SE/issues">issues</a>, <a href="https://github.com/diggsweden/DCAT-AP-SE/issues">pull requests</a>)</dd>
+            <dt class="editor">On behalf of:</dt>
+            <dd class="editor p-author h-card vcard"><a href="https://www.digg.se/">Swedish Agency for Digital Government</a></dd>
+            <dt>Licens:</dt>
+            <dd><a href="http://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a></dd>
+        </dl>
+    </div>
+    <p class="copyright">Copyright © 2024 <a
+            href="https://digg.se">DIGG</a></p>
+    <hr title="Avdelare till header">
+</div>
+<nav id="toc"></nav>
+<main>
+    <section>
+        <p>DCAT-AP-SE is a metadata specification introduced for the purpose of describing datasets. More specifically, DCAT-AP-SE is a Swedish adaption (a profile) of the European metadata specification DCAT-AP. DCAT-AP in turn, is an adaption (profile) of the W3C recommendation DCAT.</p>
+        <p>The diagram below shows only the primary classes, their relationships and their mandatory and recommended properties. Note that for readability, classes and properties are introduced using friendly labels in both headings and the diagram below. The actual metadata expressions, i.e. the full URIs of classes and properties, are listed in the details under each respective heading.
+        </p>
+        <div id="diagram" class="mermaid">
+            classDiagram
+
+            Catalog --> Dataset : dataset
+            Catalog --> Agent : publisher
+            Dataset --> DatasetSeries : in series
+            Dataset --> Agent : publisher
+            Distribution --> Data_service : access service
+            DatasetSeries --> Agent : publisher
+            Data_service --> Agent : publisher
+            DatasetSeries --> Contact_point : contactpoint
+            Dataset --> Contact_point : contactpoint
+            Catalog --> DatasetSeries : dataset
+            Catalog --> Data_service : dataservice
+            Dataset --> Distribution : distribution
+
+            class Catalog {
+              title
+              description
+              licens
+              release date
+              language
+              date modified
+              homepage
+              theme taxonomy
+            }
+
+            class Dataset {
+              title
+              description
+              keyword
+              theme
+              time period
+              release date
+              access rights
+              geographical area
+            }
+
+            class DatasetSeries {
+              title
+              description
+              keyword
+              theme
+              time period
+              release date
+              geographical area
+            }
+
+            class Distribution {
+              web address for access
+              description
+              mediatype
+              availability
+              licens
+            }
+
+            Catalog --> Data_service : dataservice
+            class Data_service {
+              title
+              endpoint URL
+              endpoint description
+              licens
+              access rights
+            }
+
+            class Agent {
+              name
+              type
+            }
+
+            class Contact_point {
+              kind
+              formatted name
+              email
+            }
+
+        </div>
+    </section>
+</main>
+</body>
+    <script>mermaid.init(document.getElementById("diagram"));</script>
+    <script src="../../libs/specs.js"></script>
+    <script>
+      document.targetLanguage = 'en';
+    </script>
+    <script src="../../libs/recommendations.js"></script>
+    <script src="../../config.js"></script>
+    <link rel="stylesheet" href="https://lankadedata.se/spec/assets/style.css">
+</html>
