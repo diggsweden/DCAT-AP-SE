@@ -51,7 +51,7 @@ ytterligare skördningar närhelst så passar. Detta sker på Admin. Efter att m
 sker skördningen normalt inom 10 minuter.
 
 ### Registrera skördning
-I sverige har vi valt att förregistrera alla offentliga aktörer, man kan enkelt kolla om man är
+I Sverige har vi valt att förregistrera alla offentliga aktörer, man kan enkelt kolla om man är
 [förregistrerad på registrera](https://admin.dataportal.se/status/reports).
 Förregistrerade aktörer har en angiven skördningskälla på formen:
 ```
