@@ -52,7 +52,7 @@ sker skördningen normalt inom 10 minuter.
 
 ### Registrera skördning
 I Sverige har vi valt att förregistrera alla offentliga aktörer, man kan enkelt kolla om man är
-[förregistrerad på registrera](https://registrera.oppnadata.se/status/public).
+[förregistrerad på registrera](https://admin.dataportal.se/status/reports).
 Förregistrerade aktörer har en angiven skördningskälla på formen:
 ```
 http://<organisation>.se/datasets/dcat
