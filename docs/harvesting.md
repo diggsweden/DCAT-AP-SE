@@ -51,8 +51,13 @@ ytterligare skördningar närhelst så passar. Detta sker på Admin. Efter att m
 sker skördningen normalt inom 10 minuter.
 
 ### Registrera skördning
+<<<<<<< HEAD
 I Sverige har vi valt att förregistrera alla offentliga aktörer, man kan enkelt kolla om man är
 [förregistrerad på registrera](https://registrera.oppnadata.se/status/public).
+=======
+I sverige har vi valt att förregistrera alla offentliga aktörer, man kan enkelt kolla om man är
+[förregistrerad på registrera](https://admin.dataportal.se/status/reports).
+>>>>>>> 87d3243 (fix broken link from registrera.oppnadata.se to admin.dataportal.se)
 Förregistrerade aktörer har en angiven skördningskälla på formen:
 ```
 http://<organisation>.se/datasets/dcat
