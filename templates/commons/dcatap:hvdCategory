@@ -10,6 +10,10 @@
   "cardinality": {
     "min": 1
   },
+  "description": {
+    "sv": "Kategorier i enlighet med annexet i kommissionens genomförandeförordning (EU) 2023/138 den 21 december 2022 om fastställande av en förteckning över särskilda värdefulla datamängder och arrangemangen för offentliggörande och vidareutnyttjande av dessa (https://eur-lex.europa.eu/eli/reg_impl/2023/138/oj). Se också definitioner här: https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://data.europa.eu/bna/asd487ae75",
+    "en": "Categories according to the annex in the Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex (https://eur-lex.europa.eu/eli/reg_impl/2023/138/oj). See also the definitions here: https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://data.europa.eu/bna/asd487ae75."
+  },
   "deps": [
     "http://data.europa.eu/r5r/applicableLegislation",
     "http://data.europa.eu/eli/reg_impl/2023/138/oj"
@@ -17,999 +21,1052 @@
   "choices": [
     {
       "label": {
-        "en": "Energy resources"
-      },
-      "description": {
-        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 2"
-      },
-      "value": "http://data.europa.eu/bna/c_b7de66cd"
-    },
-    {
-      "label": {
-        "en": "Unemployment"
-      },
-      "description": {
-        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 4"
-      },
-      "value": "http://data.europa.eu/bna/c_fd4e881c"
-    },
-    {
-      "label": {
-        "en": "Geology"
-      },
-      "description": {
-        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 2"
-      },
-      "value": "http://data.europa.eu/bna/c_e3f55603"
-    },
-    {
-      "label": {
-        "en": "Short term changes of lock and bridge operating times"
-      },
-      "description": {
-        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 6"
-      },
-      "value": "http://data.europa.eu/bna/c_66b946cb"
-    },
-    {
-      "label": {
-        "en": "Land use"
-      },
-      "description": {
-        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 2"
-      },
-      "value": "http://data.europa.eu/bna/c_ad9ae929"
-    },
-    {
-      "label": {
-        "en": "Links to the external xml-files with operation times of restricting structures"
-      },
-      "description": {
-        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 6"
-      },
-      "value": "http://data.europa.eu/bna/c_298ffb73"
-    },
-    {
-      "label": {
-        "en": "Location and characteristics of ports and transhipment sites"
-      },
-      "description": {
-        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 6"
-      },
-      "value": "http://data.europa.eu/bna/c_3e8e3bf7"
-    },
-    {
-      "label": {
-        "en": "Current healthcare expenditure"
-      },
-      "description": {
-        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 4"
-      },
-      "value": "http://data.europa.eu/bna/c_424bb0b4"
-    },
-    {
-      "label": {
-        "en": "Land cover"
-      },
-      "description": {
-        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 2"
-      },
-      "value": "http://data.europa.eu/bna/c_b21e1296"
-    },
-    {
-      "label": {
-        "en": "Regular lock and bridge operating times"
-      },
-      "description": {
-        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 6"
-      },
-      "value": "http://data.europa.eu/bna/c_03ba8d92"
-    },
-    {
-      "label": {
-        "en": "Restrictions caused by flood and ice"
-      },
-      "description": {
-        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 6"
-      },
-      "value": "http://data.europa.eu/bna/c_f6886b00"
-    },
-    {
-      "label": {
-        "en": "List of navigation aids and traffic signs"
-      },
-      "description": {
-        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 6"
-      },
-      "value": "http://data.europa.eu/bna/c_9cbe4435"
-    },
-    {
-      "label": {
-        "en": "Potential labour force"
-      },
-      "description": {
-        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 4"
-      },
-      "value": "http://data.europa.eu/bna/c_23385471"
-    },
-    {
-      "label": {
-        "en": "Present and future water levels at gauges"
-      },
-      "description": {
-        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 6"
-      },
-      "value": "http://data.europa.eu/bna/c_e5f69a04"
-    },
-    {
-      "label": {
-        "en": "Habitats and biotopes"
-      },
-      "description": {
-        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 2"
-      },
-      "value": "http://data.europa.eu/bna/c_c3919aec"
-    },
-    {
-      "label": {
-        "en": "Government expenditure and revenue"
-      },
-      "description": {
-        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 4"
-      },
-      "value": "http://data.europa.eu/bna/c_4ac557e7"
-    },
-    {
-      "label": {
-        "en": "Species distribution"
-      },
-      "description": {
-        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 2"
-      },
-      "value": "http://data.europa.eu/bna/c_793164b6"
-    },
-    {
-      "label": {
-        "en": "Transport networks"
-      },
-      "description": {
-        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 6"
-      },
-      "value": "http://data.europa.eu/bna/c_4b74ea13"
-    },
-    {
-      "label": {
-        "en": "Cadastral parcels"
-      },
-      "description": {
-        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 1"
-      },
-      "value": "http://data.europa.eu/bna/c_6a3f6896"
-    },
-    {
-      "label": {
-        "en": "Waste"
-      },
-      "description": {
-        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 2"
-      },
-      "value": "http://data.europa.eu/bna/c_38933a65"
-    },
-    {
-      "label": {
-        "en": "Mineral resources"
-      },
-      "description": {
-        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 2"
-      },
-      "value": "http://data.europa.eu/bna/c_4dd389c5"
-    },
-    {
-      "label": {
-        "en": "State of the rivers, canals, locks and bridges"
-      },
-      "description": {
-        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 6"
-      },
-      "value": "http://data.europa.eu/bna/c_e50004c6"
-    },
-    {
-      "label": {
-        "en": "Area management / restriction / regulation zones & reporting units"
-      },
-      "description": {
-        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 2"
-      },
-      "value": "http://data.europa.eu/bna/c_af646f5b"
-    },
-    {
-      "label": {
-        "en": "Poverty"
-      },
-      "description": {
-        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 4"
-      },
-      "value": "http://data.europa.eu/bna/c_04bf94a3"
-    },
-    {
-      "label": {
-        "en": "Noise"
-      },
-      "description": {
-        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 2"
-      },
-      "value": "http://data.europa.eu/bna/c_e4358335"
-    },
-    {
-      "label": {
-        "en": "National accounts – key indicators on corporations"
-      },
-      "description": {
-        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 4"
-      },
-      "value": "http://data.europa.eu/bna/c_95da87c7"
-    },
-    {
-      "label": {
-        "en": "Environmental monitoring facilities"
-      },
-      "description": {
-        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 2"
-      },
-      "value": "http://data.europa.eu/bna/c_7b8fbb64"
-    },
-    {
-      "label": {
-        "en": "Observations data measured by weather stations"
-      },
-      "description": {
-        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 3"
-      },
-      "value": "http://data.europa.eu/bna/c_3af3368c"
-    },
-    {
-      "label": {
-        "en": "Agricultural parcels"
-      },
-      "description": {
-        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 1"
-      },
-      "value": "http://data.europa.eu/bna/c_642643e6"
-    },
-    {
-      "label": {
-        "en": "Tourism flows in Europe"
-      },
-      "description": {
-        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 4"
-      },
-      "value": "http://data.europa.eu/bna/c_a3767648"
-    },
-    {
-      "label": {
-        "en": "Natural risk zones"
-      },
-      "description": {
-        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 2"
-      },
-      "value": "http://data.europa.eu/bna/c_63be22bd"
-    },
-    {
-      "label": {
-        "en": "Addresses"
-      },
-      "description": {
-        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 1"
-      },
-      "value": "http://data.europa.eu/bna/c_c3de25e4"
-    },
-    {
-      "label": {
-        "en": "Air"
-      },
-      "description": {
-        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 2"
-      },
-      "value": "http://data.europa.eu/bna/c_63b37dd4"
-    },
-    {
-      "label": {
-        "en": "Weather alerts"
-      },
-      "description": {
-        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 3"
-      },
-      "value": "http://data.europa.eu/bna/c_be47b010"
-    },
-    {
-      "label": {
-        "en": "Sea regions"
-      },
-      "description": {
-        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 2"
-      },
-      "value": "http://data.europa.eu/bna/c_f399050e"
-    },
-    {
-      "label": {
-        "en": "Long-time obstructions in the fairway and reliability"
-      },
-      "description": {
-        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 6"
-      },
-      "value": "http://data.europa.eu/bna/c_fa2a1c3a"
-    },
-    {
-      "label": {
-        "en": "Oceanographic geographical features"
-      },
-      "description": {
-        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 2"
-      },
-      "value": "http://data.europa.eu/bna/c_b40e6d46"
-    },
-    {
-      "label": {
-        "en": "Soil"
-      },
-      "description": {
-        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 2"
-      },
-      "value": "http://data.europa.eu/bna/c_87a129d9"
-    },
-    {
-      "label": {
-        "en": "Water depths contours in the navigation channel"
-      },
-      "description": {
-        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 6"
-      },
-      "value": "http://data.europa.eu/bna/c_fef208ab"
-    },
-    {
-      "label": {
-        "en": "Protected sites"
-      },
-      "description": {
-        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 2"
-      },
-      "value": "http://data.europa.eu/bna/c_83aa10a6"
-    },
-    {
-      "label": {
-        "en": "National accounts – key indicators on households"
-      },
-      "value": "http://data.europa.eu/bna/c_59627af3"
-    },
-    {
-      "label": {
-        "en": "Inequality"
-      },
-      "description": {
-        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 4"
-      },
-      "value": "http://data.europa.eu/bna/c_a8b937c4"
-    },
-    {
-      "label": {
-        "en": "Mortality"
-      },
-      "description": {
-        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 4"
-      },
-      "value": "http://data.europa.eu/bna/c_4acb6bf3"
-    },
-    {
-      "label": {
-        "en": "Consolidated government gross debt"
-      },
-      "description": {
-        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 4"
-      },
-      "value": "http://data.europa.eu/bna/c_dd8f4797"
-    },
-    {
-      "label": {
-        "en": "Basic company information: key attributes"
-      },
-      "description": {
-        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 5"
-      },
-      "value": "http://data.europa.eu/bna/c_56a1bf47"
-    },
-    {
-      "label": {
-        "en": "Administrative units"
-      },
-      "description": {
-        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 1"
-      },
-      "value": "http://data.europa.eu/bna/c_9427236f"
-    },
-    {
-      "label": {
-        "en": "Reference parcels"
-      },
-      "description": {
-        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 1"
-      },
-      "value": "http://data.europa.eu/bna/c_fbd2fc3f"
-    },
-    {
-      "label": {
-        "en": "Emissions"
-      },
-      "description": {
-        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 2"
-      },
-      "value": "http://data.europa.eu/bna/c_4ba9548e"
-    },
-    {
-      "label": {
-        "en": "Industrial production"
-      },
-      "description": {
-        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 4"
-      },
-      "value": "http://data.europa.eu/bna/c_34abf8c1"
-    },
-    {
-      "label": {
-        "en": "Environmental accounts and statistics"
-      },
-      "description": {
-        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 4"
-      },
-      "value": "http://data.europa.eu/bna/c_92874eb2"
-    },
-    {
-      "label": {
-        "en": "Company documents and accounts"
-      },
-      "description": {
-        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 5"
-      },
-      "value": "http://data.europa.eu/bna/c_8f0fac04"
-    },
-    {
-      "label": {
-        "en": "Water"
-      },
-      "description": {
-        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 2"
-      },
-      "value": "http://data.europa.eu/bna/c_43f88346"
-    },
-    {
-      "label": {
-        "en": "Short term changes of aids to navigation"
-      },
-      "description": {
-        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 6"
-      },
-      "value": "http://data.europa.eu/bna/c_593bc53d"
-    },
-    {
-      "label": {
-        "en": "Boundaries of the fairway/navigation channel"
-      },
-      "description": {
-        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 6"
-      },
-      "value": "http://data.europa.eu/bna/c_664c9e5a"
-    },
-    {
-      "label": {
-        "en": "Horizontal legislation"
-      },
-      "description": {
-        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 2"
-      },
-      "value": "http://data.europa.eu/bna/c_4d63300b"
-    },
-    {
-      "label": {
-        "en": "Navigation rules and recommendations"
-      },
-      "description": {
-        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 6"
-      },
-      "value": "http://data.europa.eu/bna/c_2037ada4"
-    },
-    {
-      "label": {
-        "en": "National accounts – GDP main aggregates"
-      },
-      "description": {
-        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 4"
-      },
-      "value": "http://data.europa.eu/bna/c_b72b721f"
-    },
-    {
-      "label": {
-        "en": "Production and industrial facilities"
-      },
-      "description": {
-        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 2"
-      },
-      "value": "http://data.europa.eu/bna/c_59c93ba5"
-    },
-    {
-      "label": {
-        "en": "Bank of waterway at mean water level"
-      },
-      "description": {
-        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 6"
-      },
-      "value": "http://data.europa.eu/bna/c_1226dc1a"
-    },
-    {
-      "label": {
-        "en": "Population"
-      },
-      "description": {
-        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 4"
-      },
-      "value": "http://data.europa.eu/bna/c_f2b50efd"
-    },
-    {
-      "label": {
-        "en": "Companies and company ownership",
-        "sv": "Företag och företagsägande",
-        "de": "Unternehmen und Eigentümerschaft von Unternehmen",
-        "es": "Sociedades y propiedad de sociedades",
-        "fr": "Entreprises et propriété d'entreprises",
-        "it": "Dati relativi alle imprese e alla proprietà delle imprese",
-        "sl": "Družbe in lastništvo družb",
-        "mt": "Data dwar il-kumpanniji u l-proprjetà tal-kumpanniji",
-        "lv": "Uzņēmumi un uzņēmumu īpašumtiesības",
-        "hu": "Vállalati és vállalattulajdonosi adatok",
-        "lt": "Bendrovės ir bendrovių valdymas nuosavybės teise",
-        "el": "Εταιρείες και ιδιοκτησιακό καθεστώς εταιρειών",
-        "bg": "Дружества и собственост на дружествата",
-        "pl": "Dane dotyczące przedsiębiorstw i ich własności",
-        "et": "Äriühingud ja äriühingu omandisuhted",
-        "ro": "Domeniul Societăți și structura de proprietate a societăților",
-        "nl": "Bedrijven en eigendom van bedrijven",
-        "ga": "Cuideachtaí agus úinéireacht cuideachtaí",
-        "da": "Virksomheder og virksomhedsejerskab",
-        "cs": "Společnosti a vlastnictví společností",
-        "pt": "Empresas e propriedade de empresas",
-        "hr": "Trgovačka društva i vlasništvo nad trgovačkim društvima",
-        "sk": "Spoločnosti a vlastníctvo spoločností",
-        "fi": "Yritys- ja yritysten omistustiedot"
-      },
-      "description": {
-        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 5"
-      },
-      "value": "http://data.europa.eu/bna/c_a9135398"
-    },
-    {
-      "label": {
-        "en": "Nature preservation and biodiversity"
-      },
-      "description": {
-        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 2"
-      },
-      "value": "http://data.europa.eu/bna/c_b7f6a4f3"
-    },
-    {
-      "label": {
-        "en": "Temporary obstructions in the fairway"
-      },
-      "description": {
-        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 6"
-      },
-      "value": "http://data.europa.eu/bna/c_b121e2f6"
-    },
-    {
-      "label": {
-        "en": "Buildings"
-      },
-      "description": {
-        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 1"
-      },
-      "value": "http://data.europa.eu/bna/c_60182062"
-    },
-    {
-      "label": {
-        "en": "Elevation"
-      },
-      "description": {
-        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 2"
-      },
-      "value": "http://data.europa.eu/bna/c_315692ad"
-    },
-    {
-      "label": {
-        "en": "Isolated dangers in the fairway/navigation channel under and above water"
-      },
-      "description": {
-        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 6"
-      },
-      "value": "http://data.europa.eu/bna/c_99bc517f"
-    },
-    {
-      "label": {
-        "en": "Hydrography"
-      },
-      "description": {
-        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 2"
-      },
-      "value": "http://data.europa.eu/bna/c_06b1eec4"
-    },
-    {
-      "label": {
-        "en": "Fairway characteristics"
-      },
-      "description": {
-        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 6"
-      },
-      "value": "http://data.europa.eu/bna/c_f76b01e6"
-    },
-    {
-      "label": {
-        "en": "Harmonised Indices of consumer prices"
-      },
-      "description": {
-        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 4"
-      },
-      "value": "http://data.europa.eu/bna/c_c0022235"
-    },
-    {
-      "label": {
-        "en": "Contours of locks and dams"
-      },
-      "description": {
-        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 6"
-      },
-      "value": "http://data.europa.eu/bna/c_883d0205"
-    },
-    {
-      "label": {
-        "en": "Other physical limitations on waterways"
-      },
-      "description": {
-        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 6"
-      },
-      "value": "http://data.europa.eu/bna/c_7e19ef26"
-    },
-    {
-      "label": {
-        "en": "Fertility"
-      },
-      "description": {
-        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 4"
-      },
-      "value": "http://data.europa.eu/bna/c_6a7250c1"
-    },
-    {
-      "label": {
-        "en": "Bio-geographical regions"
-      },
-      "description": {
-        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 2"
-      },
-      "value": "http://data.europa.eu/bna/c_c873f344"
-    },
-    {
-      "label": {
-        "en": "NWP model data"
-      },
-      "description": {
-        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 3"
-      },
-      "value": "http://data.europa.eu/bna/c_13e3cf16"
-    },
-    {
-      "label": {
-        "en": "Waterway axis with kilometres indication"
-      },
-      "description": {
-        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 6"
-      },
-      "value": "http://data.europa.eu/bna/c_c19af83a"
-    },
-    {
-      "label": {
-        "en": "Radar data"
-      },
-      "description": {
-        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 3"
-      },
-      "value": "http://data.europa.eu/bna/c_d13a4420"
-    },
-    {
-      "label": {
-        "en": "Location of ports and transhipment sites"
-      },
-      "description": {
-        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 6"
-      },
-      "value": "http://data.europa.eu/bna/c_407951ff"
-    },
-    {
-      "label": {
-        "en": "Climate"
-      },
-      "description": {
-        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 2"
-      },
-      "value": "http://data.europa.eu/bna/c_59e64dd4"
-    },
-    {
-      "label": {
         "en": "Geospatial",
-        "sv": "Geospatiala data",
-        "de": "Georaum",
-        "lv": "Ģeotelpisko datu kopas",
-        "lt": "Geoerdviniai duomenys",
-        "et": "Georuumilised andmed",
-        "hr": "Geoprostorni podatci",
-        "mt": "Data ġeospazjali",
-        "sk": "Geopriestorové údaje",
-        "pt": "Geoespaciais",
-        "sl": "Geoprostorski podatki",
-        "nl": "Geospatiale data",
-        "da": "Geospatiale data",
-        "pl": "Dane geoprzestrzenne",
-        "es": "Geoespacial",
-        "fi": "Paikkatiedot",
-        "ro": "Domeniul geospațial",
-        "fr": "Géospatiales",
-        "ga": "Geospásúil",
-        "cs": "Geoprostorové údaje",
-        "el": "Γεωχωρικές πληροφορίες",
-        "bg": "Геопространствени данни",
-        "it": "Dati geospaziali",
-        "hu": "Térinformatikai adatok"
+        "sv": "Geospatiala data"
       },
       "description": {
+        "sv": "datamängder enligt beskrivningen i kommissionens genomförandeförordning (EU) 2023/138 den 21 december 2022 om fastställande av en förteckning över särskilda värdefulla datamängder och arrangemangen för offentliggörande och vidareutnyttjande av dessa, bilaga, avsnitt 1",
         "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 1"
       },
       "value": "http://data.europa.eu/bna/c_ac64a52d"
     },
     {
       "label": {
-        "en": "Geographical names"
-      },
-      "description": {
-        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 1"
-      },
-      "value": "http://data.europa.eu/bna/c_6c2bb82d"
-    },
-    {
-      "label": {
-        "en": "Industrial producer price index breakdowns by activity"
-      },
-      "description": {
-        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 4"
-      },
-      "value": "http://data.europa.eu/bna/c_2aed31f9"
-    },
-    {
-      "label": {
-        "en": "Meteorological",
-        "sv": "Meteorologiska data",
-        "de": "Meteorologie",
-        "nl": "Meteorologische data",
-        "pt": "Meteorológicas",
-        "sk": "Meteorológia",
-        "pl": "Dane meteorologiczne",
-        "lt": "Meteorologiniai duomenys",
-        "da": "Meteorologiske data",
-        "bg": "Метеорологични данни",
-        "it": "Dati meteorologici",
-        "fr": "Météorologiques",
-        "ga": "Meitéareolaíoch",
-        "fi": "Säätiedot",
-        "lv": "Meteoroloģijas datu kopas",
-        "mt": "Data meteoroloġika",
-        "cs": "Meteorologie",
-        "el": "Μετεωρολογικές πληροφορίες",
-        "ro": "Domeniul meteorologic",
-        "hu": "Meteorológiai adatok",
-        "sl": "Meteorološki podatki",
-        "hr": "Meteorološki podatci",
-        "et": "Meteoroloogiateave",
-        "es": "Meteorología"
-      },
-      "description": {
-        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 3"
-      },
-      "value": "http://data.europa.eu/bna/c_164e0bf5"
-    },
-    {
-      "label": {
-        "en": "Climate data: validated observations"
-      },
-      "description": {
-        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 3"
-      },
-      "value": "http://data.europa.eu/bna/c_36807466"
-    },
-    {
-      "label": {
-        "en": "Official aids-to-navigation (e.g. buoys, beacons, lights, notice marks)"
-      },
-      "description": {
-        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 6"
-      },
-      "value": "http://data.europa.eu/bna/c_b24028d7"
-    },
-    {
-      "label": {
-        "en": "EU International trade in goods statistics – exports and imports breakdowns simultaneously by partner, product and flow"
-      },
-      "description": {
-        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 4"
-      },
-      "value": "http://data.europa.eu/bna/c_20cd11bb"
-    },
-    {
-      "label": {
-        "en": "Population, Fertility, Mortality"
-      },
-      "description": {
-        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 4"
-      },
-      "value": "http://data.europa.eu/bna/c_317b9493"
-    },
-    {
-      "label": {
-        "en": "Rates of waterway infrastructure charges"
-      },
-      "description": {
-        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 6"
-      },
-      "value": "http://data.europa.eu/bna/c_25f43866"
-    },
-    {
-      "label": {
         "en": "Earth observation and environment",
-        "sv": "Jordobservation och miljö",
-        "de": "Erdbeobachtung und Umwelt",
-        "el": "Γεωσκόπηση και περιβάλλον",
-        "sl": "Opazovanje zemlje in okolje",
-        "hr": "Promatranje Zemlje i okoliš",
-        "es": "Observación de la Tierra y medio ambiente",
-        "ro": "Domeniul Observarea Pământului și mediu",
-        "fr": "Observation de la terre et environnement",
-        "sk": "Pozorovanie Zeme a životné prostredie",
-        "fi": "Maan havainnointi ja ympäristö",
-        "pl": "Dane dotyczące obserwacji Ziemi i środowiska",
-        "cs": "Země a životní prostředí",
-        "nl": "Aardobservatie en milieu",
-        "ga": "Faire na cruinne agus an comhshaol",
-        "bg": "Наблюдение на Земята и околната среда",
-        "pt": "Observação da Terra e do ambiente",
-        "lv": "Zemes novērošana un vide",
-        "et": "Maa seire ja keskkond",
-        "lt": "Žemės stebėjimas ir aplinka",
-        "it": "Dati relativi all'osservazione della terra e all'ambiente",
-        "mt": "Data dwar l-osservazzjoni tad-dinja u l-ambjent",
-        "da": "Jordobservation og miljø",
-        "hu": "Földmegfigyelési és környezeti adatok"
+        "sv": "Jordobservation och miljö"
       },
       "description": {
+        "sv": "datamängder enligt beskrivningen i kommissionens genomförandeförordning (EU) 2023/138 den 21 december 2022 om fastställande av en förteckning över särskilda värdefulla datamängder och arrangemangen för offentliggörande och vidareutnyttjande av dessa, bilaga, avsnitt 2",
         "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 2"
       },
       "value": "http://data.europa.eu/bna/c_dd313021"
     },
     {
       "label": {
-        "en": "Orthoimagery"
+        "en": "Meteorological",
+        "sv": "Meteorologiska data"
       },
       "description": {
-        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 2"
+        "sv": "datamängder enligt beskrivningen i kommissionens genomförandeförordning (EU) 2023/138 den 21 december 2022 om fastställande av en förteckning över särskilda värdefulla datamängder och arrangemangen för offentliggörande och vidareutnyttjande av dessa, bilaga, avsnitt 3",
+        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 3"
       },
-      "value": "http://data.europa.eu/bna/c_91185a85"
-    },
-    {
-      "label": {
-        "en": "Volume of sales by activity"
-      },
-      "description": {
-        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 4"
-      },
-      "value": "http://data.europa.eu/bna/c_a49ec591"
-    },
-    {
-      "label": {
-        "en": "Shoreline construction"
-      },
-      "description": {
-        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 6"
-      },
-      "value": "http://data.europa.eu/bna/c_bc8941d9"
+      "value": "http://data.europa.eu/bna/c_164e0bf5"
     },
     {
       "label": {
         "sv": "Statistik",
-        "en": "Statistics",
-        "de": "Statistik",
-        "ro": "Domeniul statistic",
-        "hr": "Statistički podatci",
-        "pl": "Dane statystyczne",
-        "it": "Dati statistici",
-        "el": "Στατιστικές",
-        "ga": "Staidreamh",
-        "mt": "Data statistika",
-        "sk": "Štatistika",
-        "hu": "Statisztikák",
-        "fr": "Statistiques",
-        "pt": "Estatísticas",
-        "cs": "Statistika",
-        "lv": "Statistika",
-        "lt": "Statistika",
-        "et": "Statistika",
-        "es": "Estadística",
-        "nl": "Statistiek",
-        "bg": "Статистика",
-        "sl": "Statistični podatki",
-        "da": "Statistik",
-        "fi": "Tilastotiedot"
+        "en": "Statistics"
       },
       "description": {
+        "sv": "datamängder enligt beskrivningen i kommissionens genomförandeförordning (EU) 2023/138 den 21 december 2022 om fastställande av en förteckning över särskilda värdefulla datamängder och arrangemangen för offentliggörande och vidareutnyttjande av dessa, bilaga, avsnitt 4",
         "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 4"
       },
       "value": "http://data.europa.eu/bna/c_e1da4e07"
     },
     {
       "label": {
-        "en": "Employment"
+        "en": "Companies and company ownership",
+        "sv": "Företag och företagsägande"
       },
       "description": {
-        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 4"
+        "sv": "datamängder enligt beskrivningen i kommissionens genomförandeförordning (EU) 2023/138 den 21 december 2022 om fastställande av en förteckning över särskilda värdefulla datamängder och arrangemangen för offentliggörande och vidareutnyttjande av dessa, bilaga, avsnitt 5",
+        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 5"
       },
-      "value": "http://data.europa.eu/bna/c_a2c6dcd8"
+      "value": "http://data.europa.eu/bna/c_a9135398"
     },
     {
       "label": {
-        "de": "Mobilität",
         "en": "Mobility",
-        "sv": "Rörlighet",
-        "ro": "Domeniul Mobilitate",
-        "pt": "Mobilidade",
-        "ga": "Soghluaisteacht",
-        "es": "Movilidad",
-        "hu": "Mobilitási adatok",
-        "sl": "Mobilnost",
-        "hr": "Mobilnost",
-        "fr": "Mobilité",
-        "nl": "Mobiliteit",
-        "et": "Liikuvus",
-        "da": "Mobilitet",
-        "mt": "Data dwar il-mobbiltà",
-        "fi": "Liikkuvuustiedot",
-        "it": "Dati relativi alla mobilità",
-        "sk": "Mobilita",
-        "pl": "Dane dotyczące mobilności",
-        "lv": "Mobilitāte",
-        "cs": "Mobilita",
-        "bg": "Мобилност",
-        "el": "Κινητικότητα",
-        "lt": "Judumas"
+        "sv": "Rörlighet"
       },
       "description": {
+        "sv": "datamängder enligt beskrivningen i kommissionens genomförandeförordning (EU) 2023/138 den 21 december 2022 om fastställande av en förteckning över särskilda värdefulla datamängder och arrangemangen för offentliggörande och vidareutnyttjande av dessa, bilaga, avsnitt 6",
         "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 6"
       },
       "value": "http://data.europa.eu/bna/c_b79e35eb"
     },
     {
       "label": {
+        "en": "Energy resources",
+        "sv": "Energiresurser"
+      },
+      "description": {
+        "sv": "datamängder enligt beskrivningen i kommissionens genomförandeförordning (EU) 2023/138 den 21 december 2022 om fastställande av en förteckning över särskilda värdefulla datamängder och arrangemangen för offentliggörande och vidareutnyttjande av dessa, bilaga, avsnitt 2",
+        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 2"
+      },
+      "value": "http://data.europa.eu/bna/c_b7de66cd"
+    },
+    {
+      "label": {
+        "sv": "Adresser",
+        "en": "Addresses"
+      },
+      "description": {
+        "sv": "datamängder enligt beskrivningen i kommissionens genomförandeförordning (EU) 2023/138 den 21 december 2022 om fastställande av en förteckning över särskilda värdefulla datamängder och arrangemangen för offentliggörande och vidareutnyttjande av dessa, bilaga, avsnitt 1",
+        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 1"
+      },
+      "value": "http://data.europa.eu/bna/c_c3de25e4"
+    },
+    {
+      "label": {
+        "sv": "Producentprisindex för industriprodukter uppdelat per verksamhet",
+        "en": "Industrial producer price index breakdowns by activity"
+      },
+      "description": {
+        "sv": "datamängder enligt beskrivningen i kommissionens genomförandeförordning (EU) 2023/138 den 21 december 2022 om fastställande av en förteckning över särskilda värdefulla datamängder och arrangemangen för offentliggörande och vidareutnyttjande av dessa, bilaga, avsnitt 4",
+        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 4"
+      },
+      "value": "http://data.europa.eu/bna/c_2aed31f9"
+    },
+    {
+      "label": {
+        "sv": "Nuvarande och framtida vattennivåer vid vattennivåmätare",
+        "en": "Present and future water levels at gauges"
+      },
+      "description": {
+        "sv": "datamängder enligt beskrivningen i kommissionens genomförandeförordning (EU) 2023/138 den 21 december 2022 om fastställande av en förteckning över särskilda värdefulla datamängder och arrangemangen för offentliggörande och vidareutnyttjande av dessa, bilaga, avsnitt 6",
+        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 6"
+      },
+      "value": "http://data.europa.eu/bna/c_e5f69a04"
+    },
+    {
+      "label": {
+        "sv": "Konsoliderad offentlig bruttoskuld",
+        "en": "Consolidated government gross debt"
+      },
+      "description": {
+        "sv": "datamängder enligt beskrivningen i kommissionens genomförandeförordning (EU) 2023/138 den 21 december 2022 om fastställande av en förteckning över särskilda värdefulla datamängder och arrangemangen för offentliggörande och vidareutnyttjande av dessa, bilaga, avsnitt 4",
+        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 4"
+      },
+      "value": "http://data.europa.eu/bna/c_dd8f4797"
+    },
+    {
+      "label": {
+        "sv": "Ortofoto",
+        "en": "Orthoimagery"
+      },
+      "description": {
+        "sv": "datamängder enligt beskrivningen i kommissionens genomförandeförordning (EU) 2023/138 den 21 december 2022 om fastställande av en förteckning över särskilda värdefulla datamängder och arrangemangen för offentliggörande och vidareutnyttjande av dessa, bilaga, avsnitt 2",
+        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 2"
+      },
+      "value": "http://data.europa.eu/bna/c_91185a85"
+    },
+    {
+      "label": {
+        "en": "Long-time obstructions in the fairway and reliability",
+        "sv": "Långvariga hinder i farleden och tillförlitlighet"
+      },
+      "description": {
+        "sv": "datamängder enligt beskrivningen i kommissionens genomförandeförordning (EU) 2023/138 den 21 december 2022 om fastställande av en förteckning över särskilda värdefulla datamängder och arrangemangen för offentliggörande och vidareutnyttjande av dessa, bilaga, avsnitt 6",
+        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 6"
+      },
+      "value": "http://data.europa.eu/bna/c_fa2a1c3a"
+    },
+    {
+      "label": {
+        "en": "Radar data",
+        "sv": "Radardata"
+      },
+      "description": {
+        "sv": "datamängder enligt beskrivningen i kommissionens genomförandeförordning (EU) 2023/138 den 21 december 2022 om fastställande av en förteckning över särskilda värdefulla datamängder och arrangemangen för offentliggörande och vidareutnyttjande av dessa, bilaga, avsnitt 3",
+        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 3"
+      },
+      "value": "http://data.europa.eu/bna/c_d13a4420"
+    },
+    {
+      "label": {
+        "sv": "Turistflöden i Europa",
+        "en": "Tourism flows in Europe"
+      },
+      "description": {
+        "sv": "datamängder enligt beskrivningen i kommissionens genomförandeförordning (EU) 2023/138 den 21 december 2022 om fastställande av en förteckning över särskilda värdefulla datamängder och arrangemangen för offentliggörande och vidareutnyttjande av dessa, bilaga, avsnitt 4",
+        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 4"
+      },
+      "value": "http://data.europa.eu/bna/c_a3767648"
+    },
+    {
+      "label": {
+        "en": "Administrative units",
+        "sv": "Administrativa enheter"
+      },
+      "description": {
+        "sv": "datamängder enligt beskrivningen i kommissionens genomförandeförordning (EU) 2023/138 den 21 december 2022 om fastställande av en förteckning över särskilda värdefulla datamängder och arrangemangen för offentliggörande och vidareutnyttjande av dessa, bilaga, avsnitt 1",
+        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 1"
+      },
+      "value": "http://data.europa.eu/bna/c_9427236f"
+    },
+    {
+      "label": {
+        "en": "Land use",
+        "sv": "Markanvändning"
+      },
+      "description": {
+        "sv": "datamängder enligt beskrivningen i kommissionens genomförandeförordning (EU) 2023/138 den 21 december 2022 om fastställande av en förteckning över särskilda värdefulla datamängder och arrangemangen för offentliggörande och vidareutnyttjande av dessa, bilaga, avsnitt 2",
+        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 2"
+      },
+      "value": "http://data.europa.eu/bna/c_ad9ae929"
+    },
+    {
+      "label": {
+        "en": "Isolated dangers in the fairway/navigation channel under and above water",
+        "sv": "Enskilda faror under och över vattenytan i farleden"
+      },
+      "description": {
+        "sv": "datamängder enligt beskrivningen i kommissionens genomförandeförordning (EU) 2023/138 den 21 december 2022 om fastställande av en förteckning över särskilda värdefulla datamängder och arrangemangen för offentliggörande och vidareutnyttjande av dessa, bilaga, avsnitt 6",
+        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 6"
+      },
+      "value": "http://data.europa.eu/bna/c_99bc517f"
+    },
+    {
+      "label": {
+        "en": "Volume of sales by activity",
+        "sv": "Försäljningsvolym per verksamhet"
+      },
+      "description": {
+        "sv": "datamängder enligt beskrivningen i kommissionens genomförandeförordning (EU) 2023/138 den 21 december 2022 om fastställande av en förteckning över särskilda värdefulla datamängder och arrangemangen för offentliggörande och vidareutnyttjande av dessa, bilaga, avsnitt 4",
+        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 4"
+      },
+      "value": "http://data.europa.eu/bna/c_a49ec591"
+    },
+    {
+      "label": {
+        "en": "Rates of waterway infrastructure charges",
+        "sv": "Avgifter på vattenvägsinfrastrukturen"
+      },
+      "description": {
+        "sv": "datamängder enligt beskrivningen i kommissionens genomförandeförordning (EU) 2023/138 den 21 december 2022 om fastställande av en förteckning över särskilda värdefulla datamängder och arrangemangen för offentliggörande och vidareutnyttjande av dessa, bilaga, avsnitt 6",
+        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 6"
+      },
+      "value": "http://data.europa.eu/bna/c_25f43866"
+    },
+    {
+      "label": {
+        "en": "Temporary obstructions in the fairway",
+        "sv": "Tillfälliga hinder i farleden"
+      },
+      "description": {
+        "sv": "datamängder enligt beskrivningen i kommissionens genomförandeförordning (EU) 2023/138 den 21 december 2022 om fastställande av en förteckning över särskilda värdefulla datamängder och arrangemangen för offentliggörande och vidareutnyttjande av dessa, bilaga, avsnitt 6",
+        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 6"
+      },
+      "value": "http://data.europa.eu/bna/c_b121e2f6"
+    },
+    {
+      "label": {
+        "sv": "Harmoniserat konsumentprisindex",
+        "en": "Harmonised Indices of consumer prices"
+      },
+      "description": {
+        "sv": "datamängder enligt beskrivningen i kommissionens genomförandeförordning (EU) 2023/138 den 21 december 2022 om fastställande av en förteckning över särskilda värdefulla datamängder och arrangemangen för offentliggörande och vidareutnyttjande av dessa, bilaga, avsnitt 4",
+        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 4"
+      },
+      "value": "http://data.europa.eu/bna/c_c0022235"
+    },
+    {
+      "label": {
+        "en": "Natural risk zones",
+        "sv": "Naturliga riskområden"
+      },
+      "description": {
+        "sv": "datamängder enligt beskrivningen i kommissionens genomförandeförordning (EU) 2023/138 den 21 december 2022 om fastställande av en förteckning över särskilda värdefulla datamängder och arrangemangen för offentliggörande och vidareutnyttjande av dessa, bilaga, avsnitt 2",
+        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 2"
+      },
+      "value": "http://data.europa.eu/bna/c_63be22bd"
+    },
+    {
+      "label": {
+        "sv": "Mortalitet",
+        "en": "Mortality"
+      },
+      "description": {
+        "sv": "datamängder enligt beskrivningen i kommissionens genomförandeförordning (EU) 2023/138 den 21 december 2022 om fastställande av en förteckning över särskilda värdefulla datamängder och arrangemangen för offentliggörande och vidareutnyttjande av dessa, bilaga, avsnitt 4",
+        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 4"
+      },
+      "value": "http://data.europa.eu/bna/c_4acb6bf3"
+    },
+    {
+      "label": {
+        "sv": "Utsläpp",
+        "en": "Emissions"
+      },
+      "description": {
+        "sv": "datamängder enligt beskrivningen i kommissionens genomförandeförordning (EU) 2023/138 den 21 december 2022 om fastställande av en förteckning över särskilda värdefulla datamängder och arrangemangen för offentliggörande och vidareutnyttjande av dessa, bilaga, avsnitt 2",
+        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 2"
+      },
+      "value": "http://data.europa.eu/bna/c_4ba9548e"
+    },
+    {
+      "label": {
+        "sv": "Regelbundna driftstider för slussar och broar",
+        "en": "Regular lock and bridge operating times"
+      },
+      "description": {
+        "sv": "datamängder enligt beskrivningen i kommissionens genomförandeförordning (EU) 2023/138 den 21 december 2022 om fastställande av en förteckning över särskilda värdefulla datamängder och arrangemangen för offentliggörande och vidareutnyttjande av dessa, bilaga, avsnitt 6",
+        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 6"
+      },
+      "value": "http://data.europa.eu/bna/c_03ba8d92"
+    },
+    {
+      "label": {
+        "sv": "Avfall",
+        "en": "Waste"
+      },
+      "description": {
+        "sv": "datamängder enligt beskrivningen i kommissionens genomförandeförordning (EU) 2023/138 den 21 december 2022 om fastställande av en förteckning över särskilda värdefulla datamängder och arrangemangen för offentliggörande och vidareutnyttjande av dessa, bilaga, avsnitt 2",
+        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 2"
+      },
+      "value": "http://data.europa.eu/bna/c_38933a65"
+    },
+    {
+      "label": {
+        "en": "Poverty",
+        "sv": "Fattigdom"
+      },
+      "description": {
+        "sv": "datamängder enligt beskrivningen i kommissionens genomförandeförordning (EU) 2023/138 den 21 december 2022 om fastställande av en förteckning över särskilda värdefulla datamängder och arrangemangen för offentliggörande och vidareutnyttjande av dessa, bilaga, avsnitt 4",
+        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 4"
+      },
+      "value": "http://data.europa.eu/bna/c_04bf94a3"
+    },
+    {
+      "label": {
+        "en": "Horizontal legislation",
+        "sv": "Övergripande lagstiftning"
+      },
+      "description": {
+        "sv": "datamängder enligt beskrivningen i kommissionens genomförandeförordning (EU) 2023/138 den 21 december 2022 om fastställande av en förteckning över särskilda värdefulla datamängder och arrangemangen för offentliggörande och vidareutnyttjande av dessa, bilaga, avsnitt 2",
+        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 2"
+      },
+      "value": "http://data.europa.eu/bna/c_4d63300b"
+    },
+    {
+      "label": {
+        "sv": "Fertilitet",
+        "en": "Fertility"
+      },
+      "description": {
+        "sv": "datamängder enligt beskrivningen i kommissionens genomförandeförordning (EU) 2023/138 den 21 december 2022 om fastställande av en förteckning över särskilda värdefulla datamängder och arrangemangen för offentliggörande och vidareutnyttjande av dessa, bilaga, avsnitt 4",
+        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 4"
+      },
+      "value": "http://data.europa.eu/bna/c_6a7250c1"
+    },
+    {
+      "label": {
+        "en": "Geographical names",
+        "sv": "Geografiska namn"
+      },
+      "description": {
+        "sv": "datamängder enligt beskrivningen i kommissionens genomförandeförordning (EU) 2023/138 den 21 december 2022 om fastställande av en förteckning över särskilda värdefulla datamängder och arrangemangen för offentliggörande och vidareutnyttjande av dessa, bilaga, avsnitt 1",
+        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 1"
+      },
+      "value": "http://data.europa.eu/bna/c_6c2bb82d"
+    },
+    {
+      "label": {
+        "en": "Short term changes of aids to navigation",
+        "sv": "Förändringar på kort sikt av navigeringshjälpmedlen"
+      },
+      "description": {
+        "sv": "datamängder enligt beskrivningen i kommissionens genomförandeförordning (EU) 2023/138 den 21 december 2022 om fastställande av en förteckning över särskilda värdefulla datamängder och arrangemangen för offentliggörande och vidareutnyttjande av dessa, bilaga, avsnitt 6",
+        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 6"
+      },
+      "value": "http://data.europa.eu/bna/c_593bc53d"
+    },
+    {
+      "label": {
+        "en": "Waterway axis with kilometres indication",
+        "sv": "Vattenvägsaxlar med kilometerindikering"
+      },
+      "description": {
+        "sv": "datamängder enligt beskrivningen i kommissionens genomförandeförordning (EU) 2023/138 den 21 december 2022 om fastställande av en förteckning över särskilda värdefulla datamängder och arrangemangen för offentliggörande och vidareutnyttjande av dessa, bilaga, avsnitt 6",
+        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 6"
+      },
+      "value": "http://data.europa.eu/bna/c_c19af83a"
+    },
+    {
+      "label": {
+        "en": "Climate",
+        "sv": "Klimat"
+      },
+      "description": {
+        "sv": "datamängder enligt beskrivningen i kommissionens genomförandeförordning (EU) 2023/138 den 21 december 2022 om fastställande av en förteckning över särskilda värdefulla datamängder och arrangemangen för offentliggörande och vidareutnyttjande av dessa, bilaga, avsnitt 2",
+        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 2"
+      },
+      "value": "http://data.europa.eu/bna/c_59e64dd4"
+    },
+    {
+      "label": {
+        "en": "Navigation rules and recommendations",
+        "sv": "Navigationsregler och rekommendationer"
+      },
+      "description": {
+        "sv": "datamängder enligt beskrivningen i kommissionens genomförandeförordning (EU) 2023/138 den 21 december 2022 om fastställande av en förteckning över särskilda värdefulla datamängder och arrangemangen för offentliggörande och vidareutnyttjande av dessa, bilaga, avsnitt 6",
+        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 6"
+      },
+      "value": "http://data.europa.eu/bna/c_2037ada4"
+    },
+    {
+      "label": {
+        "en": "Potential labour force",
+        "sv": "Potentiell arbetskraft"
+      },
+      "description": {
+        "sv": "datamängder enligt beskrivningen i kommissionens genomförandeförordning (EU) 2023/138 den 21 december 2022 om fastställande av en förteckning över särskilda värdefulla datamängder och arrangemangen för offentliggörande och vidareutnyttjande av dessa, bilaga, avsnitt 4",
+        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 4"
+      },
+      "value": "http://data.europa.eu/bna/c_23385471"
+    },
+    {
+      "label": {
+        "en": "Employment",
+        "sv": "Sysselsättning"
+      },
+      "description": {
+        "sv": "datamängder enligt beskrivningen i kommissionens genomförandeförordning (EU) 2023/138 den 21 december 2022 om fastställande av en förteckning över särskilda värdefulla datamängder och arrangemangen för offentliggörande och vidareutnyttjande av dessa, bilaga, avsnitt 4",
+        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 4"
+      },
+      "value": "http://data.europa.eu/bna/c_a2c6dcd8"
+    },
+    {
+      "label": {
+        "en": "National accounts – key indicators on corporations",
+        "sv": "Nationalräkenskaper – viktiga indikatorer för företag"
+      },
+      "description": {
+        "sv": "datamängder enligt beskrivningen i kommissionens genomförandeförordning (EU) 2023/138 den 21 december 2022 om fastställande av en förteckning över särskilda värdefulla datamängder och arrangemangen för offentliggörande och vidareutnyttjande av dessa, bilaga, avsnitt 4",
+        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 4"
+      },
+      "value": "http://data.europa.eu/bna/c_95da87c7"
+    },
+    {
+      "label": {
+        "en": "Environmental monitoring facilities",
+        "sv": "Anläggningar för miljöövervakning"
+      },
+      "description": {
+        "sv": "datamängder enligt beskrivningen i kommissionens genomförandeförordning (EU) 2023/138 den 21 december 2022 om fastställande av en förteckning över särskilda värdefulla datamängder och arrangemangen för offentliggörande och vidareutnyttjande av dessa, bilaga, avsnitt 2",
+        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 2"
+      },
+      "value": "http://data.europa.eu/bna/c_7b8fbb64"
+    },
+    {
+      "label": {
+        "en": "Agricultural parcels",
+        "sv": "Jordbruksskiften"
+      },
+      "description": {
+        "sv": "datamängder enligt beskrivningen i kommissionens genomförandeförordning (EU) 2023/138 den 21 december 2022 om fastställande av en förteckning över särskilda värdefulla datamängder och arrangemangen för offentliggörande och vidareutnyttjande av dessa, bilaga, avsnitt 1",
+        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 1"
+      },
+      "value": "http://data.europa.eu/bna/c_642643e6"
+    },
+    {
+      "label": {
+        "sv": "Områden med särskild förvaltning/begränsningar/reglering samt enheter för rapportering",
+        "en": "Area management / restriction / regulation zones & reporting units"
+      },
+      "description": {
+        "sv": "datamängder enligt beskrivningen i kommissionens genomförandeförordning (EU) 2023/138 den 21 december 2022 om fastställande av en förteckning över särskilda värdefulla datamängder och arrangemangen för offentliggörande och vidareutnyttjande av dessa, bilaga, avsnitt 2",
+        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 2"
+      },
+      "value": "http://data.europa.eu/bna/c_af646f5b"
+    },
+    {
+      "label": {
+        "sv": "Konturer av vattendjupen i navigeringskanalen",
+        "en": "Water depths contours in the navigation channel"
+      },
+      "description": {
+        "sv": "datamängder enligt beskrivningen i kommissionens genomförandeförordning (EU) 2023/138 den 21 december 2022 om fastställande av en förteckning över särskilda värdefulla datamängder och arrangemangen för offentliggörande och vidareutnyttjande av dessa, bilaga, avsnitt 6",
+        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 6"
+      },
+      "value": "http://data.europa.eu/bna/c_fef208ab"
+    },
+    {
+      "label": {
+        "en": "Basic company information: key attributes",
+        "sv": "Grundläggande företagsinformation: nyckelattribut"
+      },
+      "description": {
+        "sv": "datamängder enligt beskrivningen i kommissionens genomförandeförordning (EU) 2023/138 den 21 december 2022 om fastställande av en förteckning över särskilda värdefulla datamängder och arrangemangen för offentliggörande och vidareutnyttjande av dessa, bilaga, avsnitt 5",
+        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 5"
+      },
+      "value": "http://data.europa.eu/bna/c_56a1bf47"
+    },
+    {
+      "label": {
+        "en": "Contours of locks and dams",
+        "sv": "Ytterlinjer för slussar och fördämningar"
+      },
+      "description": {
+        "sv": "datamängder enligt beskrivningen i kommissionens genomförandeförordning (EU) 2023/138 den 21 december 2022 om fastställande av en förteckning över särskilda värdefulla datamängder och arrangemangen för offentliggörande och vidareutnyttjande av dessa, bilaga, avsnitt 6",
+        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 6"
+      },
+      "value": "http://data.europa.eu/bna/c_883d0205"
+    },
+    {
+      "label": {
+        "sv": "Buller",
+        "en": "Noise"
+      },
+      "description": {
+        "sv": "datamängder enligt beskrivningen i kommissionens genomförandeförordning (EU) 2023/138 den 21 december 2022 om fastställande av en förteckning över särskilda värdefulla datamängder och arrangemangen för offentliggörande och vidareutnyttjande av dessa, bilaga, avsnitt 2",
+        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 2"
+      },
+      "value": "http://data.europa.eu/bna/c_e4358335"
+    },
+    {
+      "label": {
+        "sv": "NWP-modelldata",
+        "en": "NWP model data"
+      },
+      "description": {
+        "sv": "datamängder enligt beskrivningen i kommissionens genomförandeförordning (EU) 2023/138 den 21 december 2022 om fastställande av en förteckning över särskilda värdefulla datamängder och arrangemangen för offentliggörande och vidareutnyttjande av dessa, bilaga, avsnitt 3",
+        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 3"
+      },
+      "value": "http://data.europa.eu/bna/c_13e3cf16"
+    },
+    {
+      "label": {
+        "en": "Protected sites",
+        "sv": "Skyddade områden"
+      },
+      "description": {
+        "sv": "datamängder enligt beskrivningen i kommissionens genomförandeförordning (EU) 2023/138 den 21 december 2022 om fastställande av en förteckning över särskilda värdefulla datamängder och arrangemangen för offentliggörande och vidareutnyttjande av dessa, bilaga, avsnitt 2",
+        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 2"
+      },
+      "value": "http://data.europa.eu/bna/c_83aa10a6"
+    },
+    {
+      "label": {
+        "en": "Land cover",
+        "sv": "Landtäcke"
+      },
+      "description": {
+        "sv": "datamängder enligt beskrivningen i kommissionens genomförandeförordning (EU) 2023/138 den 21 december 2022 om fastställande av en förteckning över särskilda värdefulla datamängder och arrangemangen för offentliggörande och vidareutnyttjande av dessa, bilaga, avsnitt 2",
+        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 2"
+      },
+      "value": "http://data.europa.eu/bna/c_b21e1296"
+    },
+    {
+      "label": {
+        "sv": "Officiella sjömärken (t.ex. bojar, prickar, fyrar, tavlor)",
+        "en": "Official aids-to-navigation (e.g. buoys, beacons, lights, notice marks)"
+      },
+      "description": {
+        "sv": "datamängder enligt beskrivningen i kommissionens genomförandeförordning (EU) 2023/138 den 21 december 2022 om fastställande av en förteckning över särskilda värdefulla datamängder och arrangemangen för offentliggörande och vidareutnyttjande av dessa, bilaga, avsnitt 6",
+        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 6"
+      },
+      "value": "http://data.europa.eu/bna/c_b24028d7"
+    },
+    {
+      "label": {
+        "sv": "Vatten",
+        "en": "Water"
+      },
+      "description": {
+        "sv": "datamängder enligt beskrivningen i kommissionens genomförandeförordning (EU) 2023/138 den 21 december 2022 om fastställande av en förteckning över särskilda värdefulla datamängder och arrangemangen för offentliggörande och vidareutnyttjande av dessa, bilaga, avsnitt 2",
+        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 2"
+      },
+      "value": "http://data.europa.eu/bna/c_43f88346"
+    },
+    {
+      "label": {
+        "en": "Nature preservation and biodiversity",
+        "sv": "Naturskydd och biologisk mångfald"
+      },
+      "description": {
+        "sv": "datamängder enligt beskrivningen i kommissionens genomförandeförordning (EU) 2023/138 den 21 december 2022 om fastställande av en förteckning över särskilda värdefulla datamängder och arrangemangen för offentliggörande och vidareutnyttjande av dessa, bilaga, avsnitt 2",
+        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 2"
+      },
+      "value": "http://data.europa.eu/bna/c_b7f6a4f3"
+    },
+    {
+      "label": {
+        "en": "Boundaries of the fairway/navigation channel",
+        "sv": "Gränser för farleden/navigationskanalen"
+      },
+      "description": {
+        "sv": "datamängder enligt beskrivningen i kommissionens genomförandeförordning (EU) 2023/138 den 21 december 2022 om fastställande av en förteckning över särskilda värdefulla datamängder och arrangemangen för offentliggörande och vidareutnyttjande av dessa, bilaga, avsnitt 6",
+        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 6"
+      },
+      "value": "http://data.europa.eu/bna/c_664c9e5a"
+    },
+    {
+      "label": {
+        "en": "Restrictions caused by flood and ice",
+        "sv": "Begränsningar orsakade av översvämningar och is"
+      },
+      "description": {
+        "sv": "datamängder enligt beskrivningen i kommissionens genomförandeförordning (EU) 2023/138 den 21 december 2022 om fastställande av en förteckning över särskilda värdefulla datamängder och arrangemangen för offentliggörande och vidareutnyttjande av dessa, bilaga, avsnitt 6",
+        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 6"
+      },
+      "value": "http://data.europa.eu/bna/c_f6886b00"
+    },
+    {
+      "label": {
+        "en": "Geology",
+        "sv": "Geologi"
+      },
+      "description": {
+        "sv": "datamängder enligt beskrivningen i kommissionens genomförandeförordning (EU) 2023/138 den 21 december 2022 om fastställande av en förteckning över särskilda värdefulla datamängder och arrangemangen för offentliggörande och vidareutnyttjande av dessa, bilaga, avsnitt 2",
+        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 2"
+      },
+      "value": "http://data.europa.eu/bna/c_e3f55603"
+    },
+    {
+      "label": {
+        "sv": "Förändringar på kort sikt av slussarnas och broarnas driftstider",
+        "en": "Short term changes of lock and bridge operating times"
+      },
+      "description": {
+        "sv": "datamängder enligt beskrivningen i kommissionens genomförandeförordning (EU) 2023/138 den 21 december 2022 om fastställande av en förteckning över särskilda värdefulla datamängder och arrangemangen för offentliggörande och vidareutnyttjande av dessa, bilaga, avsnitt 6",
+        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 6"
+      },
+      "value": "http://data.europa.eu/bna/c_66b946cb"
+    },
+    {
+      "label": {
+        "sv": "Länkar till externa xml-filer med driftstider för begränsande strukturer",
+        "en": "Links to the external xml-files with operation times of restricting structures"
+      },
+      "description": {
+        "sv": "datamängder enligt beskrivningen i kommissionens genomförandeförordning (EU) 2023/138 den 21 december 2022 om fastställande av en förteckning över särskilda värdefulla datamängder och arrangemangen för offentliggörande och vidareutnyttjande av dessa, bilaga, avsnitt 6",
+        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 6"
+      },
+      "value": "http://data.europa.eu/bna/c_298ffb73"
+    },
+    {
+      "label": {
+        "en": "Location and characteristics of ports and transhipment sites",
+        "sv": "Hamnars och omlastningsanläggningars lokalisering och egenskaper"
+      },
+      "description": {
+        "sv": "datamängder enligt beskrivningen i kommissionens genomförandeförordning (EU) 2023/138 den 21 december 2022 om fastställande av en förteckning över särskilda värdefulla datamängder och arrangemangen för offentliggörande och vidareutnyttjande av dessa, bilaga, avsnitt 6",
+        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 6"
+      },
+      "value": "http://data.europa.eu/bna/c_3e8e3bf7"
+    },
+    {
+      "label": {
+        "en": "Current healthcare expenditure",
+        "sv": "Löpande utgifter för hälso- och sjukvård"
+      },
+      "description": {
+        "sv": "datamängder enligt beskrivningen i kommissionens genomförandeförordning (EU) 2023/138 den 21 december 2022 om fastställande av en förteckning över särskilda värdefulla datamängder och arrangemangen för offentliggörande och vidareutnyttjande av dessa, bilaga, avsnitt 4",
+        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 4"
+      },
+      "value": "http://data.europa.eu/bna/c_424bb0b4"
+    },
+    {
+      "label": {
+        "en": "List of navigation aids and traffic signs",
+        "sv": "Förteckning över navigationshjälpmedel och trafikskyltar"
+      },
+      "description": {
+        "sv": "datamängder enligt beskrivningen i kommissionens genomförandeförordning (EU) 2023/138 den 21 december 2022 om fastställande av en förteckning över särskilda värdefulla datamängder och arrangemangen för offentliggörande och vidareutnyttjande av dessa, bilaga, avsnitt 6",
+        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 6"
+      },
+      "value": "http://data.europa.eu/bna/c_9cbe4435"
+    },
+    {
+      "label": {
+        "en": "Habitats and biotopes",
+        "sv": "Naturtyper och biotoper"
+      },
+      "description": {
+        "sv": "datamängder enligt beskrivningen i kommissionens genomförandeförordning (EU) 2023/138 den 21 december 2022 om fastställande av en förteckning över särskilda värdefulla datamängder och arrangemangen för offentliggörande och vidareutnyttjande av dessa, bilaga, avsnitt 2",
+        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 2"
+      },
+      "value": "http://data.europa.eu/bna/c_c3919aec"
+    },
+    {
+      "label": {
+        "sv": "Offentliga utgifter och inkomster",
+        "en": "Government expenditure and revenue"
+      },
+      "description": {
+        "sv": "datamängder enligt beskrivningen i kommissionens genomförandeförordning (EU) 2023/138 den 21 december 2022 om fastställande av en förteckning över särskilda värdefulla datamängder och arrangemangen för offentliggörande och vidareutnyttjande av dessa, bilaga, avsnitt 4",
+        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 4"
+      },
+      "value": "http://data.europa.eu/bna/c_4ac557e7"
+    },
+    {
+      "label": {
+        "en": "Species distribution",
+        "sv": "Arters utbredning"
+      },
+      "description": {
+        "sv": "datamängder enligt beskrivningen i kommissionens genomförandeförordning (EU) 2023/138 den 21 december 2022 om fastställande av en förteckning över särskilda värdefulla datamängder och arrangemangen för offentliggörande och vidareutnyttjande av dessa, bilaga, avsnitt 2",
+        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 2"
+      },
+      "value": "http://data.europa.eu/bna/c_793164b6"
+    },
+    {
+      "label": {
+        "en": "Transport networks",
+        "sv": "Transportnät"
+      },
+      "description": {
+        "sv": "datamängder enligt beskrivningen i kommissionens genomförandeförordning (EU) 2023/138 den 21 december 2022 om fastställande av en förteckning över särskilda värdefulla datamängder och arrangemangen för offentliggörande och vidareutnyttjande av dessa, bilaga, avsnitt 6",
+        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 6"
+      },
+      "value": "http://data.europa.eu/bna/c_4b74ea13"
+    },
+    {
+      "label": {
+        "en": "Cadastral parcels",
+        "sv": "Fastighetsområden"
+      },
+      "description": {
+        "sv": "datamängder enligt beskrivningen i kommissionens genomförandeförordning (EU) 2023/138 den 21 december 2022 om fastställande av en förteckning över särskilda värdefulla datamängder och arrangemangen för offentliggörande och vidareutnyttjande av dessa, bilaga, avsnitt 1",
+        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 1"
+      },
+      "value": "http://data.europa.eu/bna/c_6a3f6896"
+    },
+    {
+      "label": {
+        "en": "Mineral resources",
+        "sv": "Mineralfyndigheter"
+      },
+      "description": {
+        "sv": "datamängder enligt beskrivningen i kommissionens genomförandeförordning (EU) 2023/138 den 21 december 2022 om fastställande av en förteckning över särskilda värdefulla datamängder och arrangemangen för offentliggörande och vidareutnyttjande av dessa, bilaga, avsnitt 2",
+        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 2"
+      },
+      "value": "http://data.europa.eu/bna/c_4dd389c5"
+    },
+    {
+      "label": {
+        "en": "State of the rivers, canals, locks and bridges",
+        "sv": "Tillståndet för floder, kanaler, slussar och broar"
+      },
+      "description": {
+        "sv": "datamängder enligt beskrivningen i kommissionens genomförandeförordning (EU) 2023/138 den 21 december 2022 om fastställande av en förteckning över särskilda värdefulla datamängder och arrangemangen för offentliggörande och vidareutnyttjande av dessa, bilaga, avsnitt 6",
+        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 6"
+      },
+      "value": "http://data.europa.eu/bna/c_e50004c6"
+    },
+    {
+      "label": {
+        "en": "Observations data measured by weather stations",
+        "sv": "Observationsdata som uppmätts av väderstationer"
+      },
+      "description": {
+        "sv": "datamängder enligt beskrivningen i kommissionens genomförandeförordning (EU) 2023/138 den 21 december 2022 om fastställande av en förteckning över särskilda värdefulla datamängder och arrangemangen för offentliggörande och vidareutnyttjande av dessa, bilaga, avsnitt 3",
+        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 3"
+      },
+      "value": "http://data.europa.eu/bna/c_3af3368c"
+    },
+    {
+      "label": {
+        "en": "Air",
+        "sv": "Luft"
+      },
+      "description": {
+        "sv": "datamängder enligt beskrivningen i kommissionens genomförandeförordning (EU) 2023/138 den 21 december 2022 om fastställande av en förteckning över särskilda värdefulla datamängder och arrangemangen för offentliggörande och vidareutnyttjande av dessa, bilaga, avsnitt 2",
+        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 2"
+      },
+      "value": "http://data.europa.eu/bna/c_63b37dd4"
+    },
+    {
+      "label": {
+        "en": "Weather alerts",
+        "sv": "Vädervarningar"
+      },
+      "description": {
+        "sv": "datamängder enligt beskrivningen i kommissionens genomförandeförordning (EU) 2023/138 den 21 december 2022 om fastställande av en förteckning över särskilda värdefulla datamängder och arrangemangen för offentliggörande och vidareutnyttjande av dessa, bilaga, avsnitt 3",
+        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 3"
+      },
+      "value": "http://data.europa.eu/bna/c_be47b010"
+    },
+    {
+      "label": {
+        "en": "Sea regions",
+        "sv": "Havsområden"
+      },
+      "description": {
+        "sv": "datamängder enligt beskrivningen i kommissionens genomförandeförordning (EU) 2023/138 den 21 december 2022 om fastställande av en förteckning över särskilda värdefulla datamängder och arrangemangen för offentliggörande och vidareutnyttjande av dessa, bilaga, avsnitt 2",
+        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 2"
+      },
+      "value": "http://data.europa.eu/bna/c_f399050e"
+    },
+    {
+      "label": {
+        "en": "Oceanographic geographical features",
+        "sv": "Geografiska oceanografiska förhållanden"
+      },
+      "description": {
+        "sv": "datamängder enligt beskrivningen i kommissionens genomförandeförordning (EU) 2023/138 den 21 december 2022 om fastställande av en förteckning över särskilda värdefulla datamängder och arrangemangen för offentliggörande och vidareutnyttjande av dessa, bilaga, avsnitt 2",
+        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 2"
+      },
+      "value": "http://data.europa.eu/bna/c_b40e6d46"
+    },
+    {
+      "label": {
+        "en": "Soil",
+        "sv": "Mark"
+      },
+      "description": {
+        "sv": "datamängder enligt beskrivningen i kommissionens genomförandeförordning (EU) 2023/138 den 21 december 2022 om fastställande av en förteckning över särskilda värdefulla datamängder och arrangemangen för offentliggörande och vidareutnyttjande av dessa, bilaga, avsnitt 2",
+        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 2"
+      },
+      "value": "http://data.europa.eu/bna/c_87a129d9"
+    },
+    {
+      "label": {
+        "sv": "Nationalräkenskaper – viktiga indikatorer för hushåll",
+        "en": "National accounts – key indicators on households"
+      },
+      "value": "http://data.europa.eu/bna/c_59627af3"
+    },
+    {
+      "label": {
+        "sv": "Ojämlikhet",
+        "en": "Inequality"
+      },
+      "description": {
+        "sv": "datamängder enligt beskrivningen i kommissionens genomförandeförordning (EU) 2023/138 den 21 december 2022 om fastställande av en förteckning över särskilda värdefulla datamängder och arrangemangen för offentliggörande och vidareutnyttjande av dessa, bilaga, avsnitt 4",
+        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 4"
+      },
+      "value": "http://data.europa.eu/bna/c_a8b937c4"
+    },
+    {
+      "label": {
+        "en": "Environmental accounts and statistics",
+        "sv": "Miljöräkenskaper och miljöstatistik"
+      },
+      "description": {
+        "sv": "datamängder enligt beskrivningen i kommissionens genomförandeförordning (EU) 2023/138 den 21 december 2022 om fastställande av en förteckning över särskilda värdefulla datamängder och arrangemangen för offentliggörande och vidareutnyttjande av dessa, bilaga, avsnitt 4",
+        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 4"
+      },
+      "value": "http://data.europa.eu/bna/c_92874eb2"
+    },
+    {
+      "label": {
+        "en": "Industrial production",
+        "sv": "Industriproduktion"
+      },
+      "description": {
+        "sv": "datamängder enligt beskrivningen i kommissionens genomförandeförordning (EU) 2023/138 den 21 december 2022 om fastställande av en förteckning över särskilda värdefulla datamängder och arrangemangen för offentliggörande och vidareutnyttjande av dessa, bilaga, avsnitt 4",
+        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 4"
+      },
+      "value": "http://data.europa.eu/bna/c_34abf8c1"
+    },
+    {
+      "label": {
+        "en": "Reference parcels",
+        "sv": "Referensskifte"
+      },
+      "description": {
+        "sv": "datamängder enligt beskrivningen i kommissionens genomförandeförordning (EU) 2023/138 den 21 december 2022 om fastställande av en förteckning över särskilda värdefulla datamängder och arrangemangen för offentliggörande och vidareutnyttjande av dessa, bilaga, avsnitt 1",
+        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 1"
+      },
+      "value": "http://data.europa.eu/bna/c_fbd2fc3f"
+    },
+    {
+      "label": {
+        "en": "Company documents and accounts",
+        "sv": "Företagshandlingar och räkenskaper"
+      },
+      "description": {
+        "sv": "datamängder enligt beskrivningen i kommissionens genomförandeförordning (EU) 2023/138 den 21 december 2022 om fastställande av en förteckning över särskilda värdefulla datamängder och arrangemangen för offentliggörande och vidareutnyttjande av dessa, bilaga, avsnitt 5",
+        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 5"
+      },
+      "value": "http://data.europa.eu/bna/c_8f0fac04"
+    },
+    {
+      "label": {
+        "sv": "Nationalräkenskaper – viktiga BNP-aggregat",
+        "en": "National accounts – GDP main aggregates"
+      },
+      "description": {
+        "sv": "datamängder enligt beskrivningen i kommissionens genomförandeförordning (EU) 2023/138 den 21 december 2022 om fastställande av en förteckning över särskilda värdefulla datamängder och arrangemangen för offentliggörande och vidareutnyttjande av dessa, bilaga, avsnitt 4",
+        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 4"
+      },
+      "value": "http://data.europa.eu/bna/c_b72b721f"
+    },
+    {
+      "label": {
+        "en": "Production and industrial facilities",
+        "sv": "Produktions- och industrianläggningar"
+      },
+      "description": {
+        "sv": "datamängder enligt beskrivningen i kommissionens genomförandeförordning (EU) 2023/138 den 21 december 2022 om fastställande av en förteckning över särskilda värdefulla datamängder och arrangemangen för offentliggörande och vidareutnyttjande av dessa, bilaga, avsnitt 2",
+        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 2"
+      },
+      "value": "http://data.europa.eu/bna/c_59c93ba5"
+    },
+    {
+      "label": {
+        "sv": "Strandlinje vid medelvattenstånd",
+        "en": "Bank of waterway at mean water level"
+      },
+      "description": {
+        "sv": "datamängder enligt beskrivningen i kommissionens genomförandeförordning (EU) 2023/138 den 21 december 2022 om fastställande av en förteckning över särskilda värdefulla datamängder och arrangemangen för offentliggörande och vidareutnyttjande av dessa, bilaga, avsnitt 6",
+        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 6"
+      },
+      "value": "http://data.europa.eu/bna/c_1226dc1a"
+    },
+    {
+      "label": {
+        "en": "Population",
+        "sv": "Befolkning"
+      },
+      "description": {
+        "sv": "datamängder enligt beskrivningen i kommissionens genomförandeförordning (EU) 2023/138 den 21 december 2022 om fastställande av en förteckning över särskilda värdefulla datamängder och arrangemangen för offentliggörande och vidareutnyttjande av dessa, bilaga, avsnitt 4",
+        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 4"
+      },
+      "value": "http://data.europa.eu/bna/c_f2b50efd"
+    },
+    {
+      "label": {
+        "en": "Buildings",
+        "sv": "Byggnader"
+      },
+      "description": {
+        "sv": "datamängder enligt beskrivningen i kommissionens genomförandeförordning (EU) 2023/138 den 21 december 2022 om fastställande av en förteckning över särskilda värdefulla datamängder och arrangemangen för offentliggörande och vidareutnyttjande av dessa, bilaga, avsnitt 1",
+        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 1"
+      },
+      "value": "http://data.europa.eu/bna/c_60182062"
+    },
+    {
+      "label": {
+        "sv": "Höjd",
+        "en": "Elevation"
+      },
+      "description": {
+        "sv": "datamängder enligt beskrivningen i kommissionens genomförandeförordning (EU) 2023/138 den 21 december 2022 om fastställande av en förteckning över särskilda värdefulla datamängder och arrangemangen för offentliggörande och vidareutnyttjande av dessa, bilaga, avsnitt 2",
+        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 2"
+      },
+      "value": "http://data.europa.eu/bna/c_315692ad"
+    },
+    {
+      "label": {
+        "en": "Hydrography",
+        "sv": "Hydrografi"
+      },
+      "description": {
+        "sv": "datamängder enligt beskrivningen i kommissionens genomförandeförordning (EU) 2023/138 den 21 december 2022 om fastställande av en förteckning över särskilda värdefulla datamängder och arrangemangen för offentliggörande och vidareutnyttjande av dessa, bilaga, avsnitt 2",
+        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 2"
+      },
+      "value": "http://data.europa.eu/bna/c_06b1eec4"
+    },
+    {
+      "label": {
+        "sv": "Farledens egenskaper",
+        "en": "Fairway characteristics"
+      },
+      "description": {
+        "sv": "datamängder enligt beskrivningen i kommissionens genomförandeförordning (EU) 2023/138 den 21 december 2022 om fastställande av en förteckning över särskilda värdefulla datamängder och arrangemangen för offentliggörande och vidareutnyttjande av dessa, bilaga, avsnitt 6",
+        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 6"
+      },
+      "value": "http://data.europa.eu/bna/c_f76b01e6"
+    },
+    {
+      "label": {
+        "en": "Other physical limitations on waterways",
+        "sv": "Andra fysiska begränsningar för vattenvägar"
+      },
+      "description": {
+        "sv": "datamängder enligt beskrivningen i kommissionens genomförandeförordning (EU) 2023/138 den 21 december 2022 om fastställande av en förteckning över särskilda värdefulla datamängder och arrangemangen för offentliggörande och vidareutnyttjande av dessa, bilaga, avsnitt 6",
+        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 6"
+      },
+      "value": "http://data.europa.eu/bna/c_7e19ef26"
+    },
+    {
+      "label": {
+        "en": "Bio-geographical regions",
+        "sv": "Biogeografiska regioner"
+      },
+      "description": {
+        "sv": "datamängder enligt beskrivningen i kommissionens genomförandeförordning (EU) 2023/138 den 21 december 2022 om fastställande av en förteckning över särskilda värdefulla datamängder och arrangemangen för offentliggörande och vidareutnyttjande av dessa, bilaga, avsnitt 2",
+        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 2"
+      },
+      "value": "http://data.europa.eu/bna/c_c873f344"
+    },
+    {
+      "label": {
+        "en": "Location of ports and transhipment sites",
+        "sv": "Hamnars och omlastningsanläggningars lokalisering"
+      },
+      "description": {
+        "sv": "datamängder enligt beskrivningen i kommissionens genomförandeförordning (EU) 2023/138 den 21 december 2022 om fastställande av en förteckning över särskilda värdefulla datamängder och arrangemangen för offentliggörande och vidareutnyttjande av dessa, bilaga, avsnitt 6",
+        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 6"
+      },
+      "value": "http://data.europa.eu/bna/c_407951ff"
+    },
+    {
+      "label": {
+        "en": "Unemployment",
+        "sv": "Arbetslöshet"
+      },
+      "description": {
+        "sv": "datamängder enligt beskrivningen i kommissionens genomförandeförordning (EU) 2023/138 den 21 december 2022 om fastställande av en förteckning över särskilda värdefulla datamängder och arrangemangen för offentliggörande och vidareutnyttjande av dessa, bilaga, avsnitt 4",
+        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 4"
+      },
+      "value": "http://data.europa.eu/bna/c_fd4e881c"
+    },
+    {
+      "label": {
+        "en": "Climate data: validated observations",
+        "sv": "Klimatdata: validerade observationer"
+      },
+      "description": {
+        "sv": "datamängder enligt beskrivningen i kommissionens genomförandeförordning (EU) 2023/138 den 21 december 2022 om fastställande av en förteckning över särskilda värdefulla datamängder och arrangemangen för offentliggörande och vidareutnyttjande av dessa, bilaga, avsnitt 3",
+        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 3"
+      },
+      "value": "http://data.europa.eu/bna/c_36807466"
+    },
+    {
+      "label": {
+        "sv": "Statistik över internationell varuhandel i EU – export och import uppdelat efter partner, produkt och produktflöde",
+        "en": "EU International trade in goods statistics – exports and imports breakdowns simultaneously by partner, product and flow"
+      },
+      "description": {
+        "sv": "datamängder enligt beskrivningen i kommissionens genomförandeförordning (EU) 2023/138 den 21 december 2022 om fastställande av en förteckning över särskilda värdefulla datamängder och arrangemangen för offentliggörande och vidareutnyttjande av dessa, bilaga, avsnitt 4",
+        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 4"
+      },
+      "value": "http://data.europa.eu/bna/c_20cd11bb"
+    },
+    {
+      "label": {
+        "en": "Population, Fertility, Mortality",
+        "sv": "Befolkning, fertilitet, mortalitet"
+      },
+      "description": {
+        "sv": "datamängder enligt beskrivningen i kommissionens genomförandeförordning (EU) 2023/138 den 21 december 2022 om fastställande av en förteckning över särskilda värdefulla datamängder och arrangemangen för offentliggörande och vidareutnyttjande av dessa, bilaga, avsnitt 4",
+        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 4"
+      },
+      "value": "http://data.europa.eu/bna/c_317b9493"
+    },
+    {
+      "label": {
+        "en": "Shoreline construction",
+        "sv": "Strandlinjekonstruktion"
+      },
+      "description": {
+        "sv": "datamängder enligt beskrivningen i kommissionens genomförandeförordning (EU) 2023/138 den 21 december 2022 om fastställande av en förteckning över särskilda värdefulla datamängder och arrangemangen för offentliggörande och vidareutnyttjande av dessa, bilaga, avsnitt 6",
+        "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 6"
+      },
+      "value": "http://data.europa.eu/bna/c_bc8941d9"
+    },
+    {
+      "label": {
+        "sv": "Dataset som avser inre vattenvägar",
         "en": "Inland waterways datasets"
       },
       "description": {
+        "sv": "datamängder enligt beskrivningen i kommissionens genomförandeförordning (EU) 2023/138 den 21 december 2022 om fastställande av en förteckning över särskilda värdefulla datamängder och arrangemangen för offentliggörande och vidareutnyttjande av dessa, bilaga, avsnitt 6",
         "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 6"
       },
       "value": "http://data.europa.eu/bna/c_b151a0ba"
     },
     {
       "label": {
+        "sv": "Referensuppgifter för vattennivåmätare som är av betydelse för navigering",
         "en": "Reference data for water level gauges relevant to navigation"
       },
       "description": {
+        "sv": "datamängder enligt beskrivningen i kommissionens genomförandeförordning (EU) 2023/138 den 21 december 2022 om fastställande av en förteckning över särskilda värdefulla datamängder och arrangemangen för offentliggörande och vidareutnyttjande av dessa, bilaga, avsnitt 6",
         "en": "data sets as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 laying down a list of specific high-value datasets and the arrangements for their publication and re-use, Annex, Section 6"
       },
       "value": "http://data.europa.eu/bna/c_1e787364"

@@ -2,7 +2,7 @@
   "type": "choice",
   "extends": "dcatap:hvdCategory",
   "description": {
-    "en": "Categorization of high value dataset as described in Commission Implementing Regulation (EU) 2023/138 of 21 December 2022, Annex, Section 3. Note that this field is only mandatory if the applicable legislation specifies that the dataservice is a \"high value dataset\", in fact, otherwise it should not be expressed at all.",
-    "sv": "Kategori för värdefulla datamängder i enlighet med Kommissionens genomförandeförordning (EU) 2023/138 från 21 december 2022, annex, sektion 3. Observera att detta fält bara är obligatoriskt om den tillämplig lagstiftning på datatjänsten är satt till \"värdefull datamängd\", annars bör man inte uttrycka en kategori över huvud taget."
+    "en": "Categorization of high value dataset as described in the annex of the Commission Implementing Regulation (EU) 2023/138 of 21 December 2022 (https://eur-lex.europa.eu/eli/reg_impl/2023/138/oj). See also the definitions here: https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://data.europa.eu/bna/asd487ae75. Note that this field is only mandatory if the applicable legislation specifies that the dataservice is a \"high value dataset\", in fact, otherwise it should not be expressed at all.",
+    "sv": "Kategori för värdefulla datamängder i enlighet med annexet i Kommissionens genomförandeförordning (EU) 2023/138 från 21 december 2022 (https://eur-lex.europa.eu/eli/reg_impl/2023/138/oj). Se också definitioner här: https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://data.europa.eu/bna/asd487ae75. Observera att detta fält bara är obligatoriskt om den tillämplig lagstiftning på datatjänsten är satt till \"värdefull datamängd\", annars bör man inte uttrycka en kategori över huvud taget."
   }
 }
