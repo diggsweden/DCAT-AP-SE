@@ -4,8 +4,7 @@ Nedan redovisar vi först avvikelser i den svenska profilen mot DCAT-AP2.0.0.
 Vi delar in ändringar som handlar om kardinalitet, utelämnade delar, tillägg samt förtydlingar. Därefter redovisar vi i korthet vad som ändrats sedan den tidigare versionen av den svenska profilen.
 
 ## Ändringar mellan DCAT-AP-SE-3.0.0 och DCAT-AP-SE-3.0.1
-Då DCAT-AP-SE försöker hålla samma versionsnummer för major och minor versioner är denna version bara patch trots 
-att ett antal mer substanstiella ändringar gjorts:
+Då DCAT-AP-SE försöker hålla samma versionsnummer för major och minor versioner som DCAT-AP är denna version bara en patch version trots att ett antal mer substanstiella ändringar gjorts:
 
 1. Alla HVD klassificeringarna finns nu på svenska.
 2. Profilen för utgivare har utvidgats med en `beskrivning`, ett sätt att markera att en aktör har avgiftsfinansiering på några datamängder / tjänster. Det finns nu också stöd för att uttrycka identifierare (organisationsnummer) samt alternativa URI:er.
