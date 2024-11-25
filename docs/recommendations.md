@@ -162,3 +162,9 @@ När man vill erbjuda en datatjänst (API) för all data i en datamängdsserie �
 ## 21. Egenskaper med samma värde på datamängder i datamängdsserier
 Datamängder som är i samma datamängdsserie ska ha samma karaktär (se rekommendation 15). Det medför att för alla datamängder i en datamängdsserie finns ett antal fält som inte bör skilja sig åt sinsemellan. Om samma fält uttrycks på datamängdsserien själv bör de vara samma även där. Detta inkluderar fälten utgivare, nyckelord, kategori, tillämplig lagstiftning, kategori för värdefulla datamängder, kategori för grunddata, uppfyller, ingångssida, relaterad resurs, kvalificerad relaterad resurs samt dokumentation.
 
+## 22. Publicering av skyddade data enligt dataförvaltningsförordningen
+Du som behöver berätta om datamängder, datatjänster eller datamängdsserier enligt dataförvaltningsförordningen måste följa vissa regler för att dyka upp i EUs register över skyddade data. Följande krav gäller:
+
+1. På datamängden, datatjänsten eller datamängdsserien behöver `titel`, `beskrivning`, `utgivare` och minst en distribution tillhandahållas.
+2. På datamängden, datatjänsten eller datamängdsserien behöver `åtkomsträttigheter` vara satt till antingen `begränsad` eller `ej offentlig`.
+3. För distributioner på datamängder behöver minst `webbadress för åtkomst`, `format`, `storlek` samt antingen `licens` eller en `rättighetsförklaring` anges.

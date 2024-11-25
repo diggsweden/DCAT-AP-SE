@@ -106,6 +106,21 @@ var spec2recs = {
     "dcat_Dataset-dcat_qualifiedRelation",
     "dcat_DatasetSeries-foaf_page",
     "dcat_Dataset-foaf_page",
+  ],
+  "22-publicering-av-skyddade-data-enligt-dataforvaltningsforordningen": [
+    "dcat_Dataset-dcterms_title",
+    "dcat_Dataset-dcterms_description",
+    "dcat_Dataset-dcterms_publisher",
+    "dcat_Dataset-dcat_distribution",
+    "dcat_Dataset-dcterms_accessRights",
+    "dcat_Distribution-dcat_accessURL",
+    "dcat_Distribution-dcterms_format",
+    "dcat_Distribution-dcterms_format-2",
+    "dcat_Distribution-dcterms_format-3",
+    "dcat_Distribution-dcat_byteSize",
+    "dcat_Distribution-dcterms_license",
+    "dcat_Distribution-dcterms_license-2",
+    "dcat_Distribution-dcterms_rights"
   ]
 };
 
