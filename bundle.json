@@ -6456,68 +6456,14 @@
       "nodetype": "RESOURCE",
       "property": "dcterms:publisher",
       "items": [
-        {
-          "property": "foaf:name",
-          "label": {
-            "en": "Name",
-            "sv": "Namn"
-          },
-          "description": {
-            "en": "Ett namn på en person eller organisation."
-          },
-          "type": "text",
-          "nodetype": "LANGUAGE_LITERAL",
-          "cardinality": {
-            "min": 1,
-            "pref": 0
-          }
-        },
+        "foaf:name",
+        "dcterms:description_agent",
         "adms:publishertype",
-        {
-          "property": "foaf:homepage",
-          "label": {
-            "en": "Homepage",
-            "sv": "Hemsida"
-          },
-          "description": {
-            "en": "A homepage for a person or organization.",
-            "sv": "En hemsida för en person eller organisation."
-          },
-          "constraints": {
-            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "http://xmlns.com/foaf/0.1/Document"
-          },
-          "type": "text",
-          "nodetype": "URI",
-          "cardinality": {
-            "min": 0,
-            "pref": 0
-          },
-          "styles": [
-            "externalLink"
-          ],
-          "pattern": "https?://.+"
-        },
-        {
-          "property": "foaf:mbox",
-          "label": {
-            "en": "Email address",
-            "sv": "E-postadress"
-          },
-          "description": {
-            "en": "An e-mail address used by a person or a specific administrative function within an organization.",
-            "sv": "En mailadress som används av en person eller en funktionsadress inom en organisation."
-          },
-          "type": "text",
-          "nodetype": "URI",
-          "cardinality": {
-            "min": 0,
-            "pref": 0
-          },
-          "styles": [
-            "email"
-          ],
-          "valueTemplate": "mailto:"
-        }
+        "foaf:homepage",
+        "foaf:mbox",
+        "org:classification",
+        "dcterms:identifier_agent",
+        "owl:sameAs_agent"
       ],
       "constraints": {
         "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
@@ -6535,6 +6481,44 @@
         "sv": "En aktör som bedriver aktiviteter i förhållande till entiteterna katalog, datamängd, datatjänst eller datamängdsserie."
       },
       "id": "dcat:foaf:Agent"
+    },
+    {
+      "property": "foaf:name",
+      "label": {
+        "en": "Name",
+        "sv": "Namn"
+      },
+      "description": {
+        "en": "A name for a person or organization.",
+        "sv": "Ett namn på en person eller organisation."
+      },
+      "type": "text",
+      "nodetype": "LANGUAGE_LITERAL",
+      "cardinality": {
+        "min": 1,
+        "pref": 0
+      },
+      "id": "foaf:name"
+    },
+    {
+      "property": "dcterms:description",
+      "label": {
+        "sv": "Beskrivning",
+        "en": "Description"
+      },
+      "description": {
+        "en": "A textual description of the agent.",
+        "sv": "En textuell beskrivning av aktören."
+      },
+      "type": "text",
+      "nodetype": "LANGUAGE_LITERAL",
+      "styles": [
+        "multiline"
+      ],
+      "cardinality": {
+        "pref": 1
+      },
+      "id": "dcterms:description_agent"
     },
     {
       "type": "choice",
@@ -6629,11 +6613,126 @@
         }
       ],
       "cardinality": {
-        "min": 0,
-        "pref": 1,
+        "min": 1,
         "max": 1
       },
       "id": "adms:publishertype"
+    },
+    {
+      "property": "foaf:homepage",
+      "label": {
+        "en": "Homepage",
+        "sv": "Hemsida"
+      },
+      "description": {
+        "en": "A homepage for a person or organization.",
+        "sv": "En hemsida för en person eller organisation."
+      },
+      "constraints": {
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "http://xmlns.com/foaf/0.1/Document"
+      },
+      "type": "text",
+      "nodetype": "URI",
+      "cardinality": {
+        "min": 0,
+        "pref": 0
+      },
+      "styles": [
+        "externalLink"
+      ],
+      "pattern": "https?://.+",
+      "id": "foaf:homepage"
+    },
+    {
+      "property": "foaf:mbox",
+      "label": {
+        "en": "Email address",
+        "sv": "E-postadress"
+      },
+      "description": {
+        "en": "An e-mail address used by a person or a specific administrative function within an organization.",
+        "sv": "En mailadress som används av en person eller en funktionsadress inom en organisation."
+      },
+      "type": "text",
+      "nodetype": "URI",
+      "cardinality": {
+        "min": 0,
+        "pref": 0
+      },
+      "styles": [
+        "email"
+      ],
+      "valueTemplate": "mailto:",
+      "id": "foaf:mbox"
+    },
+    {
+      "type": "choice",
+      "nodetype": "URI",
+      "property": "https://www.w3.org/ns/org#classification",
+      "label": {
+        "en": "Classification",
+        "sv": "Klassificering"
+      },
+      "descriptions": {
+        "en": "Classification of the agent, e.g. if finanzed via fees or not.",
+        "sv": "Klassificering av aktör, t.ex. om man är reglerad att ta ut avgifter eller inte."
+      },
+      "choices": [
+        {
+          "value": "https://dataportal.se/concepts/orgAspects/feeFinanzing",
+          "label": {
+            "en": "Regulated to take out fees on some service and data",
+            "sv": "Reglerad att ta ut avgifter på tjänster och data"
+          },
+          "descriptions": {
+            "en": "The agent is forced by regulation to take out fees on part of its services and data.",
+            "sv": "Aktören är ålagd att finansiera en del av sin verksamhet genom att ta ut avgifter för vissa tjänster och data."
+          }
+        }
+      ],
+      "cardinality": {
+        "pref": 1,
+        "max": 1
+      },
+      "styles": [
+        "verticalCheckBoxes"
+      ],
+      "id": "org:classification"
+    },
+    {
+      "property": "dcterms:identifier",
+      "label": {
+        "en": "Identifier",
+        "sv": "Indentifierare"
+      },
+      "description": {
+        "en": "The main identifier for the agent, e.g. a Swedish organization should use the \"organisationsnummer\".",
+        "sv": "Aktörens huvudsakliga identifierare, till exempel för en svensk organisation bör organisationsnummret anges."
+      },
+      "type": "text",
+      "nodetype": "ONLY_LITERAL",
+      "cardinality": {
+        "pref": 1
+      },
+      "id": "dcterms:identifier_agent"
+    },
+    {
+      "property": "owl:sameAs",
+      "label": {
+        "en": "Alternative URI",
+        "sv": "Alternativ URI"
+      },
+      "description": {
+        "en": "A known alternative URI for this agent.",
+        "sv": "En känd alternativ URI för denna aktör."
+      },
+      "type": "text",
+      "nodetype": "URI",
+      "styles": [
+        "externalLink"
+      ],
+      "pattern": "https?://.+",
+      "id": "owl:sameAs_agent"
     },
     {
       "type": "group",

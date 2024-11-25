@@ -1,0 +1,21 @@
+{
+  "property": "foaf:mbox",
+  "label": {
+    "en": "Email address",
+    "sv": "E-postadress"
+  },
+  "description": {
+    "en": "An e-mail address used by a person or a specific administrative function within an organization.",
+    "sv": "En mailadress som används av en person eller en funktionsadress inom en organisation."
+  },
+  "type": "text",
+  "nodetype": "URI",
+  "cardinality": {
+    "min": 0,
+    "pref": 0
+  },
+  "styles": [
+    "email"
+  ],
+  "valueTemplate": "mailto:"
+}

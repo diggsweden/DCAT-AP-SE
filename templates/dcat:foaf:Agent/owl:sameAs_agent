@@ -1,0 +1,17 @@
+{
+  "property": "owl:sameAs",
+  "label": {
+    "en": "Alternative URI",
+    "sv": "Alternativ URI"
+  },
+  "description": {
+    "en": "A known alternative URI for this agent.",
+    "sv": "En känd alternativ URI för denna aktör."
+  },
+  "type": "text",
+  "nodetype": "URI",
+  "styles": [
+    "externalLink"
+  ],
+  "pattern": "https?://.+"
+}

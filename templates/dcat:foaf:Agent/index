@@ -3,69 +3,14 @@
   "nodetype": "RESOURCE",
   "property": "dcterms:publisher",
   "items": [
-    {
-      "property": "foaf:name",
-      "label": {
-        "en": "Name",
-        "sv": "Namn"
-      },
-      "description": {
-        "en": "A name for a person or organization.",
-        "en": "Ett namn på en person eller organisation."
-      },
-      "type": "text",
-      "nodetype": "LANGUAGE_LITERAL",
-      "cardinality": {
-        "min": 1,
-        "pref": 0
-      }
-    },
+    "foaf:name",
+    "dcterms:description_agent",
     "adms:publishertype",
-    {
-      "property": "foaf:homepage",
-      "label": {
-        "en": "Homepage",
-        "sv": "Hemsida"
-      },
-      "description": {
-        "en": "A homepage for a person or organization.",
-        "sv": "En hemsida för en person eller organisation."
-      },
-      "constraints": {
-        "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "http://xmlns.com/foaf/0.1/Document"
-      },
-      "type": "text",
-      "nodetype": "URI",
-      "cardinality": {
-        "min": 0,
-        "pref": 0
-      },
-      "styles": [
-        "externalLink"
-      ],
-      "pattern": "https?://.+"
-    },
-    {
-      "property": "foaf:mbox",
-      "label": {
-        "en": "Email address",
-        "sv": "E-postadress"
-      },
-      "description": {
-        "en": "An e-mail address used by a person or a specific administrative function within an organization.",
-        "sv": "En mailadress som används av en person eller en funktionsadress inom en organisation."
-      },
-      "type": "text",
-      "nodetype": "URI",
-      "cardinality": {
-        "min": 0,
-        "pref": 0
-      },
-      "styles": [
-        "email"
-      ],
-      "valueTemplate": "mailto:"
-    }
+    "foaf:homepage",
+    "foaf:mbox",
+    "org:classification",
+    "dcterms:identifier_agent",
+    "owl:sameAs_agent"
   ],
   "constraints": {
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [

@@ -116,7 +116,8 @@ rdforms_specs.init({
     adms: 'http://www.w3.org/ns/adms#',
     prov: 'http://www.w3.org/ns/prov#',
     dcatap: 'http://data.europa.eu/r5r/',
-    schema: 'http://schema.org/'
+    schema: 'http://schema.org/',
+    org: 'https://www.w3.org/ns/org#'
   },
   bundles: [
     ['../bundle.json']

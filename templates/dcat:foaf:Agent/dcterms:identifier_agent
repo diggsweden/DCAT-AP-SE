@@ -1,0 +1,16 @@
+{
+  "property": "dcterms:identifier",
+  "label": {
+    "en": "Identifier",
+    "sv": "Indentifierare"
+  },
+  "description": {
+    "en": "The main identifier for the agent, e.g. a Swedish organization should use the \"organisationsnummer\".",
+    "sv": "Aktörens huvudsakliga identifierare, till exempel för en svensk organisation bör organisationsnummret anges."
+  },
+  "type": "text",
+  "nodetype": "ONLY_LITERAL",
+  "cardinality": {
+    "pref": 1
+  }
+}

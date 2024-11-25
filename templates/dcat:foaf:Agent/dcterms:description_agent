@@ -1,0 +1,19 @@
+{
+  "property": "dcterms:description",
+  "label": {
+    "sv": "Beskrivning",
+    "en": "Description"
+  },
+  "description": {
+    "en": "A textual description of the agent.",
+    "sv": "En textuell beskrivning av aktören."
+  },
+  "type": "text",
+  "nodetype": "LANGUAGE_LITERAL",
+  "styles": [
+    "multiline"
+  ],
+  "cardinality": {
+    "pref": 1
+  }
+}

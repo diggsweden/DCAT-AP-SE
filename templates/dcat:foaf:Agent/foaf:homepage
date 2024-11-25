@@ -1,0 +1,24 @@
+{
+  "property": "foaf:homepage",
+  "label": {
+    "en": "Homepage",
+    "sv": "Hemsida"
+  },
+  "description": {
+    "en": "A homepage for a person or organization.",
+    "sv": "En hemsida för en person eller organisation."
+  },
+  "constraints": {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "http://xmlns.com/foaf/0.1/Document"
+  },
+  "type": "text",
+  "nodetype": "URI",
+  "cardinality": {
+    "min": 0,
+    "pref": 0
+  },
+  "styles": [
+    "externalLink"
+  ],
+  "pattern": "https?://.+"
+}

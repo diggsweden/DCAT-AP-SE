@@ -1,0 +1,17 @@
+{
+  "property": "foaf:name",
+  "label": {
+    "en": "Name",
+    "sv": "Namn"
+  },
+  "description": {
+    "en": "A name for a person or organization.",
+    "sv": "Ett namn på en person eller organisation."
+  },
+  "type": "text",
+  "nodetype": "LANGUAGE_LITERAL",
+  "cardinality": {
+    "min": 1,
+    "pref": 0
+  }
+}
